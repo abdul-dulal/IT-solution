@@ -8,8 +8,153 @@
 }
 
 @layer components {
-  .main-container {
-    max-width: 1200px;
-    margin: auto;
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #686ee2;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 17px;
   }
+}
+
+.grap-btn:hover::before {
+  height: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+.to_bottom:hover:before {
+  height: 100%;
+  top: auto;
+  top: 0;
+}
+
+.animated-img {
+  animation: rotated 20s infinite linear;
+}
+@keyframes rotated {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-img2 {
+  animation: halfBounce2 2s infinite;
+}
+
+@keyframes halfBounce2 {
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.popup:before {
+  animation: zoomBig 3.25s linear infinite;
+  animation-delay: 0.75s;
+}
+.popup:after {
+  animation: zoomBig 3.25s linear infinite;
+
+  animation-delay: 0s;
+}
+@keyframes zoomBig {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+    border-width: 3px;
+  }
+  40% {
+    opacity: 0.5;
+    border-width: 2px;
+  }
+  65% {
+    border-width: 1px;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+.layer {
+  animation-delay: 2.8s;
+  animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.service-item-02:hover:after {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.client-slider.owl-carousel a:hover .normal {
+  display: block;
+  visibility: hidden;
+  transform: translateY(100%);
+}
+
+.client-slider.owl-carousel a:hover .hover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 3;
+  visibility: visible;
+  transform: translateY(0%);
+}
+
+.pricintable-01:after {
+  transition: all 0.5s;
+}
+.pricintable-01:before {
+  transform: scale(0.98);
+  transition: all 0.5s;
+  background-color: rgba(8, 24, 69, 0.9);
+}
+.pricintable-01:hover:after,
+.pricintable-01:hover:before {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.pricintable-01 h5 {
+  transition: all ease 0.3s;
+}
+.pricintable-01 h2 {
+  transition: all ease 0.3s;
+}
+
+.pricintable-01 ul li {
+  transition: all ease 0.3s;
+}
+.pricintable-01 ul li::before {
+  content: "\2713";
+  transition: all ease 0.3s;
+}
+.pricintable-01:hover ul li::before,
+.pricintable-01:hover ul li {
+  color: #fff;
 }

@@ -12,8 +12,8 @@ import {
 
 const TopHeader = () => {
   return (
-    <section className="bg-[#686EE2]  ">
-      <div className="main-container flex items-center justify-between">
+    <div className="bg-primary  ">
+      <div className="container mx-auto flex items-center justify-between">
         <div
           className={`${rubik.className}  flex items-center   gap-9  py-4 text-white text-sm font-medium`}
         >
@@ -37,22 +37,22 @@ const TopHeader = () => {
         </div>
         <div>
           <ul className="flex gap-3 text-[#F5F5F5] text-[17px] font-bold">
-            <li className="hover:text-black delay-200 cursor-pointer">
+            <li className="hover:text-base delay-200 cursor-pointer">
               <a href="https://www.facebook.com/" target="blank">
                 <FaFacebookF size={18} />
               </a>
             </li>
-            <li className="hover:text-black delay-200 cursor-pointer">
+            <li className="hover:text-base delay-200 cursor-pointer">
               <a href="https://x.com/home" target="blank">
                 <FaTwitter size={18} />
               </a>
             </li>
-            <li className="hover:text-black delay-200 cursor-pointer">
-              <a href="" target="blank">
+            <li className="hover:text-base delay-200 cursor-pointer">
+              <a href="https://web.whatsapp.com/" target="blank">
                 <FaWhatsapp size={18} />
               </a>
             </li>
-            <li className="hover:text-black delay-200 cursor-pointer">
+            <li className="hover:text-base delay-200 cursor-pointer">
               <a href="https://www.instagram.com/" target="blank">
                 <FaInstagram size={18} />
               </a>
@@ -60,7 +60,7 @@ const TopHeader = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
