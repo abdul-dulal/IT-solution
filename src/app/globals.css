@@ -18,6 +18,8 @@
   }
 }
 
+/* Home Start */
+
 .grap-btn:hover::before {
   height: 100%;
   top: auto;
@@ -125,14 +127,6 @@
   transform: translateY(0%);
 }
 
-.pricintable-01:after {
-  transition: all 0.5s;
-}
-.pricintable-01:before {
-  transform: scale(0.98);
-  transition: all 0.5s;
-  background-color: rgba(8, 24, 69, 0.9);
-}
 .pricintable-01:hover:after,
 .pricintable-01:hover:before {
   transform: scale(1);
@@ -140,21 +134,17 @@
   opacity: 1;
 }
 
-.pricintable-01 h5 {
-  transition: all ease 0.3s;
-}
-.pricintable-01 h2 {
-  transition: all ease 0.3s;
-}
-
-.pricintable-01 ul li {
-  transition: all ease 0.3s;
-}
 .pricintable-01 ul li::before {
   content: "\2713";
-  transition: all ease 0.3s;
 }
 .pricintable-01:hover ul li::before,
 .pricintable-01:hover ul li {
   color: #fff;
 }
+
+.slider-button:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+/* Home End */

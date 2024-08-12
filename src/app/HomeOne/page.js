@@ -29,6 +29,7 @@ import cLogo4 from "/public/img/client/techlogo2.png";
 import Client from "../../../components/ui/Client";
 import PricePlan from "../../../components/ui/PricePlan";
 import Accrodian from "../../../components/ui/Accrodian";
+import Portfolio from "../../../components/ui/Portfolio";
 
 const HomeOne = () => {
   return (
@@ -203,7 +204,7 @@ const HomeOne = () => {
       {/* Client Start */}
       <section className="bg-[#f0f4f9] relative pt-[75px] pb-[68px] ">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-4 ">
+          <div className="grid gap-5 justify-center md:grid-cols-4  xs:grid-cols-2  ">
             <Client logo={cLogo3} />
             <Client logo={cLogo2} />
             <Client logo={cLogo4} />
@@ -215,14 +216,14 @@ const HomeOne = () => {
 
       {/* Price Start */}
       <section className="relative pt-[116px] pb-[85px]">
-        <div className="container mx-auto px-3">
+        <div className="container mx-auto xs:px-3 px-4">
           <h6 class="title  text-center">Let’s Work</h6>
           <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
             Pricing Plans
           </h2>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid  md:grid-cols-3 xs:grid-cols-2  gap-8">
             <PricePlan icon={<MdAutoMode />} title="basic plan" price="49.00" />
-            <PricePlan icon={<FaAward />} title="premimum" price="69.00" />
+            <PricePlan icon={<FaAward />} title="premimum plan" price="69.00" />
             <PricePlan
               icon={<MdOutlineWorkspacePremium />}
               title="business plan"
@@ -232,6 +233,12 @@ const HomeOne = () => {
         </div>
       </section>
       {/* Price End */}
+
+      {/* Portfolio Start */}
+      <section className="relative bg-[#f0f4f9] pt-[120px] xl:px-8 px-4 pb-[244px]">
+        <Portfolio />
+      </section>
+      {/* Portfolio End */}
     </div>
   );
 };
