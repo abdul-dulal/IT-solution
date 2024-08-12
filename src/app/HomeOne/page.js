@@ -31,6 +31,10 @@ import PricePlan from "../../../components/ui/PricePlan";
 import Accrodian from "../../../components/ui/Accrodian";
 import Portfolio from "../../../components/ui/Portfolio";
 import Counter from "../../../components/ui/Counter";
+import Blog from "../../../components/ui/Blog";
+import blog1 from "/public/img/blog/blog1.jpg";
+import blog2 from "/public/img/blog/blog2.jpg";
+import blog3 from "/public/img/blog/blog3.jpg";
 
 const HomeOne = () => {
   return (
@@ -84,6 +88,7 @@ const HomeOne = () => {
             <Image
               class="animated-img rounded-[5px] absolute sm:right-7 right-10  top-[73px] -z-[1] "
               src={ring}
+              draggable={false}
               alt="Feature"
             />
             <Image
@@ -254,7 +259,42 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
+
       {/* Counter End */}
+
+      {/* Blog Start  */}
+
+      <section
+        style={{ padding: "116px 0 90px" }}
+        className="relative pt-[116px]"
+      >
+        <div className="container mx-auto xs:px-6 px-3">
+          <div>
+            <h6 class="title  text-center">Blogs</h6>
+            <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
+              Out Latest Articles
+            </h2>
+          </div>
+          <div className="grid  xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2  gap-7">
+            <Blog
+              img={blog1}
+              title="Necessity May Give Us Your Best Virtual Court System"
+              subTitle=" Morbi ullamcorper vel nunc quis venenatis. Ut auctor dapibus dignissim..."
+            />
+            <Blog
+              img={blog2}
+              title="Open Source Job Report Show More Openings Fewer"
+              subTitle=" Morbi ullamcorper vel nunc quis venenatis. Ut auctor dapibus dignissim..."
+            />
+            <Blog
+              img={blog3}
+              title="Types of Social Proof What its Makes Them Effective"
+              subTitle=" Morbi ullamcorper vel nunc quis venenatis. Ut auctor dapibus dignissim..."
+            />
+          </div>
+        </div>
+      </section>
+      {/* Blog End  */}
     </div>
   );
 };
