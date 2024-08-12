@@ -30,6 +30,7 @@ import Client from "../../../components/ui/Client";
 import PricePlan from "../../../components/ui/PricePlan";
 import Accrodian from "../../../components/ui/Accrodian";
 import Portfolio from "../../../components/ui/Portfolio";
+import Counter from "../../../components/ui/Counter";
 
 const HomeOne = () => {
   return (
@@ -178,6 +179,7 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
+
       {/* Service End */}
 
       {/* FAQ Start */}
@@ -199,6 +201,7 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
+
       {/* FAQ End */}
 
       {/* Client Start */}
@@ -212,6 +215,7 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
+
       {/* Client End */}
 
       {/* Price Start */}
@@ -232,13 +236,25 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
+
       {/* Price End */}
 
       {/* Portfolio Start */}
       <section className="relative bg-[#f0f4f9] pt-[120px] xl:px-8 px-4 pb-[244px]">
         <Portfolio />
       </section>
+
       {/* Portfolio End */}
+
+      {/* Counter Start */}
+      <section className="relative -mt-[150px]">
+        <div className="container mx-auto xl:px-6 px-3">
+          <div className="bg-[url('/img/bg/counter-bg.png')] relative   w-full rounded-[10px] bg-[#686ee2] z-[2]  py-10 bg-center bg-auto bg-no-repeat">
+            <Counter />
+          </div>
+        </div>
+      </section>
+      {/* Counter End */}
     </div>
   );
 };
