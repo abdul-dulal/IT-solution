@@ -55,31 +55,31 @@ const CustomSwiper = () => {
       >
         <SwiperSlide>
           <div className="">
-            <Image src={portfolio} alt="Portfolio" />
-            <PortfolioContent tech="technology" title="platform integration" />
+            <Image src={portfolio} className="w-full" alt="Portfolio" />
+            <PortfolioContent tech="Technology" title="platform integration" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="">
-            <Image src={portfolio2} alt="Portfolio" />
+            <Image src={portfolio2} className="w-full" alt="Portfolio" />
             <PortfolioContent tech="Printing" title="product engineering" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="">
-            <Image src={portfolio3} alt="Portfolio" />
+            <Image src={portfolio3} className="w-full" alt="Portfolio" />
             <PortfolioContent tech="UX/UI" title="growth startegies" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="">
-            <Image src={portfolio4} alt="Portfolio" />
+            <Image src={portfolio4} className="w-full" alt="Portfolio" />
             <PortfolioContent tech="Branding" title="innovative interface" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="">
-            <Image src={portfolio5} alt="Portfolio" />
+            <Image src={portfolio5} className="w-full" alt="Portfolio" />
             <PortfolioContent tech="Web Design" title="product design" />
           </div>
         </SwiperSlide>

@@ -7,14 +7,15 @@
   box-sizing: border-box;
 }
 
-@layer components {
-  .title {
-    font-size: 16px;
-    line-height: 20px;
-    color: #686ee2;
-    font-weight: 500;
-    text-transform: capitalize;
-    margin: 0 0 17px;
+@layer base {
+  h2 {
+    @apply text-5xl leading-[58px] font-bold;
+  }
+  h6 {
+    @apply text-lg leading-[20px] text-primary font-normal capitalize mb-[17px];
+  }
+  p {
+    @apply text-[rgb(86,88,114)] text-lg font-normal;
   }
 }
 
@@ -151,4 +152,16 @@
   stroke: #686ee2;
 }
 
+.widget ul li:hover:before {
+  margin-right: 13px;
+  color: #686ee2;
+}
 /* Home End */
+
+/* service 3 */
+
+/* Important notice */
+
+/* .service-item-04:hover .ib-icon svg {
+  fill: #686ee2;
+} */

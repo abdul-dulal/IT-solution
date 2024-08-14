@@ -20,7 +20,7 @@ import { FaAward } from "react-icons/fa6";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 
 import VideoModal from "../../../components/ui/VideoModal";
-import Services from "../../../components/ui/Services";
+import Services from "../../../components/ui/service/Services";
 import ContactForm from "../../../components/ui/ContactForm";
 import cLogo1 from "/public/img/client/techlogo1.png";
 import cLogo2 from "/public/img/client/brandname1.png";
@@ -35,6 +35,7 @@ import Blog from "../../../components/ui/Blog";
 import blog1 from "/public/img/blog/blog1.jpg";
 import blog2 from "/public/img/blog/blog2.jpg";
 import blog3 from "/public/img/blog/blog3.jpg";
+import Footer from "../../../components/ui/Footer";
 
 const HomeOne = () => {
   return (
@@ -226,7 +227,7 @@ const HomeOne = () => {
       {/* Price Start */}
       <section className="relative pt-[116px] pb-[85px]">
         <div className="container mx-auto xs:px-3 px-4">
-          <h6 class="title  text-center">Let’s Work</h6>
+          <h6 class="  text-center">Let’s Work</h6>
           <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
             Pricing Plans
           </h2>
@@ -294,6 +295,7 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
+
       {/* Blog End  */}
     </div>
   );

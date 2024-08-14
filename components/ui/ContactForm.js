@@ -1,6 +1,7 @@
 "use client";
 import { rubik } from "@/app/fonts";
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlinePhoneEnabled } from "react-icons/md";
@@ -10,9 +11,18 @@ const Form = () => {
     name: "",
     email: "",
   });
-  const [message, setMessage] = useState("");
-
+  const [message, setMessage] = useState(false);
   const [errors, setErrors] = useState({});
+  const [time, setTime] = useState(false);
+  useEffect(() => {
+    setTime(true);
+
+    const timer = setTimeout(() => {
+      setTime(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,11 +37,16 @@ const Form = () => {
     const validationErrors = {};
 
     if (!formData.name) {
-      validationErrors.name = "Name is required";
+      validationErrors.name = (
+        <p>
+          <span className="texg-lg ">Opps!</span> Errpr found. Please fix those
+          and re submit.
+        </p>
+      );
     }
 
     if (!formData.email) {
-      validationErrors.email = "Email is required";
+      validationErrors.email = "error";
     }
 
     setErrors(validationErrors);
@@ -40,21 +55,8 @@ const Form = () => {
       // Form is valid, proceed with submission
     }
     if (formData.name && formData.email) {
-      setMessage(
-        <p className="text-lg font-normal text-green-400 bg-[#FFF3CD] py-3 text-center">
-          <span className="text-xl font-bold">Congratulations</span> Errpr
-          found. Please fix those and re submit.
-        </p>
-      );
-    } else {
-      setMessage(
-        <p className="text-lg font-normal text-black bg-[#FFF3CD] py-3 text-center">
-          <span className="text-xl font-bold">Opps!</span> Errpr found. Please
-          fix those and re submit.
-        </p>
-      );
+      setMessage(true);
     }
-    setFormData({ name: "", email: "" });
   };
 
   return (
@@ -131,7 +133,27 @@ const Form = () => {
       >
         Submit
       </button>
-      <div className="w-[88%] ml-[9px] mt-4 ">{message}</div>
+
+      <div className="w-[88%] ml-[9px] mt-4 ">
+        <div className="  ">
+          {(time && errors.name) || errors.email ? (
+            <p className="bg-[#FFF3CD] py-4 text-[#856404] px-5 text-base font-normal leading-[30px]">
+              <span className="text-xl font-bold">Opps!</span> Errpr found.
+              Please fix those and re submit.
+            </p>
+          ) : (
+            ""
+          )}
+          {message ? (
+            <p className="bg-[#D4EDDA] py-4 text-[#157893] px-5 text-base font-normal leading-[30px]">
+              <span className="text-xl font-bold">Congratulations!</span> Errpr
+              found. Please fix those and re submit.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
     </form>
   );
 };

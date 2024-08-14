@@ -8,7 +8,7 @@ const Counter = () => {
     <div className="my-14">
       <ScrollTrigger
         onEnter={() => setCounteron(true)}
-        onExit={() => setCounteron(false)}
+        // onExit={() => setCounteron(false)}
       >
         {counterOn && (
           <div className="sm:flex  items-center xs:gap-0  justify-around ">
