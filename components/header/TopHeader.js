@@ -19,16 +19,26 @@ const TopHeader = () => {
         >
           <div className="flex  gap-3 items-center ">
             <LuPhone size={20} />
-            <p>+ 124 569 89 09</p>
+            <p
+              className={`${rubik.className} text-[15px] text-white font-normal`}
+            >
+              + 124 569 89 09
+            </p>
           </div>
           <div className="flex gap-3 items-center">
             <IoLocationOutline size={20} />
-            <p>2072 Pinnickinick Street, WA 98370</p>
+            <p
+              className={`${rubik.className} text-[15px] text-white font-normal`}
+            >
+              2072 Pinnickinick Street, WA 98370
+            </p>
           </div>
 
           <div className="flex gap-3 items-center">
             <TfiEmail size={20} />
-            <p>
+            <p
+              className={`${rubik.className} text-[15px] text-white font-normal`}
+            >
               <a href="mailto:example@example.com" target="blank">
                 info@website.com
               </a>

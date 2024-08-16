@@ -11,7 +11,10 @@ import WorkProcess from "../../../components/ui/WorkProcess";
 import { PiTargetLight } from "react-icons/pi";
 import { PiUserSwitchDuotone } from "react-icons/pi";
 import { FaRegLightbulb } from "react-icons/fa";
-
+import { IoLocationOutline } from "react-icons/io5";
+import Address from "../../../components/ui/Address";
+import { SiFigma } from "react-icons/si";
+import { TfiEmail } from "react-icons/tfi";
 const ServiceOne = () => {
   return (
     <div>
@@ -44,7 +47,6 @@ const ServiceOne = () => {
       {/* Service End */}
 
       {/* Work Process Start */}
-
       <section className="relative pt-28 pb-[120px]">
         <div className="container mx-auto xs:px-6 px-4">
           <h6 class="text-center ">Our Work Process</h6>
@@ -72,6 +74,34 @@ const ServiceOne = () => {
       </section>
 
       {/* Work Process End*/}
+
+      {/* Contact Start */}
+
+      <section className="relative bg-[#f0f4f9] py-[120px]">
+        <div className="container mx-auto xs:px-6 px-4">
+          <div className="grid grid-cols-12">
+            <div className="col-span-4">
+              <h2 className="mb-[50px]"> Let&apos;s Work together</h2>
+              <Address
+                title="Our Address"
+                address="PSD Building, 2 AlBahr St, Loskia sripur, jamukara."
+                icon={<IoLocationOutline />}
+              />
+              <Address
+                title="Our Phone"
+                address="Telephone : 0029129102320 Mobile : 000 2324 39493"
+                icon={<SiFigma />}
+              />
+              <Address
+                title="Our Email"
+                address=" Main Email : name@website.com Inquiries : Info@orex.com"
+                icon={<TfiEmail />}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Contact End */}
     </div>
   );
 };
