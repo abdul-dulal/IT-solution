@@ -2,13 +2,13 @@ import { rubik } from "@/app/fonts";
 import Image from "next/image";
 import React from "react";
 import { MdOutlineMail } from "react-icons/md";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
-import { SlSocialPintarest } from "react-icons/sl";
+
 import footer1 from "/public/img/footer-1.jpg";
 import footer2 from "/public/img/footer-2.jpg";
-import logo from "/public/img/main-logo.png";
+
 import Link from "next/link";
+import FooterSocial from "./FooterSocial";
+import FooterBottom from "./FooterBottom";
 const Footer = () => {
   return (
     <footer class="footer bg-[url('/img/bg/footer-bg.png')] bg-center bg-auto bg-no-repeat relative bg-[#081845] pt-[60px]">
@@ -41,49 +41,7 @@ const Footer = () => {
         </div>
         <div class="grid grid-cols-12">
           <div class="lg:col-span-4 xs:col-span-6 col-span-12">
-            <aside class="widget relative mt-[60px] mb-[45px]">
-              <div class="about-widget relative pr-5">
-                <a href="index.html">
-                  <Image src={logo} alt="Footer-Logo" />
-                </a>
-                <p className="text-[rgba(255,255,255,0.8)] mt-7 mb-8 text-lg font-normal">
-                  Sedut perspiciatis unde omnis iste natus error sitlutem acc
-                  usantium doloremque denounce with illo inventore veritatis
-                </p>
-                <div class="flex gap-3 relative">
-                  <Link
-                    href="https://www.facebook.com/"
-                    className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
-                  >
-                    <FaFacebookF />
-                  </Link>
-                  <Link
-                    href="https://twitter.com/"
-                    className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
-                  >
-                    <FaTwitter />{" "}
-                  </Link>
-                  <Link
-                    href="http://instagram.com/"
-                    className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
-                  >
-                    <FaInstagram />
-                  </Link>
-                  <Link
-                    href="https://google.com/"
-                    className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
-                  >
-                    <FaLinkedinIn />{" "}
-                  </Link>
-                  <Link
-                    href="https://google.com/"
-                    className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
-                  >
-                    <SlSocialPintarest />{" "}
-                  </Link>
-                </div>
-              </div>
-            </aside>
+            <FooterSocial />
           </div>
           <div class="lg:col-span-3 xs:col-span-6 col-span-12">
             <aside class="widget mt-[60px] mb-[45px]">
@@ -180,50 +138,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="">
-          <div class="grid grid-cols-12 copyright relative pt-[22px] pb-7 border-t border-solid border-[rgba(255,255,255,0.1)]">
-            <div class="xs:col-span-7 col-span-12 text-center">
-              <p className="text-[rgba(255,255,255,0.5)] text-lg font-normal leading-[30px]">
-                &copy;{" "}
-                <Link
-                  href="https://psdtowpwork.com/"
-                  className="hover:text-primary"
-                >
-                  Nsstheme
-                </Link>
-                2021 | All Rights Reserved.
-              </p>
-            </div>
-            <div class="xs:col-span-5 col-span-12">
-              <ul className="m-0 p-0 xs:text-right text-center xs:my-0 my-5">
-                <li className="relative mb-5 inline-block after:absolute after:-right-4 after:top-[6px] after:h-3 after:w-[2px] after:content-[''] after:bg-[rgba(255,255,255,0.5)] after:mr-1">
-                  <Link
-                    href=""
-                    className="text-[rgba(255,255,255,0.5)] hover:text-primary"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li className="relative px-6 mb-5 inline-block after:absolute after:-right-[6px] after:top-[6px] after:h-3 after:w-[2px] after:content-[''] after:bg-[rgba(255,255,255,0.5)] after:mr-4">
-                  <Link
-                    href="https://www.google.com/maps"
-                    className="text-[rgba(255,255,255,0.5)] hover:text-primary"
-                  >
-                    Sitemap
-                  </Link>
-                </li>
-                <li className="relative mb-5 inline-block ">
-                  <Link
-                    href=""
-                    className="text-[rgba(255,255,255,0.5)] hover:text-primary"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <FooterBottom />
       </div>
     </footer>
   );

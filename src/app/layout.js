@@ -2,7 +2,7 @@ import "./globals.css";
 import TopHeader from "../../components/header/TopHeader";
 import { jost } from "./fonts";
 import MainHeader from "../../components/header/MainHeader";
-import Footer from "../../components/ui/Footer";
+import Footer from "../../components/ui/Footer/Footer";
 import HeaderTwo from "../../components/header/HeaderTwo";
 import HeaderApply from "./HeaderApply";
 import Header from "./header/page";
@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
       <title>Graptor</title>
       <body className={jost.className}>
         <div className="">
-          <Header />
+          {/* <HeaderApply /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>

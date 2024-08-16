@@ -35,7 +35,7 @@ import Blog from "../../../components/ui/Blog";
 import blog1 from "/public/img/blog/blog1.jpg";
 import blog2 from "/public/img/blog/blog2.jpg";
 import blog3 from "/public/img/blog/blog3.jpg";
-import Footer from "../../../components/ui/Footer";
+import Footer from "../../../components/ui/Footer/Footer";
 
 const HomeOne = () => {
   return (

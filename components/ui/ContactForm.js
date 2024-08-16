@@ -37,12 +37,7 @@ const Form = () => {
     const validationErrors = {};
 
     if (!formData.name) {
-      validationErrors.name = (
-        <p>
-          <span className="texg-lg ">Opps!</span> Errpr found. Please fix those
-          and re submit.
-        </p>
-      );
+      validationErrors.name = "error";
     }
 
     if (!formData.email) {
