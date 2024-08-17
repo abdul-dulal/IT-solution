@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head></head>
-      <title>Graptor</title>
+      <title>
+        Graptor - Technology & IT Solutions HTML5 Responsive Template
+      </title>
       <body className={jost.className}>
         <div className="">
           {/* <HeaderApply /> */}

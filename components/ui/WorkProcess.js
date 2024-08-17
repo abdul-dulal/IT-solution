@@ -11,7 +11,7 @@ const WorkProcess = ({ title, serial, icon }) => {
         </span>
       </div>
       <h5 className="text-white text-xl leading-[30px] m-0 font-bold">
-        Collecting Info Data
+        {title}
       </h5>
     </div>
   );
