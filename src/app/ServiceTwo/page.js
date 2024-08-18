@@ -32,38 +32,7 @@ const ServiceTwo = () => {
               Service for You
             </h2>
           </div>
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-8">
-            <Services
-              title="Analytic Solutions"
-              icon={<FiSettings />}
-              serial="01"
-            />
-            <Services
-              title="web development"
-              icon={<TbBrandWebflow />}
-              serial="02"
-            />
-            <Services
-              title="seo optimized expert"
-              icon={<BiLogoSlack />}
-              serial="03"
-            />
-            <Services
-              title="software development"
-              icon={<GiMaterialsScience />}
-              serial="04"
-            />
-            <Services
-              title="Project Reporting"
-              icon={<GoProjectSymlink />}
-              serial="05"
-            />
-            <Services
-              title="Business Analysis"
-              icon={<PiShootingStarThin />}
-              serial="06"
-            />
-          </div>
+          <Services />
         </div>
       </section>
 

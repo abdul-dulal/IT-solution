@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Analytic Solutions",
+    "serial": "01",
+    "icon": "FiSettings"
+  },
+  {
+    "id": 2,
+    "title": "web development",
+    "serial": "02",
+    "icon": "TbBrandWebflow"
+  },
+  {
+    "id": 3,
+    "title": "seo optimized expert",
+    "serial": "03",
+    "icon": "BiLogoSlack"
+  },
+  {
+    "id": 4,
+    "title": "software development",
+    "serial": "04",
+    "icon": "GiMaterialsScience"
+  },
+  {
+    "id": 5,
+    "title": "Project Reporting",
+    "serial": "05",
+    "icon": "GoProjectSymlink"
+  },
+  {
+    "id": 6,
+    "title": "Business Analysis",
+    "serial": "06",
+    "icon": "PiShootingStarThin"
+  }
+]

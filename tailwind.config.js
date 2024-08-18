@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      content: {
+        "custom-icon": '"\\e9ef"',
+      },
       colors: {
         primary: "#686EE2",
         secondary: "#081845",
