@@ -6,8 +6,11 @@ import blog from "/public/img/bg/blog-3.jpg";
 import Link from "next/link";
 import { rubik } from "../fonts";
 import { BsFileEarmarkPdf } from "react-icons/bs";
-
+import { VscTriangleRight } from "react-icons/vsc";
 import { LuQuote } from "react-icons/lu";
+import ServiceContact from "../../../components/ui/service/ServiceContact";
+import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+import allService from "/public/AllService.json";
 const ServiceDetails = () => {
   return (
     <div>
@@ -15,12 +18,12 @@ const ServiceDetails = () => {
       <section class=" relative  py-[120px]">
         <div class="container mx-auto xs:px-6 px-4">
           <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-8">
+            <div class="lg:col-span-8 col-span-12">
               <div class=" relative">
                 <div class=" relative mb-7">
                   <Image src={hero} alt="Hero" className="rounded-[10px]" />
                 </div>
-                <h3 className="text-[40px] leading-[52px] font-bold text-[#191919] mb-[22px]">
+                <h3 className="sm:text-[40px] xs:text-[36px] text-[30px] sm:leading-[52px] xs:leading-[45px] leading-[40px] font-bold text-[#191919] mb-[22px]">
                   Responsive Pixel Perfect Design
                 </h3>
                 <p className="mb-5">
@@ -40,14 +43,13 @@ const ServiceDetails = () => {
                   justo duo dolores et ea rebum. Stet clita kasd gubergren, no
                   sea takimata sanctus est.
                 </p>
-                <div class="grid grid-cols-2 gap-7">
-                  <div class="col-md-6">
-                    <Image
-                      className="rounded-[5px] mt-[19px] mb-[35px]"
-                      src={blog}
-                      alt=""
-                    />
-                  </div>
+                <div class="grid sm:grid-cols-2 gap-7">
+                  <Image
+                    className="rounded-[5px] mt-[19px] mb-[35px]"
+                    src={blog}
+                    alt="Service"
+                  />
+
                   <div class="">
                     <h4 className="text-xl font-bold leading-[30px] text-[#222] mt-5 mb-[22px]">
                       Quality Control System
@@ -80,13 +82,14 @@ const ServiceDetails = () => {
                   </li>
                 </ul>
 
-                <blockquote class="relative py-[50px] px-[100px] bg-[#f0f4f9] rounded-[10px] text-center mt-[30px]">
+                <blockquote class="relative py-[50px] md:px-[100px] sm:px-[70px] xs:px-[35px] px-6 bg-[#f0f4f9] rounded-[10px] text-center mt-[30px]">
                   <LuQuote className="text-[54px] text-primary w-full block mx-auto mb-7" />
-                  <p class=" text-[#222] text-xl relative leading-[30px] font-medium italic mb-[22px] ">
+                  <p class=" text-[#222] text-xl  relative leading-[30px]  font-medium italic mb-[22px] ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
-                    <br /> Quis ipsum suspendisse ultrices
+                    <br className="md:block hidden" /> Quis ipsum suspendisse
+                    ultrices
                   </p>
                   <div class=" relative">
                     <span className="block text-primary leading-[.8] text-lg font-normal mb-[10px]">
@@ -97,90 +100,38 @@ const ServiceDetails = () => {
                 </blockquote>
               </div>
             </div>
-            <div class="col-span-4">
+            <div class="lg:col-span-4 col-span-12">
               <div class=" relative pl-[10px]">
                 <aside class=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
                   <h3 class=" capitalize relative text-[28px] font-bold leading-[36px] mb-6">
                     Popular Service
                   </h3>
                   <ul className="relative">
-                    <li className="relative block mb-[15px] z-[1]">
-                      <Link
-                        href=""
-                        className={`${rubik.className} relative block text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 after:absolute after:right-[20px] after:top-0 after:leading-[50px] after:text-[#081845] after:content-['-']`}
-                      >
-                        Web Development
-                      </Link>
-                    </li>
-                    <li className="relative block mb-[15px] z-[1]">
-                      <Link
-                        href=""
-                        className={`${rubik.className} relative block text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary transition-all ease-in-out duration-400 after:absolute after:right-[20px] after:top-0 after:leading-[50px] after:text-[#081845] after:content-['-']`}
-                      >
-                        Analytic Solutions
-                      </Link>
-                    </li>
-                    <li className="relative block mb-[15px] z-[1]">
-                      <Link
-                        href=""
-                        className={`${rubik.className} relative block text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary transition-all ease-in-out duration-400 after:absolute after:right-[20px] after:top-0 after:leading-[50px] after:text-[#081845] after:content-['-']`}
-                      >
-                        Software Development
-                      </Link>
-                    </li>
-                    <li className="relative block mb-[15px] z-[1]">
-                      <Link
-                        href=""
-                        className={`${rubik.className} relative block text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary transition-all ease-in-out duration-400 after:absolute after:right-[20px] after:top-0 after:leading-[50px] after:text-[#081845] after:content-['-']`}
-                      >
-                        Cloud and DevOps
-                      </Link>
-                    </li>
-                    <li className="relative block mb-[15px] z-[1]">
-                      <Link
-                        href=""
-                        className={`${rubik.className} relative block text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary transition-all ease-in-out duration-400 after:absolute after:right-[20px] after:top-0 after:leading-[50px] after:text-[#081845] after:content-['-']`}
-                      >
-                        Project Design
-                      </Link>
-                    </li>
+                    {allService.map((item) => {
+                      {
+                        /* const active = item.title === paramsTitle; */
+                      }
+                      return (
+                        <li
+                          key={item.id}
+                          className="relative block mb-[15px] z-[1]"
+                        >
+                          <Link
+                            href={`service/${item.title}`}
+                            className={`${rubik.className} relative flex justify-between items-center capitalize text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
+                          >
+                            {item.title} <VscTriangleRight />
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </aside>
                 <aside class=" relative my-[50px] p-0">
                   <h3 class="  text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-7">
                     Get a Quote
                   </h3>
-                  <form action="#" method="post" id="contact-form">
-                    <div class="">
-                      <input
-                        type="text"
-                        name="con_name"
-                        class="required"
-                        placeholder="Name"
-                      />
-                      <i class="nss-user1"></i>
-                    </div>
-                    <div class=" mb-[18px]">
-                      <input
-                        type="email"
-                        name="con_email"
-                        class="required"
-                        placeholder="Email"
-                      />
-                      <i class="nss-envelope1"></i>
-                    </div>
-                    <div class=" mb-[18px]">
-                      <textarea
-                        name="con_message"
-                        class="required"
-                        placeholder="Message"
-                      ></textarea>
-                      <i class="nss-pencil-alt1"></i>
-                    </div>
-                    <button type="submit" class="grap-btn to_top">
-                      Send
-                    </button>
-                  </form>
+                  <ServiceContact />
                 </aside>
                 <aside class=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
                   <h3 class=" text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-6">
@@ -210,6 +161,9 @@ const ServiceDetails = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <FooterTwo />
     </div>
   );
 };

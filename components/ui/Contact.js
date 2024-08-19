@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { useEffect } from "react";
 import Address from "./Address";
 import { IoLocationOutline } from "react-icons/io5";
 import { SiFigma } from "react-icons/si";
@@ -8,7 +7,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlinePhoneEnabled } from "react-icons/md";
-import { TbBrowser } from "react-icons/tb";
+
 import { PiNotePencilDuotone } from "react-icons/pi";
 import { BiPencil } from "react-icons/bi";
 import { rubik } from "@/app/fonts";

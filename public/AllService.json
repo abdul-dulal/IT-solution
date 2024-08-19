@@ -3,36 +3,43 @@
     "id": 1,
     "title": "Analytic Solutions",
     "serial": "01",
-    "icon": "FiSettings"
+    "icon": "FiSettings",
+
+    "img": "/img/blog/Analytic Solutions.jpg"
   },
   {
     "id": 2,
     "title": "web development",
     "serial": "02",
-    "icon": "TbBrandWebflow"
+    "icon": "TbBrandWebflow",
+    "img": "/img/blog/web development.jpg"
   },
   {
     "id": 3,
     "title": "seo optimized expert",
     "serial": "03",
-    "icon": "BiLogoSlack"
+    "icon": "BiLogoSlack",
+    "img": "/img/blog/seo optimized expert.jpg"
   },
   {
     "id": 4,
     "title": "software development",
     "serial": "04",
-    "icon": "GiMaterialsScience"
+    "icon": "GiMaterialsScience",
+    "img": "/img/blog/software development.jpg"
   },
   {
     "id": 5,
     "title": "Project Reporting",
     "serial": "05",
-    "icon": "GoProjectSymlink"
+    "icon": "GoProjectSymlink",
+    "img": "/img/blog/Project Reporting.jpg"
   },
   {
     "id": 6,
     "title": "Business Analysis",
     "serial": "06",
-    "icon": "PiShootingStarThin"
+    "icon": "PiShootingStarThin",
+    "img": "/img/blog/Responsive Pixel Perfect Design.jpg"
   }
 ]

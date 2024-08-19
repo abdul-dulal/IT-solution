@@ -1,15 +1,6 @@
 import React from "react";
-import logo from "/public/img/secondary.png";
-import Image from "next/image";
 import BreadCumb from "../../../components/ui/BreadCumb";
 import Services from "../../../components/ui/service/ServiceFour";
-
-import { FiSettings } from "react-icons/fi";
-import Link from "next/link";
-import { TbBrandWebflow } from "react-icons/tb";
-import { BiLogoSlack } from "react-icons/bi";
-import { GiMaterialsScience } from "react-icons/gi";
-import { GoProjectSymlink } from "react-icons/go";
 import {
   PiShootingStarThin,
   PiTargetLight,
