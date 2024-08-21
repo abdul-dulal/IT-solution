@@ -93,9 +93,10 @@ const ClientSlider = () => {
       </Swiper>
 
       {/* Custom Previous Button */}
+
       <button
         onClick={() => swiperRef.current?.slidePrev()}
-        className={`absolute right-[86px] -top-24   p-6   rounded-full cursor-pointer z-10  ${
+        className={`absolute  right-[86px] xs:-top-[105px]   top-[108%]    p-6   rounded-full cursor-pointer z-10  ${
           isBeginning ? "bg-[#F0F0FC] text-primary" : "text-white bg-primary"
         } `}
       >
@@ -105,9 +106,10 @@ const ClientSlider = () => {
       <button
         onClick={() => swiperRef.current?.slideNext()}
         disabled={isEnd}
-        className={`absolute right-0 -top-24 p-6 bg-primary  rounded-full cursor-pointer  z-10 ${
-          isEnd ? "bg-[#F0F0FC] text-primary" : "text-white"
-        }`}
+        className={` 
+      absolute xs:right-0 xs:-top-[105px] right-0 top-[108%]   p-6 bg-primary  rounded-full cursor-pointer  z-10 ${
+        isEnd ? "bg-[#F0F0FC] text-primary" : "text-white"
+      }`}
       >
         <HiArrowRight size={22} />
       </button>

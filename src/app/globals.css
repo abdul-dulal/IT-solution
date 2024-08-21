@@ -36,6 +36,13 @@
   top: 0;
 }
 
+/* .to_left:hover:before {
+  width: 100%;
+
+  left: 0;
+  right: auto;
+} */
+
 .animated-img {
   animation: rotated 20s infinite linear;
 }
@@ -193,3 +200,7 @@
 /* .tm-social:hover:after {
   width: 100%;
 } */
+
+.pricintable-02 .grap-btn::before {
+  border-radius: 30px;
+}

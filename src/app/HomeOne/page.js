@@ -28,7 +28,7 @@ import cLogo3 from "/public/img/client/brandname2.png";
 import cLogo4 from "/public/img/client/techlogo2.png";
 import Client from "../../../components/ui/Client";
 import PricePlan from "../../../components/ui/PricePlan";
-import Accrodian from "../../../components/ui/Accrodian";
+
 import Portfolio from "../../../components/ui/Portfolio";
 import Counter from "../../../components/ui/Counter";
 import Blog from "../../../components/ui/Blog";
@@ -36,6 +36,7 @@ import blog1 from "/public/img/blog/blog1.jpg";
 import blog2 from "/public/img/blog/blog2.jpg";
 import blog3 from "/public/img/blog/blog3.jpg";
 import Footer from "../../../components/ui/Footer/Footer";
+import Accrodian from "../../../components/ui/Accrodian";
 
 const HomeOne = () => {
   return (

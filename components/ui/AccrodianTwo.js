@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiPlus } from "react-icons/fi";
 import { HiOutlineMinus } from "react-icons/hi";
 
-const Accrodian = () => {
+const AccrodianTwo = () => {
   const [isOpen, setIsOpen] = useState([true, false, false, false]);
 
   const toggleOpen = (index) => {
@@ -14,24 +14,24 @@ const Accrodian = () => {
 
   const detailsData = [
     {
-      summary: "Where should I incorporate my business?",
+      summary: " Do I need a business plan? ",
       content:
-        "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Impress clients new and existing with elite.",
+        "Continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be.",
     },
     {
-      summary: " Can I offer my items for free on a promotional basis?",
+      summary: "How long do you take to finish?",
       content:
-        "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Impress clients new and existing with elite.",
+        "Continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be.",
     },
     {
-      summary: "How can I safely use cleaning chemicals?",
+      summary: "How long should a business plan be?",
       content:
-        "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Impress clients new and existing with elite.",
+        "Continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be.",
     },
     {
-      summary: "What type of company is measured?",
+      summary: " Where do I start?",
       content:
-        "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Impress clients new and existing with elite.",
+        "Continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be.",
     },
   ];
 
@@ -64,4 +64,4 @@ const Accrodian = () => {
   );
 };
 
-export default Accrodian;
+export default AccrodianTwo;

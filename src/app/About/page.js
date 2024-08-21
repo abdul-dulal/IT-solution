@@ -13,6 +13,7 @@ import TeamSlider from "../../../components/ui/team/TeamSlider";
 import member1 from "/public/img/team/member1.png";
 import { FaQuoteLeft } from "react-icons/fa";
 import ClientSlider from "../../../components/ui/team/ClientSlider";
+import Contact from "../../../components/ui/Contact";
 const About = () => {
   return (
     <div>
@@ -121,14 +122,16 @@ const About = () => {
       <section className="relative pt-[116px] pb-[120px] ">
         <div className="container mx-auto xl:px-6 px-4">
           <h6 class=" text-capitalize  ">Client Testimonials</h6>
-          <h2 class=" xs:text-5xl text-3xl mb-12 text-[rgb(25,25,25)]">
+          <h2 class=" sm:text-5xl text-3xl mb-12 text-[rgb(25,25,25)]">
             What our clients say
           </h2>
           <ClientSlider />
         </div>
       </section>
-
       {/* Testimonial End */}
+
+      {/* Contact */}
+      <Contact />
       <FooterTwo />
     </div>
   );
