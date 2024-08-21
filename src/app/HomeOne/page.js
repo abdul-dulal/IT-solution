@@ -53,13 +53,13 @@ const HomeOne = () => {
               <h2 class="xl:text-[80px] lg:text-[72px] mb-[38px] md:text-[55px] sm:text-5xl text-4xl xl:leading-[96px] lg:leading-[80px] md:leading-[65px] text-white font-bold animated">
                 Excellent IT services for your success
               </h2>
-              <div className="flex mt-12">
+              <div className="flex flex-wrap mt-12">
                 <Link
                   href=""
-                  className={`${rubik.className}  h-[54px] flex items-center text-[16px]  leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] xs:px-[25px] px-2 cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  grap-btn`}
+                  className={`${rubik.className}  h-[54px] flex items-center text-[16px]  leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[25px]  cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  grap-btn`}
                 >
                   Get A Quote
-                  <PiArrowRightDuotone size={20} className=" xs:ml-8 ml-6" />
+                  <PiArrowRightDuotone size={20} className=" " />
                 </Link>
                 <VideoModal />
               </div>

@@ -5,12 +5,12 @@ import hero from "/public/img/bg/blog-hero.jpg";
 import blog from "/public/img/bg/blog-3.jpg";
 import Link from "next/link";
 import { rubik } from "../fonts";
-import { BsFileEarmarkPdf } from "react-icons/bs";
 import { VscTriangleRight } from "react-icons/vsc";
-import { LuQuote } from "react-icons/lu";
 import ServiceContact from "../../../components/ui/service/ServiceContact";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 import allService from "/public/AllService.json";
+import DownloadBtn from "../../../components/ui/service/DownloadBtn";
+import BlockQuote from "../../../components/ui/service/BlockQuote";
 const ServiceDetails = () => {
   return (
     <div>
@@ -82,22 +82,7 @@ const ServiceDetails = () => {
                   </li>
                 </ul>
 
-                <blockquote class="relative py-[50px] md:px-[100px] sm:px-[70px] xs:px-[35px] px-6 bg-[#f0f4f9] rounded-[10px] text-center mt-[30px]">
-                  <LuQuote className="text-[54px] text-primary w-full block mx-auto mb-7" />
-                  <p class=" text-[#222] text-xl  relative leading-[30px]  font-medium italic mb-[22px] ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                    <br className="md:block hidden" /> Quis ipsum suspendisse
-                    ultrices
-                  </p>
-                  <div class=" relative">
-                    <span className="block text-primary leading-[.8] text-lg font-normal mb-[10px]">
-                      David Martin
-                    </span>
-                    <p className="text-sm leading-[.8]">Ceo - nsstheme</p>
-                  </div>
-                </blockquote>
+                <BlockQuote />
               </div>
             </div>
             <div class="lg:col-span-4 col-span-12">
@@ -108,9 +93,6 @@ const ServiceDetails = () => {
                   </h3>
                   <ul className="relative">
                     {allService.map((item) => {
-                      {
-                        /* const active = item.title === paramsTitle; */
-                      }
                       return (
                         <li
                           key={item.id}
@@ -118,7 +100,11 @@ const ServiceDetails = () => {
                         >
                           <Link
                             href={`service/${item.title}`}
-                            className={`${rubik.className} relative flex justify-between items-center capitalize text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
+                            className={`${rubik.className} ${
+                              item.title === "software development"
+                                ? "border border-solid border-primary"
+                                : ""
+                            } relative flex justify-between items-center capitalize text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
                           >
                             {item.title} <VscTriangleRight />
                           </Link>
@@ -133,29 +119,7 @@ const ServiceDetails = () => {
                   </h3>
                   <ServiceContact />
                 </aside>
-                <aside class=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
-                  <h3 class=" text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-6">
-                    Brochures
-                  </h3>
-                  <p style={{ margin: "-7px 0 30px" }}>
-                    Existence its certainly explained how improving household
-                    pretended.
-                  </p>
-                  <a
-                    class=" flex gap-2 text-lg font-medium text-[#191919] mt-5 hover:text-primary"
-                    href="javascript:void(0)"
-                  >
-                    <BsFileEarmarkPdf className="text-5xl  -mt-[5px] text-primary " />
-                    Download Service
-                  </a>
-                  <a
-                    class=" flex gap-2 text-lg font-medium text-[#191919] mt-5 hover:text-primary"
-                    href="javascript:void(0)"
-                  >
-                    <BsFileEarmarkPdf className="text-5xl  -mt-[5px] text-primary " />
-                    Download Feature
-                  </a>
-                </aside>
+                <DownloadBtn />
               </div>
             </div>
           </div>

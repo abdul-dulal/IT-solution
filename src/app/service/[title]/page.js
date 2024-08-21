@@ -3,16 +3,14 @@ import Image from "next/image";
 import hero from "/public/img/bg/blog-hero.jpg";
 import blog from "/public/img/bg/blog-3.jpg";
 import Link from "next/link";
-
-import { BsFileEarmarkPdf } from "react-icons/bs";
 import { VscTriangleRight } from "react-icons/vsc";
-import { LuQuote } from "react-icons/lu";
-
 import BreadCumb from "../../../../components/ui/BreadCumb";
 import ServiceContact from "../../../../components/ui/service/ServiceContact";
 import FooterTwo from "../../../../components/ui/Footer/FooterTwo";
 import { rubik } from "@/app/fonts";
 import allServcie from "/public/AllService.json";
+import DownloadBtn from "../../../../components/ui/service/DownloadBtn";
+import BlockQuote from "../../../../components/ui/service/BlockQuote";
 const ServiceDetails = ({ params }) => {
   const paramsTitle = params.title.replace(/%20/g, " ");
   const single = allServcie.find((item) => item.title === paramsTitle);
@@ -59,13 +57,12 @@ const ServiceDetails = ({ params }) => {
                   sea takimata sanctus est.
                 </p>
                 <div class="grid sm:grid-cols-2 gap-7">
-                  <div class="col-md-6">
-                    <Image
-                      className="rounded-[5px] mt-[19px] mb-[35px]"
-                      src={blog}
-                      alt=""
-                    />
-                  </div>
+                  <Image
+                    className="rounded-[5px] mt-[19px] mb-[35px]"
+                    src={blog}
+                    alt=""
+                  />
+
                   <div class="">
                     <h4 className="text-xl font-bold leading-[30px] text-[#222] mt-5 mb-[22px]">
                       Quality Control System
@@ -98,21 +95,7 @@ const ServiceDetails = ({ params }) => {
                   </li>
                 </ul>
 
-                <blockquote class="relative py-[50px] md:px-[100px] sm:px-[70px] xs:px-[35px] px-6 bg-[#f0f4f9] rounded-[10px] text-center mt-[30px]">
-                  <LuQuote className="text-[54px] text-primary w-full block mx-auto mb-7" />
-                  <p class=" text-[#222] text-xl relative leading-[30px] font-medium italic mb-[22px] ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                    <br /> Quis ipsum suspendisse ultrices
-                  </p>
-                  <div class=" relative">
-                    <span className="block text-primary leading-[.8] text-lg font-normal mb-[10px]">
-                      David Martin
-                    </span>
-                    <p className="text-sm leading-[.8]">Ceo - nsstheme</p>
-                  </div>
-                </blockquote>
+                <BlockQuote />
               </div>
             </div>
             <div class="lg:col-span-4 col-span-12">
@@ -149,29 +132,7 @@ const ServiceDetails = ({ params }) => {
                   </h3>
                   <ServiceContact />
                 </aside>
-                <aside class=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
-                  <h3 class=" text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-6">
-                    Brochures
-                  </h3>
-                  <p style={{ margin: "-7px 0 30px" }}>
-                    Existence its certainly explained how improving household
-                    pretended.
-                  </p>
-                  <a
-                    class=" flex gap-2 text-lg font-medium text-[#191919] mt-5 hover:text-primary"
-                    href="javascript:void(0)"
-                  >
-                    <BsFileEarmarkPdf className="text-5xl  -mt-[5px] text-primary " />
-                    Download Service
-                  </a>
-                  <a
-                    class=" flex gap-2 text-lg font-medium text-[#191919] mt-5 hover:text-primary"
-                    href="javascript:void(0)"
-                  >
-                    <BsFileEarmarkPdf className="text-5xl  -mt-[5px] text-primary " />
-                    Download Feature
-                  </a>
-                </aside>
+                <DownloadBtn />
               </div>
             </div>
           </div>

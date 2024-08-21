@@ -6,10 +6,7 @@ const Counter = () => {
   const [counterOn, setCounteron] = useState(false);
   return (
     <div className="my-14">
-      <ScrollTrigger
-        onEnter={() => setCounteron(true)}
-        // onExit={() => setCounteron(false)}
-      >
+      <ScrollTrigger onEnter={() => setCounteron(true)}>
         {counterOn && (
           <div className="sm:flex  items-center xs:gap-0  justify-around ">
             <CounterUp end="3500" title="happy customer" text="" />

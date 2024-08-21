@@ -7,12 +7,9 @@ import { FiSettings } from "react-icons/fi";
 import { TbBrandWebflow } from "react-icons/tb";
 import { GoProjectSymlink } from "react-icons/go";
 import { PiShootingStarThin } from "react-icons/pi";
-import WorkProcess from "../../../components/ui/WorkProcess";
-import { PiTargetLight } from "react-icons/pi";
-import { PiUserSwitchDuotone } from "react-icons/pi";
-import { FaRegLightbulb } from "react-icons/fa";
 import Contact from "../../../components/ui/Contact";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+import Work from "../../../components/ui/Work";
 const ServiceOne = () => {
   return (
     <div>
@@ -46,29 +43,7 @@ const ServiceOne = () => {
 
       {/* Work Process Start */}
       <section className="relative pt-28 pb-[120px]">
-        <div className="container mx-auto xs:px-6 px-4">
-          <h6 class="text-center ">Our Work Process</h6>
-          <h2 class="text-center">
-            We Complete Every <br /> Step Carefully
-          </h2>
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">
-            <WorkProcess
-              title="Collecting Info Data"
-              serial="01"
-              icon={<PiUserSwitchDuotone />}
-            />
-            <WorkProcess
-              title="Setup Work Target"
-              serial="02"
-              icon={<PiTargetLight />}
-            />
-            <WorkProcess
-              title="Creative Ideas"
-              serial="03"
-              icon={<FaRegLightbulb />}
-            />
-          </div>
-        </div>
+        <Work />
       </section>
 
       {/* Work Process End*/}
