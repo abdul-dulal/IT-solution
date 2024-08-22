@@ -21,7 +21,7 @@ const ProgressBar = ({ datacount, title }) => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check visibility on mount
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

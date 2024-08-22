@@ -46,7 +46,7 @@ const About = () => {
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua.
               </p>
-              <div class=" relative mb-[25px]" data-parcent="95">
+              <div class=" relative mb-[25px]">
                 <ProgressBar datacount={95} title="software development" />
                 <ProgressBar datacount={85} title="Artificial Intelligence" />
                 <ProgressBar datacount={80} title="web development" />

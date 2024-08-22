@@ -168,7 +168,7 @@ const HeaderTwo = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="#"
+                      href="/Faq"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-gray-200  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
                     >
                       Faq Page
@@ -184,7 +184,7 @@ const HeaderTwo = () => {
                     <ul className="text-[16px] absolute bg-white left-[280px] -mt-[51px] space-y-2 opacity-0  invisible transform transition-all duration-500 translate-y-4   group-hover:visible group-hover:translate-y-0 ">
                       <li className="">
                         <Link
-                          href="#"
+                          href="/TeamMember"
                           className=" w-[250px] block px-6 py-[6px]   border-t border-gray-200  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                         >
                           Team Member
@@ -192,7 +192,7 @@ const HeaderTwo = () => {
                       </li>
                       <li className="">
                         <Link
-                          href="#"
+                          href="/SingleTeam"
                           className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-gray-200  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                         >
                           Team Details
