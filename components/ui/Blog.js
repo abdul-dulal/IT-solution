@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import blog from "/public/img/blog/blog1.jpg";
 import Link from "next/link";
 const Blog = ({ img, title, subTitle }) => {
   return (

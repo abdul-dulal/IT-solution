@@ -154,7 +154,7 @@ const MainHeader = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="#"
+                      href="/Faq"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
                     >
                       Faq Page
@@ -170,7 +170,7 @@ const MainHeader = () => {
                     <ul className="text-[16px] absolute bg-base left-[280px] -mt-[51px] space-y-2 opacity-0  invisible transform transition-all duration-500 translate-y-4   group-hover:visible group-hover:translate-y-0 ">
                       <li className="">
                         <Link
-                          href="#"
+                          href="/TeamMember"
                           className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                         >
                           Team Member
@@ -178,7 +178,7 @@ const MainHeader = () => {
                       </li>
                       <li className="">
                         <Link
-                          href="#"
+                          href="/SingleTeam"
                           className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                         >
                           Team Details
@@ -232,7 +232,7 @@ const MainHeader = () => {
                 <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
                   <li className="">
                     <Link
-                      href="#"
+                      href="/BlogStandard"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                     >
                       Blog Stadard

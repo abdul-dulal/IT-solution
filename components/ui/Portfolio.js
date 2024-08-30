@@ -1,20 +1,17 @@
 "use client";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useRef } from "react";
-import portfolio from "/public/img/portfolio/portfolio1.jpg";
-import portfolio2 from "/public/img/portfolio/portfolio2.jpg";
-import portfolio3 from "/public/img/portfolio/portfolio3.jpg";
-import portfolio4 from "/public/img/portfolio/portfolio4.jpg";
-import portfolio5 from "/public/img/portfolio/portfolio5.jpg";
 import Image from "next/image";
 import { HiArrowRight } from "react-icons/hi";
 import { LuArrowLeft } from "react-icons/lu";
-import PortfolioContent from "./PortfolioContent";
+import portfolio from "/public/Portfolio.json";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 const CustomSwiper = () => {
   const swiperRef = useRef(null);
 
@@ -55,36 +52,38 @@ const CustomSwiper = () => {
           },
         }}
       >
-        <SwiperSlide>
-          <div className="">
-            <Image src={portfolio} className="w-full" alt="Portfolio" />
-            <PortfolioContent tech="Technology" title="platform integration" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="">
-            <Image src={portfolio2} className="w-full" alt="Portfolio" />
-            <PortfolioContent tech="Printing" title="product engineering" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="">
-            <Image src={portfolio3} className="w-full" alt="Portfolio" />
-            <PortfolioContent tech="UX/UI" title="growth startegies" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="">
-            <Image src={portfolio4} className="w-full" alt="Portfolio" />
-            <PortfolioContent tech="Branding" title="innovative interface" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="">
-            <Image src={portfolio5} className="w-full" alt="Portfolio" />
-            <PortfolioContent tech="Web Design" title="product design" />
-          </div>
-        </SwiperSlide>
+        {portfolio.map((item) => {
+          return (
+            <SwiperSlide key={item.id}>
+              <div className="">
+                <Image
+                  src={item.img}
+                  width={400}
+                  height={400}
+                  className="w-full"
+                  alt="Portfolio"
+                />
+                <div
+                  style={{ width: "calc(100% - 30px)" }}
+                  class=" relative shadow-sm -top-11 left-4 bg-white rounded-[5px] pt-[23px] pr-[70px] pb-4 pl-5 "
+                >
+                  <p class="relative text-primary text-lg font-normal hover:text-[#191919] mb-[2px]">
+                    <Link href="">{item.tech}</Link>
+                  </p>
+                  <h5 class="inline-block text-[#191919] hover:text-primary capitalize text-lg font-bold">
+                    <Link href={`portfolio/${item.title}`}>{item.title}</Link>
+                  </h5>
+                  <Link
+                    href=""
+                    className="inline-block w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-base rounded-[3px] leading-[47px] text-center absolute top-0 bottom-0 right-5 m-auto hover:bg-primary hover:text-white"
+                  >
+                    <FaArrowRight className="inline-block m-auto" />
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
 
       {/* Custom Previous Button */}

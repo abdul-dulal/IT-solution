@@ -201,21 +201,16 @@
   width: 100%;
 } */
 
-/* .t01_social a {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  background: transparent;
-  border: 1px solid rgba(8, 24, 69, 0.16);
-  border-radius: 2px;
-  text-align: center;
-  font-size: 14px;
-  color: #081845;
-  line-height: 30px;
-  padding-top: 1px;
-  margin: 0 5px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-} */
+.call {
+  animation: shadows 1s linear infinite;
+}
+@keyframes shadows {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2),
+      0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2),
+      0 0 0 30px rgba(255, 255, 255, 0.2), 0 0 0 40px rgba(255, 255, 255, 0);
+  }
+}

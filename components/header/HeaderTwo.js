@@ -246,7 +246,7 @@ const HeaderTwo = () => {
                 <ul className="text-[16px] absolute bg-white -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
                   <li className="">
                     <Link
-                      href="#"
+                      href="/BlogStandard"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-gray-200  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                     >
                       Blog Stadard
@@ -393,7 +393,9 @@ const HeaderTwo = () => {
                       href="https://www.facebook.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <FaFacebookF />
+                      <a target="_blank" rel="noopener noreferrer">
+                        <FaFacebookF />
+                      </a>
                     </Link>
                   </li>
                   <li>
@@ -401,7 +403,9 @@ const HeaderTwo = () => {
                       href="https://twitter.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <FaTwitter />
+                      <a target="_blank" rel="noopener noreferrer">
+                        <FaTwitter />
+                      </a>
                     </Link>
                   </li>
                   <li>
@@ -409,7 +413,9 @@ const HeaderTwo = () => {
                       href="https://whatsapp.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <IoLogoWhatsapp />
+                      <a target="_blank" rel="noopener noreferrer">
+                        <IoLogoWhatsapp />
+                      </a>
                     </Link>
                   </li>
                   <li>
@@ -417,7 +423,9 @@ const HeaderTwo = () => {
                       href="https://instagram.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <FaInstagram />
+                      <a target="_blank" rel="noopener noreferrer">
+                        <FaInstagram />
+                      </a>
                     </Link>
                   </li>
                 </ul>
