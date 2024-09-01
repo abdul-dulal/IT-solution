@@ -8,7 +8,7 @@ const Tag = ({ slug }) => {
 
   return (
     <div>
-      {uniqueTags.map((item) => {
+      {uniqueTags?.map((item) => {
         return (
           <Link
             key={item}

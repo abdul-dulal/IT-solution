@@ -20,7 +20,7 @@ const BlogTag = ({ title }) => {
           <div className="grid grid-cols-12 gap-7">
             <div class="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>
-                {filteredTag.map((tag) => {
+                {filteredTag?.map((tag) => {
                   return (
                     <div key={tag.id}>
                       <BlogTitle

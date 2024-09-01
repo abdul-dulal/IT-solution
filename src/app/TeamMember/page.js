@@ -17,7 +17,7 @@ const TeamMember = () => {
       <section className="relative pt-[120px] pb-[70px]">
         <div className="container mx-auto xs:px-6 px-4">
           <div className="grid grid-cols-3 gap-7">
-            {team.map((item) => {
+            {team?.map((item) => {
               return (
                 <div
                   key={item.id}

@@ -24,8 +24,8 @@ const SingleBlogTwo = ({ title }) => {
             <div class="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>
                 <BlogTitle
-                  title={singleBlog.title}
-                  subTitle={singleBlog.subTitle}
+                  title={singleBlog?.title}
+                  subTitle={singleBlog?.subTitle}
                   img={singleBlog?.img}
                   category={singleBlog?.category}
                   readmore={false}

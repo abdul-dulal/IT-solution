@@ -26,12 +26,14 @@ const ProgressBar = ({ datacount, title }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [null]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [""]);
 
   useEffect(() => {
     if (isVisible) {
       loadSkills();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVisible]);
 
   const loadSkills = () => {

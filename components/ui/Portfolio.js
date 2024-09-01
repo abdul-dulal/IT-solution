@@ -52,7 +52,7 @@ const CustomSwiper = () => {
           },
         }}
       >
-        {portfolio.map((item) => {
+        {portfolio?.map((item) => {
           return (
             <SwiperSlide key={item.id}>
               <div className="">

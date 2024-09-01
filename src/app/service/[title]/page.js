@@ -106,7 +106,7 @@ const ServiceDetails = ({ params }) => {
                   </h3>
 
                   <ul className="relative">
-                    {allServcie.map((item) => {
+                    {allServcie?.map((item) => {
                       const active = item.title === paramsTitle;
                       return (
                         <li

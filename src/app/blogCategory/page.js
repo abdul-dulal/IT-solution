@@ -20,7 +20,7 @@ const BlogCategory = ({ title }) => {
           <div className="grid grid-cols-12 gap-7">
             <div class="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>
-                {categories.map((category) => {
+                {categories?.map((category) => {
                   return (
                     <div key={categories.id}>
                       <BlogTitle

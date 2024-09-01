@@ -90,7 +90,7 @@ const Comments = () => {
       </h3>
       <ol class="">
         <li>
-          {comments.map((item) => {
+          {comments?.map((item) => {
             return (
               <div
                 key={item.id}

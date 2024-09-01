@@ -86,7 +86,7 @@ const Quote = ({ tags }) => {
       <div class=" mb-[55px]">
         <div class=" xs:flex items-center justify-between">
           <div class=" relative mt-2">
-            {tags.map((tag) => {
+            {tags?.map((tag) => {
               return (
                 <Link
                   key={tag}

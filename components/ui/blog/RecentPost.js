@@ -8,7 +8,7 @@ const RecentPost = ({slug}) => {
   return (
     <div>
       <ul className="m-0 p-0">
-        {recentPost.map((item) => {
+        {recentPost?.map((item) => {
           return (
             <div key={item.id}>
               <Link

@@ -61,7 +61,7 @@ const TeamSlider = () => {
         }}
       >
         <div className="relative">
-          {team.map((item) => {
+          {team?.map((item) => {
             return (
               <SwiperSlide key={item.id}>
                 <div class="">

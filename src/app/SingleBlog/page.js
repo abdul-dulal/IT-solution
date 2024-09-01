@@ -16,8 +16,8 @@ import Quote from "../../../components/ui/blog/Quote";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 const SingleBlog = () => {
   const recentPost = blog.slice(0, 5);
-  const uniqueCategories = [...new Set(blog.map((item) => item.category))];
-  const tag = [...new Set(blog.map((item) => item.tag))];
+  const uniqueCategories = [...new Set(blog?.map((item) => item.category))];
+  const tag = [...new Set(blog?.map((item) => item.tag))];
   return (
     <div>
       <BreadCumb currentPage="Committed Printing Available Text Available." />

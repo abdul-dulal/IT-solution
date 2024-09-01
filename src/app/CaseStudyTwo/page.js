@@ -6,7 +6,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import portfolio from "/public/Portfolio.json";
 import Pagination from "../../../components/ui/Pagination";
 const CaseStudyTwo = () => {
-  let pageCount = portfolio.map((item) => item.lenght);
+  let pageCount = portfolio?.map((item) => item.lenght);
   console.log(pageCount);
   return (
     <div>
@@ -15,7 +15,7 @@ const CaseStudyTwo = () => {
       <section className="py-[120px] relative">
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid grid-cols-3 gap-3">
-            {portfolio.map((item) => {
+            {portfolio?.map((item) => {
               return (
                 <div
                   key={item.id}

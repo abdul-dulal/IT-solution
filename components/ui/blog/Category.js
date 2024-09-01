@@ -4,12 +4,12 @@ import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 import blog from "/public/Blog.json";
 const Category = ({ slug }) => {
-  const uniqueCategories = [...new Set(blog.map((item) => item.category))];
+  const uniqueCategories = [...new Set(blog?.map((item) => item.category))];
 
   return (
     <div>
       <ul>
-        {uniqueCategories.map((item) => {
+        {uniqueCategories?.map((item) => {
           return (
             <li key={item}>
               <Link

@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <div>
       <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-8">
-        {AllSerive.map((item) => {
+        {AllSerive?.map((item) => {
           const IconComponent = allIcons[item.icon];
 
           return (

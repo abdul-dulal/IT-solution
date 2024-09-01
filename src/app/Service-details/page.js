@@ -92,7 +92,7 @@ const ServiceDetails = () => {
                     Popular Service
                   </h3>
                   <ul className="relative">
-                    {allService.map((item) => {
+                    {allService?.map((item) => {
                       return (
                         <li
                           key={item.id}

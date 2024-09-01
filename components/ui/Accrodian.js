@@ -8,7 +8,7 @@ const Accrodian = () => {
 
   const toggleOpen = (index) => {
     setIsOpen((prevState) =>
-      prevState.map((item, i) => (i === index ? !item : false))
+      prevState?.map((item, i) => (i === index ? !item : false))
     );
   };
 
@@ -38,7 +38,7 @@ const Accrodian = () => {
   return (
     <div className="relative">
       <div className="relative p-0 rounded-[10px] bg-[#f0f4f9] bg-transparent mb-4">
-        {detailsData.map((detail, index) => (
+        {detailsData?.map((detail, index) => (
           <div
             key={index}
             className="mb-4 lg:p-[19px] p-2  rounded bg-[#f0f4f9]"
