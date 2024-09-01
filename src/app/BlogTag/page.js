@@ -10,7 +10,7 @@ import Tag from "../../../components/ui/blog/Tag";
 import blog from "/public/Blog.json";
 
 const BlogTag = ({ title }) => {
-  const filteredTag = blog.filter((blog) => blog.tag.includes(title));
+  const filteredTag = blog.filter((blog) => blog?.tag.includes(title));
 
   return (
     <div>
@@ -22,10 +22,10 @@ const BlogTag = ({ title }) => {
               <div>
                 {filteredTag?.map((tag) => {
                   return (
-                    <div key={tag.id}>
+                    <div key={tag?.id}>
                       <BlogTitle
-                        title={tag.title}
-                        subTitle={tag.subTitle}
+                        title={tag?.title}
+                        subTitle={tag?.subTitle}
                         img={tag?.img}
                         category={tag?.category}
                         readmore={true}

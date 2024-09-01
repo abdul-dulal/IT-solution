@@ -13,6 +13,7 @@ import DownloadBtn from "../../../../components/ui/service/DownloadBtn";
 import BlockQuote from "../../../../components/ui/service/BlockQuote";
 const ServiceDetails = ({ params }) => {
   const paramsTitle = params.title.replace(/%20/g, " ");
+  console.log(params);
   const single = allServcie.find((item) => item.title === paramsTitle);
 
   return (

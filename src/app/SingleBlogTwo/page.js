@@ -13,12 +13,12 @@ import Comments from "../../../components/ui/blog/Comments";
 import BlogNavigation from "../../../components/ui/blog/BlogNavigation";
 const SingleBlogTwo = ({ title }) => {
   const singleBlog = blog.find((item) => item.title === title);
-  console.log(singleBlog);
 
   return (
     <div>
       <BreadCumb currentPage={title} />
-      <section className="relative py-[120px]">
+      <h1>hello</h1>
+      {/* <section className="relative py-[120px]">
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid grid-cols-12 gap-7">
             <div class="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
@@ -77,7 +77,7 @@ const SingleBlogTwo = ({ title }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
