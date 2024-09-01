@@ -26,7 +26,7 @@ const ProgressBar = ({ datacount, title }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [null]);
 
   useEffect(() => {
     if (isVisible) {
