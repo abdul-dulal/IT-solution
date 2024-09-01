@@ -1,19 +1,16 @@
 import React from "react";
-import BreadCumb from "../../../components/ui/BreadCumb";
-import BlogTitle from "../../../components/ui/blog/BlogTitle";
-import Quote from "../../../components/ui/blog/Quote";
-import BlogContact from "../../../components/ui/blog/BlogContact";
-import RecentPost from "../../../components/ui/blog/RecentPost";
-import Category from "../../../components/ui/blog/Category";
-import Call from "../../../components/ui/blog/Call";
-import Tag from "../../../components/ui/blog/Tag";
-import { rubik } from "../fonts";
 import blog from "/public/Blog.json";
-import Comments from "../../../components/ui/blog/Comments";
-import BlogNavigation from "../../../components/ui/blog/BlogNavigation";
-const SingleBlogTwo = ({ title }) => {
-  const singleBlog = blog.find((item) => item.title === title);
-  console.log(singleBlog);
+import BlogTitle from "../../../components/ui/blog/BlogTitle";
+import Tag from "../../../components/ui/blog/Tag";
+import Call from "../../../components/ui/blog/Call";
+import Category from "../../../components/ui/blog/Category";
+import RecentPost from "../../../components/ui/blog/RecentPost";
+import BlogContact from "../../../components/ui/blog/BlogContact";
+
+import BreadCumb from "../../../components/ui/BreadCumb";
+import { rubik } from "../fonts";
+const BlogCategory = ({ title }) => {
+  const categories = blog.filter((item) => item.category == title);
 
   return (
     <div>
@@ -23,21 +20,21 @@ const SingleBlogTwo = ({ title }) => {
           <div className="grid grid-cols-12 gap-7">
             <div class="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>
-                <BlogTitle
-                  title={singleBlog.title}
-                  subTitle={singleBlog.subTitle}
-                  img={singleBlog?.img}
-                  category={singleBlog?.category}
-                  readmore={false}
-                />
+                {categories.map((category) => {
+                  return (
+                    <div key={categories.id}>
+                      <BlogTitle
+                        title={category.title}
+                        subTitle={category.subTitle}
+                        img={category?.img}
+                        category={category?.category}
+                        readmore={true}
+                        slug="/blog"
+                      />
+                    </div>
+                  );
+                })}
               </div>
-              <Quote tags={singleBlog.tag} />
-              <div class=" relative border-t border-dashed border-[rgba(8,24,69,0.4)] py-10 mb-[60px] border-b  ">
-                <div class="">
-                  <BlogNavigation blogs={blog} currentBlogId={singleBlog.id} />
-                </div>
-              </div>
-              <Comments />
             </div>
             <div class="lg:col-span-4 col-span-12">
               <div class=" relative pl-[10px]">
@@ -82,4 +79,4 @@ const SingleBlogTwo = ({ title }) => {
   );
 };
 
-export default SingleBlogTwo;
+export default BlogCategory;

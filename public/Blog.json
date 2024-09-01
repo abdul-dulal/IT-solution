@@ -3,7 +3,7 @@
     "id": 1,
     "img": "/img/blog/blog1.jpg",
     "category": "Graphics Design",
-    "tag": "branding",
+    "tag": ["branding", "graphics"],
     "title": "Necessity May Give Us Your Best Virtual Court System",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form"
   },
@@ -13,7 +13,7 @@
     "title": "Open Source Job Report Show More Openings Fewer",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Graphics Design",
-    "tag": "praphics"
+    "tag": ["graphics", "marketing"]
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "title": "Types of Social Proof What its Makes Them Effective",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Graphics Design",
-    "tag": "marketing"
+    "tag": ["marketing", "branding"]
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "title": "How to Optimise and Webinar to Earn Leads.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Software Development",
-    "tag": "new design"
+    "tag": ["new design", "seo"]
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "title": "Quisque suscipit ipsum est eu venenatis leo Industry.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Software Development",
-    "tag": "seo"
+    "tag": ["seo", "marketing"]
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "title": "5 Ways Technology Today at Improved Business.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Ui Ux Brand Design",
-    "tag": "Ui/Ux  Design"
+    "tag": ["Ui/Ux  Design", "web design"]
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "title": "Mauris neque nisiibus non elementum venenatis.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Ui Ux Brand Design",
-    "tag": "web design"
+    "tag": ["web design", "Ui/Ux  Design"]
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "title": "Open Source Job Report Show More Openings Fewer",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Web Development",
-    "tag": "web design"
+    "tag": ["new design", "seo"]
   },
   {
     "id": 9,
@@ -69,6 +69,6 @@
     "title": "The Portraits of the Members Behind The Siege",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Web Development",
-    "tag": "web design"
+    "tag": ["graphics", "new design"]
   }
 ]

@@ -17,19 +17,7 @@ const BlogStandard = () => {
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid grid-cols-12 gap-7">
             <div class="col-span-8 relative mb-[43px] transition-all ease-in-out duration-400">
-              {blog.map((item) => {
-                return (
-                  <div key={item.id}>
-                    <BlogTitle
-                      title={item.title}
-                      subTitle={item.subTitle}
-                      img={item.img}
-                      category={item.category}
-                      readmore={false}
-                    />
-                  </div>
-                );
-              })}
+              <Pagination blogs={blog} />
             </div>
             <div class="col-span-4">
               <div class=" relative pl-[10px]">
@@ -42,7 +30,7 @@ const BlogStandard = () => {
                   >
                     Recent Post
                   </h3>
-                  <RecentPost />
+                  <RecentPost slug="/blog" />
                 </aside>
                 <aside class=" ">
                   <h3
@@ -50,7 +38,7 @@ const BlogStandard = () => {
                   >
                     Categories
                   </h3>
-                  <Category />
+                  <Category slug="/category" />
                 </aside>
                 <aside class="">
                   <Call />
@@ -62,7 +50,7 @@ const BlogStandard = () => {
                     popular tags
                   </h3>
                   <div class=" relative">
-                    <Tag />
+                    <Tag slug="/tag" />
                   </div>
                 </aside>
               </div>
@@ -70,7 +58,6 @@ const BlogStandard = () => {
           </div>
         </div>
       </section>
-      <Pagination />
     </div>
   );
 };

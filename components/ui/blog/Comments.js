@@ -4,6 +4,15 @@ import Image from "next/image";
 import React, { useState } from "react";
 import user from "/public/img/blog/user.png";
 import CommentFrom from "./CommentFrom";
+import Link from "next/link";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaCheckCircle,
+  FaTwitter,
+} from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import author from "/public/img/blog/author2.jpg";
 const Comments = () => {
   const [comments, setComment] = useState([
     {
@@ -31,6 +40,49 @@ const Comments = () => {
 
   return (
     <div class="">
+      <div class="post-author relative bg-[#f0f4f9] rounded-[10px] pt-10 pb-10 pr-[30px] pl-[200px]">
+        <Image
+          src={author}
+          className="rounded-[50%] absolute left-[35px] top-0 bottom-0 m-auto"
+          alt=""
+        />
+        <h4
+          className={`${rubik.className} text-primary text-[24px] font-bold mb-1`}
+        >
+          <Link href="blog1.html">Admin Jesik</Link>
+        </h4>
+        <p className="mb-4">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore.
+        </p>
+        <div class="relative">
+          <Link
+            href="https://www.facebook.com/"
+            className="inline-block text-[rgba(8,24,69,0.4)] text-xl hover:text-primary"
+          >
+            <FaFacebookF />
+          </Link>
+          <Link
+            href="https://twitter.com/"
+            className="inline-block text-[rgba(8,24,69,0.4)] text-xl ml-5 hover:text-primary"
+          >
+            <FaTwitter />
+          </Link>
+          <Link
+            href="https://web.whatsapp.com/"
+            className="inline-block text-[rgba(8,24,69,0.4)] text-xl ml-5 hover:text-primary"
+          >
+            <IoLogoWhatsapp />
+          </Link>
+          <Link
+            href="http://instagram.com/"
+            className="inline-block text-[rgba(8,24,69,0.4)] text-xl ml-5 hover:text-primary"
+          >
+            <FaInstagram />
+          </Link>
+        </div>
+      </div>
+
       <h3
         class={`${rubik.className}  capitalize relative text-[36px] font-bold leading-[36px]  my-14 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-4 after:content-['']`}
       >

@@ -19,7 +19,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
-import member1 from "/public/img/team/team-member1.png";
+
 import { rubik } from "@/app/fonts";
 import team from "/public/Team.json";
 const TeamSlider = () => {

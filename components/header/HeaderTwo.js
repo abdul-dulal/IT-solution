@@ -393,9 +393,7 @@ const HeaderTwo = () => {
                       href="https://www.facebook.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <a target="_blank" rel="noopener noreferrer">
-                        <FaFacebookF />
-                      </a>
+                      <FaFacebookF />
                     </Link>
                   </li>
                   <li>
@@ -403,9 +401,7 @@ const HeaderTwo = () => {
                       href="https://twitter.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <a target="_blank" rel="noopener noreferrer">
-                        <FaTwitter />
-                      </a>
+                      <FaTwitter />
                     </Link>
                   </li>
                   <li>
@@ -413,9 +409,7 @@ const HeaderTwo = () => {
                       href="https://whatsapp.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <a target="_blank" rel="noopener noreferrer">
-                        <IoLogoWhatsapp />
-                      </a>
+                      <IoLogoWhatsapp />
                     </Link>
                   </li>
                   <li>
@@ -423,9 +417,7 @@ const HeaderTwo = () => {
                       href="https://instagram.com/"
                       class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
-                      <a target="_blank" rel="noopener noreferrer">
-                        <FaInstagram />
-                      </a>
+                      <FaInstagram />
                     </Link>
                   </li>
                 </ul>
