@@ -8,7 +8,8 @@ import Category from "../../../components/ui/blog/Category";
 import Tag from "../../../components/ui/blog/Tag";
 import Call from "../../../components/ui/blog/Call";
 import BlogContact from "../../../components/ui/blog/BlogContact";
-import Pagination from "../../../components/ui/Pagination";
+
+import Blogs from "../../../components/ui/Blogs";
 const BlogStandard = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const BlogStandard = () => {
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid grid-cols-12 gap-7">
             <div class="col-span-8 relative mb-[43px] transition-all ease-in-out duration-400">
-              <Pagination blogs={blog} />
+              <Blogs blogs={blog} />
             </div>
             <div class="col-span-4">
               <div class=" relative pl-[10px]">

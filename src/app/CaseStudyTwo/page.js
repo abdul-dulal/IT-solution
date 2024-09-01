@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { AiOutlinePlus } from "react-icons/ai";
 import portfolio from "/public/Portfolio.json";
-import Pagination from "../../../components/ui/Pagination";
+import Pagination from "../../../components/ui/Blogs";
 const CaseStudyTwo = () => {
   let pageCount = portfolio?.map((item) => item.lenght);
   console.log(pageCount);

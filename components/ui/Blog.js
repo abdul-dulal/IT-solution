@@ -8,7 +8,13 @@ const Blog = ({ img, title, subTitle }) => {
       class="blogItem relative transition-all ease-out duration-400 mb-[30px] hover:-translate-y-[10px]"
     >
       <div class="biThumb relative  ">
-        <Image src={img} className="w-full" alt="Blog" />
+        <Image
+          src={img}
+          width={200}
+          height={50}
+          className="w-full"
+          alt="Blog"
+        />
         <div class="biMeta absolute bottom-[25px] left-[25px] w-auto z-[2] bg-primary text-white text-sm leading-[30px] capitalize px-[15px] font-normal transition-all ease-out duration-300 hover:bg-[#081845]">
           <Link href="" className="mr-6 relative ">
             Mark Smith
@@ -21,16 +27,18 @@ const Blog = ({ img, title, subTitle }) => {
       <div class="biDetails py-8 px-6">
         <h3 className="text-[22px] font-bold relative block leading-[30px] mb-[14px] text-[#191919]">
           <Link
-            href=""
+            href={`/blog/${title}`}
             className="hover:text-primary  hover:transition-all hover:ease-in-out hover:duration-300"
           >
-            {title}{" "}
+            {title}
           </Link>
         </h3>
-        <p className="text-[17px] leading-[27px] mb-4">{subTitle}</p>
+        <p className="text-[17px] leading-[27px] mb-4 line-clamp-2">
+          {subTitle}
+        </p>
         <Link
-          href=""
-          class="lr_more relative overflow-hidden inline-block text-base  text-[#191919] font-normal tracking-[1px] leading-[24px] hover:text-primary"
+          href={`/blog/${title}`}
+          class="blog_more relative overflow-hidden inline-block text-base  text-[#191919] font-normal tracking-[1px] leading-[24px] hover:text-primary"
         >
           Learn More
           <svg
