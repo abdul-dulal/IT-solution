@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import blog from "/public/Blog.json";
 const Tag = ({ slug }) => {
-  const allTags = blog.flatMap((blog) => blog.tag);
+  const allTags = blog.flatMap((blog) => blog?.tag);
   const uniqueTags = [...new Set(allTags)];
 
   return (

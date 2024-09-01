@@ -31,7 +31,7 @@ const SingleBlogTwo = ({ title }) => {
                   readmore={false}
                 />
               </div>
-              <Quote tags={singleBlog.tag} />
+              <Quote tags={singleBlog?.tag} />
               <div class=" relative border-t border-dashed border-[rgba(8,24,69,0.4)] py-10 mb-[60px] border-b  ">
                 <div class="">
                   <BlogNavigation blogs={blog} currentBlogId={singleBlog.id} />
