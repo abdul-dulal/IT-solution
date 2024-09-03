@@ -25,7 +25,7 @@ const BlogGridTwo = () => {
       <section class=" relative py-[120px]">
         <div class="container mx-auto xl:px-6 px-4">
           <div className="grid  xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2  gap-7">
-            {currentBlogs.map((blog) => {
+            {currentBlogs?.map((blog) => {
               return (
                 <div key={blog.id}>
                   <div class=" relative mb-8   ">
