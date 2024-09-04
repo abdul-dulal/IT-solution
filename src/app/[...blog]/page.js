@@ -2,6 +2,8 @@ import React from "react";
 import SingleBlogTwo from "../SingleBlogTwo/page";
 import BlogCategory from "../blogCategory/page";
 import BlogTag from "../BlogTag/page";
+import Portfolio from "../portfolio/page";
+import PortfolioCategory from "../portolioCategory/page";
 export default function AllBlog({ params }) {
   const data = params;
 
@@ -15,5 +17,9 @@ export default function AllBlog({ params }) {
     return <BlogCategory title={paramsTitle} />;
   } else if (slug == "tag") {
     return <BlogTag title={paramsTitle} />;
+  } else if (slug == "portfolio") {
+    return <Portfolio title={paramsTitle} />;
+  } else if (slug == "folioCat") {
+    return <PortfolioCategory title={paramsTitle} />;
   }
 }
