@@ -19,7 +19,7 @@ const PortfolioCategory = ({ title }) => {
                 <div key={item.id}>
                   <div class=" group mb-[30px] relative overflow-hidden after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:z-[1] after:opacity-0 after:invisible after:transition-all after:ease-in-out after:duration-300 after:bg-[rgba(104,110,226,0.8)] hover:after:h-full hover:after:opacity-[1] hover:after:visible">
                     <Image
-                      src={item.img}
+                      src={item?.img}
                       width={400}
                       height={318}
                       className="w-full"

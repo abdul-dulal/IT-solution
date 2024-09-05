@@ -19,7 +19,7 @@ const Portfolio = ({ title }) => {
         <div class="container mx-auto xl:px-6 xs:px-4">
           <div class="folio-thumb relative">
             <Image
-              src={single.img}
+              src={single?.img}
               width={1130}
               height={200}
               className="xl:h-[900px] w-full h-auto mb-[30px]"

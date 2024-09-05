@@ -36,7 +36,7 @@ const CaseStudyTwo = () => {
                   class=" group relative overflow-hidden m-[-2.5px]"
                 >
                   <Image
-                    src={item.img}
+                    src={item?.img}
                     width={500}
                     height={500}
                     className="w-full rounded-[10px]"
