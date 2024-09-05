@@ -9,7 +9,7 @@ import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 const Portfolio = ({ title }) => {
-  const single = portfolio.find((item) => item.title === title);
+  const single = portfolio.find((item) => item?.title === title);
 
   return (
     <div>
@@ -110,7 +110,7 @@ const Portfolio = ({ title }) => {
                   services:
                 </h5>
                 <p>
-                  <Link href={`/folioCat/${single.tech}`}>{single.tech}</Link>
+                  <Link href={`/folioCat/${single?.tech}`}>{single?.tech}</Link>
                 </p>
               </div>
               <div class="mb-4">

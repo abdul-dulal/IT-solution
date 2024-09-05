@@ -6,7 +6,7 @@ import m1 from "/public/img/portfolio/portfolio1.jpg";
 import BreadCumb from "../../../components/ui/BreadCumb";
 import Link from "next/link";
 const PortfolioCategory = ({ title }) => {
-  const categories = portfolio.filter((item) => item.tech == title);
+  const categories = portfolio.filter((item) => item?.tech == title);
 
   return (
     <div>
@@ -31,10 +31,10 @@ const PortfolioCategory = ({ title }) => {
                     >
                       <p class=" relative text-primary mb-[2px]">
                         <Link
-                          href={`/folioCat/${item.tech}`}
+                          href={`/folioCat/${item?.tech}`}
                           className="text-primary inline-block hover:text-[#191919]"
                         >
-                          {item.tech}
+                          {item?.tech}
                         </Link>
                       </p>
                       <h5 className="text-lg mb-0 hover:text-primary">
