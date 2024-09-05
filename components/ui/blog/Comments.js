@@ -39,8 +39,8 @@ const Comments = () => {
   ]);
 
   return (
-    <div class="">
-      <div class="post-author relative bg-[#f0f4f9] rounded-[10px] pt-10 pb-10 pr-[30px] pl-[200px]">
+    <div className="">
+      <div className="post-author relative bg-[#f0f4f9] rounded-[10px] pt-10 pb-10 pr-[30px] pl-[200px]">
         <Image
           src={author}
           className="rounded-[50%] absolute left-[35px] top-0 bottom-0 m-auto"
@@ -55,7 +55,7 @@ const Comments = () => {
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore.
         </p>
-        <div class="relative">
+        <div className="relative">
           <Link
             href="https://www.facebook.com/"
             className="inline-block text-[rgba(8,24,69,0.4)] text-xl hover:text-primary"
@@ -84,11 +84,11 @@ const Comments = () => {
       </div>
 
       <h3
-        class={`${rubik.className}  capitalize relative text-[36px] font-bold leading-[36px]  my-14 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-4 after:content-['']`}
+        className={`${rubik.className}  capitalize relative text-[36px] font-bold leading-[36px]  my-14 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-4 after:content-['']`}
       >
         Comments
       </h3>
-      <ol class="">
+      <ol className="">
         <li>
           {comments?.map((item) => {
             return (
@@ -99,7 +99,7 @@ const Comments = () => {
                 } flex gap-12 relative rounded-[10px] border border-solid border-[#d1d1d1] pt-10 px-10 pb-14 mb-7`}
               >
                 <Image
-                  class="  w-[97px] h-[97px] rounded-[50%]"
+                  className="  w-[97px] h-[97px] rounded-[50%]"
                   src={item.img}
                   width={70}
                   height={70}
@@ -108,17 +108,17 @@ const Comments = () => {
 
                 <div>
                   <h5
-                    class={`${rubik.className} uppercase text-xl text-secondary font-medium mb-3`}
+                    className={`${rubik.className} uppercase text-xl text-secondary font-medium mb-3`}
                   >
                     {item.author}
                   </h5>
                   <p className="text-sm my-2">02 December, 2021</p>
-                  <div class="">
+                  <div className="">
                     <p className="leading-[30px]">{item.comment}</p>
                   </div>
                   <button
                     onClick={() => handleReplay(item.id)}
-                    class={`${rubik.className}  inline-block text-sm leading-[0.8] text-secondary font-medium uppercase hover:text-primary mt-4`}
+                    className={`${rubik.className}  inline-block text-sm leading-[0.8] text-secondary font-medium uppercase hover:text-primary mt-4`}
                   >
                     Reply
                   </button>
@@ -128,9 +128,9 @@ const Comments = () => {
           })}
         </li>
       </ol>
-      <div class="">
+      <div className="">
         <h3
-          class={`${rubik.className}  capitalize relative text-[36px] font-bold leading-[36px] my-14 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
+          className={`${rubik.className}  capitalize relative text-[36px] font-bold leading-[36px] my-14 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
         >
           Leave a Comments
         </h3>

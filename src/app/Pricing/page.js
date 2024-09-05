@@ -13,11 +13,11 @@ const Pricing = () => {
       {/* Price Start */}
       <section className="relative pt-[116px] pb-[85px]">
         <div className="container mx-auto xs:px-3 px-4">
-          <h6 class="  text-center">Let’s Work</h6>
-          <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
+          <h6 className="  text-center">Let’s Work</h6>
+          <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
             Pricing Plans
           </h2>
-          <div class="grid  md:grid-cols-3 xs:grid-cols-2  gap-8">
+          <div className="grid  md:grid-cols-3 xs:grid-cols-2  gap-8">
             <PricePlanTwo plan="Basic Plan" icon={<MdAutoMode />} price="49" />
             <PricePlanTwo plan="Premium Plan" icon={<FaAward />} price="69" />
             <PricePlanTwo

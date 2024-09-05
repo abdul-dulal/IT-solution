@@ -64,12 +64,12 @@ const TeamSlider = () => {
           {team?.map((item) => {
             return (
               <SwiperSlide key={item.id}>
-                <div class="">
+                <div className="">
                   <div
                     style={{ boxShadow: "0px 10px 30px 0px rgb(0 0 0 / 5%)" }}
-                    class=" relative bg-white mb-[30px] rounded-[10px]"
+                    className=" relative bg-white mb-[30px] rounded-[10px]"
                   >
-                    <div class=" relative">
+                    <div className=" relative">
                       <Image
                         src={item.img}
                         width={500}
@@ -77,9 +77,9 @@ const TeamSlider = () => {
                         className="w-full"
                         alt="Team Member"
                       />
-                      <div class=" group absolute left-[25px] -bottom-[22px] after:absolute after:left-0 after:bottom-0 after:w-11 after:h-11 after:content-[''] after:bg-primary after:rounded-[5px] after:transition-all after:ease-in-out after:duration-400 hover:after:w-full">
+                      <div className=" group absolute left-[25px] -bottom-[22px] after:absolute after:left-0 after:bottom-0 after:w-11 after:h-11 after:content-[''] after:bg-primary after:rounded-[5px] after:transition-all after:ease-in-out after:duration-400 hover:after:w-full">
                         <a
-                          class=" visible opacity-100 scale-[1] group-hover:scale-[1] group-hover:delay-300  inline-block w-[38px] h-11 text-lg text-white rounded-none leading-[50px] text-center relative top-[18px] left-2 z-[3]  hover:text-white group-hover:visible group-hover:opacity-100  group-hover:duration-400"
+                          className=" visible opacity-100 scale-[1] group-hover:scale-[1] group-hover:delay-300  inline-block w-[38px] h-11 text-lg text-white rounded-none leading-[50px] text-center relative top-[18px] left-2 z-[3]  hover:text-white group-hover:visible group-hover:opacity-100  group-hover:duration-400"
                           href="#"
                         >
                           <FaShareAlt className="" />
@@ -110,7 +110,7 @@ const TeamSlider = () => {
                         </a>
                       </div>
                     </div>
-                    <div class=" relative pt-10 px-[25px] pb-5">
+                    <div className=" relative pt-10 px-[25px] pb-5">
                       <h5
                         className={`${rubik.className} text-xl font-medium mb-[2px] text-[#081845] transition-all ease-linear duration-400`}
                       >

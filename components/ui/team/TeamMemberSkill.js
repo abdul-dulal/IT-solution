@@ -4,8 +4,8 @@ import ProgressBar from "../Progressbar";
 
 const TeamMemberSkill = ({ member }) => {
   return (
-    <div class="tm-area">
-      <div class="team_thumb">
+    <div className="tm-area">
+      <div className="team_thumb">
         <Image
           src={member}
           width={550}
@@ -14,7 +14,7 @@ const TeamMemberSkill = ({ member }) => {
           alt="Team Member"
         />
       </div>
-      <div class=" relative mb-[25px] mt-10">
+      <div className=" relative mb-[25px] mt-10">
         <ProgressBar datacount={95} title="software development" />
         <ProgressBar datacount={85} title="Artificial Intelligence" />
         <ProgressBar datacount={80} title="web development" />

@@ -4,7 +4,7 @@ import { IoSearchOutline } from "react-icons/io5";
 const BlogContact = () => {
   return (
     <div>
-      <form class="search-form relative -mt-3" action="#" method="post">
+      <form className="search-form relative -mt-3" action="#" method="post">
         <input
           type="search"
           name="s"

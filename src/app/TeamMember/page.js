@@ -10,7 +10,7 @@ import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 const TeamMember = () => {
   return (
     <div>
-      <BreadCumb currentPage="Team Member" class="" />
+      <BreadCumb currentPage="Team Member" className="" />
 
       {/* Team Start */}
 
@@ -22,7 +22,7 @@ const TeamMember = () => {
                 <div
                   key={item.id}
                   style={{ borderRadius: "3px 3px 0 0" }}
-                  class="team_02 group relative pb-[60px] mb-[50px] "
+                  className="team_02 group relative pb-[60px] mb-[50px] "
                 >
                   <Image
                     style={{ borderRadius: "3px 3px 0 0" }}
@@ -39,7 +39,7 @@ const TeamMember = () => {
                       transition:
                         "all 350ms cubic-bezier(0.445,0.05,0.55,0.95)",
                     }}
-                    class="t01_details bg-white rounded-[3px] text-center absolute left-0 right-0 bottom-0 mx-auto z-[2] pt-[33px] px-[15px] pb-[30px]"
+                    className="t01_details bg-white rounded-[3px] text-center absolute left-0 right-0 bottom-0 mx-auto z-[2] pt-[33px] px-[15px] pb-[30px]"
                   >
                     <h3
                       className={`${rubik.className} text-xl font-medium mb-[2px] text-secondary `}
@@ -57,7 +57,7 @@ const TeamMember = () => {
                         transition:
                           "all 350ms cubic-bezier(0.445, 0.05, 0.55, 0.95)", // Correct syntax
                       }}
-                      class=" flex justify-center items-center text-center overflow-hidden h-0 group-hover:h-[59px] "
+                      className=" flex justify-center items-center text-center overflow-hidden h-0 group-hover:h-[59px] "
                     >
                       <a
                         style={{

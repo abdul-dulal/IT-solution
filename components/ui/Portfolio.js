@@ -12,7 +12,7 @@ import { LuArrowLeft } from "react-icons/lu";
 import portfolio from "/public/Portfolio.json";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-const CustomSwiper = () => {
+const Portfolio = () => {
   const swiperRef = useRef(null);
 
   return (
@@ -65,12 +65,12 @@ const CustomSwiper = () => {
                 />
                 <div
                   style={{ width: "calc(100% - 30px)" }}
-                  class=" relative shadow-sm -top-11 left-4 bg-white rounded-[5px] pt-[23px] pr-[70px] pb-4 pl-5 "
+                  className=" relative shadow-sm -top-11 left-4 bg-white rounded-[5px] pt-[23px] pr-[70px] pb-4 pl-5 "
                 >
-                  <p class="relative text-primary text-lg font-normal hover:text-[#191919] mb-[2px]">
+                  <p className="relative text-primary text-lg font-normal hover:text-[#191919] mb-[2px]">
                     <Link href="">{item.tech}</Link>
                   </p>
-                  <h5 class="inline-block text-[#191919] hover:text-primary capitalize text-lg font-bold">
+                  <h5 className="inline-block text-[#191919] hover:text-primary capitalize text-lg font-bold">
                     <Link href={`portfolio/${item.title}`}>{item.title}</Link>
                   </h5>
                   <Link
@@ -104,4 +104,4 @@ const CustomSwiper = () => {
   );
 };
 
-export default CustomSwiper;
+export default Portfolio;

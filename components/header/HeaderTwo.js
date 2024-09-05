@@ -20,17 +20,17 @@ const HeaderTwo = () => {
     setIsVisible(!isVisible);
   };
   return (
-    <header class="bg-white  sticky top-0 z-[9999] ">
-      <div class="container mx-auto px-6">
+    <header className="bg-white  sticky top-0 z-[9999] ">
+      <div className="container mx-auto px-6">
         <nav className="h-[98px]">
           <div className="flex justify-between items-center w-full h-full">
             <Link href={"/"} className="">
               <Image src={logo} className="" alt="Main logo" />
             </Link>
             <ul
-              class={`${rubik.className}   flex items-center gap-9 text-base text-lg font-medium `}
+              className={`${rubik.className}   flex items-center gap-9 text-base text-lg font-medium `}
             >
-              <li class="group relative w-16">
+              <li className="group relative w-16">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -108,7 +108,7 @@ const HeaderTwo = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-20">
+              <li className="group relative w-20">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -142,7 +142,7 @@ const HeaderTwo = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-16">
+              <li className="group relative w-16">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -202,7 +202,7 @@ const HeaderTwo = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-[115px]">
+              <li className="group relative w-[115px]">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -236,7 +236,7 @@ const HeaderTwo = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-16">
+              <li className="group relative w-16">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -283,14 +283,14 @@ const HeaderTwo = () => {
               </li>
             </ul>
             <div className="flex gap-9">
-              <div class="access-btn">
-                <Link href="javascript:void(0);" class="btn-search">
-                  <i class="nss-search2"></i>
+              <div className="access-btn">
+                <Link href="javascript:void(0);" className="btn-search">
+                  <i className="nss-search2"></i>
                 </Link>
                 <Link
                   onClick={toggleOverlay}
                   href="javascript:void(0)"
-                  class="navigator"
+                  className="navigator"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -320,7 +320,7 @@ const HeaderTwo = () => {
         style={{ zIndex: 999, cursor: "url(/img/close-sider.png), auto" }}
         onClick={() => setIsVisible(false)}
       >
-        <div class="max-w-[360px] h-full z-[999] cursor-auto  bg-white pt-10 px-[30px] overflow-y-auto fixed right-0 top-0  ">
+        <div className="max-w-[360px] h-full z-[999] cursor-auto  bg-white pt-10 px-[30px] overflow-y-auto fixed right-0 top-0  ">
           <div
             className={`${
               isVisible
@@ -330,13 +330,13 @@ const HeaderTwo = () => {
           >
             <span
               onClick={() => setIsVisible(false)}
-              class=" absolute right-0 -top-[20px] text-xl w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] z-[99] text-[#1e2843] leading-[38px]  flex justify-center items-center hover:text-primary hover:border-primary"
+              className=" absolute right-0 -top-[20px] text-xl w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] z-[99] text-[#1e2843] leading-[38px]  flex justify-center items-center hover:text-primary hover:border-primary"
             >
               <IoClose />
             </span>
-            <div class="center_align">
-              <div class=" relative">
-                <div class=" relative mb-12">
+            <div className="center_align">
+              <div className=" relative">
+                <div className=" relative mb-12">
                   <Link href="">
                     <Image src={logo} alt="Logo" />
                   </Link>
@@ -346,9 +346,9 @@ const HeaderTwo = () => {
                   luctus odio ac nibh luctus, in porttitor theo lacus egestas
                   etiusto odio data center.
                 </p>
-                <div class=" mb-[30px]">
-                  <div class=" relative pl-[60px] mb-7">
-                    <div class="text-center absolute left-0 top-[7px] text-[30px] text-[#1E2843] leading-[60px]">
+                <div className=" mb-[30px]">
+                  <div className=" relative pl-[60px] mb-7">
+                    <div className="text-center absolute left-0 top-[7px] text-[30px] text-[#1E2843] leading-[60px]">
                       <span className=" inline-block">
                         <FaPhoneVolume />
                       </span>
@@ -359,9 +359,9 @@ const HeaderTwo = () => {
                     </Link>
                   </div>
                 </div>
-                <div class=" mb-[20px]">
-                  <div class=" relative pl-[60px] mb-7">
-                    <div class="text-center absolute left-0 top-[7px] text-[30px] text-[#1E2843] leading-[60px]">
+                <div className=" mb-[20px]">
+                  <div className=" relative pl-[60px] mb-7">
+                    <div className="text-center absolute left-0 top-[7px] text-[30px] text-[#1E2843] leading-[60px]">
                       <span className=" inline-block">
                         <TfiEmail />
                       </span>
@@ -372,9 +372,9 @@ const HeaderTwo = () => {
                     </Link>
                   </div>
                 </div>
-                <div class=" mb-[30px]">
-                  <div class=" relative pl-[60px] mb-7">
-                    <div class="text-center absolute left-0 top-[7px] text-[30px] text-[#1E2843] leading-[60px]">
+                <div className=" mb-[30px]">
+                  <div className=" relative pl-[60px] mb-7">
+                    <div className="text-center absolute left-0 top-[7px] text-[30px] text-[#1E2843] leading-[60px]">
                       <span className=" inline-block">
                         <PiMapPinLineBold />
                       </span>
@@ -387,11 +387,11 @@ const HeaderTwo = () => {
                   </div>
                 </div>
 
-                <ul class=" p-0 mt-[54px] flex mb-12">
+                <ul className=" p-0 mt-[54px] flex mb-12">
                   <li className="inline-block">
                     <Link
                       href="https://www.facebook.com/"
-                      class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
+                      className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <FaFacebookF />
                     </Link>
@@ -399,7 +399,7 @@ const HeaderTwo = () => {
                   <li>
                     <Link
                       href="https://twitter.com/"
-                      class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
+                      className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <FaTwitter />
                     </Link>
@@ -407,7 +407,7 @@ const HeaderTwo = () => {
                   <li>
                     <Link
                       href="https://whatsapp.com/"
-                      class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
+                      className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <IoLogoWhatsapp />
                     </Link>
@@ -415,7 +415,7 @@ const HeaderTwo = () => {
                   <li>
                     <Link
                       href="https://instagram.com/"
-                      class="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
+                      className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <FaInstagram />
                     </Link>

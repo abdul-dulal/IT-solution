@@ -6,11 +6,11 @@ const PricePlan = ({ icon, title, price }) => {
   return (
     <div className="group ">
       <div className="pricintable-01  relative transition-all ease-linear duration-300 bg-[#f0f4f9] rounded-[10px] pt-11 px-5 mb-[60px] text-center after:absolute after:left-0 after:top-0 after:content-[''] after:w-full after:h-full after:rounded-[10px] after:bg-[url('/img/home1/price.jpg')] after:bg-no-repeat after:bg-center after:bg-cover after:z-[1] after:invisible after:opacity-0 after:transition-all after:duration-500 after:transform after:scale-[.98]   before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:rounded-[10px]  before:z-[2] before:transform before:scale-[.98] before:transition-all before:duration-500 before:bg-[rgba(8,24,69,0.9)] before:invisible before:opacity-0 group-hover:bg-[rgba(8,24,69,0.9)] group-hover:transition-all group-hover:duration-500 ">
-        <div class="ib-icon w-24 h-24 leading-[90px] text-[40px] bg-primary rounded-[50%] text-center inline-block mb-10 relative p-[26px] z-[3]">
+        <div className="ib-icon w-24 h-24 leading-[90px] text-[40px] bg-primary rounded-[50%] text-center inline-block mb-10 relative p-[26px] z-[3]">
           <span className="leading-[96px] text-white">{icon}</span>
         </div>
         <h5
-          className={`${rubik.class} text-base font-medium text-primary uppercase group-hover:text-white mb-2 relative z-[3] transition-all ease-linear duration-300`}
+          className={`${rubik.className} text-base font-medium text-primary uppercase group-hover:text-white mb-2 relative z-[3] transition-all ease-linear duration-300`}
         >
           {title}
         </h5>

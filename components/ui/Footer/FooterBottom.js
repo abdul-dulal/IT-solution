@@ -3,9 +3,9 @@ import React from "react";
 
 const FooterBottom = () => {
   return (
-    <div class="">
-      <div class="grid grid-cols-12  relative pt-[22px] pb-7 border-t border-solid border-[rgba(255,255,255,0.1)]">
-        <div class="xs:col-span-7 col-span-12 xs:text-left text-center ">
+    <div className="">
+      <div className="grid grid-cols-12  relative pt-[22px] pb-7 border-t border-solid border-[rgba(255,255,255,0.1)]">
+        <div className="xs:col-span-7 col-span-12 xs:text-left text-center ">
           <p className="text-[rgba(255,255,255,0.5)] text-lg font-normal leading-[30px]">
             &copy;{" "}
             <Link
@@ -17,7 +17,7 @@ const FooterBottom = () => {
             2021 | All Rights Reserved.
           </p>
         </div>
-        <div class="xs:col-span-5 col-span-12">
+        <div className="xs:col-span-5 col-span-12">
           <ul className="m-0 p-0 xs:text-right text-center xs:my-0 my-5">
             <li className="relative mb-5 inline-block after:absolute after:-right-4 after:top-[6px] after:h-3 after:w-[2px] after:content-[''] after:bg-[rgba(255,255,255,0.5)] after:mr-1">
               <Link

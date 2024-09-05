@@ -44,14 +44,14 @@ const HomeOne = () => {
       {/* Hero Banner Start --- */}
       <section className=" relative overflow-hidden bg-[url('/img/home1/home-banner.jpg')] bg-no-repeat bg-cover bg-center py-11 bg-secondary">
         <div className="container mx-auto grid grid-cols-12 xs:px-3 px-0">
-          <div class="sm:col-span-7 xs:col-span-8 col-span-10 items-center">
-            <div class="relative z-[9] mt-20 ml-6">
+          <div className="sm:col-span-7 xs:col-span-8 col-span-10 items-center">
+            <div className="relative z-[9] mt-20 ml-6">
               <h5
-                class={`${rubik.className} text-white font-medium text-md leading-[22px] capitalize  mb-6 relative after:relative after:-right-6 after:-top-[3px] after:w-[60px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block`}
+                className={`${rubik.className} text-white font-medium text-md leading-[22px] capitalize  mb-6 relative after:relative after:-right-6 after:-top-[3px] after:w-[60px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block`}
               >
                 Markets & Resources
               </h5>
-              <h2 class="xl:text-[80px] lg:text-[72px] mb-[38px] md:text-[55px] sm:text-5xl text-4xl xl:leading-[96px] lg:leading-[80px] md:leading-[65px] text-white font-bold animated">
+              <h2 className="xl:text-[80px] lg:text-[72px] mb-[38px] md:text-[55px] sm:text-5xl text-4xl xl:leading-[96px] lg:leading-[80px] md:leading-[65px] text-white font-bold animated">
                 Excellent IT services for your success
               </h2>
               <div className="flex flex-wrap mt-12">
@@ -68,13 +68,13 @@ const HomeOne = () => {
           </div>
           <div
             style={{ backgroundClip: "border-box" }}
-            class="col-span-5 bg-transparent border-none rounded-[0]"
+            className="col-span-5 bg-transparent border-none rounded-[0]"
           >
             <div
-              class=""
+              className=""
               style={{ transform: " rotateY(-0.8875 deg) rotateX(-8.69 deg)" }}
             >
-              <div class="layer animated relative text-right -mb-[45px] sm:block hidden">
+              <div className="layer animated relative text-right -mb-[45px] sm:block hidden">
                 <Image src={hero} alt="Hero" />
               </div>
             </div>
@@ -86,9 +86,9 @@ const HomeOne = () => {
       {/*   About Start */}
       <section className="relative py-[120px]">
         <div className="container mx-auto grid sm:grid-cols-2 ">
-          <div class=" relative sm:px-1.5 px-6">
+          <div className=" relative sm:px-1.5 px-6">
             <Image
-              class="animated-img rounded-[5px] absolute sm:right-7 right-10  top-[73px] -z-[1] "
+              className="animated-img rounded-[5px] absolute sm:right-7 right-10  top-[73px] -z-[1] "
               src={ring}
               draggable={false}
               alt="Feature"
@@ -99,26 +99,26 @@ const HomeOne = () => {
               alt="Animation Ring"
             />
             <Image
-              class="animated-img2  rounded-[5px] absolute sm:-left-[42px]   bottom-[50px] -z-[1]"
+              className="animated-img2  rounded-[5px] absolute sm:-left-[42px]   bottom-[50px] -z-[1]"
               src={round}
               alt="Animation Round"
             />
           </div>
-          <div class="relative pl-7 ">
-            <h6 class="sub-title text-base sm:mt-0 mt-8 leading-5 text-primary font-medium uppercase xs:mb-4">
+          <div className="relative pl-7 ">
+            <h6 className="sub-title text-base sm:mt-0 mt-8 leading-5 text-primary font-medium uppercase xs:mb-4">
               <span className="w-[81px] h-[3px] inline-block bg-primary mr-[15px] relative -top-[3px]"></span>
               Our Specialty
             </h6>
-            <h2 class=" lg:text-5xl md:text-4xl sm:text-3xl xs:text-[28px] text-2xl  font-bold xs:leading-[58px] sm:mb-6 mb-3">
+            <h2 className=" lg:text-5xl md:text-4xl sm:text-3xl xs:text-[28px] text-2xl  font-bold xs:leading-[58px] sm:mb-6 mb-3">
               Over 25+ Years Helping Brands to Reach Full Potential
             </h2>
-            <p class=" mb-5 text-[17px] leading-[26px] text-secondary font-normal ">
+            <p className=" mb-5 text-[17px] leading-[26px] text-secondary font-normal ">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo.
             </p>
-            <div class="grid lg:grid-cols-2 space-y-3">
-              <div class="flex items-center gap-3">
+            <div className="grid lg:grid-cols-2 space-y-3">
+              <div className="flex items-center gap-3">
                 <span className="h-10 w-10 bg-primary rounded-full flex items-center justify-center font-bold">
                   <HiLightBulb size={20} color="white" />
                 </span>
@@ -126,7 +126,7 @@ const HomeOne = () => {
                   Experts Problem Solvers
                 </p>
               </div>
-              <div class="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <span className="h-10 w-10 bg-primary rounded-full flex items-center justify-center font-bold">
                   <IoMdBug size={20} color="white" />
                 </span>
@@ -134,7 +134,7 @@ const HomeOne = () => {
                   Regular Updates & Bug fixes
                 </p>
               </div>
-              <div class="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <span className="h-10 w-10 bg-primary rounded-full flex items-center justify-center font-bold">
                   <TbFileAnalytics size={20} color="white" />
                 </span>
@@ -142,7 +142,7 @@ const HomeOne = () => {
                   Creative Product Analitic
                 </p>
               </div>
-              <div class="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <span className="h-10 w-10 bg-primary rounded-full flex items-center justify-center font-bold">
                   <BsFillQuestionCircleFill size={20} color="white" />
                 </span>
@@ -167,9 +167,9 @@ const HomeOne = () => {
       <section className="  bg-secondary pt-[116px] pb-[345px]  relative bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat ">
         <div className="container mx-auto xs:px-6 px-3">
           <div className=" grid grid-cols-12">
-            <div class="xs:col-start-3 xs:col-span-8 col-start-2 col-span-10 text-center">
-              <h6 class="title text-white">What we do</h6>
-              <h2 class=" lg:text-[48px] md:text-[40px] sm:text-[36px] xs:text-[30px] text-[23px] md:leading-[58px] sm:leading-[50px] xs:leading-[45px] font-bold mb-10 text-white">
+            <div className="xs:col-start-3 xs:col-span-8 col-start-2 col-span-10 text-center">
+              <h6 className="title text-white">What we do</h6>
+              <h2 className=" lg:text-[48px] md:text-[40px] sm:text-[36px] xs:text-[30px] text-[23px] md:leading-[58px] sm:leading-[50px] xs:leading-[45px] font-bold mb-10 text-white">
                 We Are Offering All Kinds of IT Solutions Services
               </h2>
             </div>
@@ -194,10 +194,10 @@ const HomeOne = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-12  bg-white relative rounded-[10px] py-[65px] lg:px-[45px] px-4 z-[3] -mt-[260px]">
             <div className="md:col-span-5 col-span-12">
-              <h2 class="lg:text-[25px] text-[22px] text-center leading-[30px] mb-[12px] font-bold text-[#191919]">
+              <h2 className="lg:text-[25px] text-[22px] text-center leading-[30px] mb-[12px] font-bold text-[#191919]">
                 Schedule Your Appointment
               </h2>
-              <p class="text-lg font-normal text-secondary text-center mb-7">
+              <p className="text-lg font-normal text-secondary text-center mb-7">
                 We here to help you 24/7 with experts
               </p>
               <ContactForm />
@@ -228,8 +228,8 @@ const HomeOne = () => {
       {/* Price Start */}
       <section className="relative pt-[116px] pb-[85px]">
         <div className="container mx-auto xs:px-3 px-4">
-          <h6 class="  text-center">Let’s Work</h6>
-          <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
+          <h6 className="  text-center">Let’s Work</h6>
+          <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
             Pricing Plans
           </h2>
           <div className="grid  md:grid-cols-3 xs:grid-cols-2  gap-8">
@@ -272,8 +272,8 @@ const HomeOne = () => {
       >
         <div className="container mx-auto xs:px-6 px-3">
           <div>
-            <h6 class="title  text-center">Blogs</h6>
-            <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
+            <h6 className="title  text-center">Blogs</h6>
+            <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
               Out Latest Articles
             </h2>
           </div>

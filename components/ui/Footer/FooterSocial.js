@@ -7,8 +7,8 @@ import logo from "/public/img/main-logo.png";
 import Link from "next/link";
 const FooterSocial = () => {
   return (
-    <aside class=" relative mt-[50px] mb-[45px]">
-      <div class=" relative pr-5">
+    <aside className=" relative mt-[50px] mb-[45px]">
+      <div className=" relative pr-5">
         <a href="index.html">
           <Image src={logo} alt="Footer-Logo" />
         </a>
@@ -16,7 +16,7 @@ const FooterSocial = () => {
           Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium
           doloremque denounce with illo inventore veritatis
         </p>
-        <div class="flex gap-3 relative">
+        <div className="flex gap-3 relative">
           <Link
             href="https://www.facebook.com/"
             className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"

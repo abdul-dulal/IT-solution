@@ -6,17 +6,17 @@ import { rubik } from "@/app/fonts";
 
 const MainHeader = () => {
   return (
-    <header class="bg-base  sticky top-0 z-[9999] ">
-      <div class="container mx-auto">
+    <header className="bg-base  sticky top-0 z-[9999] ">
+      <div className="container mx-auto">
         <nav className="h-[98px]">
           <div className="flex justify-between items-center w-full h-full">
             <Link href={"/"} className="">
               <Image src={logo} className="" alt="Main logo" />
             </Link>
             <ul
-              class={`${rubik.className}   flex items-center gap-9 text-white text-lg font-medium `}
+              className={`${rubik.className}   flex items-center gap-9 text-white text-lg font-medium `}
             >
-              <li class="group relative w-16">
+              <li className="group relative w-16">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -94,7 +94,7 @@ const MainHeader = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-20">
+              <li className="group relative w-20">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -128,7 +128,7 @@ const MainHeader = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-16">
+              <li className="group relative w-16">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -188,7 +188,7 @@ const MainHeader = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-[115px]">
+              <li className="group relative w-[115px]">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
@@ -222,7 +222,7 @@ const MainHeader = () => {
                   </li>
                 </ul>
               </li>
-              <li class="group relative w-16">
+              <li className="group relative w-16">
                 <Link
                   href="#"
                   className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"

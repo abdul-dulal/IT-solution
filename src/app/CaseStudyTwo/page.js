@@ -33,7 +33,7 @@ const CaseStudyTwo = () => {
               return (
                 <div
                   key={item.id}
-                  class=" group relative overflow-hidden m-[-2.5px]"
+                  className=" group relative overflow-hidden m-[-2.5px]"
                 >
                   <Image
                     src={item?.img}
@@ -47,15 +47,15 @@ const CaseStudyTwo = () => {
                       transition:
                         "transform 0.4s cubic-bezier(0.34, 0.66, 0.79, 0.58), opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)",
                     }}
-                    class="fs-hover absolute content-[''] left-0 top-0 w-full h-full rounded-[10px] bg-[rgba(104,110,226,0.8)] opacity-0 group-hover:opacity-100"
+                    className="fs-hover absolute content-[''] left-0 top-0 w-full h-full rounded-[10px] bg-[rgba(104,110,226,0.8)] opacity-0 group-hover:opacity-100"
                   >
-                    <div class="fs-content absolute left-0 top-[50%] -translate-y-[50%] w-full text-center pb-[15px] z-[2]">
+                    <div className="fs-content absolute left-0 top-[50%] -translate-y-[50%] w-full text-center pb-[15px] z-[2]">
                       <Link
                         href={`portfolio/${item.title}`}
                         style={{
                           boxShadow: "0px 1px 54px 0px rgb(47 84 238 / 46%)",
                         }}
-                        class="fm-more relative right-auto inline-block bg-white w-[57px] h-[57px] text-center rounded-[50%] text-2xl text-primary leading-[60px] mb-[22px]  scale-75 opacity-0 invisible transition-all ease-in-out duration-300 group-hover:scale-100 group-hover:visible group-hover:opacity-100"
+                        className="fm-more relative right-auto inline-block bg-white w-[57px] h-[57px] text-center rounded-[50%] text-2xl text-primary leading-[60px] mb-[22px]  scale-75 opacity-0 invisible transition-all ease-in-out duration-300 group-hover:scale-100 group-hover:visible group-hover:opacity-100"
                       >
                         <span className="w-full h-full flex items-center justify-center">
                           <AiOutlinePlus className="" />
@@ -69,7 +69,7 @@ const CaseStudyTwo = () => {
                           {item.title}
                         </Link>
                       </h5>
-                      <p class="cats text-[rgba(255,255,255,0.8)] m-0 translate-y-[30px] opacity-0 invisible transition-all ease-in-out duration-1000 hover:text-[#191919] group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
+                      <p className="cats text-[rgba(255,255,255,0.8)] m-0 translate-y-[30px] opacity-0 invisible transition-all ease-in-out duration-1000 hover:text-[#191919] group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
                         <Link href={`/folioCat/${item?.tech}`}>
                           {item?.tech}
                         </Link>

@@ -6,20 +6,22 @@ import data from "/public/Portfolio.json"; // Adjust the path to where your JSON
 import BreadCumb from "../../../components/ui/BreadCumb";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import portfolio from "/public/Portfolio.json";
+import Pagination from "../../../components/ui/blog/Pagination";
 
-const ShuffleGrid = () => {
+const CaseStudyThree = () => {
   const shuffleContainer = useRef(null);
   const shuffleInstance = useRef(null);
   const [techCategories, setTechCategories] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [activeCategory, setActiveCategory] = useState("all");
 
   useEffect(() => {
-    // Initialize Shuffle.js when the component is mounted
     shuffleInstance.current = new Shuffle(shuffleContainer.current, {
       itemSelector: ".picture-item",
-      sizer: ".my-sizer-element", // You can remove this if not using a sizer element
+      sizer: ".my-sizer-element",
     });
 
-    // Cleanup on component unmount
     return () => {
       shuffleInstance.current.destroy();
     };
@@ -34,44 +36,65 @@ const ShuffleGrid = () => {
     shuffleInstance.current.filter(group === "all" ? Shuffle.ALL_ITEMS : group);
   };
 
+  const blogsPerPage = 6;
+
+  const handlePageClick = ({ selected }) => {
+    setCurrentPage(selected);
+  };
+
+  const offset = currentPage * blogsPerPage;
+
+  const currentPortfolio = portfolio?.slice(offset, offset + blogsPerPage);
+
   return (
     <div>
       <BreadCumb currentPage="Case Study" />
 
-      <section class=" relative py-[120px]">
+      <section className=" relative py-[120px]">
         <div className="container mx-auto">
-          <ul
-            style={{ marginTop: 0 }}
-            class="shaffle-filter group mt-11 mb-10 flex justify-center"
-          >
-            <li
-              class="active inline-block relative text-[17px] font-bold cursor-pointer  mr-[50px] px-[7px] transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out "
-              onClick={() => handleFilter("all")}
+          {currentPage == 0 ? (
+            <ul
+              style={{ marginTop: 0 }}
+              className="shaffle-filter group mt-11 mb-10 flex xs:flex-nowrap flex-wrap  justify-center"
             >
-              All Projects
-            </li>
-
-            {techCategories.map((category) => (
               <li
-                key={category}
-                class=" inline-block relative text-[17px] font-semibold cursor-pointer  mr-[50px] px-[7px] transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out "
-                onClick={() => handleFilter(category)}
+                className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7 transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out ${
+                  activeCategory === "all" ? "active" : ""
+                }`}
+                onClick={() => [handleFilter("all"), setActiveCategory("all")]}
               >
-                {category}
+                All Projects
               </li>
-            ))}
-          </ul>
+
+              {techCategories.map((category) => (
+                <li
+                  key={category}
+                  className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7 transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out ${
+                    activeCategory === category ? "active" : ""
+                  }`}
+                  onClick={() => [
+                    handleFilter(category),
+                    setActiveCategory(category),
+                  ]}
+                >
+                  {category}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            ""
+          )}
 
           <div className="">
             <div ref={shuffleContainer} className="row my-shuffle-container">
-              {data.map((item) => (
+              {currentPortfolio.map((item) => (
                 <figure
                   key={item.id}
                   className="shuffle-img  picture-item"
                   data-groups={JSON.stringify([item.tech])}
                 >
                   <div className="relative h-full w-full overflow-hidden">
-                    <div class="folio-item-1 group mb-[30px] relative overflow-hidden after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:z-[1] after:opacity-0 after:invisible after:transition-all after:ease-in-out after:duration-300 after:bg-[rgba(104,110,226,0.8)] hover:after:h-full hover:after:opacity-[1] hover:after:visible">
+                    <div className="folio-item-1 group mb-[30px] relative overflow-hidden after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:z-[1] after:opacity-0 after:invisible after:transition-all after:ease-in-out after:duration-300 after:bg-[rgba(104,110,226,0.8)] hover:after:h-full hover:after:opacity-[1] hover:after:visible">
                       <Image
                         src={item.img}
                         alt={item.title}
@@ -81,30 +104,30 @@ const ShuffleGrid = () => {
                       />
                       <div
                         style={{ width: "calc(100% - 30px)" }}
-                        class="folio-content absolute left-[15px] bottom-0 z-[2] bg-white rounded-[5px] pt-[23px] pr-[70px] pb-[16px] pl-[20px] invisible opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:bottom-4 group-hover:opacity-[1] group-hover:delay-[0.4s]"
+                        className="folio-content absolute left-[15px] bottom-0 z-[2] bg-white rounded-[5px] pt-[23px] pr-[70px] pb-[16px] pl-[20px] invisible opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:bottom-4 group-hover:opacity-[1] group-hover:delay-[0.4s]"
                       >
-                        <p class=" relative text-primary mb-[2px]">
+                        <p className=" relative text-primary mb-[2px]">
                           <Link
-                            href={`portfolio/${item.title}`}
+                            href={`/folioCat/${item?.tech}`}
                             className="text-primary inline-block hover:text-[#191919]"
                           >
                             {item.tech}
                           </Link>
                         </p>
                         <h5 className="text-lg mb-0 hover:text-primary">
-                          <a
-                            href="portfolio-details-1.html"
+                          <Link
+                            href={`portfolio/${item.title}`}
                             className="inline-block"
                           >
                             {item.title}
-                          </a>
+                          </Link>
                         </h5>
-                        <a
-                          class="flex items-center justify-center w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-[16px] rounded-[3px] leading-[47px] text-center absolute top-0 bottom-0 right-4 hover:bg-primary hover:text-white m-auto"
-                          href="portfolio-details-1.html"
+                        <Link
+                          className="flex items-center justify-center w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-[16px] rounded-[3px] leading-[47px] text-center absolute top-0 bottom-0 right-4 hover:bg-primary hover:text-white m-auto"
+                          href={`portfolio/${item.title}`}
                         >
                           <FaArrowRight />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -114,8 +137,16 @@ const ShuffleGrid = () => {
           </div>
         </div>
       </section>
+      <div className="my-[60px] flex  justify-center hover:transition-all hover:duration-300 hover:ease-in-out ">
+        <Pagination
+          currentPage={currentPage}
+          blogs={portfolio}
+          blogsPerPage={blogsPerPage}
+          handlePageClick={handlePageClick}
+        />
+      </div>
     </div>
   );
 };
 
-export default ShuffleGrid;
+export default CaseStudyThree;

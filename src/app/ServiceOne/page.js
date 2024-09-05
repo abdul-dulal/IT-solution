@@ -17,11 +17,11 @@ const ServiceOne = () => {
 
       {/* Service Start */}
 
-      <section class=" relative bg-[#f0f4f9] pt-[116px] pb-[90px]">
+      <section className=" relative bg-[#f0f4f9] pt-[116px] pb-[90px]">
         <div className="container mx-auto xs:px-6 px-4">
-          <div class="text-center">
-            <h6 class="">What we do</h6>
-            <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
+          <div className="text-center">
+            <h6 className="">What we do</h6>
+            <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
               Service for You
             </h2>
           </div>

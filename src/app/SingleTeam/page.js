@@ -10,9 +10,9 @@ const SingleTeam = () => {
   return (
     <div>
       <BreadCumb currentPage="Team Member" />
-      <section class=" relative pt-[120px] pb-[90px]">
-        <div class="container mx-auto xl:px-6 px-4">
-          <div class="grid lg:grid-cols-2 gap-10">
+      <section className=" relative pt-[120px] pb-[90px]">
+        <div className="container mx-auto xl:px-6 px-4">
+          <div className="grid lg:grid-cols-2 gap-10">
             <TeamMemberSkill member={member} />
             <TeamDetails name="Doris Jordan" dgn="Design Expert" />
           </div>

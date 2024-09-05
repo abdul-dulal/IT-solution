@@ -7,8 +7,8 @@ import { MdAutoMode } from "react-icons/md";
 
 const PricePlanTwo = ({ title, icon, price }) => {
   return (
-    <div class=" group relative rounded-[20px] pt-[41px] px-[45px] pb-9 border-[3px] border-dashed border-primary mb-[30px] transition-all ease-in-out duration-400">
-      <div class="w-24 h-24 leading-[110px] text-[40px] bg-primary text-white flex justify-center items-center mb-10 relative z-[3] transition-all ease-in-out duration-400 rounded-[70%_30%_30%_70%/_70%_70%_30%_30%] group-hover:rounded-[30%_70%_70%_30%/_30%_30%_70%_70%]">
+    <div className=" group relative rounded-[20px] pt-[41px] px-[45px] pb-9 border-[3px] border-dashed border-primary mb-[30px] transition-all ease-in-out duration-400">
+      <div className="w-24 h-24 leading-[110px] text-[40px] bg-primary text-white flex justify-center items-center mb-10 relative z-[3] transition-all ease-in-out duration-400 rounded-[70%_30%_30%_70%/_70%_70%_30%_30%] group-hover:rounded-[30%_70%_70%_30%/_30%_30%_70%_70%]">
         {icon}
       </div>
       <h3
@@ -19,7 +19,7 @@ const PricePlanTwo = ({ title, icon, price }) => {
       <h2
         className={`${rubik.className} text-5xl leading-[.8] font-medium text-[#191919] mb-[30px] relative z-[3] transition-all ease-in-out duration-400`}
       >
-        <sup class="currency text-[14px] mr-[10px] -top-6 left-0">US$</sup>
+        <sup className="currency text-[14px] mr-[10px] -top-6 left-0">US$</sup>
         {price}
         <sup className="m-0 text-lg left-[6px] -top-[21px]">.99</sup>
       </h2>

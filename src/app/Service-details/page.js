@@ -15,12 +15,12 @@ const ServiceDetails = () => {
   return (
     <div>
       <BreadCumb currentPage="Software Development" />
-      <section class=" relative  py-[120px]">
-        <div class="container mx-auto xs:px-6 px-4">
-          <div class="grid grid-cols-12 gap-5">
-            <div class="lg:col-span-8 col-span-12">
-              <div class=" relative">
-                <div class=" relative mb-7">
+      <section className=" relative  py-[120px]">
+        <div className="container mx-auto xs:px-6 px-4">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="lg:col-span-8 col-span-12">
+              <div className=" relative">
+                <div className=" relative mb-7">
                   <Image src={hero} alt="Hero" className="rounded-[10px]" />
                 </div>
                 <h3 className="sm:text-[40px] xs:text-[36px] text-[30px] sm:leading-[52px] xs:leading-[45px] leading-[40px] font-bold text-[#191919] mb-[22px]">
@@ -43,14 +43,14 @@ const ServiceDetails = () => {
                   justo duo dolores et ea rebum. Stet clita kasd gubergren, no
                   sea takimata sanctus est.
                 </p>
-                <div class="grid sm:grid-cols-2 gap-7">
+                <div className="grid sm:grid-cols-2 gap-7">
                   <Image
                     className="rounded-[5px] mt-[19px] mb-[35px]"
                     src={blog}
                     alt="Service"
                   />
 
-                  <div class="">
+                  <div className="">
                     <h4 className="text-xl font-bold leading-[30px] text-[#222] mt-5 mb-[22px]">
                       Quality Control System
                     </h4>
@@ -85,10 +85,10 @@ const ServiceDetails = () => {
                 <BlockQuote />
               </div>
             </div>
-            <div class="lg:col-span-4 col-span-12">
-              <div class=" relative pl-[10px]">
-                <aside class=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
-                  <h3 class=" capitalize relative text-[28px] font-bold leading-[36px] mb-6">
+            <div className="lg:col-span-4 col-span-12">
+              <div className=" relative pl-[10px]">
+                <aside className=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
+                  <h3 className=" capitalize relative text-[28px] font-bold leading-[36px] mb-6">
                     Popular Service
                   </h3>
                   <ul className="relative">
@@ -113,8 +113,8 @@ const ServiceDetails = () => {
                     })}
                   </ul>
                 </aside>
-                <aside class=" relative my-[50px] p-0">
-                  <h3 class="  text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-7">
+                <aside className=" relative my-[50px] p-0">
+                  <h3 className="  text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-7">
                     Get a Quote
                   </h3>
                   <ServiceContact />

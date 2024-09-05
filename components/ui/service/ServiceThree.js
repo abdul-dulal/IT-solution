@@ -5,9 +5,9 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Services = ({ title, icon }) => {
   return (
-    <div class="group">
-      <div class=" relative mb-[30px] border-[5px] border-solid border-transparent rounded-[10px] py-10 px-7   text-center transition-all duration-400 ease-in-out hover:border-primary">
-        <div class=" text-[70px] leading-[70px]  inline-block text-center mb-[27px] transition-all duration-400 ease-in-out">
+    <div className="group">
+      <div className=" relative mb-[30px] border-[5px] border-solid border-transparent rounded-[10px] py-10 px-7   text-center transition-all duration-400 ease-in-out hover:border-primary">
+        <div className=" text-[70px] leading-[70px]  inline-block text-center mb-[27px] transition-all duration-400 ease-in-out">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="97.356"
@@ -37,7 +37,7 @@ const Services = ({ title, icon }) => {
           noket numy eirmod tempor
         </p>
         <Link
-          class=" h-[45px] bg-[rgba(104,110,226,0.1)]  rounded-[30px] text-center inline-block text-[22px] text-primary leading-[50px] pb-[30px] w-[80px] hover:bg-primary hover:text-white transition-all duration-400 ease-in-out"
+          className=" h-[45px] bg-[rgba(104,110,226,0.1)]  rounded-[30px] text-center inline-block text-[22px] text-primary leading-[50px] pb-[30px] w-[80px] hover:bg-primary hover:text-white transition-all duration-400 ease-in-out"
           href=""
         >
           <FaLongArrowAltRight className="w-full mt-3" />

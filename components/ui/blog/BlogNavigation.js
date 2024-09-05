@@ -27,13 +27,13 @@ const BlogNavigation = ({ blogs, currentBlogId }) => {
   };
 
   return (
-    <div class="grid xs:grid-cols-2 gap-10">
+    <div className="grid xs:grid-cols-2 gap-10">
       <div className="text-left">
         {currentIndex > 0 && (
           <div>
             <button
               onClick={handlePrevious}
-              class={`${rubik.className} flex  items-center  prev text-[17px] font-semibold tracking-[0.6px] mb-4  text-secondary  hover:text-primary leading-[26px]`}
+              className={`${rubik.className} flex  items-center  prev text-[17px] font-semibold tracking-[0.6px] mb-4  text-secondary  hover:text-primary leading-[26px]`}
             >
               <FaAngleLeft className="text-[20px] mr-4 relative " />
               Previous
@@ -55,7 +55,7 @@ const BlogNavigation = ({ blogs, currentBlogId }) => {
           <div>
             <button
               onClick={handleNext}
-              class={`${rubik.className}  flex justify-end w-full   gap-2 items-center text-[17px] font-semibold tracking-[0.6px] mb-4  text-secondary hover:text-primary leading-[26px]`}
+              className={`${rubik.className}  flex justify-end w-full   gap-2 items-center text-[17px] font-semibold tracking-[0.6px] mb-4  text-secondary hover:text-primary leading-[26px]`}
             >
               Next <FaAngleRight className="text-[20px] mr-4 relative " />
             </button>

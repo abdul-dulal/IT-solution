@@ -5,9 +5,9 @@ const Blog = ({ img, title, subTitle }) => {
   return (
     <div
       style={{ boxShadow: "0px 0 20px 0px rgb(152 152 152 / 16%)" }}
-      class="blogItem relative transition-all ease-out duration-400 mb-[30px] hover:-translate-y-[10px]"
+      className="blogItem relative transition-all ease-out duration-400 mb-[30px] hover:-translate-y-[10px]"
     >
-      <div class="biThumb relative  ">
+      <div className="biThumb relative  ">
         <Image
           src={img}
           width={200}
@@ -15,7 +15,7 @@ const Blog = ({ img, title, subTitle }) => {
           className="w-full"
           alt="Blog"
         />
-        <div class="biMeta absolute bottom-[25px] left-[25px] w-auto z-[2] bg-primary text-white text-sm leading-[30px] capitalize px-[15px] font-normal transition-all ease-out duration-300 hover:bg-[#081845]">
+        <div className="biMeta absolute bottom-[25px] left-[25px] w-auto z-[2] bg-primary text-white text-sm leading-[30px] capitalize px-[15px] font-normal transition-all ease-out duration-300 hover:bg-[#081845]">
           <Link href="" className="mr-6 relative ">
             Mark Smith
           </Link>
@@ -24,7 +24,7 @@ const Blog = ({ img, title, subTitle }) => {
           </Link>
         </div>
       </div>
-      <div class="biDetails py-8 px-6">
+      <div className="biDetails py-8 px-6">
         <h3 className="text-[22px] font-bold relative block leading-[30px] mb-[14px] text-[#191919]">
           <Link
             href={`/blog/${title}`}
@@ -38,7 +38,7 @@ const Blog = ({ img, title, subTitle }) => {
         </p>
         <Link
           href={`/blog/${title}`}
-          class="blog_more relative overflow-hidden inline-block text-base  text-[#191919] font-normal tracking-[1px] leading-[24px] hover:text-primary"
+          className="blog_more relative overflow-hidden inline-block text-base  text-[#191919] font-normal tracking-[1px] leading-[24px] hover:text-primary"
         >
           Learn More
           <svg

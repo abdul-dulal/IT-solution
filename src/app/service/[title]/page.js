@@ -19,12 +19,12 @@ const ServiceDetails = ({ params }) => {
   return (
     <div>
       <BreadCumb currentPage={paramsTitle} />
-      <section class=" relative  py-[120px]">
-        <div class="container mx-auto xs:px-6 px-4">
+      <section className=" relative  py-[120px]">
+        <div className="container mx-auto xs:px-6 px-4">
           <div className="grid grid-cols-12  gap-5">
-            <div class="lg:col-span-8 col-span-12">
-              <div class=" relative">
-                <div class=" relative mb-7">
+            <div className="lg:col-span-8 col-span-12">
+              <div className=" relative">
+                <div className=" relative mb-7">
                   {single ? (
                     <Image
                       src={single.img}
@@ -57,14 +57,14 @@ const ServiceDetails = ({ params }) => {
                   justo duo dolores et ea rebum. Stet clita kasd gubergren, no
                   sea takimata sanctus est.
                 </p>
-                <div class="grid sm:grid-cols-2 gap-7">
+                <div className="grid sm:grid-cols-2 gap-7">
                   <Image
                     className="rounded-[5px] mt-[19px] mb-[35px]"
                     src={blog}
                     alt=""
                   />
 
-                  <div class="">
+                  <div className="">
                     <h4 className="text-xl font-bold leading-[30px] text-[#222] mt-5 mb-[22px]">
                       Quality Control System
                     </h4>
@@ -99,10 +99,10 @@ const ServiceDetails = ({ params }) => {
                 <BlockQuote />
               </div>
             </div>
-            <div class="lg:col-span-4 col-span-12">
-              <div class=" relative pl-[10px]">
-                <aside class=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
-                  <h3 class=" capitalize relative text-[28px] font-bold leading-[36px] mb-6">
+            <div className="lg:col-span-4 col-span-12">
+              <div className=" relative pl-[10px]">
+                <aside className=" bg-[#f0f4f9] rounded-[5px] p-[25px]">
+                  <h3 className=" capitalize relative text-[28px] font-bold leading-[36px] mb-6">
                     Popular Service
                   </h3>
 
@@ -127,8 +127,8 @@ const ServiceDetails = ({ params }) => {
                     })}
                   </ul>
                 </aside>
-                <aside class=" relative my-[50px] p-0">
-                  <h3 class="  text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-7">
+                <aside className=" relative my-[50px] p-0">
+                  <h3 className="  text-[28px] text-[rgb(25,25,25)] font-bold leading-[30px] mb-7">
                     Get a Quote
                   </h3>
                   <ServiceContact />

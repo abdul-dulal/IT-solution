@@ -11,16 +11,16 @@ import FooterSocial from "./FooterSocial";
 import FooterBottom from "./FooterBottom";
 const Footer = () => {
   return (
-    <footer class="footer bg-[url('/img/bg/footer-bg.png')] bg-center bg-auto bg-no-repeat relative bg-[#081845] pt-[60px]">
-      <div class="container mx-auto xs:px-6 px-4">
-        <div class="mailchimp-area relative w-full sm:flex justify-between border-b border-solid border-[rgba(255,255,255,0.1)] pb-11">
+    <footer className="footer bg-[url('/img/bg/footer-bg.png')] bg-center bg-auto bg-no-repeat relative bg-[#081845] pt-[60px]">
+      <div className="container mx-auto xs:px-6 px-4">
+        <div className="mailchimp-area relative w-full sm:flex justify-between border-b border-solid border-[rgba(255,255,255,0.1)] pb-11">
           <h3 className="md:text-[28px] sm:text-xl xs:text-[28px] text-[28px] md:leading-[38px] sm:leading-[30px] text-white font-bold">
             Get notified about the event! <br className="xs:block hidden" />
             Subscribe today
           </h3>
 
           <form
-            class="mc4wp-form relative md:w-[570px] sm:w-[400px] xs:w-[400px] w-full sm:py-0 py-7"
+            className="mc4wp-form relative md:w-[570px] sm:w-[400px] xs:w-[400px] w-full sm:py-0 py-7"
             method="post"
           >
             <input
@@ -39,13 +39,13 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div class="grid grid-cols-12">
-          <div class="lg:col-span-4 xs:col-span-6 col-span-12">
+        <div className="grid grid-cols-12">
+          <div className="lg:col-span-4 xs:col-span-6 col-span-12">
             <FooterSocial />
           </div>
-          <div class="lg:col-span-3 xs:col-span-6 col-span-12">
-            <aside class="widget mt-[60px] mb-[45px]">
-              <h3 class="widget-title text-xl leading-[0.8] uppercase relative mt-[13px] mb-[37px] border-none text-white pl-[18px] font-bold after:absolute after:-bottom-[6px] after:left-0 after:h-7 after:w-1 after:bg-primary after:content-['']">
+          <div className="lg:col-span-3 xs:col-span-6 col-span-12">
+            <aside className="widget mt-[60px] mb-[45px]">
+              <h3 className="widget-title text-xl leading-[0.8] uppercase relative mt-[13px] mb-[37px] border-none text-white pl-[18px] font-bold after:absolute after:-bottom-[6px] after:left-0 after:h-7 after:w-1 after:bg-primary after:content-['']">
                 IT Services
               </h3>
               <ul>
@@ -87,13 +87,13 @@ const Footer = () => {
               </ul>
             </aside>
           </div>
-          <div class="lg:col-span-5 col-span-12">
-            <aside class="widget relative mt-[60px] mb-[45px]">
-              <h3 class="widget-title text-xl leading-[0.8] uppercase relative mt-[13px] mb-[37px] border-none text-white pl-[18px] font-bold after:absolute after:-bottom-[6px] after:left-0 after:h-7 after:w-1 after:bg-primary after:content-['']">
+          <div className="lg:col-span-5 col-span-12">
+            <aside className="widget relative mt-[60px] mb-[45px]">
+              <h3 className="widget-title text-xl leading-[0.8] uppercase relative mt-[13px] mb-[37px] border-none text-white pl-[18px] font-bold after:absolute after:-bottom-[6px] after:left-0 after:h-7 after:w-1 after:bg-primary after:content-['']">
                 latest news
               </h3>
               <div
-                class={`${rubik.className} sf_s1_post relative pl-[100px] mb-5`}
+                className={`${rubik.className} sf_s1_post relative pl-[100px] mb-5`}
               >
                 <Image
                   src={footer1}
@@ -114,7 +114,7 @@ const Footer = () => {
                 </p>
               </div>
               <div
-                class={`${rubik.className} sf_s1_post relative pl-[100px] mb-5`}
+                className={`${rubik.className} sf_s1_post relative pl-[100px] mb-5`}
               >
                 <Image
                   src={footer2}

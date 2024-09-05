@@ -18,7 +18,7 @@ const BlogTag = ({ title }) => {
       <section className="relative py-[120px]">
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid grid-cols-12 gap-7">
-            <div class="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
+            <div className="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>
                 {filteredTag?.map((tag) => {
                   return (
@@ -36,37 +36,37 @@ const BlogTag = ({ title }) => {
                 })}
               </div>
             </div>
-            <div class="lg:col-span-4 col-span-12">
-              <div class=" relative pl-[10px]">
-                <aside class="">
+            <div className="lg:col-span-4 col-span-12">
+              <div className=" relative pl-[10px]">
+                <aside className="">
                   <BlogContact />
                 </aside>
-                <aside class=" relative p-0 my-[42px]">
+                <aside className=" relative p-0 my-[42px]">
                   <h3
-                    class={`${rubik.className}  capitalize relative md:text-[28px] text-[23px] font-bold md:leading-[36px] leading-8 mb-11 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
+                    className={`${rubik.className}  capitalize relative md:text-[28px] text-[23px] font-bold md:leading-[36px] leading-8 mb-11 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
                   >
                     Recent Post
                   </h3>
                   <RecentPost slug="/blog" />
                 </aside>
-                <aside class=" ">
+                <aside className=" ">
                   <h3
-                    class={`${rubik.className}  capitalize relative md:text-[28px] text-[23px] font-bold md:leading-[36px] leading-8 mb-11 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
+                    className={`${rubik.className}  capitalize relative md:text-[28px] text-[23px] font-bold md:leading-[36px] leading-8 mb-11 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
                   >
                     Categories
                   </h3>
                   <Category slug="/category" />
                 </aside>
-                <aside class="">
+                <aside className="">
                   <Call />
                 </aside>
-                <aside class=" capitalize font-normal  ">
+                <aside className=" capitalize font-normal  ">
                   <h3
-                    class={`${rubik.className}  capitalize relative md:text-[28px] text-[23px] font-bold md:leading-[36px] leading-8 mb-11 mt-9 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
+                    className={`${rubik.className}  capitalize relative md:text-[28px] text-[23px] font-bold md:leading-[36px] leading-8 mb-11 mt-9 after:absolute after:w-[50px] after:h-[3px] after:bg-primary after:left-0 after:-bottom-2 after:content-['']`}
                   >
                     popular tags
                   </h3>
-                  <div class=" relative">
+                  <div className=" relative">
                     <Tag slug="/tag" />
                   </div>
                 </aside>

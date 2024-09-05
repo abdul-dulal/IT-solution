@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 import blog from "/public/Blog.json";
-const RecentPost = ({slug}) => {
+const RecentPost = ({ slug }) => {
   const recentPost = blog.slice(0, 5);
   return (
     <div>

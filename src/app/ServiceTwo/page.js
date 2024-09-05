@@ -17,9 +17,9 @@ const ServiceTwo = () => {
       {/* Service Start */}
       <section className="service-section-3 relative bg-[#f0f4f9] pt-[116px] pb-[90px]">
         <div className="container mx-auto xs:px-6 px-4">
-          <div class="text-center">
-            <h6 class="">What we do</h6>
-            <h2 class="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
+          <div className="text-center">
+            <h6 className="">What we do</h6>
+            <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
               Service for You
             </h2>
           </div>
@@ -33,8 +33,8 @@ const ServiceTwo = () => {
 
       <section className="relative pt-28 pb-[120px]">
         <div className="container mx-auto xs:px-6 px-4">
-          <h6 class="text-center ">Our Work Process</h6>
-          <h2 class="text-center">
+          <h6 className="text-center ">Our Work Process</h6>
+          <h2 className="text-center">
             We Complete Every <br /> Step Carefully
           </h2>
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">

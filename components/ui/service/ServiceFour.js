@@ -27,18 +27,18 @@ const Services = () => {
           return (
             <div
               key={item.id}
-              class=" group relative   bg-[#081845] hover:bg-primary  pt-8  pb-[50px] transition-all duration-300 ease-in text-center"
+              className=" group relative   bg-[#081845] hover:bg-primary  pt-8  pb-[50px] transition-all duration-300 ease-in text-center"
             >
-              <div class=" flex justify-center gap-5 mb-10">
+              <div className=" flex justify-center gap-5 mb-10">
                 <span className="inline-block text-[rgba(104,110,226,0.1)] text-[80px] -tracking-[2] leading-[80px] font-medium transition-all duration-300 ease-in group-hover:text-[rgba(255,255,255,0.1)]">
                   {item.serial}
                 </span>
-                <div class="   h-[5px] bg-[rgba(104,110,226,0.1)] mt-10 px-[12px] rounded-[5px] transition-all duration-300 ease-in group-hover:bg-[rgba(255,255,255,0.1)]"></div>
-                <span class="inline-block text-primary text-[80px] leading-[80px] transition-all duration-300 ease-in group-hover:text-white">
+                <div className="   h-[5px] bg-[rgba(104,110,226,0.1)] mt-10 px-[12px] rounded-[5px] transition-all duration-300 ease-in group-hover:bg-[rgba(255,255,255,0.1)]"></div>
+                <span className="inline-block text-primary text-[80px] leading-[80px] transition-all duration-300 ease-in group-hover:text-white">
                   <IconComponent />
                 </span>
               </div>
-              <div class=" absolute flex justify-center w-full  bottom-3 text-[180px] text-[rgba(255,255,255,0.05)] z-[1] transition-all duration-300 ease-in">
+              <div className=" absolute flex justify-center w-full  bottom-3 text-[180px] text-[rgba(255,255,255,0.05)] z-[1] transition-all duration-300 ease-in">
                 <IconComponent />
               </div>
               <h4 className="text-[22px] font-bold leading-[32px] text-white relative z-[2] uppercase mb-5 transition-all duration-400 ease-in-out">

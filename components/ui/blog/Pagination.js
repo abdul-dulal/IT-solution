@@ -25,7 +25,7 @@ const Pagination = ({ currentPage, blogs, blogsPerPage, handlePageClick }) => {
       nextClassName={"text-2xl font-bold"}
       containerClassName={"flex justify-center items-center gap-4"}
       pageClassName={
-        "h-[60px] w-[60px] rounded-full flex items-center justify-center"
+        "h-[60px] w-[60px] rounded-full flex items-center justify-center bg-[#f0f4f9] hover:bg-primary hover:text-white  hover:transition-all hover:duration-300 hover:ease-in-out"
       }
       //   pageLinkClassName={
       //     "h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center justify-center text-[#222] hover:bg-primary hover:text-white hover:transition-all hover:duration-300 hover:ease-in-out text-xl"

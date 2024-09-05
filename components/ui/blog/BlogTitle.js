@@ -8,7 +8,7 @@ import { rubik } from "@/app/fonts";
 const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
   return (
     <div>
-      <div class=" relative mb-9">
+      <div className=" relative mb-9">
         <Image
           src={img}
           width={750}
@@ -17,8 +17,8 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
           alt="Blog"
         />
       </div>
-      <div class=" relative">
-        <div class=" inline-block relative mr-3">
+      <div className=" relative">
+        <div className=" inline-block relative mr-3">
           <Link
             href={`/category/${category}`}
             className={`${rubik.className} inline-block h-[42px] bg-primary text-center rounded-[5px] text-[12px] leading-[42px] text-white mr-[10px] mb-[10px] tracking-[1.2px] uppercase px-[14px] hover:bg-black hover:text-white`}
@@ -27,7 +27,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
           </Link>
         </div>
         <div
-          class={`${rubik.className}  relative top-5 inline-block pl-[58px]  pt-[8px]`}
+          className={`${rubik.className}  relative top-5 inline-block pl-[58px]  pt-[8px]`}
         >
           <Image
             src={author}
@@ -58,7 +58,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
         </p>
         {readmore ? (
           <Link
-            class={` ${rubik.className} group  flex items-center text-base text-secondary font-bold uppercase hover:text-primary`}
+            className={` ${rubik.className} group  flex items-center text-base text-secondary font-bold uppercase hover:text-primary`}
             href={`${slug}/${title}`}
           >
             Read More

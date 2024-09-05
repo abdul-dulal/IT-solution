@@ -8,7 +8,10 @@ const FooterContact = () => {
     e.preventDefault();
   };
   return (
-    <form onSubmit={handleSubmit} class="relative xs:w-[350px] w-full mt-10">
+    <form
+      onSubmit={handleSubmit}
+      className="relative xs:w-[350px] w-full mt-10"
+    >
       <input
         type="email"
         name="EMAIL"

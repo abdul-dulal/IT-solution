@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Call = () => {
   return (
-    <div class="  pt-[60px] px-5 pb-[50px]  w-full min-h-[350px] text-center rounded-[10px] bg-center bg-cover bg-no-repeat relative bg-[url('/img/blog/blog2.jpg')] after:absolute after:left-0 after:top-0 after:w-full after:h-full after:content-[''] after:bg-primary after:rounded-[10px] after:opacity-95">
+    <div className="  pt-[60px] px-5 pb-[50px]  w-full min-h-[350px] text-center rounded-[10px] bg-center bg-cover bg-no-repeat relative bg-[url('/img/blog/blog2.jpg')] after:absolute after:left-0 after:top-0 after:w-full after:h-full after:content-[''] after:bg-primary after:rounded-[10px] after:opacity-95">
       <div className="flex justify-center items-center">
         <span className=" call relative z-[2] w-[70px] h-[70px] flex items-center justify-center bg-white rounded-[50%] text-center  text-primary leading-[70px] text-[24px] mb-[35px]">
           <FaPhoneAlt className="" />

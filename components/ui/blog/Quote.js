@@ -13,8 +13,8 @@ import BlogNavigation from "./BlogNavigation";
 
 const Quote = ({ tags }) => {
   return (
-    <div class="">
-      <blockquote class="relative my-10 mb-11 bg-transparent pt-10 xs:px-[60px] px-4 after:absolute after:left-[45px] after:top-0 after:-z-[1] after:bg-[url('/img/graptor-quote.png')] after:content-[''] after:w-[113px] after:h-[75px]">
+    <div className="">
+      <blockquote className="relative my-10 mb-11 bg-transparent pt-10 xs:px-[60px] px-4 after:absolute after:left-[45px] after:top-0 after:-z-[1] after:bg-[url('/img/graptor-quote.png')] after:content-[''] after:w-[113px] after:h-[75px]">
         <p className="text-[24px] text-secondary leading-[32px] italic font-normal ">
           Qodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
           in futurum quam nunc putamus claram est usus autem vel.
@@ -34,27 +34,27 @@ const Quote = ({ tags }) => {
       </p>
       <ul className="mb-6">
         <li
-          className={`${rubik.class} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
+          className={`${rubik.className} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
         >
           <FaCheckCircle className="text-primary" />
           Lorem available market standard dummy text available market industry
         </li>
         <li
-          className={`${rubik.class} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
+          className={`${rubik.className} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
         >
           <FaCheckCircle className="text-primary" />
           Accusamus et iusto odio dignissimos ducimus qui blanditiis
         </li>
         <li
-          className={`${rubik.class} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
+          className={`${rubik.className} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
         >
           <FaCheckCircle className="text-primary" />
           Nam libero tempore, cum soluta nobis est eligendi optio cumque
         </li>
       </ul>
-      <div class=" grid sm:grid-cols-2 gap-6 mt-9 mb-[10px]">
-        <div class="">
-          <figure class="wp-block-image size-full">
+      <div className=" grid sm:grid-cols-2 gap-6 mt-9 mb-[10px]">
+        <div className="">
+          <figure className="wp-block-image size-full">
             <Image
               src={blog}
               className="mb-[22px] rounded-[5px]"
@@ -62,7 +62,7 @@ const Quote = ({ tags }) => {
             />
           </figure>
         </div>
-        <div class="">
+        <div className="">
           <h3 className="text-[28px] leading-[42px] font-bold mb-4">
             Toproviding Available.
           </h3>
@@ -83,9 +83,9 @@ const Quote = ({ tags }) => {
         alteration in some form,
       </p>
 
-      <div class=" mb-[55px]">
-        <div class=" xs:flex items-center justify-between">
-          <div class=" relative mt-2">
+      <div className=" mb-[55px]">
+        <div className=" xs:flex items-center justify-between">
+          <div className=" relative mt-2">
             {tags?.map((tag) => {
               return (
                 <Link
@@ -102,7 +102,7 @@ const Quote = ({ tags }) => {
               );
             })}
           </div>
-          <div class=" xs:text-right xs:mt-0 mt-7 relative">
+          <div className=" xs:text-right xs:mt-0 mt-7 relative">
             <Link
               href="https://www.facebook.com/"
               className="inline-block text-[rgba(8,24,69,0.4)] text-xl ml-5 hover:text-primary"
