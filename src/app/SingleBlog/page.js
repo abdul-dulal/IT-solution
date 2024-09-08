@@ -32,6 +32,7 @@ const SingleBlog = () => {
                   img={blog1}
                   category="graphics design"
                   readmore={false}
+                  slug="/category"
                 />
               </div>
               <Quote />
@@ -47,7 +48,7 @@ const SingleBlog = () => {
                   >
                     Recent Post
                   </h3>
-                  <RecentPost recentPost={recentPost} />
+                  <RecentPost recentPost={recentPost} slug="/blog" />
                 </aside>
                 <aside className=" ">
                   <h3
@@ -55,7 +56,7 @@ const SingleBlog = () => {
                   >
                     Categories
                   </h3>
-                  <Category category={uniqueCategories} />
+                  <Category category={uniqueCategories} slug="/category" />
                 </aside>
                 <aside className="">
                   <Call />
@@ -67,7 +68,7 @@ const SingleBlog = () => {
                     popular tags
                   </h3>
                   <div className=" relative">
-                    <Tag tag={tag} />
+                    <Tag tag={tag} slug="/tag" />
                   </div>
                 </aside>
               </div>

@@ -9,67 +9,70 @@ import {
   FaWhatsapp,
   FaInstagram,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const TopHeader = () => {
   return (
     <div className="bg-primary  ">
-      <div className="container mx-auto flex items-center justify-between">
+      <dv className="container mx-auto xl:px-6 px-4 xs:flex   items-center justify-between">
         <div
           className={`${rubik.className}  flex items-center   gap-9  py-4 text-white text-sm font-medium`}
         >
-          <div className="flex  gap-3 items-center ">
-            <LuPhone size={20} />
-            <p
-              className={`${rubik.className} text-[15px] text-white font-normal`}
-            >
-              + 124 569 89 09
-            </p>
-          </div>
-          <div className="flex gap-3 items-center">
-            <IoLocationOutline size={20} />
-            <p
-              className={`${rubik.className} text-[15px] text-white font-normal`}
-            >
-              2072 Pinnickinick Street, WA 98370
-            </p>
+          <div className="xs:flex gap-4 mx-auto">
+            <div className="flex  gap-3 items-center justify-center ">
+              <LuPhone size={20} />
+              <p
+                className={`${rubik.className} text-[15px] text-white font-normal`}
+              >
+                + 124 569 89 09
+              </p>
+            </div>
+            <div className="flex gap-3 items-center">
+              <IoLocationOutline size={20} />
+              <p
+                className={`${rubik.className} text-[15px] text-white font-normal`}
+              >
+                2072 Pinnickinick Street, WA 98370
+              </p>
+            </div>
           </div>
 
-          <div className="flex gap-3 items-center">
+          <div className="md:flex hidden gap-3 items-center  ">
             <TfiEmail size={20} />
             <p
               className={`${rubik.className} text-[15px] text-white font-normal`}
             >
-              <a href="mailto:example@example.com" target="blank">
+              <Link href="mailto:example@example.com" target="blank">
                 info@website.com
-              </a>
+              </Link>
             </p>
           </div>
         </div>
-        <div>
-          <ul className="flex gap-3 text-[#F5F5F5] text-[17px] font-bold">
+        <div className="xs:pb-0 pb-5 flex justify-center ">
+          <ul className="flex  gap-4 text-[#F5F5F5] text-[17px] font-bold">
             <li className="hover:text-base delay-200 cursor-pointer">
-              <a href="https://www.facebook.com/" target="blank">
+              <Link href="https://www.facebook.com/" target="blank">
                 <FaFacebookF size={18} />
-              </a>
+              </Link>
             </li>
             <li className="hover:text-base delay-200 cursor-pointer">
-              <a href="https://x.com/home" target="blank">
+              <Link href="https://x.com/home" target="blank">
                 <FaTwitter size={18} />
-              </a>
+              </Link>
             </li>
             <li className="hover:text-base delay-200 cursor-pointer">
-              <a href="https://web.whatsapp.com/" target="blank">
+              <Link href="https://web.whatsapp.com/" target="blank">
                 <FaWhatsapp size={18} />
-              </a>
+              </Link>
             </li>
             <li className="hover:text-base delay-200 cursor-pointer">
-              <a href="https://www.instagram.com/" target="blank">
+              <Link href="https://www.instagram.com/" target="blank">
                 <FaInstagram size={18} />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
-      </div>
+      </dv>
     </div>
   );
 };

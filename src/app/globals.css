@@ -296,3 +296,24 @@ $picture-gutter: 24px;
     width: 33.33333%;
   }
 }
+
+/* customize done */
+.active {
+  animation-name: fadeMove;
+  animation-duration: 0.9s;
+  animation-fill-mode: both;
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+}
+
+@keyframes fadeMove {
+  0% {
+    opacity: 0.1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
