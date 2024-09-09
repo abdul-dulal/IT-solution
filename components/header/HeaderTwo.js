@@ -41,7 +41,7 @@ const HeaderTwo = () => {
                       </li>
                       <li className="">
                         <Link
-                          href="#"
+                          href="/HomeTwo"
                           className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-gray-200  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                         >
                           Home Two
@@ -49,7 +49,7 @@ const HeaderTwo = () => {
                       </li>
                       <li className="">
                         <Link
-                          href="#"
+                          href="/HomeThree"
                           className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-gray-200  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                         >
                           Home Three

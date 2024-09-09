@@ -8,6 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import portfolio from "/public/Portfolio.json";
 import Pagination from "../../../components/ui/blog/Pagination";
+import CategoryList from "../../../components/ui/CategoryList";
 
 const CaseStudyThree = () => {
   const shuffleContainer = useRef(null);
@@ -52,38 +53,11 @@ const CaseStudyThree = () => {
 
       <section class="relative py-[120px]">
         <div class="container mx-auto">
-          {currentPage == 0 ? (
-            <ul
-              style={{ marginTop: 0 }}
-              class="shaffle-filter group mt-11 mb-10 flex xs:flex-nowrap flex-wrap justify-center"
-            >
-              <li
-                className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7 transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out ${
-                  activeCategory === "all" ? "active" : ""
-                }`}
-                onClick={() => [handleFilter("all"), setActiveCategory("all")]}
-              >
-                All Projects
-              </li>
-
-              {techCategories.map((category) => (
-                <li
-                  key={category}
-                  className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7 transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out ${
-                    activeCategory === category ? "active" : ""
-                  }`}
-                  onClick={() => [
-                    handleFilter(category),
-                    setActiveCategory(category),
-                  ]}
-                >
-                  {category}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            ""
-          )}
+          <CategoryList
+            currentPage={currentPage}
+            techCategories={techCategories}
+            handleFilter={handleFilter}
+          />
 
           <div class="">
             <div ref={shuffleContainer} class="row my-shuffle-container">

@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import logo from "/public/img/main-logo.png";
 import { rubik } from "@/app/fonts";
+import HeaderRight from "./HeaderRight";
+import ResponsiveHeader from "./ResponsiveHeader";
 
 const MainHeader = () => {
   return (
@@ -14,7 +16,7 @@ const MainHeader = () => {
               <Image src={logo} className="" alt="Main logo" />
             </Link>
             <ul
-              className={`${rubik.className}   flex items-center gap-9 text-white text-lg font-medium `}
+              className={`${rubik.className}   lg:flex hidden items-center gap-9 text-white text-lg font-medium `}
             >
               <li className="group relative w-16">
                 <Link
@@ -268,16 +270,9 @@ const MainHeader = () => {
                 <Link href="">Contact</Link>
               </li>
             </ul>
-            <div className="flex gap-9">
-              <Link href="" className="text-white text-lg font-medium ">
-                hello
-              </Link>
-              <Link
-                href=""
-                className={`${rubik.className} h-[50px]  flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[25px] cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-primary before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-white   grap-btn`}
-              >
-                Get A Quote
-              </Link>
+            <div className="flex gap-8">
+              <HeaderRight />
+              <ResponsiveHeader bgColor="white" />
             </div>
           </div>
         </nav>

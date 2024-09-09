@@ -4,6 +4,7 @@ import BlogCategory from "../blogCategory/page";
 import BlogTag from "../BlogTag/page";
 import Portfolio from "../portfolio/page";
 import PortfolioCategory from "../portolioCategory/page";
+import NotFound from "../not-found";
 export default function AllBlog({ params }) {
   const data = params;
 
@@ -21,5 +22,7 @@ export default function AllBlog({ params }) {
     return <Portfolio title={paramsTitle} />;
   } else if (slug == "folioCat") {
     return <PortfolioCategory title={paramsTitle} />;
+  } else {
+    return <NotFound />;
   }
 }

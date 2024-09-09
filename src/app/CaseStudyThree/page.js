@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Shuffle from "shufflejs";
 import Image from "next/image";
-import data from "/public/Portfolio.json"; // Adjust the path to where your JSON file is located
+import data from "/public/Portfolio.json";
 import BreadCumb from "../../../components/ui/BreadCumb";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
@@ -52,38 +52,38 @@ const CaseStudyThree = () => {
 
       <section className=" relative py-[120px]">
         <div className="container mx-auto">
-          {currentPage == 0 ? (
-            <ul
-              style={{ marginTop: 0 }}
-              className="shaffle-filter group mt-11 mb-10 flex xs:flex-nowrap flex-wrap  justify-center"
+          <ul
+            style={{ marginTop: 0 }}
+            className="shaffle-filter  group mt-11 mb-10 flex xs:flex-nowrap flex-wrap  justify-center"
+          >
+            <li
+              className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7   ${
+                activeCategory === "all"
+                  ? "border-b-[2px] border-solid border-primary pb-1"
+                  : "border-b-[2px] border-solid border-transparent pb-1 before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[3px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out "
+              }`}
+              onClick={() => [handleFilter("all"), setActiveCategory("all")]}
             >
-              <li
-                className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7 transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out ${
-                  activeCategory === "all" ? "active" : ""
-                }`}
-                onClick={() => [handleFilter("all"), setActiveCategory("all")]}
-              >
-                All Projects
-              </li>
+              All Projects
+            </li>
 
-              {techCategories.map((category) => (
-                <li
-                  key={category}
-                  className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7 transition-all duration-300 ease-in-out before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[7px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out ${
-                    activeCategory === category ? "active" : ""
-                  }`}
-                  onClick={() => [
-                    handleFilter(category),
-                    setActiveCategory(category),
-                  ]}
-                >
-                  {category}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            ""
-          )}
+            {techCategories.map((category) => (
+              <li
+                key={category}
+                className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7   ${
+                  activeCategory === category
+                    ? "border-b-[2px] border-solid border-primary pb-1"
+                    : "border-b-[2px] border-solid border-transparent pb-1 before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[3px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out"
+                }`}
+                onClick={() => [
+                  handleFilter(category),
+                  setActiveCategory(category),
+                ]}
+              >
+                {category}
+              </li>
+            ))}
+          </ul>
 
           <div className="">
             <div ref={shuffleContainer} className="row my-shuffle-container">

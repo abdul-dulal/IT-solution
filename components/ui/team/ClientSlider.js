@@ -107,8 +107,8 @@ const ClientSlider = () => {
         onClick={() => swiperRef.current?.slideNext()}
         disabled={isEnd}
         className={` 
-      absolute xs:right-0 xs:-top-[105px] right-0 top-[108%]   p-6 bg-primary  rounded-full cursor-pointer  z-10 ${
-        isEnd ? "bg-[#F0F0FC] text-primary" : "text-white"
+      absolute xs:right-0 xs:-top-[105px] right-0 top-[108%]   p-6   rounded-full cursor-pointer  z-10 ${
+        isEnd ? "bg-[#F0F0FC] text-primary" : "text-white bg-primary"
       }`}
       >
         <HiArrowRight size={22} />

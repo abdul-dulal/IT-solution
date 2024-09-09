@@ -216,7 +216,7 @@
   }
 }
 /* customize done */
-.shaffle-filter li.active:before,
+
 .shaffle-filter li:hover:before {
   opacity: 1;
   visibility: visible;
