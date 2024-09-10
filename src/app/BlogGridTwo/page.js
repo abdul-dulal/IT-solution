@@ -11,10 +11,7 @@ import { FaUser } from "react-icons/fa";
 import Link from "next/link";
 import blogs from "/public/Blog.json";
 import Pagination from "../../../components/ui/blog/Pagination";
-export const metadata = {
-  title: "Blog Grid 02-Graptor",
-  description: "Technology & IT Solutions ",
-};
+
 const BlogGridTwo = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const blogsPerPage = 6;

@@ -1,26 +1,26 @@
-import React from "react";
-import SingleBlogTwo from "../SingleBlogTwo/page";
-import BlogCategory from "../blogCategory/page";
-import BlogTag from "../BlogTag/page";
+// import React from "react";
+// import SingleBlogTwo from "../SingleBlogTwo/page";
+// import BlogCategory from "../blogCategory/page";
+// import BlogTag from "../BlogTag/page";
 
-import NotFound from "../not-found";
-export default function AllBlog({ params }) {
-  const data = params;
+// import NotFound from "../not-found";
+// export default function AllBlog({ params }) {
+//   const data = params;
 
-  const slug = params.blog[0];
+//   const slug = params.blog[0];
 
-  const paramsTitle = data.blog[data.blog.length - 1]?.replace(/%20/g, " ");
+//   const paramsTitle = data.blog[data.blog.length - 1]?.replace(/%20/g, " ");
 
-  if (slug == "blog") {
-    return <SingleBlogTwo title={paramsTitle} />;
-  } else if (slug == "category") {
-    return <BlogCategory title={paramsTitle} />;
-  } else if (slug == "tag") {
-    return <BlogTag title={paramsTitle} />;
-  } else {
-    return <NotFound />;
-  }
-}
+//   if (slug == "blog") {
+//     return <SingleBlogTwo title={paramsTitle} />;
+//   } else if (slug == "category") {
+//     return <BlogCategory title={paramsTitle} />;
+//   } else if (slug == "tag") {
+//     return <BlogTag title={paramsTitle} />;
+//   } else {
+//     return <NotFound />;
+//   }
+// }
 
 // else if (slug == "portfolio") {
 //   return <Portfolio title={paramsTitle} />;

@@ -10,10 +10,6 @@ import portfolio from "/public/Portfolio.json";
 import Pagination from "../../../components/ui/blog/Pagination";
 import CategoryList from "../../../components/ui/CategoryList";
 
-export const metadata = {
-  title: "Case Study 01-Graptor",
-  description: "Technology & IT Solutions ",
-};
 const CaseStudyThree = () => {
   const shuffleContainer = useRef(null);
   const shuffleInstance = useRef(null);

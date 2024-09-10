@@ -6,10 +6,7 @@ import blogs from "/public/Blog.json";
 
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 import Pagination from "../../../components/ui/blog/Pagination";
-export const metadata = {
-  title: "Blog Grid 01-Graptor",
-  description: "Technology & IT Solutions ",
-};
+
 const BlogGridOne = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const blogsPerPage = 6;

@@ -9,11 +9,6 @@ import Pagination from "../../../components/ui/blog/Pagination";
 import Link from "next/link";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 
-
-export const metadata = {
-  title: "Case Study 02-Graptor",
-  description: "Technology & IT Solutions ",
-};
 const CaseStudyTwo = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
