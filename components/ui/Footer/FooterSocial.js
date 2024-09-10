@@ -9,9 +9,9 @@ const FooterSocial = () => {
   return (
     <aside className=" relative mt-[50px] mb-[45px]">
       <div className=" relative pr-5">
-        <a href="index.html">
+        <Link href="/HomeOne">
           <Image src={logo} alt="Footer-Logo" />
-        </a>
+        </Link>
         <p className="text-[rgba(255,255,255,0.8)] mt-7 mb-8 text-lg font-normal xs:pr-10 pr-0">
           Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium
           doloremque denounce with illo inventore veritatis
@@ -19,33 +19,38 @@ const FooterSocial = () => {
         <div className="flex gap-3 relative">
           <Link
             href="https://www.facebook.com/"
+            target="blank"
             className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
           >
             <FaFacebookF />
           </Link>
           <Link
             href="https://twitter.com/"
+            target="blank"
             className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
           >
-            <FaTwitter />{" "}
+            <FaTwitter />
           </Link>
           <Link
             href="http://instagram.com/"
+            target="blank"
             className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
           >
             <FaInstagram />
           </Link>
           <Link
             href="https://google.com/"
+            target="blank"
             className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
           >
-            <FaLinkedinIn />{" "}
+            <FaLinkedinIn />
           </Link>
           <Link
             href="https://google.com/"
+            target="blank"
             className="flex items-center justify-center w-[37px] h-[37px] bg-[rgba(255,255,255,0.1)] rounded-[50%] text-center leading-[40px] text-white text-base  hover:bg-primary transition-all ease-in-out duration-300"
           >
-            <SlSocialPintarest />{" "}
+            <SlSocialPintarest />
           </Link>
         </div>
       </div>

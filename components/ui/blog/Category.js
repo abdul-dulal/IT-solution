@@ -13,7 +13,7 @@ const Category = ({ slug }) => {
           return (
             <li key={item}>
               <Link
-                href={`${slug}/${item}`}
+                href={`/blogCategory/${item}`}
                 key={item}
                 className={`${rubik.className} group block relative text-base text-secondary leading-[28px] font-nomal capitalize pl-[30px] border-b border-solid border-[rgba(8,24,69,0.16)] pb-6 mb-5 hover:text-primary`}
               >

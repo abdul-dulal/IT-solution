@@ -2,7 +2,7 @@ import { rubik } from "@/app/fonts";
 import Link from "next/link";
 import React from "react";
 import blog from "/public/Blog.json";
-const Tag = ({ slug }) => {
+const Tag = () => {
   const allTags = blog.flatMap((blog) => blog?.tag);
   const uniqueTags = [...new Set(allTags)];
 
@@ -12,7 +12,7 @@ const Tag = ({ slug }) => {
         return (
           <Link
             key={item}
-            href={`${slug}/${item}`}
+            href={`/BlogTag/${item}`}
             style={{
               margin: "0 8px 12px 0",
               boxShadow: "0px 0 20px 0px rgba(130,130,13,0.09)",

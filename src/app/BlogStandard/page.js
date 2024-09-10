@@ -55,7 +55,7 @@ const BlogStandard = () => {
                     popular tags
                   </h3>
                   <div className=" relative">
-                    <Tag slug="/tag" />
+                    <Tag />
                   </div>
                 </aside>
               </div>

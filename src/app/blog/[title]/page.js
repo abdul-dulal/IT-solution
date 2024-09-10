@@ -1,17 +1,30 @@
 import React from "react";
-import BreadCumb from "../../../components/ui/BreadCumb";
-import BlogTitle from "../../../components/ui/blog/BlogTitle";
-import Quote from "../../../components/ui/blog/Quote";
-import BlogContact from "../../../components/ui/blog/BlogContact";
-import RecentPost from "../../../components/ui/blog/RecentPost";
-import Category from "../../../components/ui/blog/Category";
-import Call from "../../../components/ui/blog/Call";
-import Tag from "../../../components/ui/blog/Tag";
-import { rubik } from "../fonts";
+import BreadCumb from "../../../../components/ui/BreadCumb";
+import Quote from "../../../../components/ui/blog/Quote";
+import BlogNavigation from "../../../../components/ui/blog/BlogNavigation";
+import Comments from "../../../../components/ui/blog/Comments";
+import BlogContact from "../../../../components/ui/blog/BlogContact";
+import RecentPost from "../../../../components/ui/blog/RecentPost";
+import Category from "../../../../components/ui/blog/Category";
+import Call from "../../../../components/ui/blog/Call";
+import Tag from "../../../../components/ui/blog/Tag";
+import { rubik } from "@/app/fonts";
 import blog from "/public/Blog.json";
-import Comments from "../../../components/ui/blog/Comments";
-import BlogNavigation from "../../../components/ui/blog/BlogNavigation";
-const SingleBlogTwo = ({ title }) => {
+import BlogTitle from "../../../../components/ui/blog/BlogTitle";
+
+
+export async function generateMetadata({ params }) {
+    const paramsTitle = params.title
+      ?.replace(/%20/g, " ")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
+    return {
+      title: paramsTitle + "-Graptor",
+      description: "Technology & IT Solutions ",
+    };
+  }
+const SingleBlog = ({ params }) => {
+  const title = params?.title?.replace(/%20/g, " ");
+
   const singleBlog = blog.find((item) => item.title === title);
 
   return (
@@ -82,4 +95,4 @@ const SingleBlogTwo = ({ title }) => {
   );
 };
 
-export default SingleBlogTwo;
+export default SingleBlog;

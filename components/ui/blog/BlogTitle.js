@@ -20,7 +20,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
       <div className=" relative">
         <div className=" inline-block relative mr-3">
           <Link
-            href={`/category/${category}`}
+            href={`/blogCategory/${category}`}
             className={`${rubik.className} inline-block h-[42px] bg-primary text-center rounded-[5px] text-[12px] leading-[42px] text-white mr-[10px] mb-[10px] tracking-[1.2px] uppercase px-[14px] hover:bg-black hover:text-white`}
           >
             {category}
@@ -48,7 +48,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
           <h3
             className={` text-[34px] leading-[38px] mt-[19px] mb-[15px] font-bold`}
           >
-            <Link href={`${slug}/${title}`}>{title}</Link>
+            <Link href={`/blog/${title}`}>{title}</Link>
           </h3>
         ) : (
           ""
@@ -59,7 +59,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
         {readmore ? (
           <Link
             className={` ${rubik.className} group  flex items-center text-base text-secondary font-bold uppercase hover:text-primary`}
-            href={`${slug}/${title}`}
+            href={`/blog/${title}`}
           >
             Read More
             <span className="text-[22px] relative text-primary pl-[15px] transition-all ease-in-out duration-400 group-hover:pl-5">

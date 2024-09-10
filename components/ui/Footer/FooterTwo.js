@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaPhone } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import FooterBottom from "./FooterBottom";
-import { rubik } from "@/app/fonts";
 import FooterContact from "./FooterContact";
 
 const FooterTwo = () => {

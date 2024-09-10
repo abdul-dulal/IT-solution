@@ -1,15 +1,25 @@
 import React from "react";
+import BreadCumb from "../../../../components/ui/BreadCumb";
+import BlogTitle from "../../../../components/ui/blog/BlogTitle";
+import BlogContact from "../../../../components/ui/blog/BlogContact";
+import RecentPost from "../../../../components/ui/blog/RecentPost";
+import Category from "../../../../components/ui/blog/Category";
+import Call from "../../../../components/ui/blog/Call";
+import Tag from "../../../../components/ui/blog/Tag";
 import blog from "/public/Blog.json";
-import BlogTitle from "../../../components/ui/blog/BlogTitle";
-import Tag from "../../../components/ui/blog/Tag";
-import Call from "../../../components/ui/blog/Call";
-import Category from "../../../components/ui/blog/Category";
-import RecentPost from "../../../components/ui/blog/RecentPost";
-import BlogContact from "../../../components/ui/blog/BlogContact";
+import { rubik } from "@/app/fonts";
 
-import BreadCumb from "../../../components/ui/BreadCumb";
-import { rubik } from "../fonts";
-const BlogCategory = ({ title }) => {
+export async function generateMetadata({ params }) {
+  const paramsTitle = params.title
+    ?.replace(/%20/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return {
+    title: paramsTitle + "-Graptor",
+    description: "Technology & IT Solutions ",
+  };
+}
+const BlogCategory = ({ params }) => {
+  const title = params.title?.replace(/%20/g, " ");
   const categories = blog.filter((item) => item.category == title);
 
   return (

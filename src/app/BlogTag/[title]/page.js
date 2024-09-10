@@ -1,15 +1,25 @@
 import React from "react";
-import BreadCumb from "../../../components/ui/BreadCumb";
-import BlogTitle from "../../../components/ui/blog/BlogTitle";
-import BlogContact from "../../../components/ui/blog/BlogContact";
-import { rubik } from "../fonts";
-import RecentPost from "../../../components/ui/blog/RecentPost";
-import Category from "../../../components/ui/blog/Category";
-import Call from "../../../components/ui/blog/Call";
-import Tag from "../../../components/ui/blog/Tag";
+import BreadCumb from "../../../../components/ui/BreadCumb";
+import BlogTitle from "../../../../components/ui/blog/BlogTitle";
+import BlogContact from "../../../../components/ui/blog/BlogContact";
+import RecentPost from "../../../../components/ui/blog/RecentPost";
+import Category from "../../../../components/ui/blog/Category";
+import Call from "../../../../components/ui/blog/Call";
 import blog from "/public/Blog.json";
+import { rubik } from "@/app/fonts";
+import Tag from "../../../../components/ui/blog/Tag";
 
-const BlogTag = ({ title }) => {
+export async function generateMetadata({ params }) {
+  const paramsTitle = params.title
+    ?.replace(/%20/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return {
+    title: paramsTitle + "-Graptor",
+    description: "Technology & IT Solutions ",
+  };
+}
+const BlogTag = ({ params }) => {
+  const title = params.title?.replace(/%20/g, " ");
   const filteredTag = blog.filter((blog) => blog?.tag.includes(title));
 
   return (
@@ -29,7 +39,6 @@ const BlogTag = ({ title }) => {
                         img={tag?.img}
                         category={tag?.category}
                         readmore={true}
-                        slug="/blog"
                       />
                     </div>
                   );
@@ -47,7 +56,7 @@ const BlogTag = ({ title }) => {
                   >
                     Recent Post
                   </h3>
-                  <RecentPost slug="/blog" />
+                  <RecentPost />
                 </aside>
                 <aside className=" ">
                   <h3
@@ -55,7 +64,7 @@ const BlogTag = ({ title }) => {
                   >
                     Categories
                   </h3>
-                  <Category slug="/category" />
+                  <Category />
                 </aside>
                 <aside className="">
                   <Call />
@@ -67,7 +76,7 @@ const BlogTag = ({ title }) => {
                     popular tags
                   </h3>
                   <div className=" relative">
-                    <Tag slug="/tag" />
+                    <Tag />
                   </div>
                 </aside>
               </div>
