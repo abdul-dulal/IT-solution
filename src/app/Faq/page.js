@@ -3,7 +3,10 @@ import BreadCumb from "../../../components/ui/BreadCumb";
 import Accrodian from "../../../components/ui/Accrodian";
 import AccrodianTwo from "../../../components/ui/AccrodianTwo";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
-
+export const metadata = {
+  title: "Faq Page-Graptor",
+  description: "Technology & IT Solutions ",
+};
 const Faq = () => {
   return (
     <div>

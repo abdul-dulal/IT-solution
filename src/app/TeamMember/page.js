@@ -7,6 +7,12 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 import team from "/public/Team.json";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+
+export const metadata = {
+  title: "TeamMember 01-Graptor",
+  description: "Technology & IT Solutions ",
+};
+
 const TeamMember = () => {
   return (
     <div>

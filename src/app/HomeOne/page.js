@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { rubik } from "../fonts";
 import Link from "next/link";
@@ -37,7 +36,10 @@ import blog2 from "/public/img/blog/blog2.jpg";
 import blog3 from "/public/img/blog/blog3.jpg";
 import Footer from "../../../components/ui/Footer/Footer";
 import Accrodian from "../../../components/ui/Accrodian";
-
+export const metadata = {
+  title: "Home One-Graptor",
+  description: "Technology & IT Solutions ",
+};
 const HomeOne = () => {
   return (
     <div>
@@ -56,7 +58,7 @@ const HomeOne = () => {
               </h2>
               <div className="flex flex-wrap mt-12">
                 <Link
-                  href=""
+                  href="/contact"
                   className={`${rubik.className}  h-[58px] flex gap-6 items-center text-[16px]  leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[25px]  cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  grap-btn`}
                 >
                   Get A Quote
@@ -152,7 +154,7 @@ const HomeOne = () => {
               </div>
             </div>
             <Link
-              href=""
+              href="/About"
               className={`${rubik.className} h-[50px]  flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium w-[170px] mt-10 bg-primary py-[14px] px-[25px] cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:content-[''] before:w-full before:h-0 before:absolute before:left-0 before:bottom-0 before:touch-auto before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0   to_bottom`}
             >
               about us <PiArrowRightDuotone size={20} className="ml-7" />
@@ -174,16 +176,8 @@ const HomeOne = () => {
               </h2>
             </div>
           </div>
-          <div className="grid xl:grid-cols-5 sm:grid-cols-3 xs:grid-cols-2  gap-8 px-4">
-            <Services
-              title=" Profit Planning"
-              icon={<FaAmericanSignLanguageInterpreting />}
-            />
-            <Services title=" Business Analysis" icon={<TbMessage2Star />} />
-            <Services title=" Report Analysis" icon={<IoIosPaper />} />
-            <Services title=" Project Reporting" icon={<GoProjectSymlink />} />
-            <Services title=" Analytic Solution" icon={<AiOutlineSolution />} />
-          </div>
+
+          {/* <Services /> */}
         </div>
       </section>
 
@@ -266,7 +260,7 @@ const HomeOne = () => {
 
       {/* Blog Start  */}
 
-      <section
+      {/* <section
         style={{ padding: "116px 0 90px" }}
         className="relative pt-[116px]"
       >
@@ -295,7 +289,7 @@ const HomeOne = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Blog End  */}
     </div>

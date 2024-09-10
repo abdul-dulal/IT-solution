@@ -9,7 +9,7 @@ import ResponsiveHeader from "./ResponsiveHeader";
 const MainHeader = () => {
   return (
     <header className="bg-base  sticky top-0 z-[9999] ">
-      <div className="container mx-auto">
+      <div className="container mx-auto xl:px-6 px-4">
         <nav className="h-[98px]">
           <div className="flex justify-between items-center w-full h-full">
             <Link href={"/"} className="">
@@ -270,7 +270,7 @@ const MainHeader = () => {
                 <Link href="">Contact</Link>
               </li>
             </ul>
-            <div className="flex gap-8">
+            <div className="flex xl:gap-8 gap-5">
               <HeaderRight />
               <ResponsiveHeader bgColor="white" />
             </div>

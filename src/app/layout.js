@@ -5,7 +5,6 @@ import MainHeader from "../../components/header/MainHeader";
 import Footer from "../../components/ui/Footer/Footer";
 import HeaderTwo from "../../components/header/HeaderTwo";
 import HeaderApply from "./HeaderApply";
-import Header from "./header/page";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,9 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head></head>
-      <title>
-        Graptor - Technology & IT Solutions HTML5 Responsive Template
-      </title>
+      <title></title>
       <body className={jost.className}>
         <div className="">
           <TopHeader />

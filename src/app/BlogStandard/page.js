@@ -9,6 +9,10 @@ import Tag from "../../../components/ui/blog/Tag";
 import Call from "../../../components/ui/blog/Call";
 import BlogContact from "../../../components/ui/blog/BlogContact";
 
+export const metadata = {
+  title: "Blog Standard-Graptor",
+  description: "Technology & IT Solutions ",
+};
 import Blogs from "../../../components/ui/Blogs";
 const BlogStandard = () => {
   return (

@@ -121,13 +121,14 @@
   visibility: visible;
 }
 
-.client-slider.owl-carousel a:hover .normal {
+/* customize done */
+.client a:hover .normal {
   display: block;
   visibility: hidden;
   transform: translateY(100%);
 }
 
-.client-slider.owl-carousel a:hover .hover {
+.client a:hover .hover {
   position: absolute;
   z-index: 1;
   top: 0;

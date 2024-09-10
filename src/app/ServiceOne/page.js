@@ -1,15 +1,15 @@
 import React from "react";
 import BreadCumb from "../../../components/ui/BreadCumb";
-import Services from "../../../components/ui/service/ServiceThree";
-import { GiMaterialsScience } from "react-icons/gi";
-import { BiLogoSlack } from "react-icons/bi";
-import { FiSettings } from "react-icons/fi";
-import { TbBrandWebflow } from "react-icons/tb";
-import { GoProjectSymlink } from "react-icons/go";
-import { PiShootingStarThin } from "react-icons/pi";
+import Services from "../../../components/ui/service/ServiceOne";
 import Contact from "../../../components/ui/Contact";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 import Work from "../../../components/ui/Work";
+
+export const metadata = {
+  title: "Service 01-Graptor",
+  description: "Technology & IT Solutions ",
+};
+
 const ServiceOne = () => {
   return (
     <div>
@@ -25,17 +25,7 @@ const ServiceOne = () => {
               Service for You
             </h2>
           </div>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
-            <Services
-              title="Software Development"
-              icon={<GiMaterialsScience />}
-            />
-            <Services title="SEO Optimized Expert" icon={<BiLogoSlack />} />
-            <Services title="Analytic Solutions" icon={<FiSettings />} />
-            <Services title="Web Development" icon={<TbBrandWebflow />} />
-            <Services title="Project Reporting" icon={<GoProjectSymlink />} />
-            <Services title="Business Analysis" icon={<PiShootingStarThin />} />
-          </div>
+          <Services />
         </div>
       </section>
 

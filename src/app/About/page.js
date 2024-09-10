@@ -10,10 +10,13 @@ import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 import VideoModalTwo from "../../../components/VideoModal2";
 import Work from "../../../components/ui/Work";
 import TeamSlider from "../../../components/ui/team/TeamSlider";
-import member1 from "/public/img/team/member1.png";
-import { FaQuoteLeft } from "react-icons/fa";
 import ClientSlider from "../../../components/ui/team/ClientSlider";
 import Contact from "../../../components/ui/Contact";
+export const metadata = {
+  title: "About Us-Graptor",
+  description: "Technology & IT Solutions ",
+};
+
 const About = () => {
   return (
     <div>

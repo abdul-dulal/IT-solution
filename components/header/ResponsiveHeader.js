@@ -31,13 +31,12 @@ const ResponsiveHeader = ({ bgColor }) => {
   return (
     <div>
       <section>
-        <div className={`rounded-md lg:hidden block ${bgColor}`}>
-          <Hamburger
-            toggled={isOpen}
-            color="white"
-            size={24}
-            toggle={setOpen}
-          />
+        <div
+          className={`rounded-md lg:hidden block ${
+            bgColor == "white" ? "bg-white text-black" : "bg-black text-white"
+          }`}
+        >
+          <Hamburger toggled={isOpen} size={24} toggle={setOpen} />
         </div>
         {isOpen && (
           <div

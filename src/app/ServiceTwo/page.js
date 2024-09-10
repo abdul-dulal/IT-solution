@@ -1,6 +1,6 @@
 import React from "react";
 import BreadCumb from "../../../components/ui/BreadCumb";
-import Services from "../../../components/ui/service/ServiceFour";
+import Services from "../../../components/ui/service/ServiceTwo";
 import {
   PiShootingStarThin,
   PiTargetLight,
@@ -10,6 +10,12 @@ import WorkProcess from "../../../components/ui/WorkProcess";
 import { FaRegLightbulb } from "react-icons/fa";
 import Contact from "../../../components/ui/Contact";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+
+export const metadata = {
+  title: "Service 02-Graptor",
+  description: "Technology & IT Solutions ",
+};
+
 const ServiceTwo = () => {
   return (
     <div>

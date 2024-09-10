@@ -12,6 +12,7 @@ import { LuArrowLeft } from "react-icons/lu";
 import portfolio from "/public/Portfolio.json";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+
 const Portfolio = () => {
   const swiperRef = useRef(null);
 
@@ -68,13 +69,15 @@ const Portfolio = () => {
                   className=" relative shadow-sm -top-11 left-4 bg-white rounded-[5px] pt-[23px] pr-[70px] pb-4 pl-5 "
                 >
                   <p className="relative text-primary text-lg font-normal hover:text-[#191919] mb-[2px]">
-                    <Link href="">{item.tech}</Link>
+                    <Link href={`/portfolioCategory/${item?.tech}`}>
+                      {item.tech}
+                    </Link>
                   </p>
                   <h5 className="inline-block text-[#191919] hover:text-primary capitalize text-lg font-bold">
                     <Link href={`portfolio/${item.title}`}>{item.title}</Link>
                   </h5>
                   <Link
-                    href=""
+                    href={`portfolio/${item.title}`}
                     className="inline-block w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-base rounded-[3px] leading-[47px] text-center absolute top-0 bottom-0 right-5 m-auto hover:bg-primary hover:text-white"
                   >
                     <FaArrowRight className="inline-block m-auto" />
@@ -86,7 +89,6 @@ const Portfolio = () => {
         })}
       </Swiper>
 
-      {/* Custom Previous Button */}
       <button
         onClick={() => swiperRef.current?.slidePrev()}
         className="slider-button absolute left-0 top-1/2 transform -translate-y-1/2 p-4 bg-primary text-white rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-300    group-hover:left-5 group-hover:transition-all group-hover:ease-out group-hover:duration-300 z-10  after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:m-auto after:content-[''] after:rounded-[50%] after:text-center after:w-0 after:h-0 after:-z-[1] after:transition-all after:ease-out-out after:duration-300 after:bg-[#081845]"

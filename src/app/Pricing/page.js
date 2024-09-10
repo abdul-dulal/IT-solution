@@ -1,11 +1,15 @@
 import React from "react";
 import BreadCumb from "../../../components/ui/BreadCumb";
 import { MdAutoMode, MdOutlineWorkspacePremium } from "react-icons/md";
-import { rubik } from "../fonts";
+
 import { FaAward, FaCheckCircle } from "react-icons/fa";
 import PricePlanTwo from "../../../components/ui/PricePlanTwo";
 import PricePlan from "../../../components/ui/PricePlan";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+export const metadata = {
+  title: "Pricing Page-Graptor",
+  description: "Technology & IT Solutions ",
+};
 const Pricing = () => {
   return (
     <div>

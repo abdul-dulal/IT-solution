@@ -1,18 +1,30 @@
 import React from "react";
-import BreadCumb from "../../../components/ui/BreadCumb";
-import Image from "next/image";
-import portfolio from "/public/Portfolio.json";
+import FooterTwo from "../../../../components/ui/Footer/FooterTwo";
+import Link from "next/link";
+import { FaCircleArrowRight } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io5";
 import ps1 from "/public/img/portfolio/psingle.jpg";
 import ps2 from "/public/img/portfolio/psinlge2.jpg";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-import Link from "next/link";
-import { IoLogoWhatsapp } from "react-icons/io5";
-import FooterTwo from "../../../components/ui/Footer/FooterTwo";
-import { FaCircleArrowRight } from "react-icons/fa6";
-import { rubik } from "../fonts";
-const Portfolio = ({ title }) => {
-  const single = portfolio.find((item) => item?.title === title);
+import BreadCumb from "../../../../components/ui/BreadCumb";
 
+import portfolio from "/public/Portfolio.json";
+import Image from "next/image";
+import { rubik } from "@/app/fonts";
+
+export async function generateMetadata({ params }) {
+  const paramsTitle = params.title
+    ?.replace(/%20/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return {
+    title: paramsTitle + "-Graptor",
+    description: "Technology & IT Solutions ",
+  };
+}
+const Portfolio = ({ params }) => {
+  const title = params.title?.replace(/%20/g, " ");
+
+  const single = portfolio.find((item) => item?.title === title);
   return (
     <div>
       <BreadCumb currentPage={title} />
@@ -115,7 +127,9 @@ const Portfolio = ({ title }) => {
                   services:
                 </h5>
                 <p>
-                  <Link href={`/folioCat/${single?.tech}`}>{single?.tech}</Link>
+                  <Link href={`/portfolioCategory/${single?.tech}`}>
+                    {single?.tech}
+                  </Link>
                 </p>
               </div>
               <div className="mb-4">

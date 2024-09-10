@@ -11,9 +11,18 @@ import { rubik } from "@/app/fonts";
 import allServcie from "/public/AllService.json";
 import DownloadBtn from "../../../../components/ui/service/DownloadBtn";
 import BlockQuote from "../../../../components/ui/service/BlockQuote";
-const ServiceDetails = ({ params }) => {
+
+export async function generateMetadata({ params }) {
   const paramsTitle = params.title.replace(/%20/g, " ");
-  console.log(params);
+  return {
+    title: paramsTitle + "-Graptor",
+    description: "Technology & IT Solutions ",
+  };
+}
+
+export default function ServiceDetails({ params }) {
+  const paramsTitle = params.title.replace(/%20/g, " ");
+
   const single = allServcie.find((item) => item.title === paramsTitle);
 
   return (
@@ -144,6 +153,4 @@ const ServiceDetails = ({ params }) => {
       <FooterTwo />
     </div>
   );
-};
-
-export default ServiceDetails;
+}
