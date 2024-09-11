@@ -40,10 +40,9 @@ const BlogNavigation = ({ blogs, currentBlogId }) => {
             </button>
 
             <Link
-              href="single-blog.html"
+              href={`/blog/${blogs[currentIndex - 1].title}`}
               className=" text-[18px] leading-[26px]  hover:text-primary block"
             >
-              Necessity may give us your best Virtual court system
               {blogs[currentIndex - 1].title}
             </Link>
           </div>
@@ -60,7 +59,7 @@ const BlogNavigation = ({ blogs, currentBlogId }) => {
               Next <FaAngleRight className="text-[20px] mr-4 relative " />
             </button>
             <Link
-              href="single-blog.html"
+              href={`/blog/${blogs[currentIndex + 1].title}`}
               className=" text-[18px] leading-[26px]  hover:text-primary block"
             >
               {blogs[currentIndex + 1].title}

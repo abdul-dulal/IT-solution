@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
-import BlogTitle from "./blog/BlogTitle";
+import BlogTitle from "./BlogTitle";
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
-import Pagination from "./blog/Pagination";
+import Pagination from "./Pagination";
 
 const Blogs = ({ blogs }) => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -29,7 +29,6 @@ const Blogs = ({ blogs }) => {
               img={item.img}
               category={item.category}
               readmore={true}
-              slug="/blog"
             />
           </div>
         ))}

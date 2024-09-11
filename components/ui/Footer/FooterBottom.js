@@ -21,7 +21,7 @@ const FooterBottom = () => {
           <ul className="m-0 p-0 xs:text-right text-center xs:my-0 my-5">
             <li className="relative mb-5 inline-block after:absolute after:-right-4 after:top-[6px] after:h-3 after:w-[2px] after:content-[''] after:bg-[rgba(255,255,255,0.5)] after:mr-1">
               <Link
-                href=""
+                href="/About"
                 className="text-[rgba(255,255,255,0.5)] hover:text-primary"
               >
                 About
@@ -37,7 +37,7 @@ const FooterBottom = () => {
             </li>
             <li className="relative mb-5 inline-block ">
               <Link
-                href=""
+                href="/contact"
                 className="text-[rgba(255,255,255,0.5)] hover:text-primary"
               >
                 Contact

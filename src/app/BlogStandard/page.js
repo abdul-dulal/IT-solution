@@ -13,7 +13,7 @@ export const metadata = {
   title: "Blog Standard-Graptor",
   description: "Technology & IT Solutions ",
 };
-import Blogs from "../../../components/ui/Blogs";
+import Blogs from "../../../components/ui/blog/Blogs";
 const BlogStandard = () => {
   return (
     <div>
@@ -35,7 +35,7 @@ const BlogStandard = () => {
                   >
                     Recent Post
                   </h3>
-                  <RecentPost slug="/blog" />
+                  <RecentPost />
                 </aside>
                 <aside className=" ">
                   <h3
@@ -43,7 +43,7 @@ const BlogStandard = () => {
                   >
                     Categories
                   </h3>
-                  <Category slug="/category" />
+                  <Category />
                 </aside>
                 <aside className="">
                   <Call />

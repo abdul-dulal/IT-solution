@@ -8,8 +8,9 @@ export default function Header() {
     const pathname = usePathname();
     if (pathname == "/") {
       return <MainHeader />;
+    } else if (pathname == "/HomeOne") {
+      return <MainHeader />;
     }
-    return <HeaderTwo />;
   };
   return HeaderChooser();
 }

@@ -9,17 +9,15 @@ import round from "/public/img/home1/round.png";
 import { PiArrowRightDuotone } from "react-icons/pi";
 import { HiLightBulb } from "react-icons/hi";
 import { IoMdBug, IoIosPaper } from "react-icons/io";
-import { TbFileAnalytics, TbMessage2Star } from "react-icons/tb";
+import { TbFileAnalytics } from "react-icons/tb";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { MdAutoMode } from "react-icons/md";
-import { FaAmericanSignLanguageInterpreting, FaUser } from "react-icons/fa";
-import { GoProjectSymlink } from "react-icons/go";
-import { AiOutlineSolution } from "react-icons/ai";
+
 import { FaAward } from "react-icons/fa6";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 
 import VideoModal from "../../../components/ui/VideoModal";
-import Services from "../../../components/ui/service/Services";
+
 import ContactForm from "../../../components/ui/ContactForm";
 import cLogo1 from "/public/img/client/techlogo1.png";
 import cLogo2 from "/public/img/client/brandname1.png";
@@ -30,12 +28,11 @@ import PricePlan from "../../../components/ui/PricePlan";
 
 import Portfolio from "../../../components/ui/Portfolio";
 import Counter from "../../../components/ui/Counter";
-import Blog from "../../../components/ui/Blog";
-import blog1 from "/public/img/blog/blog1.jpg";
-import blog2 from "/public/img/blog/blog2.jpg";
-import blog3 from "/public/img/blog/blog3.jpg";
+
 import Footer from "../../../components/ui/Footer/Footer";
 import Accrodian from "../../../components/ui/Accrodian";
+import HomeBlog from "../../../components/ui/blog/HomeBlog";
+import Services from "../../../components/ui/service/Services";
 export const metadata = {
   title: "Home One-Graptor",
   description: "Technology & IT Solutions ",
@@ -76,7 +73,7 @@ const HomeOne = () => {
               className=""
               style={{ transform: " rotateY(-0.8875 deg) rotateX(-8.69 deg)" }}
             >
-              <div className="layer animated relative text-right -mb-[45px] sm:block hidden">
+              <div className=" hero_img relative text-right -mb-[45px] sm:block hidden">
                 <Image src={hero} alt="Hero" />
               </div>
             </div>
@@ -177,7 +174,7 @@ const HomeOne = () => {
             </div>
           </div>
 
-          {/* <Services /> */}
+          <Services />
         </div>
       </section>
 
@@ -260,7 +257,7 @@ const HomeOne = () => {
 
       {/* Blog Start  */}
 
-      {/* <section
+      <section
         style={{ padding: "116px 0 90px" }}
         className="relative pt-[116px]"
       >
@@ -271,27 +268,15 @@ const HomeOne = () => {
               Out Latest Articles
             </h2>
           </div>
-          <div className="grid  xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2  gap-7">
-            <Blog
-              img={blog1}
-              title="Necessity May Give Us Your Best Virtual Court System"
-              subTitle=" Morbi ullamcorper vel nunc quis venenatis. Ut auctor dapibus dignissim..."
-            />
-            <Blog
-              img={blog2}
-              title="Open Source Job Report Show More Openings Fewer"
-              subTitle=" Morbi ullamcorper vel nunc quis venenatis. Ut auctor dapibus dignissim..."
-            />
-            <Blog
-              img={blog3}
-              title="Types of Social Proof What its Makes Them Effective"
-              subTitle=" Morbi ullamcorper vel nunc quis venenatis. Ut auctor dapibus dignissim..."
-            />
-          </div>
+          <HomeBlog />
         </div>
-      </section> */}
+      </section>
 
       {/* Blog End  */}
+
+      {/* Footer */}
+
+      <Footer />
     </div>
   );
 };

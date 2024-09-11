@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 import blog from "/public/Blog.json";
-const Category = ({ slug }) => {
+const Category = () => {
   const uniqueCategories = [...new Set(blog?.map((item) => item.category))];
 
   return (

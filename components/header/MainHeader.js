@@ -36,7 +36,7 @@ const MainHeader = () => {
                     <ul className="text-[16px] absolute bg-base left-[280px] -mt-[51px] space-y-2 opacity-0  invisible transform transition-all duration-500 translate-y-4   group-hover:visible group-hover:translate-y-0 ">
                       <li className="">
                         <Link
-                          href="#"
+                          href="/HomeOne"
                           className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                         >
                           Home One
@@ -44,13 +44,13 @@ const MainHeader = () => {
                       </li>
                       <li className="">
                         <Link
-                          href="#"
+                          href="/HomeTwo"
                           className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                         >
                           Home Two
                         </Link>
                       </li>
-                      <li className="">
+                      <li className="/HomeThree">
                         <Link
                           href="#"
                           className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
@@ -148,7 +148,7 @@ const MainHeader = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="#"
+                      href="/Pricing"
                       className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                     >
                       Pricing Page
@@ -200,7 +200,7 @@ const MainHeader = () => {
                 <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
                   <li className="">
                     <Link
-                      href="#"
+                      href="/CaseStudyOne"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                     >
                       Case Study 01
@@ -208,7 +208,7 @@ const MainHeader = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="#"
+                      href="/CaseStudyTwo"
                       className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                     >
                       Case Study 02
@@ -216,7 +216,15 @@ const MainHeader = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="#"
+                      href="/CaseStudyThree"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
+                    >
+                      Case Study 03
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      href="/CaseDetails"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
                     >
                       Case Details
@@ -250,7 +258,7 @@ const MainHeader = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="#"
+                      href="/BlogGridTwo"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
                     >
                       Blog Grid 02
@@ -258,7 +266,7 @@ const MainHeader = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="#"
+                      href="/SingleBlog"
                       className=" w-[250px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
                     >
                       Blog Details
@@ -267,7 +275,7 @@ const MainHeader = () => {
                 </ul>
               </li>
               <li>
-                <Link href="">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
             <div className="flex xl:gap-8 gap-5">

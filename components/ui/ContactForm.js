@@ -14,14 +14,12 @@ const Form = () => {
   const [message, setMessage] = useState(false);
   const [errors, setErrors] = useState({});
   const [time, setTime] = useState(false);
+  console.log(time);
   useEffect(() => {
-    setTime(true);
-
-    const timer = setTimeout(() => {
-      setTime(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
+    // const timer = setTimeout(() => {
+    //   setTime(false);
+    // }, 3000);
+    // return () => clearTimeout(timer);
   }, []);
 
   const handleChange = (e) => {
@@ -52,6 +50,12 @@ const Form = () => {
     if (formData.name && formData.email) {
       setMessage(true);
     }
+    setTime(true);
+    const timer = setTimeout(() => {
+      setTime(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
   };
 
   return (
@@ -131,21 +135,27 @@ const Form = () => {
 
       <div className="w-[88%] ml-[9px] mt-4 ">
         <div className="  ">
-          {(time && errors.name) || errors.email ? (
-            <p className="bg-[#FFF3CD] py-4 text-[#856404] px-5 text-base font-normal leading-[30px]">
-              <span className="text-xl font-bold">Opps!</span> Errpr found.
-              Please fix those and re submit.
-            </p>
-          ) : (
-            ""
-          )}
-          {message ? (
-            <p className="bg-[#D4EDDA] py-4 text-[#157893] px-5 text-base font-normal leading-[30px]">
-              <span className="text-xl font-bold">Congratulations!</span> Errpr
-              found. Please fix those and re submit.
-            </p>
-          ) : (
-            ""
+          {time && (
+            <div>
+              {errors.name || errors.email ? (
+                <p className="bg-[#FFF3CD] py-4 text-[#856404] px-5 text-base font-normal leading-[30px]">
+                  <span className="text-xl font-bold">Opps!</span> Errpr found.
+                  Please fix those and re submit.
+                </p>
+              ) : (
+                ""
+              )}
+              {message ? (
+                <p className="bg-[#D4EDDA] py-4 text-[#157893] px-5 text-base font-normal leading-[30px] text-center">
+                  <span className="text-xl font-bold mr-1">
+                    Congratulations!
+                  </span>
+                  Your query successfully sent to site admin.
+                </p>
+              ) : (
+                ""
+              )}
+            </div>
           )}
         </div>
       </div>
