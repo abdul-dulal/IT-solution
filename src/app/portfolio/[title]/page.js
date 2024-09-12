@@ -33,10 +33,10 @@ const Portfolio = ({ params }) => {
         <div className="container mx-auto xl:px-6 px-4">
           <div className="folio-thumb relative">
             <Image
-              src={single?.img}
+              src={single?.img2}
               width={1130}
               height={200}
-              className="xl:h-[900px] w-full h-auto mb-[30px]"
+              className=" h-auto mb-[30px]"
               alt=""
             />
           </div>
@@ -94,7 +94,7 @@ const Portfolio = ({ params }) => {
                 </Link>
               </div>
             </div>
-            <div className=" sm:col-span-5 col-span-12">
+            <div className=" sm:col-span-5 col-span-11">
               <div className=" pt-6">
                 <p className="text-lg leading-[30px] text-[#565872] font-normal">
                   Qestigationes demonstraverunt lectores legere me lius quod ii

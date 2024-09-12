@@ -1,7 +1,6 @@
 "use client";
 import { rubik } from "@/app/fonts";
 import React, { useState } from "react";
-import { useEffect } from "react";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlinePhoneEnabled } from "react-icons/md";
@@ -10,44 +9,30 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    message: "",
+  });
+  const [time, setTime] = useState(false);
+
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false,
+    message: false,
   });
   const [message, setMessage] = useState(false);
-  const [errors, setErrors] = useState({});
-  const [time, setTime] = useState(false);
-  console.log(time);
-  useEffect(() => {
-    // const timer = setTimeout(() => {
-    //   setTime(false);
-    // }, 3000);
-    // return () => clearTimeout(timer);
-  }, []);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const validationErrors = {};
+    const newErrors = {
+      name: formData.name.trim() === "",
+      email: formData.email.trim() === "",
+      message: formData.message.trim() === "",
+    };
 
-    if (!formData.name) {
-      validationErrors.name = "error";
-    }
+    setErrors(newErrors);
 
-    if (!formData.email) {
-      validationErrors.email = "error";
-    }
-
-    setErrors(validationErrors);
-
-    if (Object.keys(validationErrors).length === 0) {
-      // Form is valid, proceed with submission
-    }
-    if (formData.name && formData.email) {
+    const hasErrors = Object.values(newErrors).some((error) => error);
+    if (!hasErrors) {
+      //   console.log("Form submitted:", formData);
       setMessage(true);
     }
     setTime(true);
@@ -58,6 +43,20 @@ const Form = () => {
     return () => clearTimeout(timer);
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+
+    if (value.trim() !== "") {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        [name]: false,
+      }));
+    }
+  };
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex relative xl:w-[385px] md:ml-4  lg:w-80 md:w-[300px] w-full ">
@@ -66,7 +65,7 @@ const Form = () => {
           name="name"
           id="name"
           value={formData.name}
-          onChange={handleChange}
+          onChange={handleInputChange}
           placeholder="full name"
           className={`border-2 border-gray-300 w-full  h-[70px] px-3  my-2 text-lg  placeholder:text-[#191919] placeholder:text-lg placeholder:capitalize placeholder:font-normal bg-transparent rounded-[5px] mb-[18px]  focus:outline-none ${
             errors.name ? "border-red-500" : "border-gray-300"
@@ -85,7 +84,7 @@ const Form = () => {
           name="email"
           id="email"
           value={formData.email}
-          onChange={handleChange}
+          onChange={handleInputChange}
           placeholder="Enter your email"
           className={`border-2 border-gray-300 w-full  h-[70px] px-3  my-2 text-lg  placeholder:text-[#191919] placeholder:capitalize placeholder:text-lg placeholder:font-normal bg-transparent rounded-[5px] mb-[18px]  focus:outline-none ${
             errors.email ? "border-red-500" : "border-gray-300"

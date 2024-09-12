@@ -20,9 +20,9 @@ const Popup = () => {
   const [searchPopup, setSearchPopup] = useState(false);
 
   return (
-    <section className="flex gap-6 items-center">
+    <div className="flex xs:gap-6 gap-3 items-center">
       <div className="">
-        <div className="flex items-center gap-8">
+        <div className="flex items-center xs:gap-8 gap-4">
           <Link
             href="javascript:void(0);"
             onClick={() => setSearchPopup(!searchPopup)}
@@ -166,7 +166,7 @@ const Popup = () => {
       </div>
       <SearchPopup searchPopup={searchPopup} setSearchPopup={setSearchPopup} />
       <ResponsiveHeader bgColor="black" />
-    </section>
+    </div>
   );
 };
 

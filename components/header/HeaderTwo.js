@@ -272,7 +272,7 @@ const HeaderTwo = () => {
                 </ul>
               </li>
               <li>
-                <Link href="">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
             <Popup />

@@ -35,24 +35,28 @@ const TeamDetails = ({ params }) => {
                 <Link
                   className="h-[30px] w-[30px] flex items-center justify-center bg-transparent border border-solid border-[rgba(8,24,69,0.16)] rounded-[2px] text-secondary hover:text-primary ml-1 text-center leading-[30px] pt-[1px] mx-[5px] mt-5 mb-[10px] transition-all ease-linear duration-400 hover:bg-primary hover:text-white    "
                   href="https://www.facebook.com/"
+                  target="blank"
                 >
                   <FaFacebookF className="" />
                 </Link>
                 <Link
                   className="h-[30px] w-[30px] flex items-center justify-center bg-transparent border border-solid border-[rgba(8,24,69,0.16)] rounded-[2px] text-secondary hover:text-primary ml-1 text-center leading-[30px] pt-[1px] mx-[5px] mt-5 mb-[10px] transition-all ease-linear duration-400 hover:bg-primary hover:text-white    "
                   href="https://twitter.com/"
+                  target="blank"
                 >
                   <FaTwitter />
                 </Link>
                 <Link
                   href="instagram.com"
                   className="h-[30px] w-[30px] flex items-center justify-center bg-transparent border border-solid border-[rgba(8,24,69,0.16)] rounded-[2px] text-secondary hover:text-primary ml-1 text-center leading-[30px] pt-[1px] mx-[5px] mt-5 mb-[10px] transition-all ease-linear duration-400 hover:bg-primary hover:text-white    "
+                  target="blank"
                 >
                   <FaInstagram />
                 </Link>
                 <Link
                   className="h-[30px] w-[30px] flex items-center justify-center bg-transparent border border-solid border-[rgba(8,24,69,0.16)] rounded-[2px] text-secondary hover:text-primary ml-1 text-center leading-[30px] pt-[1px] mx-[5px] mt-5 mb-[10px] transition-all ease-linear duration-400 hover:bg-primary hover:text-white    "
                   href="https://www.linkedin.com/"
+                  target="blank"
                 >
                   <FaLinkedinIn />
                 </Link>

@@ -1,15 +1,6 @@
-"use client";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import { useRef } from "react";
-
+import React from "react";
+import BreadCumb from "../../../components/ui/BreadCumb";
 import Image from "next/image";
-
-import Link from "next/link";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -17,52 +8,28 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
-
-import { rubik } from "@/app/fonts";
+import Link from "next/link";
 import team from "/public/Team.json";
-const TeamSlider = () => {
-  const swiperRef = useRef(null);
+import { rubik } from "../fonts";
 
+import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+
+export const metadata = {
+  title: "TeamMember 02-Graptor",
+  description: "Technology & IT Solutions ",
+};
+
+const TeamMemberTwo = () => {
   return (
-    <section className="relative px-[50px] bg-transparent -mt-20">
-      <Swiper
-        spaceBetween={23}
-        slidesPerView={1}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        modules={[Navigation]}
-        className="relative "
-        breakpoints={{
-          620: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          880: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1200: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          1536: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-        }}
-      >
-        <div className="relative">
-          {team?.map((item) => {
-            return (
-              <SwiperSlide key={item.id}>
-                <div className="">
+    <div>
+      <BreadCumb currentPage="Team Member 02" />
+
+      <section className="py-[120px] relative">
+        <div className="container mx-auto xl:px-6 px-4">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">
+            {team?.map((item) => {
+              return (
+                <div key={item.id} className="">
                   <div
                     style={{ boxShadow: "0px 10px 30px 0px rgb(0 0 0 / 5%)" }}
                     className=" relative bg-white mb-[30px] rounded-[10px]"
@@ -125,15 +92,15 @@ const TeamSlider = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </Swiper>
-
-      {/* Custom Previous Button */}
-    </section>
+      </section>
+      {/* Footer */}
+      <FooterTwo />
+    </div>
   );
 };
 
-export default TeamSlider;
+export default TeamMemberTwo;

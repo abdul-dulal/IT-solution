@@ -16,13 +16,13 @@ export const metadata = {
 const TeamMember = () => {
   return (
     <div>
-      <BreadCumb currentPage="Team Member" className="" />
+      <BreadCumb currentPage="Team Member" />
 
       {/* Team Start */}
 
       <section className="relative pt-[120px] pb-[70px]">
         <div className="container mx-auto xs:px-6 px-4">
-          <div className="grid grid-cols-3 gap-7">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-7">
             {team?.map((item) => {
               return (
                 <div

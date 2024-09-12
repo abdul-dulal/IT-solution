@@ -2,60 +2,70 @@
   {
     "id": 1,
     "img": "/img/portfolio/portfolio1.jpg",
+    "img2": "/img/portfolio/Platform Integration.jpg",
     "tech": "Technology",
     "title": "platform integration"
   },
   {
     "id": 2,
     "img": "/img/portfolio/portfolio2.jpg",
+    "img2": "/img/portfolio/Product Engineering.jpg",
     "tech": "Printing",
     "title": "product engineering"
   },
   {
     "id": 3,
     "img": "/img/portfolio/portfolio3.jpg",
+    "img2": "/img/portfolio/Growth Strategies.jpg",
     "tech": "UX/UI",
     "title": "growth startegies"
   },
   {
     "id": 4,
     "img": "/img/portfolio/portfolio4.jpg",
+    "img2": "/img/portfolio/Innovative Interfaces.jpg",
     "tech": "Branding",
     "title": "innovative interface"
   },
   {
     "id": 5,
     "img": "/img/portfolio/portfolio5.jpg",
+    "img2": "/img/portfolio/Product Engineering.jpg",
     "tech": "Web Design",
     "title": "product design"
   },
   {
     "id": 6,
     "img": "/img/portfolio/portfolio6.jpg",
+    "img2": "/img/portfolio/Cyber Security.jpg",
     "tech": "Technology",
     "title": "Cyber Security"
   },
   {
     "id": 7,
     "img": "/img/portfolio/portfolio7.jpg",
+    "img2": "/public/img/portfolio/Business Solution.jpg",
     "tech": "Web Design",
     "title": "Analysis of Security"
   },
   {
     "id": 8,
     "img": "/img/portfolio/portfolio8.jpg",
+    "img2": "/img/portfolio/Workflow Management.jpg",
     "tech": "Printing",
     "title": "Workflow Managemen"
   },
   {
     "id": 9,
     "img": "/img/portfolio/portfolio9.jpg",
+    "img2": "/img/portfolio/Business Solution.jpg",
     "tech": "Printing",
     "title": "Business Solution"
   },
   {
     "id": 10,
     "img": "/img/portfolio/portfolio10.jpg",
+    "img2": "/public/img/portfolio/IT Counsultancy.jpg",
     "tech": "UX/UI",
     "title": "IT Counsultancy"
   }
