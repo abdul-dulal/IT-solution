@@ -5,6 +5,7 @@ import MainHeader from "../../components/header/MainHeader";
 import Footer from "../../components/ui/Footer/Footer";
 import HeaderTwo from "../../components/header/HeaderTwo";
 import HeaderApply from "./HeaderApply";
+import "react-modal-video/css/modal-video.css";
 
 export const metadata = {
   title: "Create Next App",

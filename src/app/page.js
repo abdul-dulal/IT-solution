@@ -1,74 +1,57 @@
 "use client";
-import Image from "next/image";
-import { useEffect, useRef } from "react";
-import Shuffle from "shufflejs";
-import m1 from "/public/img/blog/Project Reporting.jpg";
-import m2 from "/public/img/blog/Responsive Pixel Perfect Design.jpg";
-import m3 from "/public/img/blog/Analytic Solutions.jpg";
-const ShuffleGrid = () => {
-  const shuffleInstance = useRef(null);
-  const gridRef = useRef(null);
+import { useState } from "react";
+import VideoModal from "../../components/ui/VideoModal";
+import VideoModalTwo from "../../components/VideoModal2";
+const VideoPopup = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    shuffleInstance.current = new Shuffle(gridRef.current, {
-      itemSelector: ".grid-item",
-      sizer: ".grid-sizer",
-    });
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
 
-    return () => {
-      shuffleInstance.current.destroy();
-      shuffleInstance.current = null;
-    };
-  }, []);
+  const closePopup = (e) => {
+    // Prevent closing when clicking inside the video container
+    e.stopPropagation();
+  };
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="flex justify-center space-x-4 mb-6">
-        <button
-          onClick={() => shuffleInstance.current.filter(Shuffle.ALL_ITEMS)}
+    <div>
+      <button
+        onClick={togglePopup}
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+      >
+        Open Vide
+      </button>
+      <VideoModalTwo />
+
+      {isOpen && (
+        <div
+          onClick={togglePopup} // Closes popup if clicked on the overlay
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-75"
         >
-          All
-        </button>
-        <button onClick={() => shuffleInstance.current.filter("category-a")}>
-          Category A
-        </button>
-        <button onClick={() => shuffleInstance.current.filter("category-b")}>
-          Category B
-        </button>
-      </div>
-      <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-3 ">
-        <div className="grid-sizer"></div>
-        <div className="grid-item" data-groups='["category-a"]'>
-          <Image
-            src={m1}
-            alt="Image 1"
-            className="w-full h-[250px] object-cover"
-          />
+          <div
+            onClick={closePopup} // Stops propagation to prevent closing when clicking inside the popup
+            className="relative w-[95%] h-[95%] bg-white"
+          >
+            <button
+              onClick={togglePopup}
+              className="absolute top-2 right-2 text-2xl text-black"
+            >
+              &times;
+            </button>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
-        <div className="grid-item" data-groups='["category-b"]'>
-          <Image
-            src={m2}
-            alt="Image 2"
-            className="w-full h-[250px] object-cover"
-          />
-        </div>
-        <div className="grid-item" data-groups='["category-a"]'>
-          <Image
-            src={m3}
-            alt="Image 3"
-            className="w-full h-[250px] object-cover"
-          />
-        </div>
-        <div className="grid-item" data-groups='["category-b"]'>
-          <Image
-            src={m1}
-            alt="Image 4"
-            className="w-full h-[250px] object-cover"
-          />
-        </div>
-      </div>
+      )}
     </div>
   );
 };
 
-export default ShuffleGrid;
+export default VideoPopup;

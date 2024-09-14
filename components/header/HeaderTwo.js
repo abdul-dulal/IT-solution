@@ -5,7 +5,7 @@ import { rubik } from "@/app/fonts";
 import Popup from "./Popup";
 const HeaderTwo = () => {
   return (
-    <header className="bg-white  sticky top-0 z-[9999] shadow-lg">
+    <header className="bg-white  sticky top-0 z-[999] shadow-lg">
       <div className="container mx-auto px-6">
         <nav className="h-[98px]">
           <div className="flex justify-between  items-center w-full h-full">
@@ -172,7 +172,15 @@ const HeaderTwo = () => {
                           href="/TeamMember"
                           className=" w-[250px] block px-6 py-[6px]   border-t border-gray-200  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                         >
-                          Team Member
+                          Team Member 01
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          href="/TeamMemberTwo"
+                          className=" w-[250px] block px-6 py-[6px]   border-t border-gray-200  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
+                        >
+                          Team Member 02
                         </Link>
                       </li>
                       <li className="">

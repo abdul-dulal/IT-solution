@@ -8,7 +8,7 @@ import ResponsiveHeader from "./ResponsiveHeader";
 
 const MainHeader = () => {
   return (
-    <header className="bg-base  sticky top-0 z-[9999] ">
+    <header className="bg-base  sticky top-0 z-[999] ">
       <div className="container mx-auto xl:px-6 px-4">
         <nav className="h-[98px]">
           <div className="flex justify-between items-center w-full h-full">
@@ -175,7 +175,15 @@ const MainHeader = () => {
                           href="/TeamMember"
                           className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                         >
-                          Team Member
+                          Team Member 01
+                        </Link>
+                      </li>
+                      <li className="">
+                        <Link
+                          href="/TeamMemberTwo"
+                          className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
+                        >
+                          Team Member 02
                         </Link>
                       </li>
                       <li className="">

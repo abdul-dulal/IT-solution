@@ -17,38 +17,50 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [time, setTime] = useState(false);
+
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
   const [message, setMessage] = useState(false);
-  const [errors, setErrors] = useState({});
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const validationErrors = {};
+    const newErrors = {
+      name: formData.name.trim() === "",
+      email: formData.email.trim() === "",
+      message: formData.message.trim() === "",
+    };
 
-    if (!formData.name) {
-      validationErrors.name = "error";
-    }
+    setErrors(newErrors);
 
-    if (!formData.email) {
-      validationErrors.email = "error";
-    }
-    if (!formData.message) {
-      validationErrors.message = "error";
-    }
-
-    setErrors(validationErrors);
-
-    if (Object.keys(validationErrors).length === 0) {
-      // Form is valid, proceed with submission
-    }
-    if (formData.name && formData.email && formData.message) {
+    const hasErrors = Object.values(newErrors).some((error) => error);
+    if (!hasErrors) {
+      //   console.log("Form submitted:", formData);
       setMessage(true);
+    }
+    setTime(true);
+    const timer = setTimeout(() => {
+      setTime(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+
+    if (value.trim() !== "") {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        [name]: false,
+      }));
     }
   };
   return (
@@ -88,7 +100,7 @@ const Contact = () => {
                       name="name"
                       id="name"
                       value={formData.name}
-                      onChange={handleChange}
+                      onChange={handleInputChange}
                       placeholder="full name"
                       className={`border-2 border-gray-300 w-full  h-[70px] px-4   text-lg  placeholder:text-[rgba(8,24,69,0.8)] placeholder:text-lg placeholder:capitalize placeholder:font-normal bg-transparent rounded-[5px]   focus:outline-none ${
                         errors.name ? "border-red-500" : "border-gray-300"
@@ -120,7 +132,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       value={formData.email}
-                      onChange={handleChange}
+                      onChange={handleInputChange}
                       placeholder="Enter your email"
                       className={`border-2 border-gray-300 w-full  h-[70px] px-4   text-lg  placeholder:text-[rgba(8,24,69,0.8)] placeholder:capitalize placeholder:text-lg placeholder:font-normal bg-transparent rounded-[5px]   focus:outline-none ${
                         errors.email ? "border-red-500" : "border-gray-300"
@@ -156,7 +168,7 @@ const Contact = () => {
                     name="message"
                     id="message"
                     value={formData.message}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                     placeholder="Your message"
                     className={`border-2 border-gray-300 w-full pt-3  h-[120px] px-4   text-lg  placeholder:text-[rgba(8,24,69,0.8)] placeholder:capitalize placeholder:text-lg placeholder:font-normal  bg-transparent rounded-[5px]   focus:outline-none ${
                       errors.message ? "border-red-500" : "border-gray-300"
@@ -177,23 +189,27 @@ const Contact = () => {
                 </button>
                 <div className="w-full ml-[9px] mt-4 ">
                   <div className="  ">
-                    {errors.name || errors.email || errors.message ? (
-                      <p className="bg-[#FFF3CD] py-4 text-[#856404] px-5 text-base font-normal leading-[30px]">
-                        <span className="text-xl font-bold">Opps!</span> Errpr
-                        found. Please fix those and re submit.
-                      </p>
-                    ) : (
-                      ""
-                    )}
-                    {message ? (
-                      <p className="bg-[#D4EDDA] py-4 text-[#157893] px-5 text-base font-normal leading-[30px]">
-                        <span className="text-xl font-bold">
-                          Congratulations!
-                        </span>{" "}
-                        Errpr found. Please fix those and re submit.
-                      </p>
-                    ) : (
-                      ""
+                    {time && (
+                      <div>
+                        {errors.name || errors.email || errors.message ? (
+                          <p className="bg-[#FFF3CD] py-4 text-[#856404] px-5 text-base font-normal leading-[30px]">
+                            <span className="text-xl font-bold">Opps!</span>{" "}
+                            Errpr found. Please fix those and re submit.
+                          </p>
+                        ) : (
+                          ""
+                        )}
+                        {message ? (
+                          <p className="bg-[#D4EDDA] py-4 text-[#157893] px-5 text-base font-normal leading-[30px] text-center">
+                            <span className="text-xl font-bold mr-1">
+                              Congratulations!
+                            </span>
+                            Your query successfully sent to site admin.
+                          </p>
+                        ) : (
+                          ""
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>

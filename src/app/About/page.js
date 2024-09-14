@@ -12,6 +12,7 @@ import Work from "../../../components/ui/Work";
 import TeamSlider from "../../../components/ui/team/TeamSlider";
 import ClientSlider from "../../../components/ui/team/ClientSlider";
 import Contact from "../../../components/ui/Contact";
+
 export const metadata = {
   title: "About Us-Graptor",
   description: "Technology & IT Solutions ",
@@ -28,11 +29,13 @@ const About = () => {
         <div className="container mx-auto xs:px-6 px-4">
           <div className="grid md:grid-cols-2 xl:gap-4 gap-10 ">
             <div className="relative">
-              <div className=" group relative pt-[27px] z-[2]">
+              <div className=" group relative pt-[27px] ">
                 <Image src={hero} className="rounded-[29px]" alt="About" />
                 <div className=" w-[298px]  h-[536px] xs:block hidden bg-primary rounded-[29px] absolute right-[13%] top-0 -z-[1] "></div>
 
-                <VideoModalTwo />
+                <div className="">
+                  <VideoModalTwo />
+                </div>
               </div>
             </div>
 
@@ -77,7 +80,7 @@ const About = () => {
 
                 <div className="xs:col-span-5 col-span-12 relative">
                   <div className="   flex gap-3  after:bg-transparent pb-[60px] mt-8 shadow-none">
-                    <div className="    w-12 h-12 min-w-12 min-h-12 leading-[48px] text-[22px] text-primary hover:bg-primary hover:text-white transition-all ease-in-out duration-400 cursor-pointer  text-center  border-2 border-solid border-[rgba(25,25,25,0.1)] rounded-[50%] flex items-center justify-center ">
+                    <div className=" w-12 h-12 min-w-12 min-h-12 leading-[48px] text-[22px] text-primary hover:bg-primary hover:text-white transition-all ease-in-out duration-400 cursor-pointer  text-center  border-2 border-solid border-[rgba(25,25,25,0.1)] rounded-[50%] flex items-center justify-center ">
                       <IoCallSharp className="" />
                     </div>
                     <div>
@@ -120,8 +123,6 @@ const About = () => {
       <TeamSlider />
 
       {/* Team End */}
-
-      {/* Footer */}
 
       {/* Testimonial Start */}
       <section className="relative pt-[116px] pb-[120px] ">

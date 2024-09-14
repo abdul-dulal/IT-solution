@@ -2,7 +2,7 @@ import React from "react";
 import { rubik } from "../fonts";
 import Link from "next/link";
 import Image from "next/image";
-import hero from "/public/img/home1/hero.png";
+
 import feature from "/public/img/home1/feature.png";
 import ring from "/public/img/home1/ring.png";
 import round from "/public/img/home1/round.png";
@@ -33,6 +33,8 @@ import Footer from "../../../components/ui/Footer/Footer";
 import Accrodian from "../../../components/ui/Accrodian";
 import HomeBlog from "../../../components/ui/blog/HomeBlog";
 import Services from "../../../components/ui/service/Services";
+
+import CardImage from "../../../components/ui/CardImage";
 export const metadata = {
   title: "Home One-Graptor",
   description: "Technology & IT Solutions ",
@@ -44,7 +46,7 @@ const HomeOne = () => {
       <section className=" relative overflow-hidden bg-[url('/img/home1/home-banner.jpg')] bg-no-repeat bg-cover bg-center py-11 bg-secondary">
         <div className="container mx-auto grid grid-cols-12 xs:px-3 px-0">
           <div className="sm:col-span-7 xs:col-span-8 col-span-10 items-center">
-            <div className="relative z-[9] mt-20 ml-6">
+            <div className="relative  mt-20 ml-6">
               <h5
                 className={`${rubik.className} text-white font-medium text-md leading-[22px] capitalize  mb-6 relative after:relative after:-right-6 after:-top-[3px] after:w-[60px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block`}
               >
@@ -53,7 +55,7 @@ const HomeOne = () => {
               <h2 className="xl:text-[80px] lg:text-[72px] mb-[38px] md:text-[55px] sm:text-5xl text-4xl xl:leading-[96px] lg:leading-[80px] md:leading-[65px] text-white font-bold animated">
                 Excellent IT services for your success
               </h2>
-              <div className="flex flex-wrap mt-12">
+              <div className="flex flex-wrap mt-12 ">
                 <Link
                   href="/contact"
                   className={`${rubik.className}  h-[58px] flex gap-6 items-center text-[16px]  leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[25px]  cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  grap-btn`}
@@ -69,14 +71,7 @@ const HomeOne = () => {
             style={{ backgroundClip: "border-box" }}
             className="col-span-5 bg-transparent border-none rounded-[0]"
           >
-            <div
-              className=""
-              style={{ transform: " rotateY(-0.8875 deg) rotateX(-8.69 deg)" }}
-            >
-              <div className=" hero_img relative text-right -mb-[45px] sm:block hidden">
-                <Image src={hero} alt="Hero" />
-              </div>
-            </div>
+            <CardImage />
           </div>
         </div>
       </section>
@@ -108,7 +103,7 @@ const HomeOne = () => {
               <span className="w-[81px] h-[3px] inline-block bg-primary mr-[15px] relative -top-[3px]"></span>
               Our Specialty
             </h6>
-            <h2 className=" lg:text-5xl md:text-4xl sm:text-3xl xs:text-[28px] text-2xl  font-bold xs:leading-[58px] sm:mb-6 mb-3">
+            <h2 className=" lg:text-5xl md:text-4xl sm:text-3xl xs:text-[28px] text-2xl  font-bold lg:leading-[58px] md:leading-[48px] sm:leading-[40px] xs:leading-[36px] sm:mb-6 mb-3">
               Over 25+ Years Helping Brands to Reach Full Potential
             </h2>
             <p className=" mb-5 text-[17px] leading-[26px] text-secondary font-normal ">
