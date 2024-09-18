@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Shuffle from "shufflejs";
 import Image from "next/image";
-import data from "/public/Portfolio.json"; // Adjust the path to where your JSON file is located
+import data from "/public/Portfolio.json";
 import BreadCumb from "../../../components/ui/BreadCumb";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";

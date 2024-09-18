@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/scss/modal-video.scss";
+
 import { FaPlay } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 const VideoModal = () => {
@@ -36,7 +35,7 @@ const VideoModal = () => {
           </button>
           <div
             onClick={closePopup}
-            className="relative w-[80%] h-[80%] bg-white rounded"
+            className="relative w-[60%] h-[600%] bg-white rounded"
           >
             <iframe
               className="w-full h-full"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
+
 import member1 from "/public/img/team/member1.png";
 
 const ClientContent = ({ name, title, img }) => {

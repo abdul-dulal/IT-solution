@@ -77,7 +77,7 @@ const HomeOne = () => {
       </section>
       {/*  Hero Banner Start---- */}
 
-      {/*   About Start */}
+      {/*   About--Start */}
       <section className="relative py-[120px]">
         <div className="container mx-auto grid sm:grid-cols-2 ">
           <div className=" relative sm:px-1.5 px-6">
@@ -99,7 +99,7 @@ const HomeOne = () => {
             />
           </div>
           <div className="relative pl-7 ">
-            <h6 className="sub-title text-base sm:mt-0 mt-8 leading-5 text-primary font-medium uppercase xs:mb-4">
+            <h6 className=" text-base sm:mt-0 mt-8 leading-5 text-primary font-medium uppercase xs:mb-4">
               <span className="w-[81px] h-[3px] inline-block bg-primary mr-[15px] relative -top-[3px]"></span>
               Our Specialty
             </h6>
@@ -155,9 +155,9 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* About End */}
+      {/* About--End */}
 
-      {/* Service Start */}
+      {/* Service--Start */}
       <section className="  bg-secondary pt-[116px] pb-[345px]  relative bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat ">
         <div className="container mx-auto xs:px-6 px-3">
           <div className=" grid grid-cols-12">
@@ -173,9 +173,9 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* Service End */}
+      {/* Service--End */}
 
-      {/* FAQ Start */}
+      {/* FAQ--Start */}
       <section className=" bg-[#f0f4f9]  pb-11">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-12  bg-white relative rounded-[10px] py-[65px] lg:px-[45px] px-4 z-[3] -mt-[260px]">
@@ -195,9 +195,9 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* FAQ End */}
+      {/* FAQ--End */}
 
-      {/* Client Start */}
+      {/* Client--Start */}
       <section className="bg-[#f0f4f9] relative pt-[75px] pb-[68px] ">
         <div className="container mx-auto px-6">
           <div className="grid gap-5 justify-center md:grid-cols-4  xs:grid-cols-2  ">
@@ -209,9 +209,9 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* Client End */}
+      {/* Client--End */}
 
-      {/* Price Start */}
+      {/* Price--Start */}
       <section className="relative pt-[116px] pb-[85px]">
         <div className="container mx-auto xs:px-3 px-4">
           <h6 className="  text-center">Let’s Work</h6>
@@ -230,16 +230,16 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* Price End */}
+      {/* Price--End */}
 
-      {/* Portfolio Start */}
+      {/* Portfolio--Start */}
       <section className="relative bg-[#f0f4f9] pt-[120px] xl:px-8 px-4 pb-[244px]">
         <Portfolio />
       </section>
 
-      {/* Portfolio End */}
+      {/* Portfolio--End */}
 
-      {/* Counter Start */}
+      {/* Counter--Start */}
       <section className="relative -mt-[150px]">
         <div className="container mx-auto xl:px-6 px-3">
           <div className="bg-[url('/img/bg/counter-bg.png')] relative   w-full rounded-[10px] bg-[#686ee2] z-[2]  py-10 bg-center bg-auto bg-no-repeat">
@@ -248,9 +248,9 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* Counter End */}
+      {/* Counter--End */}
 
-      {/* Blog Start  */}
+      {/* Blog--Start  */}
 
       <section
         style={{ padding: "116px 0 90px" }}
@@ -267,7 +267,7 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* Blog End  */}
+      {/* Blog--End  */}
 
       {/* Footer */}
 
