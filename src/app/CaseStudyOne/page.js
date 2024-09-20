@@ -68,7 +68,7 @@ const CaseStudyThree = () => {
                         class="relative shadow-sm -top-11 left-4 bg-white rounded-[5px] pt-[23px] pr-[70px] pb-4 pl-5"
                       >
                         <p class="relative text-primary text-lg font-normal hover:text-[#191919] mb-[2px]">
-                          <Link href={`/folioCat/${item?.tech}`}>
+                          <Link href={`/portfolioCategory/${item?.tech}`}>
                             {item.tech}
                           </Link>
                         </p>
