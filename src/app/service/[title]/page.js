@@ -24,7 +24,7 @@ export default function ServiceDetails({ params }) {
   const paramsTitle = params.title.replace(/%20/g, " ");
 
   const single = allServcie.find((item) => item.title === paramsTitle);
-
+  const uniqueService = [...new Set(allServcie)];
   return (
     <div>
       <BreadCumb currentPage={paramsTitle} />

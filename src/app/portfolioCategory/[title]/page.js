@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   };
 }
 const FolioCat = ({ params }) => {
-  const title = params.title;
+  const title = params.title.replace(/%20/g, " ");
   const categories = portfolio.filter((item) => item?.tech == title);
   return (
     <div>
