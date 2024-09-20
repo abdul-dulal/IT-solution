@@ -2,38 +2,38 @@
   {
     "id": 1,
     "name": "Doris Jordan",
-    "design": "Design Expert",
+    "designation": "Design Expert",
     "img": "/img/team/team-member1.jpg"
   },
   {
     "id": 2,
     "name": "Johnny Ramirez",
-    "design": "Digital Marketer",
+    "designation": "Digital Marketer",
     "img": "/img/team/team-member2.jpg"
   },
   {
     "id": 3,
     "name": "Diana Wagner",
-    "design": "UI/UX Designer",
+    "designation": "UI/UX Designer",
     "img": "/img/team/team-member3.jpg"
   },
   {
     "id": 4,
     "name": "Mark Smith",
-    "design": "Ceo & Founder",
+    "designation": "Ceo & Founder",
     "img": "/img/team/team-member4.jpg"
   },
   {
     "id": 5,
     "name": "Harry Garrett",
-    "design": "Web Developer",
+    "designation": "Web Developer",
     "img": "/img/team/team-member5.jpg"
   },
 
   {
     "id": 6,
     "name": "Jesica Brown",
-    "design": "SEO Expert",
+    "designation": "SEO Expert",
     "img": "/img/team/team-member6.jpg"
   }
 ]

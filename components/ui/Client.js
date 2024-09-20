@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Client = ({ logo }) => {
   return (
     <div className="client ">
-      <a
+      <Link
         href="javascript:void(0);"
         className="group  overflow-hidden inline-block relative transition-all duration-300 ease-in-out  "
       >
@@ -18,7 +19,7 @@ const Client = ({ logo }) => {
           src={logo}
           alt="Client"
         />
-      </a>
+      </Link>
     </div>
   );
 };

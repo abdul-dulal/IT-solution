@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 
@@ -10,20 +11,20 @@ const DownloadBtn = () => {
       <p style={{ margin: "-7px 0 30px" }}>
         Existence its certainly explained how improving household pretended.
       </p>
-      <a
+      <Link
         className=" flex gap-2 text-lg font-medium text-[#191919] mt-5 hover:text-primary"
         href="javascript:void(0)"
       >
         <BsFileEarmarkPdf className="text-5xl  -mt-[5px] text-primary " />
         Download Service
-      </a>
-      <a
+      </Link>
+      <Link
         className=" flex gap-2 text-lg font-medium text-[#191919] mt-5 hover:text-primary"
         href="javascript:void(0)"
       >
         <BsFileEarmarkPdf className="text-5xl  -mt-[5px] text-primary " />
         Download Feature
-      </a>
+      </Link>
     </aside>
   );
 };

@@ -52,23 +52,23 @@ const TeamDetails = ({ name, dgn }) => {
           <span className="capitalize inline-block font-semibold text-[#081845]">
             Phone:
           </span>
-          <a
+          <Link
             href="tel:1245698909"
             className="text-secondary hover:text-primary ml-1 "
           >
             + 124 569 89 09
-          </a>
+          </Link>
         </li>
         <li className=" text-lg leading-[36px] flex w-f[50%]">
           <span className="capitalize inline-block font-semibold text-[#081845]">
             Email:
           </span>
-          <a
+          <Link
             href="mailto:yourname@mail.com"
             className="text-secondary hover:text-primary ml-1"
           >
             Yourname@mail.com
-          </a>
+          </Link>
         </li>
         <li className=" text-lg leading-[36px] flex w-f[50%]">
           <span className="capitalize inline-block font-semibold text-[#081845]">
@@ -80,12 +80,12 @@ const TeamDetails = ({ name, dgn }) => {
           <span className="capitalize inline-block font-semibold text-[#081845] ">
             Website:
           </span>
-          <a
+          <Link
             href="https://psdtowpwork.com/"
             className="text-secondary hover:text-primary ml-1"
           >
             psdtowpwork.com
-          </a>
+          </Link>
         </li>
       </ul>
       <p className="text-[rgb(86,88,114)] leading-[32px] mt-2">

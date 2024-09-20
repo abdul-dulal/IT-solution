@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import Link from "next/link";
-import team from "/public/Team.json";
+import teams from "/public/Team.json";
 import { rubik } from "../fonts";
 
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
@@ -27,16 +27,16 @@ const TeamMemberTwo = () => {
       <section className="py-[120px] relative">
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">
-            {team?.map((item) => {
+            {teams?.map((team) => {
               return (
-                <div key={item.id} className="">
+                <div key={team.id} className="">
                   <div
                     style={{ boxShadow: "0px 10px 30px 0px rgb(0 0 0 / 5%)" }}
                     className=" relative bg-white mb-[30px] rounded-[10px]"
                   >
                     <div className=" relative">
                       <Image
-                        src={item.img}
+                        src={team.img}
                         width={500}
                         height={400}
                         className="w-full"
@@ -49,30 +49,34 @@ const TeamMemberTwo = () => {
                         >
                           <FaShareAlt className="" />
                         </a>
-                        <a
+                        <Link
+                          target="blank"
                           href="https://www.facebook.com/"
                           className="  inline-block w-[38px] h-11 text-lg text-white rounded-none leading-[50px] text-center relative top-[18px] left-2 z-[3] invisible opacity-0 scale-[.8] hover:text-white group-hover:visible group-hover:opacity-100 group-hover:scale-[1] group-hover:delay-300 group-hover:duration-400 "
                         >
                           <FaFacebookF />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
+                          target="blank"
                           href="https://twitter.com/"
                           className="  inline-block w-[38px] h-11 text-lg text-white rounded-none leading-[50px] text-center relative top-[18px] left-2 z-[3] invisible opacity-0 scale-[.8] hover:text-white group-hover:visible group-hover:opacity-100 group-hover:scale-[1] group-hover:delay-300 group-hover:duration-400 "
                         >
                           <FaTwitter />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
+                          target="blank"
                           href="instagram.com"
                           className="  inline-block w-[38px] h-11 text-lg text-white rounded-none leading-[50px] text-center relative top-[18px] left-2 z-[3] invisible opacity-0 scale-[.8] hover:text-white group-hover:visible group-hover:opacity-100 group-hover:scale-[1] group-hover:delay-300 group-hover:duration-400 "
                         >
                           <IoLogoInstagram />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
+                          target="blank"
                           href="https://www.linkedin.com/"
                           className="  inline-block w-[38px] h-11 text-lg text-white rounded-none leading-[50px] text-center relative top-[18px] left-2 z-[3] invisible opacity-0 scale-[.8] hover:text-white group-hover:visible group-hover:opacity-100 group-hover:scale-[1] group-hover:delay-300 group-hover:duration-400 "
                         >
                           <FaLinkedinIn />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className=" relative pt-10 px-[25px] pb-5">
@@ -80,14 +84,14 @@ const TeamMemberTwo = () => {
                         className={`${rubik.className} text-xl font-medium mb-[2px] text-[#081845] transition-all ease-linear duration-400`}
                       >
                         <Link
-                          href={`team/${item.name}`}
+                          href={`team/${team.name}`}
                           className="hover:text-primary"
                         >
-                          {item.name}
+                          {team.name}
                         </Link>
                       </h5>
                       <p className="text-[17px] font-normal text-[rgb(86,88,114)] ">
-                        {item.design}
+                        {team.designation}
                       </p>
                     </div>
                   </div>
