@@ -2,6 +2,7 @@ import React from "react";
 import WorkProcess from "./WorkProcess";
 import { PiTargetLight, PiUserSwitchDuotone } from "react-icons/pi";
 import { FaRegLightbulb } from "react-icons/fa";
+import { LuComponent } from "react-icons/lu";
 
 const Work = () => {
   return (
@@ -14,7 +15,7 @@ const Work = () => {
         <WorkProcess
           title="Collecting Info Data"
           serial="01"
-          icon={<PiUserSwitchDuotone />}
+          icon={<LuComponent />}
         />
         <WorkProcess
           title="Setup Work Target"

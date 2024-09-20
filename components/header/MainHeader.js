@@ -21,89 +21,45 @@ const MainHeader = () => {
               <li className="group relative w-16">
                 <Link
                   href="#"
-                  className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
+                  className="py-[38px] after:content-['+'] group-hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
                 >
                   Home
                 </Link>
-                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
-                  <li className="team">
+                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform  transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0  pointer-events-none group-hover:pointer-events-auto">
+                  <li className="">
                     <Link
-                      href="#"
-                      className=" w-[250px] after:content-['+'] hover:after:content-['-'] after:ml-[140px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
+                      href="/HomeOne"
+                      className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                     >
-                      Multiple
+                      Home One
                     </Link>
-                    <ul className="text-[16px] absolute bg-base left-[280px] -mt-[51px] space-y-2 opacity-0  invisible transform transition-all duration-500 translate-y-4   group-hover:visible group-hover:translate-y-0 ">
-                      <li className="">
-                        <Link
-                          href="/HomeOne"
-                          className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
-                        >
-                          Home One
-                        </Link>
-                      </li>
-                      <li className="">
-                        <Link
-                          href="/HomeTwo"
-                          className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
-                        >
-                          Home Two
-                        </Link>
-                      </li>
-                      <li className="/HomeThree">
-                        <Link
-                          href="#"
-                          className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
-                        >
-                          Home Three
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
-                  <li className="team">
+                  <li className="">
                     <Link
-                      href="#"
-                      className=" w-[250px] after:content-['+'] hover:after:content-['-'] after:ml-[123px] block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
+                      href="/HomeTwo"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                     >
-                      OnpePage
+                      Home Two
                     </Link>
-                    <ul className="text-[16px] absolute bg-base left-[280px] -mt-[51px] space-y-2 opacity-0  invisible transform transition-all duration-500 translate-y-4    group-hover:translate-y-0 ">
-                      <li className="">
-                        <Link
-                          href="#"
-                          className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
-                        >
-                          Home One
-                        </Link>
-                      </li>
-                      <li className="">
-                        <Link
-                          href="#"
-                          className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
-                        >
-                          Home Two
-                        </Link>
-                      </li>
-                      <li className="">
-                        <Link
-                          href="#"
-                          className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
-                        >
-                          Home Three
-                        </Link>
-                      </li>
-                    </ul>
+                  </li>
+                  <li className="">
+                    <Link
+                      href="/HomeThree"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
+                    >
+                      Home Three
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="group relative w-20">
                 <Link
                   href="#"
-                  className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
+                  className="py-[38px] after:content-['+'] group-hover:after:content-['-'] hover:text-primary  after:ml-1"
                 >
                   Services
                 </Link>
-                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform  transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0  pointer-events-none group-hover:pointer-events-auto">
                   <li className="">
                     <Link
                       href="/ServiceOne"
@@ -133,11 +89,11 @@ const MainHeader = () => {
               <li className="group relative w-16">
                 <Link
                   href="#"
-                  className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
+                  className="py-[38px] after:content-['+'] group-hover:after:content-['-'] hover:text-primary  after:ml-1"
                 >
                   Pages
                 </Link>
-                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
                   <li className="">
                     <Link
                       href="/About"
@@ -165,7 +121,7 @@ const MainHeader = () => {
                   <li className="team">
                     <Link
                       href="#"
-                      className=" w-[250px] after:content-['+'] hover:after:content-['-'] after:ml-40 block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
+                      className="  w-[250px] after:content-['+'] hover:after:content-['-'] after:ml-40 block px-6 py-[10px]   border-t border-[#1E2843]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 hover:text-primary"
                     >
                       Team
                     </Link>
@@ -201,11 +157,11 @@ const MainHeader = () => {
               <li className="group relative w-[115px]">
                 <Link
                   href="#"
-                  className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
+                  className="py-[38px] after:content-['+'] group-hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
                 >
                   Case Study
                 </Link>
-                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
                   <li className="">
                     <Link
                       href="/CaseStudyOne"
@@ -243,11 +199,11 @@ const MainHeader = () => {
               <li className="group relative w-16">
                 <Link
                   href="#"
-                  className="py-[38px] after:content-['+'] hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
+                  className="py-[38px] after:content-['+'] group-hover:after:content-['-'] hover:text-primary transition-all delay-400 ease-linear after:ml-1"
                 >
                   Blog
                 </Link>
-                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
                   <li className="">
                     <Link
                       href="/BlogStandard"

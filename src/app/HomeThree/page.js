@@ -16,6 +16,8 @@ import Contact from "../../../components/home3/Contact";
 
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 import HomeBlogGrid from "../../../components/home3/HomeBlogGrid";
+import Link from "next/link";
+import { AiOutlinePlus } from "react-icons/ai";
 export const metadata = {
   title: "Home Three-Graptor",
   description: "Technology & IT Solutions ",
@@ -39,7 +41,7 @@ const HomeThree = () => {
               Service for You
             </h2>
           </div>
-          {/* <Services /> */}
+          <Services />
         </div>
       </section>
       {/* Service--End */}
@@ -113,7 +115,7 @@ const HomeThree = () => {
           </h2>
 
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3">
-            {/* {allPortfolio?.map((item) => {
+            {allPortfolio?.map((item) => {
               return (
                 <div
                   key={item.id}
@@ -162,7 +164,7 @@ const HomeThree = () => {
                   </div>
                 </div>
               );
-            })} */}
+            })}
           </div>
         </div>
       </section>

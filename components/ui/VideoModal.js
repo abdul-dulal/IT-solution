@@ -35,14 +35,16 @@ const VideoModal = () => {
           </button>
           <div
             onClick={closePopup}
-            className="relative w-[60%] h-[600%] bg-white rounded"
+            className="relative w-[80%] h-[80%] bg-white rounded"
           >
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+              src="https://www.youtube.com/embed/SZEflIVnhH8?si=BH39mJbQuwQ-VpmA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
             ></iframe>
           </div>
         </div>

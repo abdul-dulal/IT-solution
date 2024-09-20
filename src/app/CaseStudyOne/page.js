@@ -7,15 +7,13 @@ import BreadCumb from "../../../components/ui/BreadCumb";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import portfolio from "/public/Portfolio.json";
-import Pagination from "../../../components/ui/blog/Pagination";
+
 import CategoryList from "../../../components/ui/CategoryList";
 
 const CaseStudyThree = () => {
   const shuffleContainer = useRef(null);
   const shuffleInstance = useRef(null);
   const [techCategories, setTechCategories] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
-  const [activeCategory, setActiveCategory] = useState("all");
 
   useEffect(() => {
     shuffleInstance.current = new Shuffle(shuffleContainer.current, {
@@ -37,16 +35,6 @@ const CaseStudyThree = () => {
     shuffleInstance.current.filter(group === "all" ? Shuffle.ALL_ITEMS : group);
   };
 
-  const blogsPerPage = 6;
-
-  const handlePageClick = ({ selected }) => {
-    setCurrentPage(selected);
-  };
-
-  const offset = currentPage * blogsPerPage;
-
-  const currentPortfolio = portfolio?.slice(offset, offset + blogsPerPage);
-
   return (
     <div>
       <BreadCumb currentPage="Case Study" />
@@ -54,14 +42,13 @@ const CaseStudyThree = () => {
       <section class="relative py-[120px]">
         <div class="container mx-auto">
           <CategoryList
-            currentPage={currentPage}
             techCategories={techCategories}
             handleFilter={handleFilter}
           />
 
           <div class="">
             <div ref={shuffleContainer} class="row my-shuffle-container">
-              {currentPortfolio.map((item) => (
+              {portfolio.map((item) => (
                 <figure
                   key={item.id}
                   class="shuffle-img picture-item"
@@ -105,14 +92,6 @@ const CaseStudyThree = () => {
           </div>
         </div>
       </section>
-      <div className="my-[60px] flex  justify-center hover:transition-all hover:duration-300 hover:ease-in-out ">
-        <Pagination
-          currentPage={currentPage}
-          blogs={portfolio}
-          blogsPerPage={blogsPerPage}
-          handlePageClick={handlePageClick}
-        />
-      </div>
     </div>
   );
 };

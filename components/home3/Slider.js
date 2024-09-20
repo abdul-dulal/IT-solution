@@ -40,7 +40,7 @@ const Slider = () => {
         <SwiperSlide>
           <div
             style={{ transition: "transform 10000ms ease" }}
-            class={`single-slide bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home2.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
+            class={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home2.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
               activeIndex == 0 ? "scale-[1.3]" : ""
             }`}
           >
@@ -108,7 +108,7 @@ const Slider = () => {
         <SwiperSlide>
           <div
             style={{ transition: "transform 10000ms ease" }}
-            class={`single-slide bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home1.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
+            class={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home1.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
               activeIndex == 1 ? "scale-[1.3]" : ""
             }`}
           >
@@ -159,7 +159,7 @@ const Slider = () => {
         <SwiperSlide>
           <div
             style={{ transition: "transform 10000ms ease" }}
-            class={`single-slide bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home3.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
+            class={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home3.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
               activeIndex == 2 ? "scale-[1.3]" : ""
             }`}
           >

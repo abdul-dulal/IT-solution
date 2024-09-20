@@ -58,7 +58,7 @@ const Sider = ({ isVisible, setIsVisible }) => {
                       </span>
                     </div>
                     <h5 className="mb-[6px] text-[#191919]">Call Us</h5>
-                    <Link href="tel:1.800.321.9876">
+                    <Link href="tel:1.800.321.9876" target="blank">
                       <p className="hover:text-primary">1.800.321.9876</p>
                     </Link>
                   </div>
@@ -71,7 +71,7 @@ const Sider = ({ isVisible, setIsVisible }) => {
                       </span>
                     </div>
                     <h5 className="mb-[6px] text-[#191919]">Write us</h5>
-                    <Link href="mailto:contact@website.com">
+                    <Link href="mailto:contact@website.com" target="blank">
                       <p className="hover:text-primary">contact@website.com</p>
                     </Link>
                   </div>
@@ -95,6 +95,7 @@ const Sider = ({ isVisible, setIsVisible }) => {
                   <li className="inline-block">
                     <Link
                       href="https://www.facebook.com/"
+                      target="blank"
                       className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <FaFacebookF />
@@ -103,6 +104,7 @@ const Sider = ({ isVisible, setIsVisible }) => {
                   <li>
                     <Link
                       href="https://twitter.com/"
+                      target="blank"
                       className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <FaTwitter />
@@ -111,6 +113,7 @@ const Sider = ({ isVisible, setIsVisible }) => {
                   <li>
                     <Link
                       href="https://whatsapp.com/"
+                      target="blank"
                       className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <IoLogoWhatsapp />
@@ -119,6 +122,7 @@ const Sider = ({ isVisible, setIsVisible }) => {
                   <li>
                     <Link
                       href="https://instagram.com/"
+                      target="blank"
                       className="w-9 h-9 border border-solid border-[rgba(0,0,0,0.1)] rounded-[50%] text-[#1e2843] leading-[38px] flex justify-center items-center text-[16px]  mr-3 hover:bg-primary hover:border-primary hover:text-white"
                     >
                       <FaInstagram />
