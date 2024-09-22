@@ -97,7 +97,7 @@ const HomeTwo = () => {
                 </div>
                 <Link
                   href="/contact"
-                  className={`${rubik.className} lg:my-0 my-8  h-[50px] w-[180px]  flex items-center text-[15px]  leading-[.8] text-white overflow-hidden relative z-[99] text-center capitalize font-medium   border-2 border-[rgba(255,255,255,0.2)] hover:border-primary py-[14px] px-5 cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:content-[''] before:w-full before:h-0 before:absolute before:left-0 before:bottom-0 before:touch-auto before:-z-[99] before:bg-primary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  hover:before:top-auto hover:before:h-full`}
+                  className={`${rubik.className} lg:my-0 my-8  h-[50px] w-[180px]  flex items-center text-[15px]  leading-[.8] text-white overflow-hidden relative z-[99] text-center capitalize font-medium   border-2 border-[rgba(255,255,255,0.2)] hover:border-primary py-[14px] px-5 cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:content-[''] before:w-full before:h-0 before:absolute before:left-0 before:bottom-0 before:touch-auto before:-z-[99] before:bg-primary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  hover:before:h-full hover:before:top-0`}
                 >
                   get a quote
                   <PiArrowRightDuotone size={20} className="ml-7" />

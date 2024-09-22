@@ -74,7 +74,7 @@ const Slider = () => {
                       href="/About"
                       className={`${rubik.className} layer_animated ${
                         activeIndex == 0 ? "slider_parag" : ""
-                      } h-[48px]  flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[99] text-center capitalize font-medium   border border-primary py-[14px] px-[15px] cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:content-[''] before:w-full before:h-0 before:absolute before:left-0 before:bottom-0 before:touch-auto before:-z-[99] before:bg-primary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0   to_bottom`}
+                      } h-[48px]  flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[99] text-center capitalize font-medium   border border-primary py-[14px] px-[15px] cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:content-[''] before:w-full before:h-0 before:absolute before:left-0 before:bottom-0 before:touch-auto before:-z-[99] before:bg-primary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0   hover:before:`}
                     >
                       about us
                       <PiArrowRightDuotone size={20} className="ml-7" />
@@ -124,7 +124,7 @@ const Slider = () => {
                       href="/About"
                       className={`${rubik.className} layer_animated ${
                         activeIndex == 1 ? "slider_parag" : ""
-                      } h-[48px]  flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[99] text-center capitalize font-medium   border border-primary py-[14px] px-[15px] cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:content-[''] before:w-full before:h-0 before:absolute before:left-0 before:bottom-0 before:touch-auto before:-z-[99] before:bg-primary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0   to_bottom`}
+                      } h-[48px]  flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[99] text-center capitalize font-medium   border border-primary py-[14px] px-[15px] cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:content-[''] before:w-full before:h-0 before:absolute before:left-0 before:bottom-0 before:touch-auto before:-z-[99] before:bg-primary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0   hover:before:h-full hover:top-0`}
                     >
                       about us
                       <PiArrowRightDuotone size={20} className="ml-7" />

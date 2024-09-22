@@ -45,7 +45,7 @@ const PricePlanTwo = ({ title, icon, price }) => {
       <div className="relative mt-10 ">
         <Link
           href=""
-          className={`${rubik.className} h-[50px]    flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium w-[170px]  bg-primary py-[30px] px-[24px] cursor-pointer rounded-full transform  transition-all duration-400 hover:text-white before:content-[''] before:w-0 before:h-full before:absolute before:right-0  before:left-auto before:top-0  before:-z-[1] before:bg-secondary before:transition-width before:duration-400 before:ease-custom-ease before:delay-0  hover:before:w-full hover:before:left-0 hover:before:right-auto to_left`}
+          className={`${rubik.className} h-[50px]    flex items-center text-[15px] leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium w-[170px]  bg-primary py-[30px] px-[24px] cursor-pointer rounded-full transform  transition-all duration-400 hover:text-white before:content-[''] before:w-0 before:h-full before:absolute before:right-0  before:left-auto before:top-0  before:-z-[1] before:bg-secondary before:transition-width before:duration-400 before:ease-custom-ease before:delay-0  hover:before:w-full hover:before:left-0 hover:before:right-auto`}
         >
           buy now <IoScanCircleOutline size={20} className="ml-7" />
         </Link>
