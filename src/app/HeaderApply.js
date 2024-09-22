@@ -12,19 +12,9 @@ export default function Header() {
     if (pathname == "/" || pathname == "/HomeOne") {
       return <MainHeader />;
     } else if (pathname == "/HomeThree") {
-      return (
-        <div>
-          <TopheaderTwo />
-          <HeaderThree />
-        </div>
-      );
+      return <HeaderThree />;
     }
-    return (
-      <div>
-        <TopHeader />
-        <HeaderTwo />
-      </div>
-    );
+    return <HeaderTwo />;
   };
   return HeaderChooser();
 }
