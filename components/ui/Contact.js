@@ -68,7 +68,7 @@ const Contact = () => {
       <div className="container mx-auto xs:px-6 px-4">
         <div className="grid grid-cols-12">
           <div className="md:col-span-4 col-span-12">
-            <h2 className="mb-[50px] xl:text-5xl xs:leading-[58px] leading-[40px] font-bold   xs:text-[40px] text-[36px]  ">
+            <h2 className="mb-[50px] xl:text-5xl xl:leading-[58px] leading-[40px] font-bold   xs:text-[40px] text-[36px]  ">
               Let&apos;s Work together
             </h2>
             <Address

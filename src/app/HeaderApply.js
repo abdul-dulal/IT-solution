@@ -10,12 +10,7 @@ export default function Header() {
   const HeaderChooser = () => {
     const pathname = usePathname();
     if (pathname == "/" || pathname == "/HomeOne") {
-      return (
-        <div>
-          <TopHeader />
-          <MainHeader />
-        </div>
-      );
+      return <MainHeader />;
     } else if (pathname == "/HomeThree") {
       return (
         <div>

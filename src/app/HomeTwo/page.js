@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../../../components/home2/slider";
+import Slider from "../../../components/home1/slider";
 
 export const metadata = {
   title: "Home Two-Graptor",

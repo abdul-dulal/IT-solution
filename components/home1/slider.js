@@ -51,7 +51,7 @@ const Slider = () => {
                   For Startup Business
                 </h5>
                 <h2
-                  class={`layer_animated text-white sm:text-[80px] xs:text-[40px] text-[25px]  sm:leading-[80px] xs:leading-[90px] leading-[30px] font-bold ${
+                  class={`layer_animated text-white md:text-[80px] sm:text-[60px]   xs:text-[45px] text-[30px]  md:leading-[80px] sm:leading-[70px] xs:leading-[90px] leading-[30px] font-bold ${
                     activeIndex == 0 ? " slider_title" : ""
                   }`}
                 >
@@ -63,7 +63,7 @@ const Slider = () => {
                       href="/contact"
                       className={` ${rubik.className} layer_animated ${
                         activeIndex == 0 ? "slider_parag" : ""
-                      } h-[48px]  flex gap-4 items-center text-[15px]  leading-[12px] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[15px]  cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  grap-btn`}
+                      } h-[48px]  flex gap-4 items-center text-[15px]  leading-[12px] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[15px]  cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  hover:before:h-full hover:before:top-auto hover:before:bottom-0`}
                     >
                       Get A Quote
                       <PiArrowRightDuotone size={20} className=" ml-2" />
@@ -101,7 +101,7 @@ const Slider = () => {
                   IT Software & Design
                 </h5>
                 <h2
-                  class={`layer_animated text-white sm:text-[80px] xs:text-[40px] text-[25px]  sm:leading-[90px] xs:leading-[50px] leading-[30px] font-bold ${
+                  class={`layer_animated text-white md:text-[80px] sm:text-[60px]  xs:text-[40px] text-[25px]  md:leading-[90px] sm:leading-[70px] xs:leading-[50px] leading-[30px] font-bold ${
                     activeIndex == 1 ? " slider_title" : ""
                   }`}
                 >
@@ -151,7 +151,7 @@ const Slider = () => {
                   We Increase Your
                 </h5>
                 <h2
-                  class={`layer_animated text-white sm:text-[80px] xs:text-[40px] text-[25px]  sm:leading-[90px] xs:leading-[50px] leading-[30px] font-bold ${
+                  class={`layer_animated text-white md:text-[80px] sm:text-[60px] xs:text-[40px] text-[25px]  md:leading-[90px] sm:leading-[70px] xs:leading-[50px] leading-[30px] font-bold ${
                     activeIndex == 2 ? " slider_title" : ""
                   }`}
                 >

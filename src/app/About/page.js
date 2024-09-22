@@ -25,7 +25,7 @@ const About = () => {
     <div>
       <BreadCumb currentPage="about" />
 
-      {/* About Start */}
+      {/* About--Start */}
 
       <section className="relative pt-[120px]">
         <div className="container mx-auto xs:px-6 px-4">
@@ -56,14 +56,14 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* About End */}
+      {/* About--End */}
 
       {/* Work Process */}
       <section className="relative pt-28 pb-[120px]">
         <Work />
       </section>
 
-      {/* Team Start */}
+      {/* Team--Sart */}
       <section className="bg-[#081845] pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
         <div className="container mx-auto xl:px-6 px-4">
           <h6 className=" text-capitalize text-white text-center">
@@ -75,12 +75,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Slider */}
+      {/* Team--Slider */}
       <TeamSlider />
 
-      {/* Team End */}
+      {/* Team--End */}
 
-      {/* Testimonial Start */}
+      {/* Testimonial--Start */}
       <section className="relative pt-[116px] pb-[120px] ">
         <div className="container mx-auto xl:px-6 px-4">
           <h6 className=" text-capitalize  ">Client Testimonials</h6>
@@ -90,7 +90,7 @@ const About = () => {
           <ClientSlider />
         </div>
       </section>
-      {/* Testimonial End */}
+      {/* Testimonial--End */}
 
       {/* Contact */}
       <Contact />
