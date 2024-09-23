@@ -40,7 +40,7 @@ const TeamMemberTwo = () => {
                         width={500}
                         height={400}
                         className="w-full"
-                        alt="Team Member"
+                        alt={team.name}
                       />
                       <div className=" group absolute left-[25px] -bottom-[22px] after:absolute after:left-0 after:bottom-0 after:w-11 after:h-11 after:content-[''] after:bg-primary after:rounded-[5px] after:transition-all after:ease-in-out after:duration-400 hover:after:w-full">
                         <a

@@ -44,7 +44,7 @@ const Comments = () => {
         <Image
           src={author}
           className="rounded-[50%] absolute left-[35px] top-0 bottom-0 m-auto"
-          alt=""
+          alt={author}
         />
         <h4
           className={`${rubik.className} text-primary text-[24px] font-bold mb-1`}
@@ -103,7 +103,7 @@ const Comments = () => {
                   src={item.img}
                   width={70}
                   height={70}
-                  alt="Author"
+                  alt={item.author}
                 />
 
                 <div>

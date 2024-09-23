@@ -19,7 +19,7 @@ const CardImage = () => {
         className=" relative text-right -mb-[50px] sm:block hidden"
         style={{ transform }}
       >
-        <Image src={hero} alt="" />
+        <Image src={hero} alt="Hero" />
       </div>
     </div>
   );

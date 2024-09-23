@@ -24,7 +24,7 @@ const HeaderThree = () => {
                   >
                     Home
                   </Link>
-                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
                     <li className="">
                       <Link
                         href="/HomeOne"
@@ -35,7 +35,7 @@ const HeaderThree = () => {
                     </li>
                     <li className="">
                       <Link
-                        href="/HomeTwo"
+                        href="/"
                         className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-[#191919]"
                       >
                         Home Two
@@ -58,7 +58,7 @@ const HeaderThree = () => {
                   >
                     Services
                   </Link>
-                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
                     <li className="">
                       <Link
                         href="/ServiceOne"
@@ -92,7 +92,7 @@ const HeaderThree = () => {
                   >
                     Pages
                   </Link>
-                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
                     <li className="">
                       <Link
                         href="/About"
@@ -160,7 +160,7 @@ const HeaderThree = () => {
                   >
                     Case Study
                   </Link>
-                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto ">
                     <li className="">
                       <Link
                         href="/CaseStudyOne"
@@ -202,7 +202,7 @@ const HeaderThree = () => {
                   >
                     Blog
                   </Link>
-                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 ">
+                  <ul className="text-[16px] absolute bg-primary -left-3 mt-[23px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
                     <li className="">
                       <Link
                         href="/BlogStandard"

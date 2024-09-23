@@ -7,14 +7,21 @@ import TopheaderTwo from "../../components/header/TopheaderTwo";
 import TopHeader from "../../components/header/TopHeader";
 
 export default function Header() {
+  const pathname = usePathname();
   const HeaderChooser = () => {
-    const pathname = usePathname();
-    if (pathname == "/" || pathname == "/HomeOne") {
+    if (pathname == "/") {
       return <MainHeader />;
     } else if (pathname == "/HomeThree") {
       return <HeaderThree />;
     }
     return <HeaderTwo />;
   };
-  return HeaderChooser();
+  const footerChooser = () => {
+    if (pathname == "/HomeThree") {
+      return <TopheaderTwo />;
+    }
+    return <TopHeader />;
+  };
+  const result = [footerChooser(), HeaderChooser()];
+  return result;
 }

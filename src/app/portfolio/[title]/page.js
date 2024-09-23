@@ -42,8 +42,8 @@ const Portfolio = ({ params }) => {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-3">
-            <Image src={ps1} alt="" />
-            <Image src={ps2} alt="" />
+            <Image src={ps1} alt={single?.tech} />
+            <Image src={ps2} alt={single?.tech} />
           </div>
 
           <div className="grid grid-cols-12 gap-11">

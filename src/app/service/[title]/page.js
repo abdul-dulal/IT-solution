@@ -70,7 +70,7 @@ export default function ServiceDetails({ params }) {
                   <Image
                     className="rounded-[5px] mt-[19px] mb-[35px]"
                     src={blog}
-                    alt=""
+                    alt={paramsTitle}
                   />
 
                   <div className="">

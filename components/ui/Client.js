@@ -12,12 +12,12 @@ const Client = ({ logo }) => {
         <Image
           className="hover inline-block max-w-full w-auto transition-all duration-300 ease-in-out absolute top-0 left-0 z-[1] invisible "
           src={logo}
-          alt="Client"
+          alt="Client Hover"
         />
         <Image
           className="normal inline-block max-w-full w-auto transition-all duration-300 ease-in-out   "
           src={logo}
-          alt="Client"
+          alt="Client Main"
         />
       </Link>
     </div>

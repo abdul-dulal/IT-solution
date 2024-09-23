@@ -15,6 +15,11 @@ import cLogo1 from "/public/img/client/techlogo1.png";
 import cLogo2 from "/public/img/client/brandname1.png";
 import cLogo3 from "/public/img/client/brandname2.png";
 import cLogo4 from "/public/img/client/techlogo2.png";
+import CaseSlider from "../../components/home1/CaseSlider";
+import TeamSlider from "../../components/ui/team/TeamSlider";
+import ClientSlider from "../../components/ui/team/ClientSlider";
+import Contact from "../../components/ui/Contact";
+import FooterTwo from "../../components/ui/Footer/FooterTwo";
 export const metadata = {
   title: "Home Two-Graptor",
   description: "Technology & IT Solutions ",
@@ -61,7 +66,9 @@ const HomeTwo = () => {
 
       {/* Service--Start */}
       <section class="service-section-1 relative bg-secondary pt-[30px] pb-[120px]">
-        <div class="px-6">{/* <ServiceSlider /> */}</div>
+        <div class="px-6">
+          <ServiceSlider />
+        </div>
         <div class="container mx-auto xs:px-10 px-3">
           <div class=" relative bg-[#1a2a57] border-2 border-solid border-[rgba(255,255,255,0.1)] rounded-[10px] py-20 lg:px-[50px] px-6 mt-[90px]">
             <div className="grid grid-cols-12 gap-5">
@@ -129,6 +136,41 @@ const HomeTwo = () => {
       </section>
 
       {/* Client--End */}
+
+      <CaseSlider />
+
+      {/* Team--Sart */}
+      {/* <section className="bg-[#081845] pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
+        <div className="container mx-auto xl:px-6 px-4">
+          <h6 className=" text-capitalize text-white text-center">
+            Meet Our Team
+          </h6>
+          <h2 className=" xs:text-5xl text-3xl text-center text-white">
+            Our Creative Team
+          </h2>
+        </div>
+      </section>
+
+      <TeamSlider /> */}
+
+      {/* Team--End */}
+
+      {/* Testimonial--Start */}
+      {/* <section className="relative pt-[116px] pb-[120px] ">
+        <div className="container mx-auto xl:px-6 px-4">
+          <h6 className=" text-capitalize  ">Client Testimonials</h6>
+          <h2 className=" sm:text-5xl text-3xl mb-12 text-[rgb(25,25,25)]">
+            What our clients say
+          </h2>
+          <ClientSlider />
+        </div>
+      </section> */}
+      {/* Testimonial--End */}
+
+      {/* Contact */}
+      <Contact />
+      {/* Footer */}
+      <FooterTwo />
     </div>
   );
 };

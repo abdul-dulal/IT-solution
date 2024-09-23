@@ -1,11 +1,6 @@
 import React from "react";
 import BreadCumb from "../../../components/ui/BreadCumb";
-import Image from "next/image";
-import hero from "/public/img/about/About-hero.jpg";
-import { IoCallSharp } from "react-icons/io5";
-import { rubik } from "../fonts";
 import ProgressBar from "../../../components/ui/Progressbar";
-import AboutCounter from "../../../components/ui/AboutCounter";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 import VideoModalTwo from "../../../components/VideoModal2";
 import Work from "../../../components/ui/Work";
@@ -75,7 +70,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team--Slider */}
       <TeamSlider />
 
       {/* Team--End */}

@@ -29,7 +29,7 @@ const Blog = () => {
                     width={200}
                     height={50}
                     className="w-full"
-                    alt="Blog"
+                    alt={blog.title}
                   />
                   <div className="biMeta absolute bottom-[25px] left-[25px] w-auto z-[2] bg-primary text-white text-sm leading-[30px] capitalize px-[15px] font-normal transition-all ease-out duration-300 hover:bg-[#081845]">
                     <Link href="" className="mr-6 relative ">

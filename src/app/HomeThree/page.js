@@ -52,7 +52,7 @@ const HomeThree = () => {
         <div class="container mx-auto xs:px-0 px-6">
           <div class="grid sm:grid-cols-2 gap-4">
             <div class="">
-              <Image src={layer} alt="" />
+              <Image src={layer} alt="Layer" />
             </div>
 
             <div class="">

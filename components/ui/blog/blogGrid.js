@@ -29,7 +29,7 @@ const BlogGrid = () => {
                       src={blog.img}
                       width={360}
                       height={360}
-                      alt="Description"
+                      alt={blog.title}
                       className="w-full h-[350px] transition-all duration-300 ease-in-out group-hover:scale-[1.1] group-hover:rotate-[1.2deg] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
                     />
 

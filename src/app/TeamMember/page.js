@@ -35,7 +35,7 @@ const TeamMember = () => {
                     src={team.img}
                     width={500}
                     height={500}
-                    alt="Team Member"
+                    alt={team.name}
                     className="w-full"
                   />
                   <div

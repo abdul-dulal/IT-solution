@@ -14,7 +14,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
           width={750}
           height={200}
           className="rounded-[5px] h-[400px] mt-10 mx-auto"
-          alt="Blog"
+          alt={title}
         />
       </div>
       <div className=" relative">
@@ -32,7 +32,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
           <Image
             src={author}
             className="rounded-[50%] absolute top-0 left-0 w-11 h-11"
-            alt="Author"
+            alt={author}
           />
           <Link
             href=""

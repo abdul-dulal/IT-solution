@@ -62,7 +62,7 @@ const Portfolio = () => {
                   width={400}
                   height={400}
                   className="w-full"
-                  alt="Portfolio"
+                  alt={item.title}
                 />
                 <div
                   style={{ width: "calc(100% - 30px)" }}

@@ -33,7 +33,7 @@ const HeaderTwo = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="/HomeTwo"
+                      href="/"
                       className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Home Two
