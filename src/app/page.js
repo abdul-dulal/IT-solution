@@ -20,14 +20,12 @@ import TeamSlider from "../../components/ui/team/TeamSlider";
 import ClientSlider from "../../components/ui/team/ClientSlider";
 import Contact from "../../components/ui/Contact";
 import FooterTwo from "../../components/ui/Footer/FooterTwo";
-import ShuffleTwo from "../../components/CaseStudy/ShuffleTwo";
-import portfolios from "/public/Portfolio.json";
+import HomeShuffle from "../../components/home1/HomeShuffle";
 export const metadata = {
   title: "Home One-Graptor",
   description: "Technology & IT Solutions ",
 };
 const HomeTwo = () => {
-  const portfolio = portfolios.slice(0, 6);
   return (
     <div>
       <section>
@@ -150,8 +148,8 @@ const HomeTwo = () => {
             Case Study
           </h2>
         </div>
+        <HomeShuffle />
       </section>
-      <ShuffleTwo portfolio={portfolio} />
 
       {/* Team--Sart */}
       <section className="bg-[#081845] pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
