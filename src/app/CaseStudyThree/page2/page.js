@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
-import BreadCumb from "../../../components/ui/BreadCumb";
 import portfolios from "/public/Portfolio.json";
-import ShuffleTwo from "../../../components/CaseStudy/ShuffleTwo";
-import Footer from "../../../components/ui/Footer/Footer";
-import CasePaginationTwo from "../../../components/CaseStudy/CasePaginationTwo";
-const CaseStudyThree = () => {
+import BreadCumb from "../../../../components/ui/BreadCumb";
+import ShuffleTwo from "../../../../components/CaseStudy/ShuffleTwo";
+import CasePaginationTwo from "../../../../components/CaseStudy/CasePaginationTwo";
+import Footer from "../../../../components/ui/Footer/Footer";
+const PageTwo = () => {
   const pathname = usePathname();
   const portfolio = portfolios.slice(0, 6);
 
@@ -26,4 +26,4 @@ const CaseStudyThree = () => {
   );
 };
 
-export default CaseStudyThree;
+export default PageTwo;

@@ -15,17 +15,18 @@ import cLogo1 from "/public/img/client/techlogo1.png";
 import cLogo2 from "/public/img/client/brandname1.png";
 import cLogo3 from "/public/img/client/brandname2.png";
 import cLogo4 from "/public/img/client/techlogo2.png";
-import CaseSlider from "../../components/home1/CaseSlider";
+import portfolis from "/public/Portfolio.json";
 import TeamSlider from "../../components/ui/team/TeamSlider";
 import ClientSlider from "../../components/ui/team/ClientSlider";
 import Contact from "../../components/ui/Contact";
 import FooterTwo from "../../components/ui/Footer/FooterTwo";
-import HomeShuffle from "../../components/home1/HomeShuffle";
+import ShuffleTwo from "../../components/CaseStudy/ShuffleTwo";
 export const metadata = {
   title: "Home One-Graptor",
   description: "Technology & IT Solutions ",
 };
 const HomeTwo = () => {
+  const portfolio = portfolis.slice(0, 6);
   return (
     <div>
       <section>
@@ -148,7 +149,7 @@ const HomeTwo = () => {
             Case Study
           </h2>
         </div>
-        <HomeShuffle />
+        <ShuffleTwo portfolio={portfolio} />
       </section>
 
       {/* Team--Sart */}

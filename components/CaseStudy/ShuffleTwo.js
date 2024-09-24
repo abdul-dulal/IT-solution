@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Shuffle from "shufflejs";
-import data from "/public/Portfolio.json";
-import CategoryList from "../ui/CategoryList";
-import { AiOutlinePlus } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa6";
+import CategoryList from "../ui/CategoryList";
+import data from "/public/Portfolio.json";
 
 const ShuffleTwo = ({ portfolio }) => {
   const shuffleContainer = useRef(null);
   const shuffleInstance = useRef(null);
   const [techCategories, setTechCategories] = useState([]);
+
   useEffect(() => {
     shuffleInstance.current = new Shuffle(shuffleContainer.current, {
       itemSelector: ".picture-item",
@@ -37,54 +37,49 @@ const ShuffleTwo = ({ portfolio }) => {
         techCategories={techCategories}
         handleFilter={handleFilter}
       />
-      <div class="">
-        <div ref={shuffleContainer} class="row my-shuffle-container">
+      <div className="">
+        <div ref={shuffleContainer} className="row my-shuffle-container">
           {portfolio.map((item) => (
             <figure
               key={item.id}
-              class="shuffle-img2 picture-item"
+              className="shuffle-img  picture-item"
               data-groups={JSON.stringify([item.tech])}
             >
-              <div className=" group relative overflow-hidden  ">
-                <Image
-                  src={item?.img}
-                  width={500}
-                  height={500}
-                  className="w-full rounded-[10px]"
-                  alt={item.title}
-                />
-                <div
-                  style={{
-                    transition:
-                      "transform 0.4s cubic-bezier(0.34, 0.66, 0.79, 0.58), opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)",
-                  }}
-                  className=" absolute content-[''] left-0 top-0 w-full h-full rounded-[10px] bg-[rgba(104,110,226,0.8)] opacity-0 group-hover:opacity-100"
-                >
-                  <div className=" absolute left-0 top-[50%] -translate-y-[50%] w-full text-center pb-[15px] z-[2]">
-                    <Link
-                      href={`/portfolio/${item.title}`}
-                      style={{
-                        boxShadow: "0px 1px 54px 0px rgb(47 84 238 / 46%)",
-                      }}
-                      className="fm-more relative right-auto inline-block bg-white w-[57px] h-[57px] text-center rounded-[50%] text-2xl text-primary leading-[60px] mb-[22px]  scale-75 opacity-0 invisible transition-all ease-in-out duration-300 group-hover:scale-100 group-hover:visible group-hover:opacity-100"
-                    >
-                      <span className="w-full h-full flex items-center justify-center">
-                        <AiOutlinePlus className="" />
-                      </span>
-                    </Link>
-                    <h5 className="text-xl leading-[30px] text-white mb-[3px] invisible opacity-0 translate-y-[30px] transition-all ease-in-out duration-700 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
+              <div className="relative h-full w-full overflow-hidden">
+                <div className="folio-item-1 group mb-[30px] relative overflow-hidden after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:z-[1] after:opacity-0 after:invisible after:transition-all after:ease-in-out after:duration-300 after:bg-[rgba(104,110,226,0.8)] hover:after:h-full hover:after:opacity-[1] hover:after:visible">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    width={365}
+                    height={400}
+                    className=" w-full"
+                  />
+                  <div
+                    style={{ width: "calc(100% - 30px)" }}
+                    className="folio-content absolute left-[15px] bottom-0 z-[2] bg-white rounded-[5px] pt-[23px] pr-[70px] pb-[16px] pl-[20px] invisible opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:bottom-4 group-hover:opacity-[1] group-hover:delay-[0.4s]"
+                  >
+                    <p className=" relative text-primary mb-[2px]">
                       <Link
-                        href={`/portfolio/${item.title}`}
-                        className="hover:text-[#191919] hover:transition-all hover:ease-linear hover:duration-300"
+                        href={`/portfolioCategory/${item?.tech}`}
+                        className="text-primary inline-block hover:text-[#191919]"
+                      >
+                        {item.tech}
+                      </Link>
+                    </p>
+                    <h5 className="text-lg mb-0 hover:text-primary">
+                      <Link
+                        href={`portfolio/${item.title}`}
+                        className="inline-block"
                       >
                         {item.title}
                       </Link>
                     </h5>
-                    <p className="cats text-[rgba(255,255,255,0.8)] m-0 translate-y-[30px] opacity-0 invisible transition-all ease-in-out duration-1000 hover:text-[#191919] group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
-                      <Link href={`/portfolioCategory/${item?.tech}`}>
-                        {item?.tech}
-                      </Link>
-                    </p>
+                    <Link
+                      className="flex items-center justify-center w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-[16px] rounded-[3px] leading-[47px] text-center absolute top-0 bottom-0 right-4 hover:bg-primary hover:text-white m-auto"
+                      href={`portfolio/${item.title}`}
+                    >
+                      <FaArrowRight />
+                    </Link>
                   </div>
                 </div>
               </div>
