@@ -228,6 +228,7 @@ $picture-gutter: 24px;
   position: relative;
   box-sizing: border-box;
   min-height: 1px;
+  padding-bottom: 11px;
 }
 
 .shuffle-img,

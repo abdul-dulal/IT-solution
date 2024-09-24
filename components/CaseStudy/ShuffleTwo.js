@@ -45,7 +45,7 @@ const ShuffleTwo = ({ portfolio }) => {
               class="shuffle-img2 picture-item"
               data-groups={JSON.stringify([item.tech])}
             >
-              <div className=" group relative overflow-hidden  m-[10px]">
+              <div className=" group relative overflow-hidden  ">
                 <Image
                   src={item?.img}
                   width={500}

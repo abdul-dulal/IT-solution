@@ -20,11 +20,14 @@ import TeamSlider from "../../components/ui/team/TeamSlider";
 import ClientSlider from "../../components/ui/team/ClientSlider";
 import Contact from "../../components/ui/Contact";
 import FooterTwo from "../../components/ui/Footer/FooterTwo";
+import ShuffleTwo from "../../components/CaseStudy/ShuffleTwo";
+import portfolios from "/public/Portfolio.json";
 export const metadata = {
-  title: "Home Two-Graptor",
+  title: "Home One-Graptor",
   description: "Technology & IT Solutions ",
 };
 const HomeTwo = () => {
+  const portfolio = portfolios.slice(0, 6);
   return (
     <div>
       <section>
@@ -136,11 +139,22 @@ const HomeTwo = () => {
       </section>
 
       {/* Client--End */}
+      {/* Portfolio */}
 
-      <CaseSlider />
+      <section className=" pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
+        <div className="container mx-auto xl:px-6 px-4">
+          <h6 className=" text-capitalize text-primary text-center">
+            Portfolio
+          </h6>
+          <h2 className=" xs:text-5xl text-3xl text-center text-black mb-12">
+            Case Study
+          </h2>
+        </div>
+        <ShuffleTwo portfolio={portfolio} />
+      </section>
 
       {/* Team--Sart */}
-      {/* <section className="bg-[#081845] pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
+      <section className="bg-[#081845] pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
         <div className="container mx-auto xl:px-6 px-4">
           <h6 className=" text-capitalize text-white text-center">
             Meet Our Team
@@ -151,12 +165,12 @@ const HomeTwo = () => {
         </div>
       </section>
 
-      <TeamSlider /> */}
+      <TeamSlider />
 
       {/* Team--End */}
 
       {/* Testimonial--Start */}
-      {/* <section className="relative pt-[116px] pb-[120px] ">
+      <section className="relative pt-[116px] pb-[120px] ">
         <div className="container mx-auto xl:px-6 px-4">
           <h6 className=" text-capitalize  ">Client Testimonials</h6>
           <h2 className=" sm:text-5xl text-3xl mb-12 text-[rgb(25,25,25)]">
@@ -164,7 +178,7 @@ const HomeTwo = () => {
           </h2>
           <ClientSlider />
         </div>
-      </section> */}
+      </section>
       {/* Testimonial--End */}
 
       {/* Contact */}

@@ -36,7 +36,7 @@ import Services from "../../../components/ui/service/Services";
 
 import CardImage from "../../../components/ui/CardImage";
 export const metadata = {
-  title: "Home One-Graptor",
+  title: "Home Two-Graptor",
   description: "Technology & IT Solutions ",
 };
 const HomeOne = () => {
