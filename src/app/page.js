@@ -150,8 +150,8 @@ const HomeTwo = () => {
             Case Study
           </h2>
         </div>
-        <ShuffleTwo portfolio={portfolio} />
       </section>
+      <ShuffleTwo portfolio={portfolio} />
 
       {/* Team--Sart */}
       <section className="bg-[#081845] pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
