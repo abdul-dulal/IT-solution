@@ -6,7 +6,7 @@ import Popup from "./Popup";
 const HeaderTwo = () => {
   return (
     <header className="bg-white  sticky top-0 z-[999] shadow-lg">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto xs:px-6 px-3">
         <nav className="h-[98px]">
           <div className="flex justify-between  items-center w-full h-full">
             <Link href={"/"} className="">
@@ -25,7 +25,7 @@ const HeaderTwo = () => {
                 <ul className="text-[16px] absolute bg-white -left-3 mt-[35px] space-y-2 opacity-0 invisible transform transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto ">
                   <li className="">
                     <Link
-                      href="/HomeOne"
+                      href="/"
                       className=" w-[250px] block px-6 py-[6px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Home One
@@ -33,7 +33,7 @@ const HeaderTwo = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="/"
+                      href="/HomeTwo"
                       className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Home Two

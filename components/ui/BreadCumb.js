@@ -13,7 +13,7 @@ const BreadCumb = ({ currentPage }) => {
           <div
             className={`${rubik.className} text-lg leading-[30px] text-[rgba(255,255,255,0.7)]`}
           >
-            <Link href="/HomeOne" className="text-[#B9BBCA] hover:text-primary">
+            <Link href="/HomeTwo" className="text-[#B9BBCA] hover:text-primary">
               Home
             </Link>
             / <span className="capitalize">{currentPage}</span>

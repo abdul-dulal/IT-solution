@@ -18,7 +18,7 @@ const Contact = () => {
 
       <section class="contactSetion relative pt-[150px] pb-[120px]">
         <div class="container mx-auto xl:px-6 px-4">
-          <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-8">
+          <div class="grid xl:grid-cols-3  sm:grid-cols-2 gap-8">
             <div
               style={{ padding: "59px 40px 27px" }}
               class=" relative  mb-[120px] border border-solid border-[#ececec] transition-all duration-300 ease-in-out"

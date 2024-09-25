@@ -9,7 +9,7 @@ const FooterSocial = () => {
   return (
     <aside className=" relative mt-[50px] mb-[45px]">
       <div className=" relative pr-5">
-        <Link href="/HomeOne">
+        <Link href="/HomeTwo">
           <Image src={logo} alt="Footer-Logo" />
         </Link>
         <p className="text-[rgba(255,255,255,0.8)] mt-7 mb-8 text-lg font-normal xs:pr-10 pr-0">

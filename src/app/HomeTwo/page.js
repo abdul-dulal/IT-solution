@@ -39,7 +39,7 @@ export const metadata = {
   title: "Home Two-Graptor",
   description: "Technology & IT Solutions ",
 };
-const HomeOne = () => {
+const HomeTwo = () => {
   return (
     <div>
       {/* Hero Banner Start --- */}
@@ -58,7 +58,7 @@ const HomeOne = () => {
               <div className="flex flex-wrap mt-12 ">
                 <Link
                   href="/contact"
-                  className={`${rubik.className}  h-[58px] flex gap-6 items-center text-[16px]  leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[25px]  cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  hover:before:h-full hover:before:top-auto hover:before:bottom-0`}
+                  className={`${rubik.className} xs:mb-0 mb-12  h-[58px] flex gap-6 items-center text-[16px]  leading-[.8] text-white overflow-hidden relative z-[1] text-center capitalize font-medium bg-primary py-[14px] px-[25px]  cursor-pointer rounded-[5px] transform  transition-all duration-400 hover:text-white before:absolute before:content-[''] before:w-full before:h-0 before:left-0 before:top-0 before:-z-[1] before:bg-secondary before:transition-height before:duration-400 before:ease-custom-ease before:delay-0  hover:before:h-full hover:before:top-auto hover:before:bottom-0`}
                 >
                   Get A Quote
                   <PiArrowRightDuotone size={20} className=" " />
@@ -276,4 +276,4 @@ const HomeOne = () => {
   );
 };
 
-export default HomeOne;
+export default HomeTwo;

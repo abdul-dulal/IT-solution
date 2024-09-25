@@ -61,7 +61,7 @@ const ResponsiveHeader = ({ bgColor }) => {
                       showParagraph ? "max-h-40" : "max-h-0"
                     } `}
                   >
-                    <List title="Home One" path="/HomeOne" />
+                    <List title="Home One" path="/" />
                     <List title="Home Two" path="/HomeTwo" />
                     <List title="Home Three" path="/HomeThree" />
                   </ul>

@@ -20,7 +20,8 @@ import TeamSlider from "../../components/ui/team/TeamSlider";
 import ClientSlider from "../../components/ui/team/ClientSlider";
 import Contact from "../../components/ui/Contact";
 import FooterTwo from "../../components/ui/Footer/FooterTwo";
-import ShuffleTwo from "../../components/CaseStudy/ShuffleTwo";
+import HomeShuffle from "../../components/home1/homeShuffle";
+
 export const metadata = {
   title: "Home One-Graptor",
   description: "Technology & IT Solutions ",
@@ -149,7 +150,7 @@ const HomeTwo = () => {
             Case Study
           </h2>
         </div>
-        <ShuffleTwo portfolio={portfolio} />
+        <HomeShuffle portfolio={portfolio} />
       </section>
 
       {/* Team--Sart */}

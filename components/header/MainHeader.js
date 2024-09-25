@@ -28,7 +28,7 @@ const MainHeader = () => {
                 <ul className="text-[16px] absolute bg-base -left-3 mt-[35px] space-y-2 opacity-0 invisible transform  transition-all duration-500 translate-y-4 group-hover:opacity-100  group-hover:visible group-hover:translate-y-0  pointer-events-none group-hover:pointer-events-auto">
                   <li className="">
                     <Link
-                      href="/HomeOne"
+                      href="/"
                       className=" w-[250px] block px-6 py-[6px]   border-t border-[#1E2843]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 hover:text-primary"
                     >
                       Home One
@@ -36,7 +36,7 @@ const MainHeader = () => {
                   </li>
                   <li className="">
                     <Link
-                      href="/"
+                      href="/HomeTwo"
                       className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                     >
                       Home Two

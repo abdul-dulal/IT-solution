@@ -3,8 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { MdOutlineMail } from "react-icons/md";
 
-import footer1 from "/public/img/footer-1.jpg";
-import footer2 from "/public/img/footer-2.jpg";
 import blog from "/public/Blog.json";
 import Link from "next/link";
 import FooterSocial from "./FooterSocial";
