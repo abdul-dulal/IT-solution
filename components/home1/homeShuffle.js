@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import CategoryList from "../ui/CategoryList";
 import data from "/public/Portfolio.json";
 
-const HomeShuffle = ({ portfolio }) => {
+const HomeShuffle = () => {
   const shuffleContainer = useRef(null);
   const shuffleInstance = useRef(null);
   const [techCategories, setTechCategories] = useState([]);
@@ -40,10 +40,10 @@ const HomeShuffle = ({ portfolio }) => {
       />
       <div className="">
         <div ref={shuffleContainer} className="row my-shuffle-container">
-          {portfolio.map((item) => (
+          {data.slice(0, 6).map((item, index) => (
             <figure
               key={item.id}
-              className="shuffle-img picture-item"
+              className={`shuffle-img picture-item image-${index + 1}`}
               data-groups={JSON.stringify([item.tech])}
             >
               <div className="relative h-full w-full overflow-hidden">

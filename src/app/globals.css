@@ -177,7 +177,7 @@
 
 /* Shuffle */
 /* shuffle-img */
-/* $picture-gutter: 24px;
+$picture-gutter: 24px;
 
 .picture-item {
   height: 220px;
@@ -248,7 +248,7 @@
     float: left;
     width: 33.33333%;
   }
-} */
+}
 
 /* customize done */
 .active {
@@ -436,58 +436,5 @@
 
   50% {
     opacity: 1;
-  }
-}
-
-/* Shuffle container */
-.row {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(200px, 1fr)
-  ); /* Responsive grid columns */
-  grid-gap: 24px; /* Gap between items */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.picture-item {
-  margin-top: 24px;
-  height: auto;
-}
-
-.picture-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 767px) {
-  .picture-item {
-    width: 100%;
-  }
-}
-
-.shuffle-img {
-  position: relative;
-  box-sizing: border-box;
-  padding: 16px;
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .shuffle-img {
-    width: 50%;
-  }
-
-  .row {
-    max-width: 1200px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .shuffle-img {
-    width: 33.3333%;
   }
 }

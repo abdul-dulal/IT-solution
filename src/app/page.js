@@ -27,7 +27,6 @@ export const metadata = {
   description: "Technology & IT Solutions ",
 };
 const HomeTwo = () => {
-  const portfolio = portfolis.slice(0, 6);
   return (
     <div>
       <section>
@@ -150,7 +149,7 @@ const HomeTwo = () => {
             Case Study
           </h2>
         </div>
-        <HomeShuffle portfolio={portfolio} />
+        <HomeShuffle />
       </section>
 
       {/* Team--Sart */}
