@@ -1,25 +1,48 @@
 import { rubik } from "@/app/fonts";
 import React, { useState } from "react";
 
-const CommentFrom = ({ comments, setComment }) => {
+const CommentFrom = ({ comments, setComment, isReplay, replay }) => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
-  const [replay, setReplay] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const id = comments.length + 1;
-    setComment((prevComments) => [
-      ...prevComments,
+    if (isReplay) {
+      setComment((prevComments) => [
+        ...prevComments,
 
-      {
-        id: id,
-        comment: message,
-        author: name,
-        img: "/img/blog/user.png",
-      },
-      ,
-    ]);
+        {
+          id: id,
+          comment: message,
+          author: name,
+          img: "/img/blog/user.png",
+        },
+        ,
+      ]);
+    } else {
+      comments.find((comment) => {
+        const id = comment?.id + 1;
+        if (comment.author == replay) {
+          comment.replay.push([
+            setComment((prevComments) => [
+              ...prevComments,
+
+              {
+                id: id,
+                comment: message,
+                author: name,
+                img: "/img/blog/user.png",
+              },
+              ,
+            ]),
+          ]);
+        }
+        console.log(comments);
+      });
+    }
+
     setName("");
     setMessage("");
     setEmail("");

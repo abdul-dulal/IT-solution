@@ -11,17 +11,17 @@ import Tag from "../../../../components/ui/blog/Tag";
 import { rubik } from "@/app/fonts";
 import blog from "/public/Blog.json";
 import BlogTitle from "../../../../components/ui/blog/BlogTitle";
-
+import FooterTwo from "../../../../components/ui/Footer/FooterTwo";
 
 export async function generateMetadata({ params }) {
-    const paramsTitle = params.title
-      ?.replace(/%20/g, " ")
-      .replace(/\b\w/g, (char) => char.toUpperCase());
-    return {
-      title: paramsTitle + "-Graptor",
-      description: "Technology & IT Solutions ",
-    };
-  }
+  const paramsTitle = params.title
+    ?.replace(/%20/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return {
+    title: paramsTitle + "-Graptor",
+    description: "Technology & IT Solutions ",
+  };
+}
 const SingleBlog = ({ params }) => {
   const title = params?.title?.replace(/%20/g, " ");
 
@@ -91,6 +91,8 @@ const SingleBlog = ({ params }) => {
           </div>
         </div>
       </section>
+      {/* Footer */}
+      <FooterTwo />
     </div>
   );
 };
