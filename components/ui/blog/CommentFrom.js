@@ -1,7 +1,7 @@
 import { rubik } from "@/app/fonts";
 import React, { useState } from "react";
 
-const CommentFrom = ({ comments, setComment, isReplay, replay }) => {
+const CommentFrom = ({ comments, setComment, isReplay, replay, setReplay }) => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
@@ -23,24 +23,18 @@ const CommentFrom = ({ comments, setComment, isReplay, replay }) => {
       ]);
     } else {
       comments.find((comment) => {
-        const id = comment?.id + 1;
-        if (comment.author == replay) {
-          comment.replay.push([
-            setComment((prevComments) => [
-              ...prevComments,
+        console.log(comment);
 
-              {
-                id: id,
-                comment: message,
-                author: name,
-                img: "/img/blog/user.png",
-              },
-              ,
-            ]),
-          ]);
+        if (comment.author == replay) {
+          comment.replay.push({
+            id: id,
+            comment: message,
+            author: name,
+            img: "/img/blog/user.png",
+          });
         }
-        console.log(comments);
       });
+      setReplay("");
     }
 
     setName("");

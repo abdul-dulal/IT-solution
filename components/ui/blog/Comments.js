@@ -104,11 +104,12 @@ const Comments = () => {
         <li>
           {comments?.map((item) => {
             return (
-              <div key={item.id}>
+              <div
+                key={item.id}
+                className={`${item.id % 2 == 0 ? "ml-10" : ""}`}
+              >
                 <div
-                  className={`p-2 ${
-                    item.id % 2 == 0 ? "ml-10" : ""
-                  } flex gap-12 relative rounded-[10px] border border-solid border-[#d1d1d1] pt-10 px-10 pb-14 mb-7`}
+                  className={`p-2  flex gap-12 relative rounded-[10px] border border-solid border-[#d1d1d1] pt-10 px-10 pb-14 mb-7`}
                 >
                   <Image
                     className="  w-[97px] h-[97px] rounded-[50%]"
@@ -136,6 +137,46 @@ const Comments = () => {
                     </button>
                   </div>
                 </div>
+                <div>
+                  {item.replay && (
+                    <div>
+                      {item.replay.map((item) => {
+                        return (
+                          <div
+                            key={item.comment}
+                            className={`p-2  flex gap-12 relative rounded-[10px] border border-solid border-[#d1d1d1] pt-10 px-10 pb-14 mb-7`}
+                          >
+                            <Image
+                              className="  w-[97px] h-[97px] rounded-[50%]"
+                              src={item.img}
+                              width={70}
+                              height={70}
+                              alt={item.author}
+                            />
+
+                            <div>
+                              <h5
+                                className={`${rubik.className} uppercase text-xl text-secondary font-medium mb-3`}
+                              >
+                                {item.author}
+                              </h5>
+                              <p className="text-sm my-2">02 December, 2021</p>
+                              <div className="">
+                                <p className="leading-[30px]">{item.comment}</p>
+                              </div>
+                              <button
+                                onClick={() => handleReplay(item.author)}
+                                className={`${rubik.className}  inline-block text-sm leading-[0.8] text-secondary font-medium uppercase hover:text-primary mt-4`}
+                              >
+                                Reply
+                              </button>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
                 <div className={`mb-14 ${item.id % 2 == 0 ? "ml-10" : ""}`}>
                   {replay == item.author && (
                     <div className="">
@@ -157,6 +198,7 @@ const Comments = () => {
                         setComment={setComment}
                         isReplay={false}
                         replay={replay}
+                        setReplay={setReplay}
                       />
                     </div>
                   )}
