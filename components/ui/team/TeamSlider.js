@@ -59,9 +59,9 @@ const TeamSlider = () => {
         }}
       >
         <div className="relative">
-          {teams?.map((team) => {
+          {teams?.map(({ id, name, designation, img }) => {
             return (
-              <SwiperSlide key={team.id}>
+              <SwiperSlide key={id}>
                 <div className="">
                   <div
                     style={{ boxShadow: "0px 10px 30px 0px rgb(0 0 0 / 5%)" }}
@@ -69,11 +69,11 @@ const TeamSlider = () => {
                   >
                     <div className=" relative">
                       <Image
-                        src={team.img}
+                        src={img}
                         width={500}
                         height={400}
                         className="w-full"
-                        alt={team.name}
+                        alt={name}
                       />
                       <div className=" group absolute left-[25px] -bottom-[22px] after:absolute after:left-0 after:bottom-0 after:w-11 after:h-11 after:content-[''] after:bg-primary after:rounded-[5px] after:transition-all after:ease-in-out after:duration-400 hover:after:w-full">
                         <Link
@@ -117,14 +117,14 @@ const TeamSlider = () => {
                         className={`${rubik.className} text-xl font-medium mb-[2px] text-[#081845] transition-all ease-linear duration-400`}
                       >
                         <Link
-                          href={`/team/${team.name}`}
+                          href={`/team/${name}`}
                           className="hover:text-primary"
                         >
-                          {team.name}
+                          {name}
                         </Link>
                       </h5>
                       <p className="text-[17px] font-normal text-[rgb(86,88,114)] ">
-                        {team.designation}
+                        {designation}
                       </p>
                     </div>
                   </div>

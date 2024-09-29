@@ -23,19 +23,19 @@ const TeamMember = () => {
       <section className="relative pt-[120px] pb-[70px]">
         <div className="container mx-auto xs:px-6 px-4">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-7">
-            {teams?.map((team) => {
+            {teams?.map(({ id, name, designation, img }) => {
               return (
                 <div
-                  key={team.id}
+                  key={id}
                   style={{ borderRadius: "3px 3px 0 0" }}
                   className="team_02 group relative pb-[60px] mb-[50px] "
                 >
                   <Image
                     style={{ borderRadius: "3px 3px 0 0" }}
-                    src={team.img}
+                    src={img}
                     width={500}
                     height={500}
-                    alt={team.name}
+                    alt={name}
                     className="w-full"
                   />
                   <div
@@ -51,13 +51,13 @@ const TeamMember = () => {
                       className={`${rubik.className} text-xl font-medium mb-[2px] text-secondary `}
                     >
                       <Link
-                        href={`/team/${team.name}`}
+                        href={`/team/${name}`}
                         className="text-secondary hover:text-primary"
                       >
-                        {team.name}
+                        {name}
                       </Link>
                     </h3>
-                    <p className="text-[17px] m-0">{team.designation}</p>
+                    <p className="text-[17px] m-0">{designation}</p>
                     <div
                       style={{
                         transition:
