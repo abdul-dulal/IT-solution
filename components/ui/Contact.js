@@ -148,8 +148,8 @@ const Contact = () => {
                     <div className="flex relative   w-full ">
                       <input
                         type="text"
-                        name="phone"
-                        id="phone"
+                        name="sub"
+                        id="sub"
                         placeholder="subject"
                         className={`border-2 border-gray-300 w-full  h-[70px] px-4   text-lg  placeholder:text-[rgba(8,24,69,0.8)] placeholder:capitalize placeholder:text-lg placeholder:font-normal bg-transparent rounded-[5px]   focus:outline-none  `}
                       />
@@ -164,7 +164,6 @@ const Contact = () => {
 
                 <div className="flex relative   w-full my-7">
                   <textarea
-                    type=""
                     name="message"
                     id="message"
                     value={formData.message}

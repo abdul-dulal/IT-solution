@@ -11,6 +11,11 @@ import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 import allService from "/public/AllService.json";
 import DownloadBtn from "../../../components/ui/service/DownloadBtn";
 import BlockQuote from "../../../components/ui/service/BlockQuote";
+export const metadata = {
+  title: "Service Details-Graptor",
+  description: "Technology & IT Solutions ",
+};
+
 const ServiceDetails = () => {
   return (
     <div>

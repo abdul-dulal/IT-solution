@@ -14,7 +14,7 @@ import Link from "next/link";
 const TopHeader = () => {
   return (
     <div className="bg-primary  ">
-      <dv className="container mx-auto xl:px-6 px-4 xs:flex   items-center justify-between">
+      <div className="container mx-auto xl:px-6 px-4 xs:flex   items-center justify-between">
         <div
           className={`${rubik.className}  flex items-center   gap-9  py-4 text-white text-sm font-medium`}
         >
@@ -72,7 +72,7 @@ const TopHeader = () => {
             </li>
           </ul>
         </div>
-      </dv>
+      </div>
     </div>
   );
 };

@@ -112,7 +112,7 @@ const Form = () => {
       </div>
       <div className="flex relative xl:w-[385px] md:ml-4  lg:w-80  md:w-[300px] w-full ">
         <input
-          type="text"
+          type="url"
           name="web"
           id="web"
           placeholder="your website"

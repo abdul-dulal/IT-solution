@@ -100,7 +100,6 @@ const Contact = () => {
                     <input
                       type="text"
                       name="name"
-                      id="name"
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="full name"
@@ -135,8 +134,8 @@ const Contact = () => {
                     <div className="flex relative   w-full ">
                       <input
                         type="text"
-                        name="phone"
-                        id="phone"
+                        name="sub"
+                        id="sub"
                         placeholder="subject"
                         className={`border-2 border-gray-300 w-full  h-[70px] px-4   text-lg  placeholder:text-white placeholder:capitalize placeholder:text-lg placeholder:font-normal bg-transparent rounded-[5px]   focus:outline-none  `}
                       />
@@ -146,7 +145,6 @@ const Contact = () => {
 
                 <div className="flex relative   w-full my-7">
                   <textarea
-                    type=""
                     name="message"
                     id="message"
                     value={formData.message}

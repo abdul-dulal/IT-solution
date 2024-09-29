@@ -86,7 +86,6 @@ const ServiceContact = () => {
         </div>
         <div className="flex relative   w-full mb-6">
           <textarea
-            type=""
             name="message"
             id="message"
             value={formData.message}
