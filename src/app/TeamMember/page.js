@@ -51,7 +51,7 @@ const TeamMember = () => {
                       className={`${rubik.className} text-xl font-medium mb-[2px] text-secondary `}
                     >
                       <Link
-                        href={`team/${team.name}`}
+                        href={`/team/${team.name}`}
                         className="text-secondary hover:text-primary"
                       >
                         {team.name}

@@ -43,7 +43,7 @@ const Services = () => {
               </div>
               <h4 className="text-[22px] font-bold leading-[32px] text-white relative z-[2] uppercase mb-5 transition-all duration-400 ease-in-out">
                 <Link
-                  href={`service/${item.title}`}
+                  href={`/service/${item.title}`}
                   className="hover:text-[#191919] hover:transition-all hover:duration-400 hover:ease-in-out"
                 >
                   {item.title}

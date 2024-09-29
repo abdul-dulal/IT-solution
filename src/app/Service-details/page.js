@@ -104,7 +104,7 @@ const ServiceDetails = () => {
                           className="relative block mb-[15px] z-[1]"
                         >
                           <Link
-                            href={`service/${item.title}`}
+                            href={`/service/${item.title}`}
                             className={`${rubik.className} ${
                               item.title === "software development"
                                 ? "border border-solid border-primary"
