@@ -27,7 +27,9 @@ const TeamMemberTwo = () => {
       <section className="py-[120px] relative">
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">
-            {teams?.map(({id, name, designation, img}) => {
+            {teams?.map(({ id, name, designation, img }) => {
+              const encName = encodeURIComponent(name);
+
               return (
                 <div key={id} className="">
                   <div
@@ -84,7 +86,7 @@ const TeamMemberTwo = () => {
                         className={`${rubik.className} text-xl font-medium mb-[2px] text-[#081845] transition-all ease-linear duration-400`}
                       >
                         <Link
-                          href={`/team/${name}`}
+                          href={`/team/${encName}`}
                           className="hover:text-primary"
                         >
                           {name}

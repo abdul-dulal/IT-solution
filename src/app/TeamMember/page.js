@@ -24,6 +24,7 @@ const TeamMember = () => {
         <div className="container mx-auto xs:px-6 px-4">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-7">
             {teams?.map(({ id, name, designation, img }) => {
+              const encName = encodeURIComponent(name);
               return (
                 <div
                   key={id}
@@ -51,7 +52,7 @@ const TeamMember = () => {
                       className={`${rubik.className} text-xl font-medium mb-[2px] text-secondary `}
                     >
                       <Link
-                        href={`/team/${name}`}
+                        href={`/team/${encName}`}
                         className="text-secondary hover:text-primary"
                       >
                         {name}

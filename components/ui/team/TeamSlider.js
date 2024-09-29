@@ -60,6 +60,7 @@ const TeamSlider = () => {
       >
         <div className="relative">
           {teams?.map(({ id, name, designation, img }) => {
+            const encName = encodeURIComponent(name);
             return (
               <SwiperSlide key={id}>
                 <div className="">
@@ -117,7 +118,7 @@ const TeamSlider = () => {
                         className={`${rubik.className} text-xl font-medium mb-[2px] text-[#081845] transition-all ease-linear duration-400`}
                       >
                         <Link
-                          href={`/team/${name}`}
+                          href={`/team/${encName}`}
                           className="hover:text-primary"
                         >
                           {name}
