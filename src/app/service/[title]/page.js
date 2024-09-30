@@ -116,20 +116,18 @@ export default function ServiceDetails({ params }) {
                   </h3>
 
                   <ul className="relative">
-                    {allServcie?.map((item) => {
-                      const active = item.title === paramsTitle;
+                    {allServcie?.map(({ id, title }) => {
+                      const active = title === paramsTitle;
+                      const encTitle = encodeURIComponent(title);
                       return (
-                        <li
-                          key={item.id}
-                          className="relative block mb-[15px] z-[1]"
-                        >
+                        <li key={id} className="relative block mb-[15px] z-[1]">
                           <Link
-                            href={`/${item.title}`}
+                            href={`/service/${encTitle}`}
                             className={`${rubik.className} ${
                               active ? "border border-solid border-primary" : ""
                             } relative flex justify-between items-center capitalize text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
                           >
-                            {item.title} <VscTriangleRight />
+                            {title} <VscTriangleRight />
                           </Link>
                         </li>
                       );
