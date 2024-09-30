@@ -21,9 +21,9 @@ const Services = () => {
 
   return (
     <div className="grid xl:grid-cols-5 sm:grid-cols-3 xs:grid-cols-2  gap-8 px-4">
-      {services.map(({ id, title }) => {
+      {services.map(({ id, title, icon }) => {
         const encTitle = encodeURIComponent(title);
-        const IconComponent = allIcons[item.icon];
+        const IconComponent = allIcons[icon];
         return (
           <div key={id}>
             <div className="">
