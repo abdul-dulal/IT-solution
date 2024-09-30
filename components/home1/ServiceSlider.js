@@ -57,10 +57,11 @@ const ServiceSlider = () => {
             },
           }}
         >
-          {AllSerive?.map((item) => {
-            const IconComponent = allIcons[item.icon];
+          {AllSerive?.map(({ id, title, icon }) => {
+            const encTitle = encodeURIComponent(title);
+            const IconComponent = allIcons[icon];
             return (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={id}>
                 <div>
                   <div className=" group relative bg-[#1a2a57] z-[1] pt-[34px] pr-[30px] pb-[30px] pl-[125px] mb-[30px] transition-all ease-in-out duration-400 shadow-[0px_6px_50px_0px_rgba(37,37,37,0.05)] after:content-[''] after:absolute after:left-auto after:right-0 after:bottom-0 after:h-full after:-z-[1] after:rounded-[10px] after:w-0 after:bg-primary after:transition-[width] after:duration-[400ms] after:ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:after:w-full hover:after:left-0 hover:after:right-auto">
                     <div className=" absolute left-[30px] top-[34px] min-w-[62px]">
@@ -69,7 +70,7 @@ const ServiceSlider = () => {
                       </span>
                     </div>
                     <h3 className="text-xl font-bold leading-[30px] text-white mb-3 transition-all ease-in-out duration-200 hover:text-secondary">
-                      <Link href={`service/${item.title}`}>{item.title}</Link>
+                      <Link href={`service/${encTitle}`}>{title}</Link>
                     </h3>
                     <p className="text-white m-0 transition-all duration-200 ease-in-out">
                       Lorem ipsum dolor sit amet, conset etur sadipscing elitr,

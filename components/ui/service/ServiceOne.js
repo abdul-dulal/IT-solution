@@ -19,10 +19,11 @@ const Services = () => {
   };
   return (
     <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-8">
-      {AllSerive?.map((item) => {
-        const IconComponent = allIcons[item.icon];
+      {AllSerive?.map(({ id, title, icon }) => {
+        const encName = encodeURIComponent(title);
+        const IconComponent = allIcons[icon];
         return (
-          <div className="group" key={item.id}>
+          <div className="group" key={id}>
             <div className=" relative mb-[30px] border-[5px] border-solid border-transparent rounded-[10px] py-10 px-7   text-center transition-all duration-400 ease-in-out hover:border-primary">
               <div className=" text-[70px] leading-[70px]  inline-block text-center mb-[27px] transition-all duration-400 ease-in-out">
                 <svg
@@ -46,10 +47,10 @@ const Services = () => {
               </div>
               <h3 className="text-[23px] leading-[32px] mb-[14px] font-bold">
                 <Link
-                  href={`/service/${item.title}`}
+                  href={`/service/${encName}`}
                   className="hover:text-primary"
                 >
-                  {item.title}
+                  {title}
                 </Link>
               </h3>
               <p className=" mb-[23px]">
@@ -58,7 +59,7 @@ const Services = () => {
               </p>
               <Link
                 className=" h-[45px] bg-[rgba(104,110,226,0.1)]  rounded-[30px] text-center inline-block text-[22px] text-primary leading-[50px] pb-[30px] w-[80px] hover:bg-primary hover:text-white transition-all duration-400 ease-in-out"
-                href={`/service/${item.title}`}
+                href={`/service/${encName}`}
               >
                 <FaLongArrowAltRight className="w-full mt-3" />
               </Link>
