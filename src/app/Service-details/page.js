@@ -97,21 +97,20 @@ const ServiceDetails = () => {
                     Popular Service
                   </h3>
                   <ul className="relative">
-                    {allService?.map((item) => {
+                    {allService?.map(({ id, title }) => {
+                      const encTitle = encodeURIComponent(title);
+
                       return (
-                        <li
-                          key={item.id}
-                          className="relative block mb-[15px] z-[1]"
-                        >
+                        <li key={id} className="relative block mb-[15px] z-[1]">
                           <Link
-                            href={`/service/${item.title}`}
+                            href={`/service/${encTitle}`}
                             className={`${rubik.className} ${
                               item.title === "software development"
                                 ? "border border-solid border-primary"
                                 : ""
                             } relative flex justify-between items-center capitalize text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
                           >
-                            {item.title} <VscTriangleRight />
+                            {title} <VscTriangleRight />
                           </Link>
                         </li>
                       );

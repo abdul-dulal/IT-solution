@@ -149,7 +149,7 @@ const HomeTwo = () => {
             Case Study
           </h2>
         </div>
-        <HomeShuffle />
+        {/* <HomeShuffle /> */}
       </section>
 
       {/* Team--Sart */}

@@ -17,7 +17,7 @@ const CaseStudyTwo = () => {
 
       <section className="py-[120px] relative">
         <div className="container mx-auto xl:px-6 px-4">
-          <div className="grid grid-cols-3 sm:grid-cols-2 gap-3">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3">
             {portfolio.map((item) => (
               <div key={item.id} className=" group relative overflow-hidden  ">
                 <Image

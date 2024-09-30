@@ -47,9 +47,9 @@ const CasePagination = ({ path }) => {
       )}
 
       <Link
-        href="/CaseStudyThree/page2"
+        href="/CaseStudyOne/page2"
         className={`h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center text-[#222] hover:bg-primary justify-center text-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:text-white ${
-          currentPath.path == "/CaseStudyTwo/page2" ? "hidden" : "block"
+          currentPath.path == "/CaseStudyThree/page2" ? "hidden" : "block"
         }`}
       >
         <TfiAngleRight />

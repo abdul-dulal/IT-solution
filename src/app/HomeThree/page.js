@@ -115,14 +115,16 @@ const HomeThree = () => {
           </h2>
 
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3">
-            {allPortfolio?.map((item) => {
+            {allPortfolio?.map(({ id, img, tech, title }) => {
+              const encTitle = encodeURIComponent(title);
+              const encTech = encodeURIComponent(tech);
               return (
                 <div
-                  key={item.id}
+                  key={id}
                   className=" group relative overflow-hidden m-[-2.5px]"
                 >
                   <Image
-                    src={item?.img}
+                    src={img}
                     width={500}
                     height={500}
                     className="w-full rounded-[10px]"
@@ -137,7 +139,7 @@ const HomeThree = () => {
                   >
                     <div className="fs-content absolute left-0 top-[50%] -translate-y-[50%] w-full text-center pb-[15px] z-[2]">
                       <Link
-                        href={`portfolio/${item.title}`}
+                        href={`portfolio/${encTitle}`}
                         style={{
                           boxShadow: "0px 1px 54px 0px rgb(47 84 238 / 46%)",
                         }}
@@ -149,15 +151,15 @@ const HomeThree = () => {
                       </Link>
                       <h5 className="text-xl leading-[30px] text-white mb-[3px] invisible opacity-0 translate-y-[30px] transition-all ease-in-out duration-700 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
                         <Link
-                          href={`portfolio/${item.title}`}
+                          href={`portfolio/${encTitle}`}
                           className="hover:text-[#191919] hover:transition-all hover:ease-linear hover:duration-300"
                         >
-                          {item.title}
+                          {title}
                         </Link>
                       </h5>
                       <p className="cats text-[rgba(255,255,255,0.8)] m-0 translate-y-[30px] opacity-0 invisible transition-all ease-in-out duration-1000 hover:text-[#191919] group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
-                        <Link href={`/portfolioCategory/${item?.tech}`}>
-                          {item?.tech}
+                        <Link href={`/portfolioCategory/${encTech}`}>
+                          {tech}
                         </Link>
                       </p>
                     </div>
