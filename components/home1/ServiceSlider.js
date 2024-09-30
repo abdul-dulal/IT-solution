@@ -63,8 +63,8 @@ const ServiceSlider = () => {
             return (
               <SwiperSlide key={id}>
                 <div>
-                  <div className=" group relative bg-[#1a2a57] z-[1] pt-[34px] pr-[30px] pb-[30px] pl-[125px] mb-[30px] transition-all ease-in-out duration-400 shadow-[0px_6px_50px_0px_rgba(37,37,37,0.05)] after:content-[''] after:absolute after:left-auto after:right-0 after:bottom-0 after:h-full after:-z-[1] after:rounded-[10px] after:w-0 after:bg-primary after:transition-[width] after:duration-[400ms] after:ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:after:w-full hover:after:left-0 hover:after:right-auto">
-                    <div className=" absolute left-[30px] top-[34px] min-w-[62px]">
+                  <div className="service group relative bg-[#1a2a57] z-[1] pt-[34px] pr-[30px] pb-[30px] xs:pl-[125px] pl-5 mb-[30px] transition-all ease-in-out duration-400 shadow-[0px_6px_50px_0px_rgba(37,37,37,0.05)] after:content-[''] after:absolute after:left-auto after:right-0 after:bottom-0 after:h-full after:-z-[1] after:rounded-[10px] after:w-0 after:bg-primary after:transition-[width] after:duration-[400ms] after:ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:after:w-full hover:after:left-0 hover:after:right-auto">
+                    <div className=" slider xs:absolute left-[30px]  top-[34px] min-w-[62px] xs:mb-0 mb-3 ">
                       <span className="text-[62px] text-white group-hover:text-white">
                         <IconComponent />
                       </span>

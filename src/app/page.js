@@ -26,7 +26,7 @@ export const metadata = {
   title: "Home One-Graptor",
   description: "Technology & IT Solutions ",
 };
-const HomeTwo = () => {
+const HomeOne = () => {
   return (
     <div>
       <section>
@@ -188,4 +188,4 @@ const HomeTwo = () => {
   );
 };
 
-export default HomeTwo;
+export default HomeOne;

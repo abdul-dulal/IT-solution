@@ -22,20 +22,6 @@
   }
 }
 
-/* Home Start */
-
-/* .grab_btn {
-  height: 100%;
-  top: auto;
-  bottom: 0;
-} */
-
-/* .to_bottom:hover:before {
-  height: 100%;
-  top: 0;
-} */
-/* customize done */
-
 .animated-img {
   animation: rotated 20s infinite linear;
 }
@@ -68,7 +54,6 @@
 }
 .popup-video:after {
   animation: zoom 3.25s linear infinite;
-
   animation-delay: 0s;
 }
 @keyframes zoom {
@@ -145,14 +130,10 @@
   }
 }
 
-/* Important notice */
-
-/* .service-item-04:hover .ib-icon svg {
-  fill: #686ee2;
-} */
-/* .tm-social:hover:after {
-  width: 100%;
-} */
+.service:hover .slider {
+  animation: zoomIn 0.3s linear alternate;
+  animation-duration: 0.5s;
+}
 
 .call {
   animation: shadows 1s linear infinite;
@@ -430,7 +411,6 @@ $picture-gutter: 24px;
 @keyframes zoomIn {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
