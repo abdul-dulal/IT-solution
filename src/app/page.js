@@ -11,10 +11,7 @@ import { PiArrowRightDuotone } from "react-icons/pi";
 import { rubik } from "./fonts";
 import { FaCheck } from "react-icons/fa";
 import Client from "../../components/ui/Client";
-import cLogo1 from "/public/img/client/techlogo1.png";
-import cLogo2 from "/public/img/client/brandname1.png";
-import cLogo3 from "/public/img/client/brandname2.png";
-import cLogo4 from "/public/img/client/techlogo2.png";
+
 import portfolis from "/public/Portfolio.json";
 import TeamSlider from "../../components/ui/team/TeamSlider";
 import ClientSlider from "../../components/ui/team/ClientSlider";
@@ -40,7 +37,7 @@ const HomeOne = () => {
           <div className="grid md:grid-cols-2 xl:gap-4 gap-10 ">
             <AboutLeft />
 
-            <div className=" relative">
+            <div className=" relative xs:mt-0 mt-20">
               <h6 className=" text-base md:mt-0 mt-8 leading-5 text-primary font-medium uppercase xs:mb-4">
                 <span className="w-[81px] h-[3px] inline-block bg-primary mr-[15px] relative -top-[3px]"></span>
                 about us
@@ -67,20 +64,21 @@ const HomeOne = () => {
       {/* About--End */}
 
       {/* Service--Start */}
-      <section class="service-section-1 relative bg-secondary pt-[30px] pb-[120px]">
-        <div class="px-6">
-          <ServiceSlider />
+      <section className=" relative bg-secondary pt-[30px] pb-[120px]">
+        <div className="px-6">
+          {" "}
+          <ServiceSlider />{" "}
         </div>
-        <div class="container mx-auto xs:px-10 px-3">
-          <div class=" relative bg-[#1a2a57] border-2 border-solid border-[rgba(255,255,255,0.1)] rounded-[10px] py-20 lg:px-[50px] px-6 mt-[90px]">
+        <div className="container mx-auto xs:px-10 px-3">
+          <div className=" relative bg-[#1a2a57] border-2 border-solid border-[rgba(255,255,255,0.1)] rounded-[10px] py-20 lg:px-[50px] px-6 mt-[90px]">
             <div className="grid grid-cols-12 gap-5">
-              <div class="lg:col-span-7 col-span-12">
-                <h2 class=" xl:text-5xl  xs:text-[40px] text-[30px] xl:leading-[58px] xs:leading-[44px] leading-[40px] font-bold text-white mt-[-5px] mb-[48px]">
+              <div className="lg:col-span-7 col-span-12">
+                <h2 className=" text-white mt-[-5px] mb-[48px]">
                   We build and transform businesse strategy
                 </h2>
-                <div class="grid sm:grid-cols-2 gap-5">
-                  <div class="relative mb-[33px]">
-                    <div class=" flex items-center justify-center bg-primary h-[60px] w-[60px] rounded-[10px] text-center text-[24px] leading-[64px] mb-[17px]">
+                <div className="grid sm:grid-cols-2 gap-5">
+                  <div className="relative mb-[33px]">
+                    <div className=" flex items-center justify-center bg-primary h-[60px] w-[60px] rounded-[10px] text-center text-[24px] leading-[64px] mb-[17px]">
                       <FaCheck color="white" />
                     </div>
                     <h5 className="text-white text-xl mb-[5px]">
@@ -91,8 +89,8 @@ const HomeOne = () => {
                       sed diam nonumy
                     </p>
                   </div>
-                  <div class="icon-box-2">
-                    <div class=" flex items-center justify-center bg-primary h-[60px] w-[60px] rounded-[10px] text-center text-[24px] leading-[64px] mb-[17px]">
+                  <div className="icon-box-2">
+                    <div className=" flex items-center justify-center bg-primary h-[60px] w-[60px] rounded-[10px] text-center text-[24px] leading-[64px] mb-[17px]">
                       <FaCheck color="white" />
                     </div>
                     <h5 className="text-white text-xl mb-[5px]">
@@ -112,7 +110,7 @@ const HomeOne = () => {
                   <PiArrowRightDuotone size={20} className="ml-7" />
                 </Link>
               </div>
-              <div class="lg:col-span-5 col-span-12">
+              <div className="lg:col-span-5 col-span-12">
                 <Image
                   src={feature}
                   className="w-full rounded-[10px]"
@@ -126,16 +124,11 @@ const HomeOne = () => {
       {/* Service--End */}
 
       {/* Client--Start */}
-      <section className="bg-[#f0f4f9] relative pt-[75px] pb-[68px] ">
+      <div className="bg-[#f0f4f9] relative pt-[75px] pb-[68px] ">
         <div className="container mx-auto px-6">
-          <div className="grid gap-5 justify-center md:grid-cols-4  xs:grid-cols-2  ">
-            <Client logo={cLogo3} />
-            <Client logo={cLogo2} />
-            <Client logo={cLogo4} />
-            <Client logo={cLogo1} />
-          </div>
+          <Client />
         </div>
-      </section>
+      </div>
 
       {/* Client--End */}
       {/* Portfolio */}
@@ -145,11 +138,9 @@ const HomeOne = () => {
           <h6 className=" text-capitalize text-primary text-center">
             Portfolio
           </h6>
-          <h2 className=" xs:text-5xl text-3xl text-center text-black mb-12">
-            Case Study
-          </h2>
+          <h2 className="text-center  mb-12">Case Study</h2>
         </div>
-        {/* <HomeShuffle /> */}
+        <HomeShuffle />
       </section>
 
       {/* Team--Sart */}
@@ -158,9 +149,7 @@ const HomeOne = () => {
           <h6 className=" text-capitalize text-white text-center">
             Meet Our Team
           </h6>
-          <h2 className=" xs:text-5xl text-3xl text-center text-white">
-            Our Creative Team
-          </h2>
+          <h2 className=" text-center text-white">Our Creative Team</h2>
         </div>
       </section>
 
@@ -172,9 +161,7 @@ const HomeOne = () => {
       <section className="relative pt-[116px] pb-[120px] ">
         <div className="container mx-auto xl:px-6 px-4">
           <h6 className=" text-capitalize  ">Client Testimonials</h6>
-          <h2 className=" sm:text-5xl text-3xl mb-12 text-[rgb(25,25,25)]">
-            What our clients say
-          </h2>
+          <h2 className=" mb-12 text-[rgb(25,25,25)]">What our clients say</h2>
           <ClientSlider />
         </div>
       </section>

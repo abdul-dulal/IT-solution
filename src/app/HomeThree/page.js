@@ -48,14 +48,14 @@ const HomeThree = () => {
 
       {/* About--Start */}
 
-      <section class="about-section-2 relative pt-[120px] pb-[10px]">
-        <div class="container mx-auto xs:px-0 px-6">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="">
+      <section className="about-section-2 relative pt-[120px] pb-[10px]">
+        <div className="container mx-auto xs:px-0 px-6">
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="">
               <Image src={layer} alt="Layer" />
             </div>
 
-            <div class="">
+            <div className="">
               <h6 className=" text-base sm:mt-0 mt-8 leading-5 text-primary font-medium uppercase xs:mb-4">
                 <span className="w-[81px] h-[3px] inline-block bg-primary mr-[15px] relative -top-[3px]"></span>
                 About us
@@ -63,15 +63,15 @@ const HomeThree = () => {
               <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-5">
                 Eliminate the IT challenges your business is facing
               </h2>
-              <p class="">
+              <p className="">
                 Lorem Ipsum is simply dummy text of free available in market
                 typesetting industry has been the industrys standard dummy text
                 ever. Lorem Ipsum is simply dummy text of free available in
                 market
               </p>
-              <div class=" flex gap-6 my-10">
+              <div className=" flex gap-6 my-10">
                 <div>
-                  <span class="flex items-center justify-center w-[99px] h-[99px] text-[40px] leading-[103px] rounded-[50%] bg-[#f0f4f9] text-primary">
+                  <span className="flex items-center justify-center w-[99px] h-[99px] text-[40px] leading-[103px] rounded-[50%] bg-[#f0f4f9] text-primary">
                     <CiSettings className="inline-block" />
                   </span>
                 </div>
@@ -88,7 +88,7 @@ const HomeThree = () => {
                   boxShadow: " 0px 0 20px 0px rgb(152 152 152 / 16%)",
                   padding: "25px 60px 30px",
                 }}
-                class="ab-quote bg-white rounded-[3px] relative after:absolute after:-left-[3px] after:w-[6px] after:h-[65px] after:content-[''] after:bg-primary after:top-0 after:bottom-0 after:m-auto after:rounded-[10px]"
+                className="ab-quote bg-white rounded-[3px] relative after:absolute after:-left-[3px] after:w-[6px] after:h-[65px] after:content-[''] after:bg-primary after:top-0 after:bottom-0 after:m-auto after:rounded-[10px]"
               >
                 Lorem Ipsum simply dummy available industry been the industry
                 standard.
@@ -176,17 +176,17 @@ const HomeThree = () => {
 
       <section
         style={{ padding: "123px 0 172px" }}
-        class="testibg-section -z-20 bg-[url('/img/home3/shadowbg.jpg')] bg-center bg-cover bg-fixed bg-no-repeat relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-full after:bg-[rgba(8,24,69,0.9)] after:-z-10"
+        className="testibg-section -z-20 bg-[url('/img/home3/shadowbg.jpg')] bg-center bg-cover bg-fixed bg-no-repeat relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-full after:bg-[rgba(8,24,69,0.9)] after:-z-10"
       >
-        <div class="container mx-auto xs:px-0 px-6 z-[33]">
-          <div class=" text-center">
-            <h6 class=" text-white capitalize">Client Testimonials</h6>
-            <h2 class=" text-white">What our clients say</h2>
+        <div className="container mx-auto xs:px-0 px-6 z-[33]">
+          <div className=" text-center">
+            <h6 className=" text-white capitalize">Client Testimonials</h6>
+            <h2 className=" text-white">What our clients say</h2>
           </div>
         </div>
       </section>
 
-      <section class=" -mt-[135px] z-[99]">
+      <section className=" -mt-[135px] z-[99]">
         <div className="container mx-auto">
           <ClientTestimonial />
         </div>

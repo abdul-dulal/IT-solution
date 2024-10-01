@@ -41,14 +41,14 @@ const Slider = () => {
         <SwiperSlide>
           <div
             style={{ transition: "transform 10000ms ease" }}
-            class={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home2.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
+            className={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home2.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
               activeIndex == 0 ? "scale-[1.3]" : ""
             }`}
           >
-            <div class="container mx-auto">
-              <div class=" text-center">
+            <div className="container mx-auto">
+              <div className=" text-center">
                 <h5
-                  class={` layer_animated ${
+                  className={` layer_animated ${
                     rubik.className
                   } text-white font-medium text-base  leading-[22px]  capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block ${
                     activeIndex == 0 ? "slider_sub_title" : ""
@@ -57,7 +57,7 @@ const Slider = () => {
                   Markets & Resources
                 </h5>
                 <h2
-                  class={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
+                  className={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
                     activeIndex == 0 ? " slider_title" : ""
                   }`}
                 >
@@ -91,14 +91,14 @@ const Slider = () => {
             </div>
 
             <div
-              class={`layer_animated sm:block hidden absolute left-0 bottom-0 z-[5] max-w-full h-auto ${
+              className={`layer_animated sm:block hidden absolute left-0 bottom-0 z-[5] max-w-full h-auto ${
                 activeIndex == 0 ? "layer_left" : ""
               } `}
             >
               <Image src={homelayer} alt="Graptor" />
             </div>
             <div
-              class={` layer_animated sm:block hidden absolute right-0 bottom-0 z-[5] max-w-full h-auto ${
+              className={` layer_animated sm:block hidden absolute right-0 bottom-0 z-[5] max-w-full h-auto ${
                 activeIndex == 0 ? "layer_right" : ""
               }`}
             >
@@ -109,14 +109,14 @@ const Slider = () => {
         <SwiperSlide>
           <div
             style={{ transition: "transform 10000ms ease" }}
-            class={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home1.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
+            className={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home1.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
               activeIndex == 1 ? "scale-[1.3]" : ""
             }`}
           >
-            <div class="container mx-auto px-[13%]">
-              <div class="slider-content ">
+            <div className="container mx-auto px-[13%]">
+              <div className="slider-content ">
                 <h5
-                  class={` layer_animated ${
+                  className={` layer_animated ${
                     rubik.className
                   } text-white font-medium text-base  leading-[22px]  capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block ${
                     activeIndex == 1 ? "slider_sub_title" : ""
@@ -125,7 +125,7 @@ const Slider = () => {
                   Modern. Professional. Reliable.
                 </h5>
                 <h2
-                  class={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
+                  className={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
                     activeIndex == 1 ? " slider_title" : ""
                   }`}
                 >
@@ -144,14 +144,14 @@ const Slider = () => {
               </div>
             </div>
             <div
-              class={`layer_animated sm:block hidden absolute left-0 bottom-0 z-[5] max-w-full h-auto ${
+              className={`layer_animated sm:block hidden absolute left-0 bottom-0 z-[5] max-w-full h-auto ${
                 activeIndex == 1 ? "layer_left" : ""
               } `}
             >
               <Image src={homelayer} alt="Graptor" />
             </div>
             <div
-              class={` layer_animated sm:block hidden absolute right-0 bottom-0 z-[5] max-w-full h-auto ${
+              className={` layer_animated sm:block hidden absolute right-0 bottom-0 z-[5] max-w-full h-auto ${
                 activeIndex == 1 ? "layer_right" : ""
               }`}
             >
@@ -162,14 +162,14 @@ const Slider = () => {
         <SwiperSlide>
           <div
             style={{ transition: "transform 10000ms ease" }}
-            class={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home3.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
+            className={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home3.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
               activeIndex == 2 ? "scale-[1.3]" : ""
             }`}
           >
-            <div class="container mx-auto px-12">
-              <div class=" text-center ">
+            <div className="container mx-auto px-12">
+              <div className=" text-center ">
                 <h5
-                  class={` layer_animated ${
+                  className={` layer_animated ${
                     rubik.className
                   } text-white font-medium text-base leading-[22px] capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block ${
                     activeIndex == 2 ? "slider_sub_title" : ""
@@ -178,7 +178,7 @@ const Slider = () => {
                   Develope & Deploy
                 </h5>
                 <h2
-                  class={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
+                  className={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
                     activeIndex == 2 ? " slider_title" : ""
                   }`}
                 >
@@ -186,7 +186,7 @@ const Slider = () => {
                   <br className="xs:block hidden" /> Technology Solution
                 </h2>
                 <p
-                  class={`layer_animated text-white  mt-3 ${
+                  className={`layer_animated text-white  mt-3 ${
                     activeIndex == 2 ? "slider_parag" : ""
                   }`}
                 >
@@ -197,14 +197,14 @@ const Slider = () => {
               </div>
             </div>
             <div
-              class={`layer_animated sm:block hidden absolute left-0 bottom-0 z-[5] max-w-full h-auto ${
+              className={`layer_animated sm:block hidden absolute left-0 bottom-0 z-[5] max-w-full h-auto ${
                 activeIndex == 2 ? "layer_left" : ""
               } `}
             >
               <Image src={homelayer} alt="Graptor" />
             </div>
             <div
-              class={` layer_animated sm:block hidden absolute right-0 bottom-0 z-[5] max-w-full h-auto ${
+              className={` layer_animated sm:block hidden absolute right-0 bottom-0 z-[5] max-w-full h-auto ${
                 activeIndex == 2 ? "layer_right" : ""
               }`}
             >

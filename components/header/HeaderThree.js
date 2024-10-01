@@ -9,8 +9,8 @@ import ResponsiveHeader from "./ResponsiveHeader";
 
 const HeaderThree = () => {
   return (
-    <header class="sticky top-0 bg-primary z-[999]">
-      <div class="container mx-auto  z-[999] ">
+    <header className="sticky top-0 bg-primary z-[999]">
+      <div className="container mx-auto  z-[999] ">
         <div className="container mx-auto xs:px-10 px-6">
           <nav className="h-[74px]">
             <div className="flex justify-between  items-center w-full h-full">
@@ -244,10 +244,10 @@ const HeaderThree = () => {
               <ResponsiveHeader bgColor="white" />
               <div className="flex items-center">
                 <HeaderThreePopup />
-                <div class=" sm:block hidden">
+                <div className=" sm:block hidden">
                   <Link
                     href="/contact"
-                    class={`${rubik.className} text-[15px] leading-[12px] font-bold text-white left flex relative items-center gap-3 h-[77px] py-[30px] px-[29px] bg-[rgba(255,255,255,0.2)] hover:bg-transparent before:content-[''] before:w-0 before:h-[95%] before:absolute before:left-0 before:right-auto before:-z-[1] before:top-[2px] before:bg-secondary before:hover:w-full before:hover:left-auto before:hover:right-0 before:hover:text-primary`}
+                    className={`${rubik.className} text-[15px] leading-[12px] font-bold text-white left flex relative items-center gap-3 h-[77px] py-[30px] px-[29px] bg-[rgba(255,255,255,0.2)] hover:bg-transparent before:content-[''] before:w-0 before:h-[95%] before:absolute before:left-0 before:right-auto before:-z-[1] before:top-[2px] before:bg-secondary before:hover:w-full before:hover:left-auto before:hover:right-0 before:hover:text-primary`}
                   >
                     Get A Quote
                     <FaArrowRight />

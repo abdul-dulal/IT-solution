@@ -2,8 +2,8 @@ import React from "react";
 
 const IconBox = ({ icon, title }) => {
   return (
-    <div class=" relative border-r border-solid border-[rgba(255,255,255,0.2)] pt-[34px] px-[15px]  text-center">
-      <div class=" flex justify-center relative mb-[52px] text-[62px] leading-[62px] text-white transition-all duration-300 ease-in-out">
+    <div className=" relative border-r border-solid border-[rgba(255,255,255,0.2)] pt-[34px] px-[15px]  text-center">
+      <div className=" flex justify-center relative mb-[52px] text-[62px] leading-[62px] text-white transition-all duration-300 ease-in-out">
         {icon}
       </div>
       <h5

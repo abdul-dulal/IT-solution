@@ -24,7 +24,7 @@ const TeamSlider = () => {
   const swiperRef = useRef(null);
 
   return (
-    <section className="relative px-[50px] bg-transparent -mt-20">
+    <section className="relative xl:px-[50px] md:px-8 xs:px-6 px-4 bg-transparent -mt-20">
       <Swiper
         spaceBetween={23}
         slidesPerView={1}

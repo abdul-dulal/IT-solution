@@ -9,7 +9,7 @@ import TopHeader from "../../components/header/TopHeader";
 export default function Header() {
   const pathname = usePathname();
   const HeaderChooser = () => {
-    if (pathname == "/") {
+    if (pathname == "/HomeTwo") {
       return <MainHeader />;
     } else if (pathname == "/HomeThree") {
       return <HeaderThree />;

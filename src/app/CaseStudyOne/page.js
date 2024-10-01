@@ -15,8 +15,8 @@ const CaseStudyThree = () => {
     <div>
       <BreadCumb currentPage="Case Study" />
 
-      <section class="relative pt-[100px] pb-5">
-        <div class="container mx-auto">
+      <section className="relative pt-[100px] pb-5">
+        <div className="container mx-auto">
           <ShuffleOne portfolio={portfolio} />
         </div>
       </section>

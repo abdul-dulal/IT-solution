@@ -42,9 +42,9 @@ const SearchPopup = ({ searchPopup, setSearchPopup }) => {
           }`}
           onClick={(e) => e.stopPropagation()}
         >
-          <div class="middle_search   top-[43%] translate-y-[-50%] relative z-[2]">
-            <div class="container mx-auto">
-              <div class=" text-center">
+          <div className="middle_search   top-[43%] translate-y-[-50%] relative z-[2]">
+            <div className="container mx-auto">
+              <div className=" text-center">
                 <div className="relative">
                   <form
                     onSubmit={handleSubmit}

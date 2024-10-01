@@ -16,12 +16,12 @@ const Contact = () => {
     <div>
       <BreadCumb currentPage="Contact" />
 
-      <section class="contactSetion relative pt-[150px] pb-[120px]">
-        <div class="container mx-auto xl:px-6 px-4">
-          <div class="grid xl:grid-cols-3  sm:grid-cols-2 gap-8">
+      <section className="contactSetion relative pt-[150px] pb-[120px]">
+        <div className="container mx-auto xl:px-6 px-4">
+          <div className="grid xl:grid-cols-3  sm:grid-cols-2 gap-8">
             <div
               style={{ padding: "59px 40px 27px" }}
-              class=" relative  mb-[120px] border border-solid border-[#ececec] transition-all duration-300 ease-in-out"
+              className=" relative  mb-[120px] border border-solid border-[#ececec] transition-all duration-300 ease-in-out"
             >
               <span className="icon flex items-center justify-center w-[76px] h-[65px] bg-primary rounded-[10px] text-center text-[24px] leading-[65px] text-white absolute left-10 -top-[33px]">
                 <FaPhoneAlt />
@@ -37,7 +37,7 @@ const Contact = () => {
 
             <div
               style={{ padding: "59px 40px 27px" }}
-              class=" relative  mb-[120px] border border-solid border-[#ececec] transition-all duration-300 ease-in-out"
+              className=" relative  mb-[120px] border border-solid border-[#ececec] transition-all duration-300 ease-in-out"
             >
               <span className="icon flex items-center justify-center w-[76px] h-[65px] bg-primary rounded-[10px] text-center text-[24px] leading-[65px] text-white absolute left-10 -top-[33px]">
                 <TfiEmail />
@@ -53,7 +53,7 @@ const Contact = () => {
 
             <div
               style={{ padding: "59px 40px 27px" }}
-              class=" relative  mb-[120px] border border-solid border-[#ececec] transition-all duration-300 ease-in-out"
+              className=" relative  mb-[120px] border border-solid border-[#ececec] transition-all duration-300 ease-in-out"
             >
               <span className="icon flex items-center justify-center w-[76px] h-[65px] bg-primary rounded-[10px] text-center text-[24px] leading-[65px] text-white absolute left-10 -top-[33px]">
                 <SlLocationPin />
@@ -75,7 +75,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <div class="grap-map grayscale relative leading-[.8] overflow-hidden">
+      <div className="grap-map grayscale relative leading-[.8] overflow-hidden">
         <iframe
           style={{ filter: "grayscale(100%)" }}
           className="w-full h-[550px] border-none"

@@ -7,18 +7,18 @@ import { HiOutlineMail } from "react-icons/hi";
 import { MdWatchLater } from "react-icons/md";
 const TopheaderTwo = () => {
   return (
-    <section class=" relative bg-white ">
-      <div class="container mx-auto xl:px-8 px-4">
-        <div class="grid grid-cols-12 items-center ">
-          <div class="lg:col-span-3 sm:col-span-4 col-span-12 sm:mx-0 mx-auto ">
-            <Link class="relative px-1 text-left" href="/HomeThree">
+    <section className=" relative bg-white ">
+      <div className="container mx-auto xl:px-8 px-4">
+        <div className="grid grid-cols-12 items-center ">
+          <div className="lg:col-span-3 sm:col-span-4 col-span-12 sm:mx-0 mx-auto ">
+            <Link className="relative px-1 text-left" href="/HomeThree">
               <Image src={logo} alt="Logo" />
             </Link>
           </div>
-          <div class="lg:col-span-9 col-span-8 sm:block hidden">
-            <div class=" flex items-center xl:justify-between relative">
-              <div class=" flex gap-5    border-r border-solid border-[#f0f4f9] xl:ml-[35px] ml-4  xl:pr-[46px] pr-4">
-                <div class=" flex items-center justify-center    w-12 h-12 border-[2px] border-solid border-[rgba(8,24,69,0.2)] rounded-[50%] text-center text-[24px]  text-primary leading-[48px]">
+          <div className="lg:col-span-9 col-span-8 sm:block hidden">
+            <div className=" flex items-center xl:justify-between relative">
+              <div className=" flex gap-5    border-r border-solid border-[#f0f4f9] xl:ml-[35px] ml-4  xl:pr-[46px] pr-4">
+                <div className=" flex items-center justify-center    w-12 h-12 border-[2px] border-solid border-[rgba(8,24,69,0.2)] rounded-[50%] text-center text-[24px]  text-primary leading-[48px]">
                   <IoCall />
                 </div>
                 <div>
@@ -33,8 +33,8 @@ const TopheaderTwo = () => {
                   </h5>
                 </div>
               </div>
-              <div class="relative flex gap-4  border-r border-solid border-[#f0f4f9] xl:ml-[35px] ml-4 xl:pr-[46px] pr-4">
-                <div class="flex items-center justify-center   w-12 h-12 border-[2px] border-solid border-[rgba(8,24,69,0.2)] rounded-[50%] text-center text-[24px]  text-primary leading-[48px]">
+              <div className="relative flex gap-4  border-r border-solid border-[#f0f4f9] xl:ml-[35px] ml-4 xl:pr-[46px] pr-4">
+                <div className="flex items-center justify-center   w-12 h-12 border-[2px] border-solid border-[rgba(8,24,69,0.2)] rounded-[50%] text-center text-[24px]  text-primary leading-[48px]">
                   <HiOutlineMail />
                 </div>
                 <div>
@@ -51,8 +51,8 @@ const TopheaderTwo = () => {
                   </h5>
                 </div>
               </div>
-              <div class=" relative  lg:flex hidden gap-4 xl:ml-[35px] ml-4  ">
-                <div class="flex items-center justify-center w-12 h-12 border-[2px] border-solid border-[rgba(8,24,69,0.2)] rounded-[50%] text-center text-[24px]  text-primary leading-[48px]">
+              <div className=" relative  lg:flex hidden gap-4 xl:ml-[35px] ml-4  ">
+                <div className="flex items-center justify-center w-12 h-12 border-[2px] border-solid border-[rgba(8,24,69,0.2)] rounded-[50%] text-center text-[24px]  text-primary leading-[48px]">
                   <MdWatchLater />
                 </div>
                 <div>
