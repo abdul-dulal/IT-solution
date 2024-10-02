@@ -22,10 +22,10 @@ const Pricing = () => {
             Pricing Plans
           </h2>
           <div className="grid  md:grid-cols-3 sm:grid-cols-2  gap-8">
-            <PricePlanTwo plan="Basic Plan" icon={<MdAutoMode />} price="49" />
-            <PricePlanTwo plan="Premium Plan" icon={<FaAward />} price="69" />
+            <PricePlanTwo title="Basic Plan" icon={<MdAutoMode />} price="49" />
+            <PricePlanTwo title="Premium Plan" icon={<FaAward />} price="69" />
             <PricePlanTwo
-              plan="Business Plan"
+              title="Business Plan"
               icon={<MdOutlineWorkspacePremium />}
               price="89"
             />

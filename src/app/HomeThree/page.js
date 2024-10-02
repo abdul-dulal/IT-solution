@@ -37,7 +37,7 @@ const HomeThree = () => {
         <div className="container mx-auto xs:px-6 px-4">
           <div className="text-center">
             <h6 className="">What we do</h6>
-            <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
+            <h2 className=" mb-10 text-[#191919] text-center">
               Service for You
             </h2>
           </div>
@@ -49,7 +49,7 @@ const HomeThree = () => {
       {/* About--Start */}
 
       <section className="about-section-2 relative pt-[120px] pb-[10px]">
-        <div className="container mx-auto xs:px-0 px-6">
+        <div className="container mx-auto xs:px-6 px-4">
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="">
               <Image src={layer} alt="Layer" />
@@ -69,7 +69,7 @@ const HomeThree = () => {
                 ever. Lorem Ipsum is simply dummy text of free available in
                 market
               </p>
-              <div className=" flex gap-6 my-10">
+              <div className=" flex xs:gap-6 gap-4 my-10">
                 <div>
                   <span className="flex items-center justify-center w-[99px] h-[99px] text-[40px] leading-[103px] rounded-[50%] bg-[#f0f4f9] text-primary">
                     <CiSettings className="inline-block" />
@@ -178,7 +178,7 @@ const HomeThree = () => {
         style={{ padding: "123px 0 172px" }}
         className="testibg-section -z-20 bg-[url('/img/home3/shadowbg.jpg')] bg-center bg-cover bg-fixed bg-no-repeat relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-full after:bg-[rgba(8,24,69,0.9)] after:-z-10"
       >
-        <div className="container mx-auto xs:px-0 px-6 z-[33]">
+        <div className="container mx-auto xs:px-0 px-3 z-[33]">
           <div className=" text-center">
             <h6 className=" text-white capitalize">Client Testimonials</h6>
             <h2 className=" text-white">What our clients say</h2>
@@ -187,7 +187,7 @@ const HomeThree = () => {
       </section>
 
       <section className=" -mt-[135px] z-[99]">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-3">
           <ClientTestimonial />
         </div>
       </section>
@@ -196,16 +196,14 @@ const HomeThree = () => {
 
       {/* Price--Start */}
       <section className="relative pt-[116px] pb-[85px]">
-        <div className="container mx-auto xs:px-9 px-6">
+        <div className="container mx-auto xs:px-9 px-3">
           <h6 className="  text-center">Let’s Work</h6>
-          <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
-            Pricing Plans
-          </h2>
-          <div className="grid  md:grid-cols-3 sm:grid-cols-2  gap-8">
-            <PricePlanTwo plan="Basic Plan" icon={<MdAutoMode />} price="49" />
-            <PricePlanTwo plan="Premium Plan" icon={<FaAward />} price="69" />
+          <h2 className=" mb-10 text-[#191919] text-center">Pricing Plans</h2>
+          <div className="grid  lg:grid-cols-3 sm:grid-cols-2  gap-8">
+            <PricePlanTwo title="Basic Plan" icon={<MdAutoMode />} price="49" />
+            <PricePlanTwo title="Premium Plan" icon={<FaAward />} price="69" />
             <PricePlanTwo
-              plan="Business Plan"
+              title="Business Plan"
               icon={<MdOutlineWorkspacePremium />}
               price="89"
             />
@@ -229,9 +227,7 @@ const HomeThree = () => {
         <div className="container mx-auto xs:px-6 px-3">
           <div>
             <h6 className="title  text-center">Blogs</h6>
-            <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
-              Out Latest Articles
-            </h2>
+            <h2 className="mb-10  text-center">Out Latest Articles</h2>
           </div>
           <HomeBlogGrid />
         </div>

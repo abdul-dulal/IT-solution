@@ -65,7 +65,7 @@ const Contact = () => {
       <div className="container mx-auto xs:px-6 px-4">
         <div className="grid grid-cols-12">
           <div className="md:col-span-5 col-span-12">
-            <div className="bg-primary pl-10 rounded shadow-md pb-12  ">
+            <div className="bg-primary xs:pl-10 pl-6 rounded shadow-md pb-12  ">
               <h2 className="mb-10 pt-14  xl:text-5xl xs:leading-[58px] leading-[40px] font-bold   xs:text-[40px] text-[36px] text-white ">
                 Contact Us
               </h2>
@@ -87,7 +87,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="md:col-span-7 col-span-12">
-            <div className="relative  rounded-[10px] pt-3 pb-[40px] sm:px-[30px]  px-5">
+            <div className="relative  rounded-[10px] pt-3 pb-[40px] md:pl-[30px]  ">
               <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  text-white mb-7">
                 Request A Quote
               </h2>

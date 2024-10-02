@@ -49,7 +49,7 @@ const HomeBlogGrid = () => {
                     </Link>
                     <Link
                       href={`/blog/${blog.title}`}
-                      className="leading-[24px] text-[16px] text-white hover:text-primary mr-[30px]"
+                      className="xs:block hidden leading-[24px] text-[16px] text-white hover:text-primary mr-[30px]"
                     >
                       <BiMessageRounded className="  inline-block mr-[6px] relative -top-[2px]" />
                       3

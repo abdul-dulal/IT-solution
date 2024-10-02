@@ -3,11 +3,10 @@ import Link from "next/link";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoScanCircleOutline } from "react-icons/io5";
-import { MdAutoMode } from "react-icons/md";
 
 const PricePlanTwo = ({ title, icon, price }) => {
   return (
-    <div className=" group relative rounded-[20px] pt-[41px] px-[45px] pb-9 border-[3px] border-dashed border-primary mb-[30px] transition-all ease-in-out duration-400">
+    <div className=" group relative rounded-[20px] pt-[41px]  xl:pl-[45px] lg:pl-6 xs:pl-[45px] px-5 pb-9 border-[3px] border-dashed border-primary mb-[30px] transition-all ease-in-out duration-400">
       <div className="w-24 h-24 leading-[110px] text-[40px] bg-primary text-white flex justify-center items-center mb-10 relative z-[3] transition-all ease-in-out duration-400 rounded-[70%_30%_30%_70%/_70%_70%_30%_30%] group-hover:rounded-[30%_70%_70%_30%/_30%_30%_70%_70%]">
         {icon}
       </div>

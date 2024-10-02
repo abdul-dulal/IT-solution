@@ -17,7 +17,7 @@ const HeaderThreePopup = () => {
         <Link
           href="javascript:void(0);"
           onClick={() => setSearchPopup(!searchPopup)}
-          className={`transition-all duration-300 ease-in-out  py-10 border-l border-[rgba(255,255,255,0.1)] border-solid pl-6 text-white hover:text-black`}
+          className={`transition-all duration-[5s] ease-in-out  py-10 border-l border-[rgba(255,255,255,0.1)] border-solid pl-6 text-white hover:text-black`}
         >
           <IoSearchOutline size={24} />
         </Link>

@@ -38,7 +38,7 @@ const ClientTestimonial = () => {
             spaceBetween: 30,
           },
           880: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 30,
           },
           1024: {

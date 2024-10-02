@@ -6,7 +6,7 @@ const SliderContent = ({ img, name, title }) => {
     <div>
       <div
         style={{ boxShadow: "0px 10px 30px 0px rgb(0 0 0 / 5%)" }}
-        className="flex gap-6 items-center w-[70%] py-5 pl-5 z-[88] relative top-4  bg-[#f0f4f9] rounded-[5px] m-auto "
+        className="flex gap-6 items-center xs:w-[70%] w-[95%] py-5 pl-5 z-[88] relative top-4  bg-[#f0f4f9] rounded-[5px] m-auto "
       >
         <div>
           <Image

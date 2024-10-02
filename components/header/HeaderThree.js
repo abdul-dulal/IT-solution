@@ -11,7 +11,7 @@ const HeaderThree = () => {
   return (
     <header className="sticky top-0 bg-primary z-[999]">
       <div className="container mx-auto  z-[999] ">
-        <div className="container mx-auto xs:px-10 px-6">
+        <div className="container mx-auto xs:px-6 px-3">
           <nav className="h-[74px]">
             <div className="flex justify-between  items-center w-full h-full">
               <ul

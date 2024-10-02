@@ -42,10 +42,10 @@ const Slider = () => {
           <div
             style={{ transition: "transform 10000ms ease" }}
             className={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home2.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
-              activeIndex == 0 ? "scale-[1.3]" : ""
+              activeIndex == 0 ? "xs:scale-[1.3] scale-100" : ""
             }`}
           >
-            <div className="container mx-auto">
+            <div className="container mx-auto px-2">
               <div className=" text-center">
                 <h5
                   className={` layer_animated ${
@@ -57,7 +57,7 @@ const Slider = () => {
                   Markets & Resources
                 </h5>
                 <h2
-                  className={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
+                  className={`layer_animated text-white md:text-[55px] sm:text-[45px] xs:text-[40px] text-[32px]  md:leading-[65px] sm:leading-[54px] xs:leading-[50px] leading-[38px] font-bold ${
                     activeIndex == 0 ? " slider_title" : ""
                   }`}
                 >
@@ -110,10 +110,10 @@ const Slider = () => {
           <div
             style={{ transition: "transform 10000ms ease" }}
             className={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home1.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
-              activeIndex == 1 ? "scale-[1.3]" : ""
+              activeIndex == 1 ? "xs:scale-[1.3] scale-100" : ""
             }`}
           >
-            <div className="container mx-auto px-[13%]">
+            <div className="container mx-auto xs:px-[13%] px-4">
               <div className="slider-content ">
                 <h5
                   className={` layer_animated ${
@@ -125,7 +125,7 @@ const Slider = () => {
                   Modern. Professional. Reliable.
                 </h5>
                 <h2
-                  className={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
+                  className={`layer_animated text-white md:text-[55px] sm:text-[45px] xs:text-[40px] text-[32px]  md:leading-[65px] sm:leading-[54px] xs:leading-[50px] leading-[38px] font-bold ${
                     activeIndex == 1 ? " slider_title" : ""
                   }`}
                 >
@@ -163,11 +163,11 @@ const Slider = () => {
           <div
             style={{ transition: "transform 10000ms ease" }}
             className={` bg-img relative transform scale-100 h-[660px] flex items-center bg-[url('/img/home3/home3.jpg')] bg-cover bg-center bg-no-repeat  before:absolute before:inset-0 before:bg-[rgba(8,24,69,0.7)] ${
-              activeIndex == 2 ? "scale-[1.3]" : ""
+              activeIndex == 2 ? "xs:scale-[1.3] scale-100" : ""
             }`}
           >
-            <div className="container mx-auto px-12">
-              <div className=" text-center ">
+            <div className="container mx-auto xs:px-12 px-5">
+              <div className=" xs:text-center text-left">
                 <h5
                   className={` layer_animated ${
                     rubik.className
@@ -178,7 +178,7 @@ const Slider = () => {
                   Develope & Deploy
                 </h5>
                 <h2
-                  className={`layer_animated text-white sm:text-[55px] xs:text-[40px] text-[25px]  sm:leading-[65px] xs:leading-[50px] leading-[30px] font-bold ${
+                  className={`layer_animated text-white md:text-[55px] sm:text-[45px] xs:text-[40px] text-[32px]  md:leading-[65px] sm:leading-[54px] xs:leading-[50px] leading-[38px] font-bold ${
                     activeIndex == 2 ? " slider_title" : ""
                   }`}
                 >
@@ -216,14 +216,14 @@ const Slider = () => {
 
       <button
         onClick={() => swiperRef.current?.slidePrev()}
-        className="slider-button absolute left-0 top-[50%] transform -translate-y-1/2 p-4 bg-white text-primary rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-300    group-hover:left-14 group-hover:transition-all group-hover:ease-out group-hover:duration-300 z-10  after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:m-auto after:content-[''] after:rounded-[50%] after:text-center after:w-0 after:h-0 after:-z-[1] after:transition-all after:ease-out-out after:duration-300 after:bg-[#081845]"
+        className="slider-button xs:block hidden absolute left-0 top-[50%] transform -translate-y-1/2 p-4 bg-white text-primary rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-300    group-hover:left-14 group-hover:transition-all group-hover:ease-out group-hover:duration-300 z-10  after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:m-auto after:content-[''] after:rounded-[50%] after:text-center after:w-0 after:h-0 after:-z-[1] after:transition-all after:ease-out-out after:duration-300 after:bg-[#081845]"
       >
         <LuArrowLeft size={22} />
       </button>
 
       <button
         onClick={() => swiperRef.current?.slideNext()}
-        className="slider-button absolute right-0 top-[50%] border-none transform -translate-y-1/2 p-4 bg-white text-primary rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-300 z-10 hover:bg-primary  group-hover:right-14 group-hover:transition-all group-hover:ease-out group-hover:duration-300 after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:m-auto after:content-[''] after:rounded-[50%] after:text-center after:w-0 after:h-0 after:-z-[1] after:transition-all after:ease-out-out after:duration-300 after:bg-[#081845]"
+        className="slider-button xs:block hidden absolute right-0 top-[50%] border-none transform -translate-y-1/2 p-4 bg-white text-primary rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-all ease-out duration-300 z-10 hover:bg-primary  group-hover:right-14 group-hover:transition-all group-hover:ease-out group-hover:duration-300 after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:m-auto after:content-[''] after:rounded-[50%] after:text-center after:w-0 after:h-0 after:-z-[1] after:transition-all after:ease-out-out after:duration-300 after:bg-[#081845]"
       >
         <HiArrowRight size={22} />
       </button>
