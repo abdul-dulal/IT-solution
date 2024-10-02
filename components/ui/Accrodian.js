@@ -45,7 +45,7 @@ const Accrodian = () => {
           >
             <summary
               onClick={() => toggleOpen(index)}
-              className="flex items-center gap-6 lg:text-xl cursor-pointer leading-[28px] text-[#222222] font-medium"
+              className="flex items-center gap-6 xs:text-xl text-lg cursor-pointer xs:leading-[28px] leading-[25px] text-[#222222] font-medium"
             >
               <span className=" ml-2 h-12 w-12 flex  items-center justify-center bg-white text-black rounded-full lg:text-xl text-base">
                 {isOpen[index] ? <HiOutlineMinus /> : <FiPlus />}

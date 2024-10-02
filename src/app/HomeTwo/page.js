@@ -12,17 +12,10 @@ import { IoMdBug, IoIosPaper } from "react-icons/io";
 import { TbFileAnalytics } from "react-icons/tb";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { MdAutoMode } from "react-icons/md";
-
 import { FaAward } from "react-icons/fa6";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
-
 import VideoModal from "../../../components/ui/VideoModal";
-
 import ContactForm from "../../../components/ui/ContactForm";
-import cLogo1 from "/public/img/client/techlogo1.png";
-import cLogo2 from "/public/img/client/brandname1.png";
-import cLogo3 from "/public/img/client/brandname2.png";
-import cLogo4 from "/public/img/client/techlogo2.png";
 import Client from "../../../components/ui/Client";
 import PricePlan from "../../../components/ui/PricePlan";
 
@@ -200,12 +193,7 @@ const HomeTwo = () => {
       {/* Client--Start */}
       <section className="bg-[#f0f4f9] relative pt-[75px] pb-[68px] ">
         <div className="container mx-auto px-6">
-          <div className="grid gap-5 justify-center md:grid-cols-4  xs:grid-cols-2  ">
-            <Client logo={cLogo3} />
-            <Client logo={cLogo2} />
-            <Client logo={cLogo4} />
-            <Client logo={cLogo1} />
-          </div>
+          <Client />
         </div>
       </section>
 
