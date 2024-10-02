@@ -12,9 +12,9 @@ const Popup = () => {
   const [searchPopup, setSearchPopup] = useState(false);
 
   return (
-    <div className="flex xs:gap-6 gap-1 items-center">
+    <div className="flex xs:gap-0 gap-1.5  items-center">
       <div className="">
-        <div className="flex items-center xs:gap-8 gap-2">
+        <div className="flex items-center xs:gap-8 gap-4">
           <Link
             href="javascript:void(0);"
             onClick={() => setSearchPopup(!searchPopup)}
@@ -26,6 +26,7 @@ const Popup = () => {
           <Link
             onClick={() => setIsVisible(!isVisible)}
             href="javascript:void(0);"
+            className="xs:block hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

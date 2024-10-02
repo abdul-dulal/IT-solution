@@ -66,8 +66,7 @@ const HomeOne = () => {
       {/* Service--Start */}
       <section className=" relative bg-secondary pt-[30px] pb-[120px]">
         <div className="px-6">
-          {" "}
-          <ServiceSlider />{" "}
+          <ServiceSlider />
         </div>
         <div className="container mx-auto xs:px-10 px-3">
           <div className=" relative bg-[#1a2a57] border-2 border-solid border-[rgba(255,255,255,0.1)] rounded-[10px] py-20 lg:px-[50px] px-6 mt-[90px]">
