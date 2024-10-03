@@ -14,16 +14,22 @@ import Tag from "../../../components/ui/blog/Tag";
 import BlogContact from "../../../components/ui/blog/BlogContact";
 import Quote from "../../../components/ui/blog/Quote";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+import Comments from "../../../components/ui/blog/Comments";
+export const metadata = {
+  title: "Blog Details-Graptor",
+  description: "Technology & IT Solutions ",
+};
 const SingleBlog = () => {
   const recentPost = blog.slice(0, 5);
   const uniqueCategories = [...new Set(blog?.map((item) => item.category))];
   const tag = [...new Set(blog?.map((item) => item.tag))];
+
   return (
     <div>
       <BreadCumb currentPage="Committed Printing Available Text Available." />
       <section className="relative py-[120px]">
         <div className="container mx-auto xl:px-6 px-4">
-          <div className="grid grid-cols-12 gap-7">
+          <div className="grid grid-cols-12 xs:gap-7 gap-0">
             <div className="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>
                 <BlogTitle
@@ -35,7 +41,8 @@ const SingleBlog = () => {
                   slug="/category"
                 />
               </div>
-              <Quote />
+              <Quote tags={tag[5]} />
+              <Comments />
             </div>
             <div className="lg:col-span-4 col-span-12">
               <div className=" relative pl-[10px]">

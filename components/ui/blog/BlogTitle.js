@@ -13,7 +13,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
           src={img}
           width={750}
           height={200}
-          className="rounded-[5px] h-[400px] mt-10 mx-auto"
+          className="h-[400px] w-full  rounded-[5px]  mt-10 mx-auto"
           alt={title}
         />
       </div>
@@ -46,7 +46,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
         </div>
         {readmore ? (
           <h3
-            className={` text-[34px] leading-[38px] mt-[19px] mb-[15px] font-bold`}
+            className={` md:text-[34px] xs:text-[30px] text-[27px] leading-[38px] mt-[19px] mb-[15px] font-bold`}
           >
             <Link href={`/blog/${title}`}>{title}</Link>
           </h3>

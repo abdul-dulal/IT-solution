@@ -41,10 +41,10 @@ const BlogGrid = () => {
                   >
                     <FaArrowRight />
                   </Link>
-                  <div className="biMeta2 absolute left-0 right-0 m-auto bottom-[25%] z-[3] flex justify-center">
+                  <div className=" absolute left-0 right-0 m-auto bottom-[25%] z-[3] flex justify-center">
                     <Link
                       href={`/blog/${blog.title}`}
-                      className="leading-[24px] text-[16px] text-white hover:text-primary mr-[30px]"
+                      className="leading-[24px] text-[16px] text-white hover:text-primary xs:mr-[30px] mr-[22px] ml-2"
                     >
                       <MdOutlineWatchLater className="inline-block mr-[6px] relative -top-[2px]" />
                       02 Apr, 2021
@@ -58,7 +58,7 @@ const BlogGrid = () => {
                     </Link>
                     <Link
                       href={`/blog/${blog.title}`}
-                      className="leading-[24px] text-[16px] text-white hover:text-primary mr-[30px]"
+                      className="leading-[24px] text-[16px] text-white hover:text-primary mr-[30px] xs:block hidden"
                     >
                       <BiMessageRounded className="  inline-block mr-[6px] relative -top-[2px]" />
                       3

@@ -48,14 +48,14 @@ const Comments = () => {
 
   return (
     <div className="">
-      <div className="post-author relative bg-[#f0f4f9] rounded-[10px] pt-10 pb-10 pr-[30px] pl-[200px]">
+      <div className=" relative bg-[#f0f4f9] rounded-[10px] pt-10 pb-10 pr-[30px] xs:pl-[200px] pl-6 ">
         <Image
           src={author}
-          className="rounded-[50%] absolute left-[35px] top-0 bottom-0 m-auto"
+          className="rounded-[50%] xs:absolute xs:left-[35px]  top-0 bottom-0 xs:m-auto "
           alt={author}
         />
         <h4
-          className={`${rubik.className} text-primary text-[24px] font-bold mb-1`}
+          className={`${rubik.className} text-primary text-[24px] font-bold mb-1 xs:mt-0 mt-4`}
         >
           Admin Jesik
         </h4>
@@ -106,10 +106,10 @@ const Comments = () => {
             return (
               <div
                 key={item.id}
-                className={`${item.id % 2 == 0 ? "ml-10" : ""}`}
+                className={`${item.id % 2 == 0 ? "xs:ml-10 ml-4" : ""}`}
               >
                 <div
-                  className={`p-2  flex gap-12 relative rounded-[10px] border border-solid border-[#d1d1d1] pt-10 px-10 pb-14 mb-7`}
+                  className={`p-2  xs:flex xs:gap-12 relative rounded-[10px] border border-solid border-[#d1d1d1] pt-10 px-10 pb-14 mb-7`}
                 >
                   <Image
                     className="  w-[97px] h-[97px] rounded-[50%]"
@@ -121,7 +121,7 @@ const Comments = () => {
 
                   <div>
                     <h5
-                      className={`${rubik.className} uppercase text-xl text-secondary font-medium mb-3`}
+                      className={`${rubik.className} uppercase text-xl text-secondary font-medium mb-3 xs:mt-0 mt-3`}
                     >
                       {item.author}
                     </h5>

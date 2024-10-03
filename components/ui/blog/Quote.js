@@ -87,6 +87,7 @@ const Quote = ({ tags }) => {
         <div className=" xs:flex items-center justify-between">
           <div className=" relative mt-2">
             {tags?.map((tag) => {
+              const encTitle = encodeURIComponent(tag);
               return (
                 <Link
                   key={tag}
@@ -94,7 +95,7 @@ const Quote = ({ tags }) => {
                     boxShadow: "0px 0 20px 0px rgba(130,130,13,0.09)",
                     margin: "0 8px 12px 0",
                   }}
-                  href={`/tag/${tag}`}
+                  href={`/BlogTag/${encTitle}`}
                   className={`${rubik.className} relative text-center  py-[10px] px-5 text-[16px] text-secondary lowercase h-10 rounded-[30px] bg-white hover:bg-primary hover:text-white`}
                 >
                   {tag}

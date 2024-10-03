@@ -30,7 +30,7 @@ const TopHeader = () => {
             <div className="flex gap-3 items-center">
               <IoLocationOutline size={20} />
               <p
-                className={`${rubik.className} text-[15px] text-white font-normal`}
+                className={`${rubik.className} xs:text-[15px] text-sm text-white font-normal`}
               >
                 2072 Pinnickinick Street, WA 98370
               </p>
