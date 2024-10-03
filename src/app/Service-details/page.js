@@ -21,7 +21,7 @@ const ServiceDetails = () => {
     <div>
       <BreadCumb currentPage="Software Development" />
       <section className=" relative  py-[120px]">
-        <div className="container mx-auto xs:px-6 px-4">
+        <div className="container mx-auto xs:px-5 px-3">
           <div className="grid grid-cols-12 gap-5">
             <div className="lg:col-span-8 col-span-12">
               <div className=" relative">
@@ -108,7 +108,7 @@ const ServiceDetails = () => {
                               title === "software development"
                                 ? "border border-solid border-primary"
                                 : ""
-                            } relative flex justify-between items-center capitalize text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
+                            } relative flex justify-between items-center capitalize xs:text-lg text-base xs:leading-[32px] leading-[32px]  font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
                           >
                             {title} <VscTriangleRight />
                           </Link>

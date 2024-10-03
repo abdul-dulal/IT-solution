@@ -25,9 +25,7 @@ const ServiceTwo = () => {
         <div className="container mx-auto xs:px-6 px-4">
           <div className="text-center">
             <h6 className="">What we do</h6>
-            <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
-              Service for You
-            </h2>
+            <h2 className="mb-10  text-center">Service for You</h2>
           </div>
           <Services />
         </div>

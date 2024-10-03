@@ -65,12 +65,10 @@ const Contact = () => {
   };
   return (
     <section className="relative bg-[#f0f4f9] py-[110px]">
-      <div className="container mx-auto xs:px-6 px-4">
+      <div className="container mx-auto xl:px-3 xs:px-6 px-4">
         <div className="grid grid-cols-12">
           <div className="md:col-span-4 col-span-12">
-            <h2 className="mb-[50px] xl:text-5xl xl:leading-[58px] leading-[40px] font-bold   xs:text-[40px] text-[36px]  ">
-              Let&apos;s Work together
-            </h2>
+            <h2 className=" mb-[50px] ">Let&apos;s Work together</h2>
             <Address
               title="Our Address"
               address="PSD Building, 2 AlBahr St, Loskia sripur, jamukara."

@@ -21,9 +21,7 @@ const ServiceOne = () => {
         <div className="container mx-auto xs:px-6 px-4">
           <div className="text-center">
             <h6 className="">What we do</h6>
-            <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
-              Service for You
-            </h2>
+            <h2 className="mb-10  text-center">Service for You</h2>
           </div>
           <Services />
         </div>
@@ -33,7 +31,13 @@ const ServiceOne = () => {
 
       {/* Work Process Start */}
       <section className="relative pt-28 pb-[120px]">
-        <Work />
+        <div className="container mx-auto xl:px-2 xs:px-6 px-4">
+          <h6 className="text-center ">Our Work Process</h6>
+          <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-5 text-center">
+            We Complete Every <br /> Step Carefully
+          </h2>
+          <Work />
+        </div>
       </section>
 
       {/* Work Process End*/}
