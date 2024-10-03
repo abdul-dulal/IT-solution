@@ -16,11 +16,9 @@ const Pricing = () => {
       <BreadCumb currentPage="About" />
       {/* Price--Start */}
       <section className="relative pt-[116px] pb-[85px]">
-        <div className="container mx-auto xs:px-3 px-4">
+        <div className="container mx-auto xs:px-5 px-4">
           <h6 className="  text-center">Let’s Work</h6>
-          <h2 className="text-5xl leading-[58px] font-bold mb-10 text-[#191919] text-center">
-            Pricing Plans
-          </h2>
+          <h2 className=" mb-10 text-center">Pricing Plans</h2>
           <div className="grid  md:grid-cols-3 sm:grid-cols-2  gap-8">
             <PricePlanTwo title="Basic Plan" icon={<MdAutoMode />} price="49" />
             <PricePlanTwo title="Premium Plan" icon={<FaAward />} price="69" />

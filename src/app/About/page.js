@@ -22,12 +22,12 @@ const About = () => {
 
       {/* About--Start */}
 
-      <section className="relative pt-[120px]">
+      <section className="relative pt-[120px] ">
         <div className="container mx-auto xs:px-6 px-4">
           <div className="grid md:grid-cols-2 xl:gap-4 gap-10 ">
             <AboutLeft />
 
-            <div className=" relative">
+            <div className=" relative xs:mt-0 mt-[105px]">
               <h6 className=" text-base md:mt-0 mt-8 leading-5 text-primary font-medium uppercase xs:mb-4">
                 <span className="w-[81px] h-[3px] inline-block bg-primary mr-[15px] relative -top-[3px]"></span>
                 about us
@@ -55,7 +55,13 @@ const About = () => {
 
       {/* Work Process */}
       <section className="relative pt-28 pb-[120px]">
-        <Work />
+        <div className="container mx-auto xl:px-2 xs:px-6 px-4">
+          <h6 className="text-center ">Our Work Process</h6>
+          <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-5 text-center">
+            We Complete Every <br /> Step Carefully
+          </h2>
+          <Work />
+        </div>
       </section>
 
       {/* Team--Sart */}

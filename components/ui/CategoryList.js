@@ -10,7 +10,7 @@ const CategoryList = ({ techCategories, handleFilter }) => {
         className="shaffle-filter  group mt-11 mb-10 flex xs:flex-nowrap flex-wrap  justify-center"
       >
         <li
-          className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7   ${
+          className={`inline-block relative xs:text-[17px] text-base leading-[30px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-4   ${
             activeCategory === "all"
               ? "border-b-[2px] border-solid border-primary pb-1"
               : "border-b-[2px] border-solid border-transparent pb-1 before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[3px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out "
@@ -23,7 +23,7 @@ const CategoryList = ({ techCategories, handleFilter }) => {
         {techCategories.map((category) => (
           <li
             key={category}
-            className={`inline-block relative text-[17px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-7   ${
+            className={`inline-block relative xs:text-[17px] text-base leading-[30px] font-semibold cursor-pointer md:mr-[50px] mr-3 px-[7px] xs:mt-0 mt-4  ${
               activeCategory === category
                 ? "border-b-[2px] border-solid border-primary pb-1"
                 : "border-b-[2px] border-solid border-transparent pb-1 before:w-0 before:h-[2px] before:absolute before:bg-primary before:left-0 before:right-0 before:mx-auto before:-bottom-[3px] before:content-[''] before:opacity-0 before:invisible before:transition-all before:duration-300 before:ease-in-out"

@@ -14,11 +14,9 @@ const Faq = () => {
 
       {/* Faq Start */}
       <section className="relavtive pt-[120px] pb-[100px]">
-        <div className="container xl:px-6 px-4 mx-auto">
+        <div className="container xl:px-7 px-4 mx-auto">
           <h6 className="  text-center">FAQ</h6>
-          <h2 className="sm:text-5xl text-4xl  sm:leading-[58px] leading-[50px] font-bold mb-12 text-[#191919] text-center">
-            Frequently Asked Questions
-          </h2>
+          <h2 className="mb-12  text-center">Frequently Asked Questions</h2>
           <div className="grid grid-cols-12 gap-8">
             <div className="lg:col-span-7 col-span-12">
               <Accrodian />

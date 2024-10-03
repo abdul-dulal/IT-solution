@@ -55,7 +55,7 @@ const FooterTwo = () => {
               </div>
             </aside>
           </div>
-          <div className="lg:col-span-4 col-span-12 lg:ml-24">
+          <div className="lg:col-span-5 col-span-12 lg:ml-24">
             <aside className=" mt-[60px] mb-[45px]">
               <h3 className=" text-xl leading-[0.8] uppercase relative mt-[13px] mb-[37px] border-none text-white pl-[18px] font-bold after:absolute after:-bottom-[6px] after:left-0 after:h-7 after:w-1 after:bg-primary after:content-['']">
                 Newsletters

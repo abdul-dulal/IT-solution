@@ -10,7 +10,7 @@ const FooterContact = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative xs:w-[350px] w-full mt-10"
+      className="relative lg:w-full xs:w-[350px] w-full mt-10"
     >
       <input
         type="email"
