@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import portfolios from "/public/Portfolio.json";
 import BreadCumb from "../../../../components/ui/BreadCumb";
 import ShuffleTwo from "../../../../components/CaseStudy/ShuffleTwo";
-import CasePaginationTwo from "../../../../components/CaseStudy/CasePaginationTwo";
 import Footer from "../../../../components/ui/Footer/Footer";
+import CasePaginationThree from "../../../../components/CaseStudy/CasePaginationThree";
 const PageTwo = () => {
   const pathname = usePathname();
   const portfolio = portfolios.slice(0, 6);
@@ -19,7 +19,7 @@ const PageTwo = () => {
           <ShuffleTwo portfolio={portfolio} />
         </div>
       </section>
-      <CasePaginationTwo path={pathname} />
+      <CasePaginationThree path={pathname} />
       {/* Footer */}
       <Footer />
     </div>

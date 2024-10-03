@@ -3,21 +3,21 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 
-const CasePagination = ({ path }) => {
+const CasePaginationThree = ({ path }) => {
   const [currentPath, setCurrentPath] = useState({ path });
 
   return (
     <div className="mb-20 flex gap-5 justify-center hover:transition-all hover:duration-300 hover:ease-in-out ">
       <Link
-        href="/CaseStudyTwo"
+        href="/CaseStudyThree"
         className={`h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center text-[#222] hover:bg-primary justify-center text-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:text-white ${
-          currentPath.path == "/CaseStudyTwo" ? "hidden" : "block"
+          currentPath.path == "/CaseStudyThree" ? "hidden" : "block"
         }`}
       >
         <TfiAngleLeft />
       </Link>
 
-      {currentPath.path === "/CaseStudyTwo" ? (
+      {currentPath.path === "/CaseStudyThree" ? (
         <span
           className={`h-[60px] w-[60px] rounded-full bg-primary text-white flex items-center justify-center text-xl`}
         >
@@ -25,13 +25,13 @@ const CasePagination = ({ path }) => {
         </span>
       ) : (
         <Link
-          href="/CaseStudyTwo"
+          href="/CaseStudyThree"
           className={`h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center hover:bg-primary justify-center text-xl hover:transition-all hover:duration-300 hover:ease-in-out text-[rgb(34,34,34)] hover:text-white`}
         >
           1
         </Link>
       )}
-      {currentPath.path === "/CaseStudyTwo/page2" ? (
+      {currentPath.path === "/CaseStudyThree/page2" ? (
         <span
           className={`h-[60px] w-[60px] rounded-full bg-primary text-white flex items-center justify-center text-xl`}
         >
@@ -39,7 +39,7 @@ const CasePagination = ({ path }) => {
         </span>
       ) : (
         <Link
-          href="/CaseStudyTwo/page2"
+          href="/CaseStudyThree/page2"
           className={`h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center hover:bg-primary justify-center text-xl hover:transition-all hover:duration-300 hover:ease-in-out text-[rgb(34,34,34)] hover:text-white`}
         >
           2
@@ -47,9 +47,9 @@ const CasePagination = ({ path }) => {
       )}
 
       <Link
-        href="/CaseStudyTwo/page2"
+        href="/CaseStudyThree/page2"
         className={`h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center text-[#222] hover:bg-primary justify-center text-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:text-white ${
-          currentPath.path == "/CaseStudyTwo/page2" ? "hidden" : "block"
+          currentPath.path == "/CaseStudyThree/page2" ? "hidden" : "block"
         }`}
       >
         <TfiAngleRight />
@@ -58,4 +58,4 @@ const CasePagination = ({ path }) => {
   );
 };
 
-export default CasePagination;
+export default CasePaginationThree;

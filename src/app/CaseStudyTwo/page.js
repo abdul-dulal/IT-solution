@@ -54,7 +54,7 @@ const CaseStudyTwo = () => {
                         {item.title}
                       </Link>
                     </h5>
-                    <p className="cats text-[rgba(255,255,255,0.8)] m-0 translate-y-[30px] opacity-0 invisible transition-all ease-in-out duration-1000 hover:text-[#191919] group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
+                    <p className=" text-[rgba(255,255,255,0.8)] m-0 translate-y-[30px] opacity-0 invisible transition-all ease-in-out duration-1000 hover:text-[#191919] group-hover:translate-y-0 group-hover:visible group-hover:opacity-100">
                       <Link href={`/portfolioCategory/${item?.tech}`}>
                         {item?.tech}
                       </Link>

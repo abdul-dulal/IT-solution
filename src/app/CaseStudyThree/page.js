@@ -5,7 +5,7 @@ import BreadCumb from "../../../components/ui/BreadCumb";
 import portfolios from "/public/Portfolio.json";
 import ShuffleTwo from "../../../components/CaseStudy/ShuffleTwo";
 import Footer from "../../../components/ui/Footer/Footer";
-import CasePaginationTwo from "../../../components/CaseStudy/CasePaginationTwo";
+import CasePaginationThree from "../../../components/CaseStudy/CasePaginationThree";
 const CaseStudyThree = () => {
   const pathname = usePathname();
   const portfolio = portfolios.slice(0, 6);
@@ -19,7 +19,7 @@ const CaseStudyThree = () => {
           <ShuffleTwo portfolio={portfolio} />
         </div>
       </section>
-      <CasePaginationTwo path={pathname} />
+      <CasePaginationThree path={pathname} />
       {/* Footer */}
       <Footer />
     </div>

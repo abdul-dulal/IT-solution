@@ -59,7 +59,7 @@ const ShuffleTwo = ({ portfolio }) => {
                     />
                     <div
                       style={{ width: "calc(100% - 30px)" }}
-                      className="folio-content absolute left-[15px] bottom-0 z-[2] bg-white rounded-[5px] pt-[23px] pr-[70px] pb-[16px] pl-[20px] invisible opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:bottom-4 group-hover:opacity-[1] group-hover:delay-[0.4s]"
+                      className="folio-content absolute left-[15px] bottom-0 z-[2] bg-white rounded-[5px] pt-[23px] xs:pr-[70px] pr-5 pb-[16px] pl-[20px] invisible opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:bottom-4 group-hover:opacity-[1] group-hover:delay-[0.4s]"
                     >
                       <p className=" relative text-primary mb-[2px]">
                         <Link
@@ -78,10 +78,10 @@ const ShuffleTwo = ({ portfolio }) => {
                         </Link>
                       </h5>
                       <Link
-                        className="flex items-center justify-center w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-[16px] rounded-[3px] leading-[47px] text-center absolute top-0 bottom-0 right-4 hover:bg-primary hover:text-white m-auto"
-                        href={`portfolio/${encTitle}`}
+                        href={`/portfolio/${encTitle}`}
+                        className="inline-block w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-base rounded-[3px] leading-[47px] text-center xs:absolute top-0 bottom-0 right-5  xs:m-auto mt-3 hover:bg-primary hover:text-white"
                       >
-                        <FaArrowRight />
+                        <FaArrowRight className="inline-block m-auto" />
                       </Link>
                     </div>
                   </div>
