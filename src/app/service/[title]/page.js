@@ -125,7 +125,7 @@ export default function ServiceDetails({ params }) {
                             href={`/service/${encTitle}`}
                             className={`${rubik.className} ${
                               active ? "border border-solid border-primary" : ""
-                            } relative flex justify-between items-center capitalize text-lg leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
+                            } relative flex justify-between items-center capitalize xs:text-lg text-base leading-[32px] font-medium py-2 px-[20px] bg-white rounded-[5px] text-[#222222] border border-solid border-[#e3e3e3] hover:border-primary  transition-all ease-in-out duration-400 `}
                           >
                             {title} <VscTriangleRight />
                           </Link>

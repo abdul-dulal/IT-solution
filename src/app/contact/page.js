@@ -68,9 +68,7 @@ const Contact = () => {
           </div>
 
           <div className="text-center">
-            <h3 className="text-5xl leading-[50px] font-bold text-center mb-10">
-              Contact Form
-            </h3>
+            <h3 className=" text-center mb-10">Contact Form</h3>
             <ContactTwo />
           </div>
         </div>

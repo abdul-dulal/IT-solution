@@ -46,7 +46,7 @@ const Portfolio = ({ params }) => {
             <Image src={ps2} alt={single?.tech} />
           </div>
 
-          <div className="grid grid-cols-12 gap-11">
+          <div className="grid grid-cols-12 xs:gap-11">
             <div className="sm:col-span-4 col-span-12">
               <div className="detils-folio relative pt-6">
                 <span className="block mb-[5px] text-lg text-[#565872] leading-[30px]">

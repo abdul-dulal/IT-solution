@@ -8,6 +8,7 @@ import Call from "../../../../components/ui/blog/Call";
 import blog from "/public/Blog.json";
 import { rubik } from "@/app/fonts";
 import Tag from "../../../../components/ui/blog/Tag";
+import FooterTwo from "../../../../components/ui/Footer/FooterTwo";
 
 export async function generateMetadata({ params }) {
   const paramsTitle = params.title
@@ -27,7 +28,7 @@ const BlogTag = ({ params }) => {
       <BreadCumb currentPage={title} />
       <section className="relative py-[120px]">
         <div className="container mx-auto xl:px-6 px-4">
-          <div className="grid grid-cols-12 gap-7">
+          <div className="grid grid-cols-12 xs:gap-7">
             <div className="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>
                 {filteredTag?.map((tag) => {
@@ -84,6 +85,8 @@ const BlogTag = ({ params }) => {
           </div>
         </div>
       </section>
+      {/* Footer */}
+      <FooterTwo />
     </div>
   );
 };
