@@ -23,7 +23,7 @@ const About = () => {
       {/* About--Start */}
 
       <section className="relative pt-[120px] ">
-        <div className="container mx-auto xs:px-6 px-4">
+        <div className="container mx-auto xs:px-4 px-3">
           <div className="grid md:grid-cols-2 xl:gap-4 gap-10 ">
             <AboutLeft />
 
@@ -36,9 +36,9 @@ const About = () => {
                 We Provide Best Solution For Your Business
               </h2>
               <p className=" mb-6">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                From software development to network management, we provide
+                tailored solutions to meet your unique needs.Feel free to let me
+                know if you like to add any specific services or focus areas!
               </p>
               <div className=" relative mb-[25px]">
                 <ProgressBar datacount={95} title="software development" />
@@ -55,7 +55,7 @@ const About = () => {
 
       {/* Work Process */}
       <section className="relative pt-28 pb-[120px]">
-        <div className="container mx-auto xl:px-2 xs:px-6 px-4">
+        <div className="container mx-auto xs:px-4 px-3">
           <h6 className="text-center ">Our Work Process</h6>
           <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-5 text-center">
             We Complete Every <br /> Step Carefully
@@ -82,7 +82,7 @@ const About = () => {
 
       {/* Testimonial--Start */}
       <section className="relative pt-[116px] pb-[120px] ">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xs:px-4 px-3">
           <h6 className=" text-capitalize  ">Client Testimonials</h6>
           <h2 className=" sm:text-5xl text-3xl mb-12 text-[rgb(25,25,25)]">
             What our clients say

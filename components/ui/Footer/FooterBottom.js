@@ -14,7 +14,7 @@ const FooterBottom = () => {
             >
               Nsstheme
             </Link>
-            2021 | All Rights Reserved.
+            2024 | All Rights Reserved.
           </p>
         </div>
         <div className="xs:col-span-5 col-span-12">

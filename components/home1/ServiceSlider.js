@@ -1,5 +1,4 @@
 "use client";
-import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -44,7 +43,7 @@ const ServiceSlider = () => {
               spaceBetween: 30,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 30,
             },
             1200: {
@@ -69,7 +68,7 @@ const ServiceSlider = () => {
                         <IconComponent />
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold leading-[30px] text-white mb-3 transition-all ease-in-out duration-200 hover:text-secondary">
+                    <h3 className="text-xl font-bold leading-[30px] text-white mb-3 transition-all ease-in-out duration-200 ">
                       <Link href={`service/${encTitle}`}>{title}</Link>
                     </h3>
                     <p className="text-white m-0 transition-all duration-200 ease-in-out">

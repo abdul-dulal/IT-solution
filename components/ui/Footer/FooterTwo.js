@@ -61,8 +61,8 @@ const FooterTwo = () => {
                 Newsletters
               </h3>
               <p className="text-white ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                est
+                Stay updated with the latest in IT solutions, tech trends, and
+                expert insights.
               </p>
               <FooterContact />
             </aside>

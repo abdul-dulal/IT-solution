@@ -227,8 +227,8 @@ const Slider = () => {
       </button>
 
       <div className="relative pb-[26px] -mt-[100px] z-[2] sm:block hidden">
-        <div className="container mx-auto xl:px-0 px-6">
-          <div className="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2  relative bg-primary  rounded-t-[10px] py-5">
+        <div className="container mx-auto xs:px-4 px-3">
+          <div className="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2  relative bg-primary  rounded-t-[10px] py-3">
             <IconBox icon={<BiLogoSlack />} title="Profit Planning" />
             <IconBox icon={<PiShootingStarThin />} title="Business Analysis" />
             <IconBox icon={<GoProjectSymlink />} title="Reports Analysis" />

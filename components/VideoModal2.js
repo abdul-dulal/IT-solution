@@ -22,10 +22,10 @@ const VideoModalTwo = () => {
           boxShadow: "0px 10px 30px 0px rgba(0, 0, 0, 0.07)",
         }}
         onClick={togglePopup}
-        className="video-popup hover:text-primary hover:transition-all hover:ease-linear duration-400 w-[229px] h-[229px] border-[11px] border-solid border-white rounded-[50%] text-center text-[42px] text-white absolute right-0 xs:bottom-[120px] -bottom-32 z-[2] after:absolute after:right-0 after:top-0 after:w-full after:h-full after:rounded-[50%] after:content-[''] after:bg-[rgba(8,24,69,0.7)]"
+        className="video-popup hover:text-primary hover:transition-all hover:ease-linear duration-400 w-[210px] h-[210px] border-[11px] border-solid border-white rounded-[50%] text-center text-[42px] text-white absolute right-0 xs:bottom-[120px] -bottom-32 z-[2] after:absolute after:right-0 after:top-0 after:w-full after:h-full after:rounded-[50%] after:content-[''] after:bg-[rgba(8,24,69,0.7)]"
       >
         <Image src={rounded} className="rounded-[50%]" alt="Video Image" />
-        <RiPlayLargeLine className="inline-block absolute left-0 leading-[206px] z-[2] right-0 top-0 bottom-0 m-auto" />
+        <RiPlayLargeLine className="inline-block absolute left-0 leading-[206px] z-[2] right-2 top-0 bottom-0 m-auto" />
       </button>
 
       {isOpen && (

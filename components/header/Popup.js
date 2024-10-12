@@ -14,7 +14,7 @@ const Popup = () => {
   return (
     <div className="flex xs:gap-0 gap-1.5  items-center">
       <div className="">
-        <div className="flex items-center xs:gap-8 gap-4 lg:mr-2 xs:mr-8 mr-0">
+        <div className="flex items-center xs:gap-8 gap-4 lg:mr-0 xs:mr-8 mr-0">
           <Link
             href="javascript:void(0);"
             onClick={() => setSearchPopup(!searchPopup)}

@@ -21,8 +21,8 @@ const ServiceTwo = () => {
     <div>
       <BreadCumb currentPage="Service" />
       {/* Service Start */}
-      <section className="service-section-3 relative bg-[#f0f4f9] pt-[116px] pb-[90px]">
-        <div className="container mx-auto xs:px-6 px-4">
+      <section className=" relative bg-[#f0f4f9] pt-[116px] pb-[90px]">
+        <div className="container mx-auto xs:px-4 px-3">
           <div className="text-center">
             <h6 className="">What we do</h6>
             <h2 className="mb-10  text-center">Service for You</h2>

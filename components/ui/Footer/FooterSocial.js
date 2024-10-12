@@ -13,8 +13,8 @@ const FooterSocial = () => {
           <Image src={logo} alt="Footer-Logo" />
         </Link>
         <p className="text-[rgba(255,255,255,0.8)] mt-7 mb-8 text-lg font-normal xs:pr-10 pr-0">
-          Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium
-          doloremque denounce with illo inventore veritatis
+          We specialize in delivering reliable, innovative technology services
+          that drive growth and efficiency
         </p>
         <div className="flex gap-3 relative">
           <Link
