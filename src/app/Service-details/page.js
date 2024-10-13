@@ -21,12 +21,16 @@ const ServiceDetails = () => {
     <div>
       <BreadCumb currentPage="Software Development" />
       <section className=" relative  py-[120px]">
-        <div className="container mx-auto xs:px-5 px-3">
+        <div className="container mx-auto  xs:px-5 px-3">
           <div className="grid grid-cols-12 gap-5">
-            <div className="lg:col-span-8 col-span-12">
+            <div className=" lg:col-span-8 col-span-12">
               <div className=" relative">
                 <div className=" relative mb-7">
-                  <Image src={hero} alt="Hero" className="rounded-[10px]" />
+                  <Image
+                    src={hero}
+                    alt="Hero"
+                    className="2xl:w-full rounded-[10px]"
+                  />
                 </div>
                 <h3 className="sm:text-[40px] xs:text-[36px] text-[30px] sm:leading-[52px] xs:leading-[45px] leading-[40px] font-bold text-[#191919] mb-[22px]">
                   Responsive Pixel Perfect Design
@@ -50,7 +54,7 @@ const ServiceDetails = () => {
                 </p>
                 <div className="grid sm:grid-cols-2 gap-7">
                   <Image
-                    className="rounded-[5px] mt-[19px] mb-[35px]"
+                    className="2xl:w-full rounded-[5px] mt-[19px] mb-[35px]"
                     src={blog}
                     alt="Service"
                   />
