@@ -8,7 +8,7 @@ import { MdWatchLater } from "react-icons/md";
 const TopheaderTwo = () => {
   return (
     <section className=" relative bg-white ">
-      <div className="container mx-auto xl:px-8 px-4">
+      <div className="container mx-auto xs:px-4 px-3">
         <div className="grid grid-cols-12 items-center ">
           <div className="lg:col-span-3 sm:col-span-4 col-span-12 sm:mx-0 mx-auto ">
             <Link className="relative px-1 text-left" href="/HomeThree">

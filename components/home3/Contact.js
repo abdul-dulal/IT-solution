@@ -62,7 +62,7 @@ const Contact = () => {
   };
   return (
     <section className="relative  py-[110px]">
-      <div className="container mx-auto xs:px-6 px-4">
+      <div className="container mx-auto xs:px-4 px-3 ">
         <div className="grid grid-cols-12">
           <div className="md:col-span-5 col-span-12">
             <div className="bg-primary xs:pl-10 pl-6 rounded shadow-md pb-12  ">
