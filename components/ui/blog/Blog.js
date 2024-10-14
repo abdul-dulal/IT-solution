@@ -21,22 +21,23 @@ const Blog = () => {
             <div key={blog.id}>
               <div
                 style={{ boxShadow: "0px 0 20px 0px rgb(152 152 152 / 16%)" }}
-                className="blogItem relative transition-all ease-out duration-400 mb-[30px] hover:-translate-y-[10px]"
+                className=" relative transition-all ease-out duration-400 mb-[30px] hover:-translate-y-[10px]"
               >
-                <div className="biThumb relative  ">
+                <div className=" relative  ">
                   <Image
                     src={blog.img}
-                    width={200}
-                    height={50}
-                    className="w-full"
+                    width={400}
+                    height={500}
+                    priority
+                    className="w-full h-[240px] object-cover"
                     alt={blog.title}
                   />
-                  <div className="biMeta absolute bottom-[25px] left-[25px] w-auto z-[2] bg-primary text-white text-sm leading-[30px] capitalize px-[15px] font-normal transition-all ease-out duration-300 hover:bg-[#081845]">
+                  <div className=" absolute bottom-[25px] left-[25px] w-auto z-[2] bg-primary text-white text-sm leading-[30px] capitalize px-[15px] font-normal transition-all ease-out duration-300 hover:bg-[#081845]">
                     <Link href="" className="mr-6 relative ">
                       Mark Smith
                     </Link>
                     <Link href="" className="mr-6 relative ">
-                      02 Apr, 2021
+                      02 Sep, 2024
                     </Link>
                   </div>
                 </div>

@@ -16,17 +16,21 @@ const CaseDetails = () => {
       <BreadCumb currentPage="IT Counsultancy" />
 
       <section className="portfolio-single relative py-[120px]">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xs:px-4 px-3">
           <div className="folio-thumb relative">
-            <Image src={caseDetails} className=" mb-[30px]" alt="Case Details" />
+            <Image
+              src={caseDetails}
+              className="w-full mb-[30px]"
+              alt="Case Details"
+            />
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-3">
-            <Image src={ps1} alt="Single Portfolio" />
-            <Image src={ps2} alt="Single Portfolio" />
+          <div className="grid sm:grid-cols-2 gap-6">
+            <Image src={ps1} className="w-full" alt="Single Portfolio" />
+            <Image src={ps2} className="w-full" alt="Single Portfolio" />
           </div>
 
-          <div className="grid grid-cols-12 gap-11">
+          <div className="grid grid-cols-12 xs:gap-11">
             <div className="sm:col-span-4 col-span-12">
               <div className="detils-folio relative pt-6">
                 <span className="block mb-[5px] text-lg text-[#565872] leading-[30px]">

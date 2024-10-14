@@ -10,7 +10,7 @@ const TeamMemberSkill = ({ member }) => {
           src={member}
           width={550}
           height={400}
-          className="rounded-md"
+          className="w-full rounded-md"
           alt="Team Member"
         />
       </div>

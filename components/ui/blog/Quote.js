@@ -32,24 +32,18 @@ const Quote = ({ tags }) => {
         variations of passages of Lorem Ipsum available, but the majority have
         suffered alteration in some form, by injected humour, or
       </p>
-      <ul className="mb-6">
-        <li
-          className={`${rubik.className} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
-        >
-          <FaCheckCircle className="text-primary" />
-          Lorem available market standard dummy text available market industry
+      <ul className="mb-6 xs:ml-10 ">
+        <li className="inline-block relative text-secondary xs:text-[19px] text-lg  xs:leading-[32px] leading-[30px] pl-[30px] mb-2 after:absolute after:left-0 after:text-lg after:top-[6px] after:text-white after:content-['\2713']  after:h-[18px] after:w-[18px] after:bg-primary after:rounded-full after:flex after:items-center after:justify-center">
+          Sed ut perspiciatis unde omnis iste natus error
         </li>
-        <li
-          className={`${rubik.className} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
-        >
-          <FaCheckCircle className="text-primary" />
+        <li className="inline-block relative text-secondary xs:text-[19px] text-lg  xs: leading-[32px leading-[30px]]  pl-[30px] mb-2 after:absolute after:left-0 after:text-lg after:top-[6px] after:text-white after:content-['\2713']  after:h-[18px] after:w-[18px] after:bg-primary after:rounded-full after:flex after:items-center after:justify-center">
           Accusamus et iusto odio dignissimos ducimus qui blanditiis
         </li>
-        <li
-          className={`${rubik.className} flex items-center  gap-4 relative text-lg leading-[34px] text-secondary xs:pl-10 pl-0 mb-[10px]`}
-        >
-          <FaCheckCircle className="text-primary" />
+        <li className="inline-block relative text-secondary  xs:text-[19px] text-lg  xs:leading-[32px] leading-[30px] pl-[30px] mb-2 after:absolute after:left-0 after:text-lg after:top-[6px] after:text-white after:content-['\2713']  after:h-[18px] after:w-[18px] after:bg-primary after:rounded-full after:flex after:items-center after:justify-center">
           Nam libero tempore, cum soluta nobis est eligendi optio cumque
+        </li>
+        <li className="inline-block relative text-secondary  xs:text-[19px] text-lg  xs:leading-[32px] leading-[30px] pl-[30px] mb-2 after:absolute after:left-0 after:text-lg after:top-[6px] after:text-white after:content-['\2713']  after:h-[18px] after:w-[18px] after:bg-primary after:rounded-full after:flex after:items-center after:justify-center">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur
         </li>
       </ul>
       <div className=" grid sm:grid-cols-2 gap-6 mt-9 mb-[10px]">
@@ -57,7 +51,7 @@ const Quote = ({ tags }) => {
           <figure className="wp-block-image size-full">
             <Image
               src={blog}
-              className="mb-[22px] rounded-[5px]"
+              className="2xl:w-full mb-[22px] rounded-[5px]"
               alt="Blog Feature"
             />
           </figure>
@@ -96,7 +90,7 @@ const Quote = ({ tags }) => {
                     margin: "0 8px 12px 0",
                   }}
                   href={`/BlogTag/${encTitle}`}
-                  className={`${rubik.className} relative text-center  py-[10px] px-5 text-[16px] text-secondary lowercase h-10 rounded-[30px] bg-white hover:bg-primary hover:text-white`}
+                  className={`${rubik.className} relative text-center  py-[10px] px-5  xs:text-secondary leading-[30px] lowercase h-10 rounded-[30px] bg-white hover:bg-primary hover:text-white`}
                 >
                   {tag}
                 </Link>

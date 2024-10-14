@@ -2,6 +2,7 @@ import React from "react";
 import BreadCumb from "../../../components/ui/BreadCumb";
 
 import BlogGrid from "../../../components/ui/blog/blogGrid";
+import FooterTwo from "../../../components/ui/Footer/FooterTwo";
 export const metadata = {
   title: "Blog Grid 02-Graptor",
   description: "Technology & IT Solutions ",
@@ -15,6 +16,7 @@ const BlogGridTwo = () => {
           <BlogGrid />
         </div>
       </section>
+      <FooterTwo />
     </div>
   );
 };

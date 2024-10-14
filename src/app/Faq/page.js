@@ -14,10 +14,10 @@ const Faq = () => {
 
       {/* Faq Start */}
       <section className="relavtive pt-[120px] pb-[100px]">
-        <div className="container xl:px-7 px-4 mx-auto">
+        <div className="container mx-auto xs:px-4 px-3">
           <h6 className="  text-center">FAQ</h6>
           <h2 className="mb-12  text-center">Frequently Asked Questions</h2>
-          <div className="grid grid-cols-12 gap-8">
+          <div className="grid grid-cols-12 xs:gap-8">
             <div className="lg:col-span-7 col-span-12">
               <Accrodian />
             </div>

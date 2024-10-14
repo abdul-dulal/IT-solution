@@ -17,7 +17,7 @@ const Contact = () => {
       <BreadCumb currentPage="Contact" />
 
       <section className="contactSetion relative pt-[150px] pb-[120px]">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xs:px-4 px-3">
           <div className="grid xl:grid-cols-3  sm:grid-cols-2 gap-8">
             <div
               style={{ padding: "59px 40px 27px" }}

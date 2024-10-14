@@ -40,7 +40,6 @@ const BlogCategory = ({ params }) => {
                         img={category?.img}
                         category={category?.category}
                         readmore={true}
-                        slug="/blog"
                       />
                     </div>
                   );

@@ -47,10 +47,12 @@ const AccrodianTwo = () => {
               onClick={() => toggleOpen(index)}
               className="flex items-center gap-6 lg:text-xl cursor-pointer leading-[28px] text-[#222222] font-medium"
             >
-              <span className=" ml-2 h-12 w-12 flex  items-center justify-center bg-white text-black rounded-full lg:text-xl text-base">
-                {isOpen[index] ? <HiOutlineMinus /> : <FiPlus />}
-              </span>
-              {detail.summary}
+              <div>
+                <span className=" ml-2 h-12 w-12 flex  items-center justify-center bg-white text-black rounded-full lg:text-xl text-base">
+                  {isOpen[index] ? <HiOutlineMinus /> : <FiPlus />}
+                </span>
+              </div>
+              <div>{detail.summary}</div>
             </summary>
             {isOpen[index] && (
               <div className="lg:p-2 bg-[#f0f4f9] my-1  lg:ml-4 text-lg  leading-[30px] font-normal text-[#85879B] ">

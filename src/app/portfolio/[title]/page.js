@@ -29,26 +29,26 @@ const Portfolio = ({ params }) => {
     <div>
       <BreadCumb currentPage={title} />
 
-      <section className="portfolio-single relative py-[120px]">
-        <div className="container mx-auto xl:px-6 px-4">
-          <div className="folio-thumb relative">
+      <section className="relative py-[120px]">
+        <div className="container mx-auto xs:px-4 px-3">
+          <div className="relative">
             <Image
               src={single?.img2}
               width={1130}
               height={200}
-              className=" h-auto mb-[30px]"
+              className="w-full h-auto mb-[30px]"
               alt=""
             />
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-3">
-            <Image src={ps1} alt={single?.tech} />
-            <Image src={ps2} alt={single?.tech} />
+          <div className="grid sm:grid-cols-2 gap-6">
+            <Image src={ps1} className="w-full" alt={single?.tech} />
+            <Image src={ps2} className="w-full" alt={single?.tech} />
           </div>
 
           <div className="grid grid-cols-12 xs:gap-11">
             <div className="sm:col-span-4 col-span-12">
-              <div className="detils-folio relative pt-6">
+              <div className="relative pt-6">
                 <span className="block mb-[5px] text-lg text-[#565872] leading-[30px]">
                   Mockup
                 </span>

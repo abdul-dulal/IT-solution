@@ -1,12 +1,11 @@
 import React from "react";
 import BreadCumb from "../../../components/ui/BreadCumb";
-import Image from "next/image";
 import member from "/public/img/team/team-member1.jpg";
 import TeamMemberSkill from "../../../components/ui/team/TeamMemberSkill";
-import TeamDetails from "../../../components/ui/team/TeamDetails";
 import FooterTwo from "../../../components/ui/Footer/FooterTwo";
+import TeamMemberDetails from "../../../components/ui/team/TeamMemberDetails";
 
-const SingleTeam = () => {
+const TeamDetails = () => {
   return (
     <div>
       <BreadCumb currentPage="Team Member" />
@@ -14,7 +13,7 @@ const SingleTeam = () => {
         <div className="container mx-auto xl:px-6 px-4">
           <div className="grid lg:grid-cols-2 gap-10">
             <TeamMemberSkill member={member} />
-            <TeamDetails name="Doris Jordan" dgn="Design Expert" />
+            <TeamMemberDetails name="Doris Jordan" dgn="Design Expert" />
           </div>
         </div>
       </section>
@@ -25,4 +24,4 @@ const SingleTeam = () => {
   );
 };
 
-export default SingleTeam;
+export default TeamDetails;

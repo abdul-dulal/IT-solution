@@ -144,7 +144,7 @@ const MainHeader = () => {
                       </li>
                       <li className="">
                         <Link
-                          href="/SingleTeam"
+                          href="/TeamDetails"
                           className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[#1E2843]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 hover:text-primary"
                         >
                           Team Details

@@ -5,7 +5,7 @@ import { FaCaretRight } from "react-icons/fa";
 import author from "/public/img/blog/Author.jpg";
 import { rubik } from "@/app/fonts";
 
-const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
+const BlogTitle = ({ title, subTitle, img, category, readmore }) => {
   return (
     <div>
       <div className=" relative mb-9">
@@ -13,7 +13,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
           src={img}
           width={750}
           height={200}
-          className="h-[400px] w-full  rounded-[5px]  mt-10 mx-auto"
+          className={` w-full  rounded-[5px]   mx-auto `}
           alt={title}
         />
       </div>
@@ -41,7 +41,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
             Mark Smith
           </Link>
           <span className="block text-secondary text-sm leading-3[17px] font-normal">
-            02 Apr, 2021
+            02 Sep, 2024
           </span>
         </div>
         {readmore ? (
@@ -58,7 +58,7 @@ const BlogTitle = ({ title, subTitle, img, category, readmore, slug }) => {
         </p>
         {readmore ? (
           <Link
-            className={` ${rubik.className} group  flex items-center text-base text-secondary font-bold uppercase hover:text-primary`}
+            className={` ${rubik.className} group  flex items-center text-base text-secondary font-bold uppercase hover:text-primary mb-10`}
             href={`/blog/${title}`}
           >
             Read More

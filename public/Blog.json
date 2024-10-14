@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "/img/blog/16.jpg",
+    "img": "/img/blog/blog1.jpg",
     "category": "Graphics Design",
     "tag": ["branding", "graphics"],
     "title": "Necessity May Give Us Your Best Virtual Court System",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "img": "/img/blog/blog3.jpg",
+    "img": "/img/blog/blog6.jpg",
     "title": "How to Optimise and Webinar to Earn Leads.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Software Development",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "img": "/img/blog/blog7.jpg",
+    "img": "/img/blog/blog4.jpg",
     "title": "Quisque suscipit ipsum est eu venenatis leo Industry.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Software Development",
@@ -42,7 +42,7 @@
 
   {
     "id": 7,
-    "img": "/img/blog/blog7.jpg",
+    "img": "/img/blog/blog1.jpg",
     "title": "Mauris neque nisiibus non elementum venenatis.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Ui Ux Brand Design",
@@ -50,7 +50,7 @@
   },
   {
     "id": 6,
-    "img": "/img/blog/blog10.jpg",
+    "img": "/img/blog/blog2.jpg",
     "title": "5 Ways Technology Today at Improved Business.",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Ui Ux Brand Design",
@@ -66,7 +66,7 @@
   },
   {
     "id": 9,
-    "img": "/img/blog/blog9.jpg",
+    "img": "/img/blog/blog3.jpg",
     "title": "The Portraits of the Members Behind The Siege",
     "subTitle": "Lorem available market standard dummy text available market industry Lorem Ipsum simply dummy text of free available market.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
     "category": "Web Development",

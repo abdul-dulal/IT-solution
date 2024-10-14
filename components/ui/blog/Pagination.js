@@ -15,9 +15,13 @@ const Pagination = ({ currentPage, blogs, blogsPerPage, handlePageClick }) => {
         )
       }
       nextLabel={
-        <span className="h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center text-[#222] hover:bg-primary justify-center text-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:text-white">
-          <TfiAngleRight />
-        </span>
+        currentPage < 1 ? (
+          <span className="h-[60px] w-[60px] rounded-full bg-[#f0f4f9] flex items-center text-[#222] hover:bg-primary justify-center text-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:text-white">
+            <TfiAngleRight />
+          </span>
+        ) : (
+          ""
+        )
       }
       pageCount={Math.ceil(blogs?.length / blogsPerPage)}
       onPageChange={handlePageClick}

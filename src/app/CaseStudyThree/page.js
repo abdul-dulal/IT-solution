@@ -15,7 +15,7 @@ const CaseStudyThree = () => {
       <BreadCumb currentPage="Case Study" />
 
       <section className=" relative py-[120px]">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-0">
           <ShuffleTwo portfolio={portfolio} />
         </div>
       </section>

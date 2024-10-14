@@ -17,7 +17,7 @@ const PageTwo = () => {
       <BreadCumb currentPage="case study two" />
 
       <section className="py-[120px] relative">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xs:px-4 px-3">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3">
             {portfolio.map(({ id, img, tech, title }) => {
               const encTitle = encodeURIComponent(title);

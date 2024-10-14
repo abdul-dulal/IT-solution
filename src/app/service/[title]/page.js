@@ -29,8 +29,8 @@ export default function ServiceDetails({ params }) {
     <div>
       <BreadCumb currentPage={paramsTitle} />
       <section className=" relative  py-[120px]">
-        <div className="container mx-auto xs:px-6 px-4">
-          <div className="grid grid-cols-12  gap-5">
+        <div className="container mx-auto xs:px-4 px-3">
+          <div className="grid grid-cols-12  xs:gap-7">
             <div className="lg:col-span-8 col-span-12">
               <div className=" relative">
                 <div className=" relative mb-7">
@@ -40,7 +40,7 @@ export default function ServiceDetails({ params }) {
                       alt="Hero"
                       height={500}
                       width={750}
-                      className="rounded-[10px]"
+                      className="w-full rounded-[10px]"
                     />
                   ) : (
                     <Image src={hero} alt="Hero" className="rounded-[10px]" />
@@ -68,7 +68,7 @@ export default function ServiceDetails({ params }) {
                 </p>
                 <div className="grid sm:grid-cols-2 gap-7">
                   <Image
-                    className="rounded-[5px] mt-[19px] mb-[35px]"
+                    className="2xl:w-full rounded-[5px] mt-[19px] mb-[35px]"
                     src={blog}
                     alt={paramsTitle}
                   />

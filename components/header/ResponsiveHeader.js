@@ -115,7 +115,7 @@ const ResponsiveHeader = ({ bgColor }) => {
                       } `}
                     >
                       <List title="Team Member" path="/TeamMember" />
-                      <List title="Team Details" path="/SingleTeam" />
+                      <List title="Team Details" path="/TeamDetails" />
                     </ul>
                   </ul>
 

@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-const TeamDetails = ({ name, dgn }) => {
+const TeamMemberDetails = ({ name, dgn }) => {
   return (
     <div className="relative">
       <h4 className={`${rubik.className} text-[30px] m-0 font-bold `}>
@@ -104,4 +104,4 @@ const TeamDetails = ({ name, dgn }) => {
   );
 };
 
-export default TeamDetails;
+export default TeamMemberDetails;

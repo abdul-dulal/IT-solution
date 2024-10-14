@@ -21,8 +21,8 @@ const TeamDetails = ({ params }) => {
     <div>
       <BreadCumb currentPage="Team Member" />
       <section className=" relative pt-[120px] pb-[90px]">
-        <div className="container mx-auto xl:px-6 px-4">
-          <div className="grid lg:grid-cols-2 gap-10">
+        <div className="container mx-auto xs:px-4 px-3">
+          <div className="grid lg:grid-cols-2 xs:gap-10">
             <TeamMemberSkill member={img} />
             <div className="relative">
               <h4 className={`${rubik.className} text-[30px] m-0 font-bold `}>
@@ -100,7 +100,8 @@ const TeamDetails = ({ params }) => {
                   <span className="capitalize inline-block font-semibold text-[#081845] ">
                     Website:
                   </span>
-                  <Link target="blank"
+                  <Link
+                    target="blank"
                     href="https://psdtowpwork.com/"
                     className="text-secondary hover:text-primary ml-1"
                   >

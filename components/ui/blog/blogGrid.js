@@ -47,7 +47,7 @@ const BlogGrid = () => {
                       className="leading-[24px] text-[16px] text-white hover:text-primary xs:mr-[30px] mr-[22px] ml-2"
                     >
                       <MdOutlineWatchLater className="inline-block mr-[6px] relative -top-[2px]" />
-                      02 Apr, 2021
+                      02 Sep, 2024
                     </Link>
                     <Link
                       href={`/blog/${blog.title}`}

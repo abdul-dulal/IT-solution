@@ -25,7 +25,7 @@ const TeamMemberTwo = () => {
       <BreadCumb currentPage="Team Member 02" />
 
       <section className="py-[120px] relative">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xs:px-4 px-3">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">
             {teams?.map(({ id, name, designation, img }) => {
               const encName = encodeURIComponent(name);

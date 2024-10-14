@@ -29,6 +29,7 @@ const Blogs = ({ blogs }) => {
               img={item.img}
               category={item.category}
               readmore={true}
+              
             />
           </div>
         ))}

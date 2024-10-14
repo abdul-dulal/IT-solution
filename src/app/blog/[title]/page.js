@@ -42,6 +42,7 @@ const SingleBlog = ({ params }) => {
                   img={singleBlog?.img}
                   category={singleBlog?.category}
                   readmore={false}
+                  id={singleBlog.id}
                 />
               </div>
               <Quote tags={singleBlog?.tag} />
