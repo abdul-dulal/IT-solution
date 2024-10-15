@@ -6,7 +6,7 @@ import ScrollToTopButton from "../../components/ui/ScrollToTopButton";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={jost.className}>
+      <body className={`${jost.className}`}>
         <div className="">
           <HeaderApply />
           {children}

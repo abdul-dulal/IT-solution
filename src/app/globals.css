@@ -9,7 +9,7 @@
 
 @layer base {
   h2 {
-    @apply lg:text-5xl md:text-[40px] xs:text-[36px] text-[30px]  lg:leading-[58px] md:leading-[50px] xs:leading-[44px] leading-[40px] font-bold mb-10 text-[#191919];
+    @apply lg:text-5xl md:text-[40px]  xs:text-[36px] text-[30px]  lg:leading-[58px] md:leading-[50px] xs:leading-[44px] leading-[40px] font-bold mb-10 text-[#191919];
   }
   h5 {
     @apply text-xl text-[rgb(25,25,25)] leading-[30px] font-bold;

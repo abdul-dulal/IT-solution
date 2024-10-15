@@ -66,7 +66,9 @@ const Contact = () => {
         <div className="grid grid-cols-12">
           <div className="md:col-span-5 col-span-12">
             <div className="bg-primary xs:pl-10 pl-6 rounded shadow-md pb-12  ">
-              <h2 className="mb-10 pt-14  xl:text-5xl xs:leading-[58px] leading-[40px] font-bold   xs:text-[40px] text-[36px] text-white ">
+              <h2
+                className={` mb-10 pt-14  xl:text-5xl xs:leading-[58px] leading-[40px] font-bold   xs:text-[40px] text-[36px] text-white`}
+              >
                 Contact Us
               </h2>
               <Address

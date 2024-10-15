@@ -53,7 +53,9 @@ const Slider = () => {
                   For Startup Business
                 </h5>
                 <h2
-                  className={`  text-white lg:text-[80px] md:text-[60px] sm:text-[50px]  xs:text-[36px] text-[32px]  lg:leading-[90px] md:leading-[70px] sm:leading-[60px] xs:leading-[50px] leading-[45px] font-bold  capitalize  mb-3 relative   ${
+                  className={`${
+                    rubik.className
+                  }  text-white lg:text-[80px] md:text-[60px] sm:text-[50px]  xs:text-[36px] text-[32px]  lg:leading-[90px] md:leading-[70px] sm:leading-[60px] xs:leading-[50px] leading-[45px] font-bold  capitalize  mb-3 relative   ${
                     activeIndex == 0
                       ? "opacity-100 visible transition-all delay-[1.8s]   duration-500 ease-in-out"
                       : "opacity-0 invisible"
