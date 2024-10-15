@@ -40,7 +40,9 @@ const HomeShuffle = () => {
       />
       <div className="">
         <div ref={shuffleContainer} className="row my-shuffle-container">
-          {data.slice(0, 6).map((item, index) => (
+          {data.slice(0, 6).map((item, index) => {
+            const encTitle = encodeURIComponent(item.title);
+            const encTech = encodeURIComponent(item.tech);
             <figure
               key={item.id}
               className={`shuffle-img picture-item image-${index + 1}`}
@@ -61,7 +63,7 @@ const HomeShuffle = () => {
                   >
                     <p className="relative text-primary mb-[2px]">
                       <Link
-                        href={`/portfolioCategory/${item?.tech}`}
+                        href={`/portfolioCategory/${encTech}`}
                         className="text-primary inline-block hover:text-[#191919]"
                       >
                         {item.tech}
@@ -69,7 +71,7 @@ const HomeShuffle = () => {
                     </p>
                     <h5 className="xs:inline-block block text-lg mb-0 hover:text-primary">
                       <Link
-                        href={`portfolio/${item.title}`}
+                        href={`portfolio/${encTitle}`}
                         className="inline-block"
                       >
                         {item.title}
@@ -77,15 +79,15 @@ const HomeShuffle = () => {
                     </h5>
                     <Link
                       className="flex items-center justify-center w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-[16px] rounded-[3px] leading-[47px] text-center xs:absolute top-0 bottom-0 right-4 hover:bg-primary hover:text-white xs:m-auto mt-3"
-                      href={`portfolio/${item.title}`}
+                      href={`portfolio/${encTitle}`}
                     >
                       <FaArrowRight />
                     </Link>
                   </div>
                 </div>
               </div>
-            </figure>
-          ))}
+            </figure>;
+          })}
         </div>
       </div>
     </div>

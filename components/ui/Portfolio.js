@@ -54,6 +54,8 @@ const Portfolio = () => {
         }}
       >
         {portfolio?.map((item) => {
+          const encTitle = encodeURIComponent(item.title);
+          const encTech = encodeURIComponent(item.tech);
           return (
             <SwiperSlide key={item.id}>
               <div className="">
@@ -69,15 +71,15 @@ const Portfolio = () => {
                   className=" relative shadow-sm -top-11 left-4 bg-white rounded-[5px] pt-[23px] xs:pr-[70px] pr-5 pb-4 pl-5 "
                 >
                   <p className="relative text-primary text-lg font-normal hover:text-[#191919] mb-[2px]">
-                    <Link href={`/portfolioCategory/${item?.tech}`}>
+                    <Link href={`/portfolioCategory/${encTech}`}>
                       {item.tech}
                     </Link>
                   </p>
                   <h5 className="xs:inline-block block text-[#191919] hover:text-primary capitalize text-lg font-bold">
-                    <Link href={`portfolio/${item.title}`}>{item.title}</Link>
+                    <Link href={`portfolio/${encTitle}`}>{item.title}</Link>
                   </h5>
                   <Link
-                    href={`portfolio/${item.title}`}
+                    href={`portfolio/${encTitle}`}
                     className="inline-block w-11 h-11 bg-[rgba(104,110,226,0.1)] text-primary text-base rounded-[3px] leading-[47px] text-center xs:absolute top-0 bottom-0 right-5  xs:m-auto mt-3 hover:bg-primary hover:text-white"
                   >
                     <FaArrowRight className="inline-block m-auto" />
