@@ -30,7 +30,7 @@ const HomeOne = () => {
 
       {/* About--Start */}
 
-      <section className="relative pt-[120px]">
+      <section className="relative py-[120px]">
         <div className="container mx-auto xs:px-4 px-3">
           <div className="grid md:grid-cols-2 xl:gap-4 gap-10 ">
             <AboutLeft />

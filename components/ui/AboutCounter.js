@@ -10,9 +10,9 @@ const AboutCounter = () => {
       {counterOn && (
         <CountUp start={0} end={25} duration={4} delay={0}>
           {({ countUpRef }) => (
-            <div>
+            <div className="relative top-5">
               <h2
-                className={`${rubik.className} text-[68px] text-primary leading-[90px]  `}
+                className={`${rubik.className} text-[68px] text-primary  `}
                 ref={countUpRef}
               ></h2>
             </div>
