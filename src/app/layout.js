@@ -1,8 +1,13 @@
+import { Jost } from "next/font/google";
 import "./globals.css";
 import HeaderApply from "./HeaderApply";
 import ScrollToTopButton from "../../components/ui/ScrollToTopButton";
-import { jost } from "./fonts";
-
+const jost = Jost({
+  weight: ["400", "500", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jost.className}>
