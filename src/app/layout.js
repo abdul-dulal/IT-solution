@@ -1,13 +1,13 @@
 import "./globals.css";
-import { jost } from "./fonts";
 import HeaderApply from "./HeaderApply";
 import ScrollToTopButton from "../../components/ui/ScrollToTopButton";
+import { jost } from "./fonts";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${jost.className}`}>
-        <div className="">
+    <html lang="en" className={jost.className}>
+      <body>
+        <div>
           <HeaderApply />
           {children}
           <ScrollToTopButton />
