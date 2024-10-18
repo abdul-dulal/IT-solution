@@ -49,7 +49,7 @@ const ShuffleTwo = ({ portfolio }) => {
                 data-groups={JSON.stringify([tech])}
               >
                 <div className="relative h-full w-full overflow-hidden">
-                  <div className="folio-item-1 group mb-[30px] relative overflow-hidden after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:z-[1] after:opacity-0 after:invisible after:transition-all after:ease-in-out after:duration-300 after:bg-[rgba(104,110,226,0.8)] hover:after:h-full hover:after:opacity-[1] hover:after:visible">
+                  <div className=" group mb-[30px] relative overflow-hidden after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:z-[1] after:opacity-0 after:invisible after:transition-all after:ease-in-out after:duration-300 after:bg-[rgba(104,110,226,0.8)] hover:after:h-full hover:after:opacity-[1] hover:after:visible">
                     <Image
                       src={img}
                       alt={title}
@@ -59,7 +59,7 @@ const ShuffleTwo = ({ portfolio }) => {
                     />
                     <div
                       style={{ width: "calc(100% - 30px)" }}
-                      className="folio-content absolute left-[15px] bottom-0 z-[2] bg-white rounded-[5px] pt-[23px] xs:pr-[70px] pr-5 pb-[16px] pl-[20px] invisible opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:bottom-4 group-hover:opacity-[1] group-hover:delay-[0.4s]"
+                      className=" absolute left-[15px] bottom-0 z-[2] bg-white rounded-[5px] pt-[23px] xs:pr-[70px] pr-5 pb-[16px] pl-[20px] invisible opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:bottom-4 group-hover:opacity-[1] group-hover:delay-[0.4s]"
                     >
                       <p className=" relative text-primary mb-[2px]">
                         <Link
