@@ -41,7 +41,7 @@ const ResponsiveHeader = ({ bgColor }) => {
         {isOpen && (
           <div
             className={`container xs:px-2 px-0 mx-auto shadow-lg fixed inset-0 bg-white h-[265px] lg:hidden overflow-y-scroll ${
-              isScrolled ? "top-[7%]" : "xs:top-[12%] top-[16%]"
+              isScrolled ? "top-[10%]" : "xs:top-[12%] top-[20%]"
             }`}
           >
             <div className="p-4">
