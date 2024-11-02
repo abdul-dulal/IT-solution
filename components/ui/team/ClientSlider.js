@@ -40,7 +40,6 @@ const ClientSlider = () => {
         slidesPerView={1}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Navigation]}
-        lazy={true}
         speed={1000}
         className="relative "
         breakpoints={{

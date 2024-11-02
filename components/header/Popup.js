@@ -16,7 +16,7 @@ const Popup = () => {
       <div className="">
         <div className="flex items-center xs:gap-8 gap-4 lg:mr-0 xs:mr-8 mr-0">
           <Link
-            href="javascript:void(0);"
+            href=""
             onClick={() => setSearchPopup(!searchPopup)}
             className={`transition-all duration-300 ease-in-out  py-10 `}
           >
@@ -25,7 +25,7 @@ const Popup = () => {
 
           <Link
             onClick={() => setIsVisible(!isVisible)}
-            href="javascript:void(0);"
+            href=""
             className="xs:block hidden"
           >
             <svg
@@ -37,7 +37,7 @@ const Popup = () => {
               <path
                 d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0Zm9,0a2,2,0,1,0,2,2A2,2,0,0,0,11,0Zm9,4a2,2,0,1,0-2-2A2,2,0,0,0,20,4ZM2,9a2,2,0,1,0,2,2A2,2,0,0,0,2,9Zm9,0a2,2,0,1,0,2,2A2,2,0,0,0,11,9Zm9,0a2,2,0,1,0,2,2A2,2,0,0,0,20,9ZM2,18a2,2,0,1,0,2,2,2,2,0,0,0-2-2Zm9,0a2,2,0,1,0,2,2A2,2,0,0,0,11,18Zm9,0a2,2,0,1,0,2,2A2,2,0,0,0,20,18Z"
                 fill="#1E2843"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               ></path>
             </svg>
           </Link>

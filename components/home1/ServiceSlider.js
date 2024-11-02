@@ -29,7 +29,6 @@ const ServiceSlider = () => {
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
-          lazy={true}
           speed={1000}
           loop={true}
           className="relative"

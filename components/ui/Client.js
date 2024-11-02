@@ -29,7 +29,6 @@ const Client = () => {
           spaceBetween={30}
           slidesPerView={1}
           modules={[Navigation, Autoplay]}
-          lazy={true}
           speed={1000}
           loop={true}
           autoplay={{

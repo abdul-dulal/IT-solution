@@ -10,10 +10,7 @@ const HeaderRight = () => {
   return (
     <div>
       <div className="flex items-center justify-center xs:gap-9 gap-5">
-        <Link
-          href="javascript:void(0);"
-          onClick={() => setSearchPopup(!searchPopup)}
-        >
+        <Link href="" onClick={() => setSearchPopup(!searchPopup)}>
           <IoSearchOutline size={24} color="white" className="xs:mt-0 mt-3" />
         </Link>
         <Link

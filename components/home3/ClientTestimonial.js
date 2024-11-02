@@ -24,7 +24,6 @@ const ClientTestimonial = () => {
           delay: 4000,
           disableOnInteraction: false,
         }}
-        lazy={true}
         speed={1000}
         loop={true}
         className="relative "
