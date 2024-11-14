@@ -1,5 +1,5 @@
-import { Jost } from "next/font/google";
 import "./globals.css";
+import { Jost } from "next/font/google";
 import HeaderApply from "./HeaderApply";
 import ScrollToTopButton from "../../components/ui/ScrollToTopButton";
 export const jost = Jost({
