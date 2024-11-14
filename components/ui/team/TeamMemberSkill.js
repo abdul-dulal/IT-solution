@@ -8,9 +8,9 @@ const TeamMemberSkill = ({ member }) => {
       <div>
         <Image
           src={member}
-          width={550}
+          width={540}
           height={400}
-          className="max-w-[500px] w-full rounded-md"
+          className="max-w-[540px] w-full rounded-md"
           alt="Team Member"
         />
       </div>
