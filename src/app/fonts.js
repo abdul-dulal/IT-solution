@@ -1,6 +1,6 @@
 import { Jost, Rubik } from "next/font/google";
 
-const jost = Jost({
+export const jost = Jost({
   weight: ["400", "500", "700"],
   style: ["normal"],
   subsets: ["latin"],
