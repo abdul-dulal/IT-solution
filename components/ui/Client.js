@@ -54,7 +54,7 @@ const Client = () => {
               spaceBetween: 30,
             },
             1536: {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 30,
             },
           }}

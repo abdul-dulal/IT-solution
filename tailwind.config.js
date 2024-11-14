@@ -17,14 +17,26 @@ module.exports = {
         secondary: "#081845",
         base: "#191919",
       },
+
       screens: {
-        xs: "620px",
+        xs: "640px",
         sm: "768px",
         md: "880px",
         lg: "1024px",
         xl: "1200px",
-        "2xl": "1400px",
       },
+      container: {
+        center: true,
+
+        screens: {
+          xs: "640px",
+          sm: "768px",
+          md: "880px",
+          lg: "1024px",
+          xl: "1200px",
+        },
+      },
+
       transitionProperty: {
         height: "height",
       },

@@ -31,8 +31,8 @@ const HomeOne = () => {
       {/* About--Start */}
 
       <section className="relative py-[120px]">
-        <div className="container mx-auto xs:px-4 px-3">
-          <div className="grid md:grid-cols-2 xl:gap-4 gap-10 ">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
+          <div className="grid sm:grid-cols-2 xl:gap-4 gap-10 ">
             <AboutLeft />
 
             <div className=" relative xs:mt-0 mt-20">
@@ -63,10 +63,11 @@ const HomeOne = () => {
 
       {/* Service--Start */}
       <section className=" relative bg-secondary pt-[30px] pb-[120px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="px-4">
           <ServiceSlider />
         </div>
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3"></div>
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className=" relative bg-[#1a2a57] border-2 border-solid border-[rgba(255,255,255,0.1)] rounded-[10px] py-20 lg:px-[50px] px-6 mt-[90px]">
             <div className="grid grid-cols-12 gap-5">
               <div className="lg:col-span-7 col-span-12">
@@ -122,7 +123,7 @@ const HomeOne = () => {
 
       {/* Client--Start */}
       <div className="bg-[#f0f4f9] relative pt-[75px] pb-[68px] ">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <Client />
         </div>
       </div>
@@ -142,7 +143,7 @@ const HomeOne = () => {
 
       {/* Team--Sart */}
       <section className="bg-[#081845] pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <h6 className=" text-capitalize text-white text-center">
             Meet Our Team
           </h6>
@@ -156,7 +157,7 @@ const HomeOne = () => {
 
       {/* Testimonial--Start */}
       <section className="relative pt-[116px] pb-[120px] ">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <h6 className=" text-capitalize  ">Client Testimonials</h6>
           <h2 className=" mb-12 text-[rgb(25,25,25)]">What our clients say</h2>
           <ClientSlider />

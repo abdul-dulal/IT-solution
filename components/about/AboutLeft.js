@@ -8,10 +8,10 @@ const AboutLeft = () => {
       <div className=" group relative pt-[27px] ">
         <Image
           src={hero}
-          className="2xl:w-[80%]  md:w-[74%] sm:w-[80%] rounded-[29px]"
+          className="max-w-[426px] h-auto   w-full xs:m-0 mx-auto rounded-[29px]"
           alt="About"
         />
-        <div className=" w-[298px]  h-[536px] xs:block hidden bg-primary rounded-[29px] absolute 2xl:right-[10%] sm:right-[14%] right-[15%] top-0 -z-[1] "></div>
+        <div className=" w-[298px]  h-[536px] xs:block hidden bg-primary rounded-[29px] absolute  xl:right-[13%] lg:right-0 md:-right-[5%]  right-[15%] top-0 -z-[1] "></div>
 
         <div className="">
           <VideoModalTwo />

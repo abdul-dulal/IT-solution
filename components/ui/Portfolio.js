@@ -47,7 +47,7 @@ const Portfolio = () => {
             spaceBetween: 30,
           },
           1536: {
-            slidesPerView: 3,
+            slidesPerView: 5,
             spaceBetween: 30,
           },
         }}

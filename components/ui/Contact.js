@@ -65,7 +65,7 @@ const Contact = () => {
   };
   return (
     <section className="relative bg-[#f0f4f9] py-[110px]">
-      <div className="container mx-auto xs:px-4 px-3">
+      <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
         <div className="grid grid-cols-12 2xl:gap-6">
           <div className="md:col-span-4 col-span-12">
             <h2 className=" mb-[50px] ">Let&apos;s Work together</h2>

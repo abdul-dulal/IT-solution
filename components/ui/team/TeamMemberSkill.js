@@ -4,13 +4,13 @@ import ProgressBar from "../Progressbar";
 
 const TeamMemberSkill = ({ member }) => {
   return (
-    <div className="tm-area">
-      <div className="team_thumb">
+    <div>
+      <div>
         <Image
           src={member}
           width={550}
           height={400}
-          className="w-full rounded-md"
+          className="max-w-[500px] w-full rounded-md"
           alt="Team Member"
         />
       </div>

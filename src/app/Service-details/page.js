@@ -29,7 +29,7 @@ const ServiceDetails = () => {
                   <Image
                     src={hero}
                     alt="Hero"
-                    className="2xl:w-full rounded-[10px]"
+                    className="max-w-[750px] xl:w-full rounded-[10px]"
                   />
                 </div>
                 <h3 className="sm:text-[40px] xs:text-[36px] text-[30px] sm:leading-[52px] xs:leading-[45px] leading-[40px] font-bold text-[#191919] mb-[22px]">

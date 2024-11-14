@@ -53,7 +53,7 @@ const TeamSlider = () => {
             spaceBetween: 20,
           },
           1536: {
-            slidesPerView: 3,
+            slidesPerView: 6,
             spaceBetween: 20,
           },
         }}

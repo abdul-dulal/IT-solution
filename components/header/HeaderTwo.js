@@ -6,7 +6,7 @@ import Popup from "./Popup";
 const HeaderTwo = () => {
   return (
     <header className="bg-white  sticky top-0 z-[999] shadow-lg">
-      <div className="container mx-auto xs:px-4 px-3">
+      <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
         <nav className="h-[98px]">
           <div className="flex justify-between  items-center w-full h-full">
             <Link href={"/"} className="">
