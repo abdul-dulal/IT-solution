@@ -31,10 +31,10 @@ const Client = () => {
           modules={[Navigation, Autoplay]}
           speed={1000}
           loop={true}
-          // autoplay={{
-          //   delay: 2000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           className="relative"
           breakpoints={{
             620: {
