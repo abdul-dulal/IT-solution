@@ -31,10 +31,10 @@ const Client = () => {
           modules={[Navigation, Autoplay]}
           speed={1000}
           loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2000,
+          //   disableOnInteraction: false,
+          // }}
           className="relative"
           breakpoints={{
             620: {
@@ -68,14 +68,16 @@ const Client = () => {
                     className="group  overflow-hidden inline-block relative transition-all duration-300 ease-in-out  "
                   >
                     <Image
-                      className="hover inline-block max-w-full w-auto transition-all duration-300 ease-in-out absolute top-0 left-0 z-[1] invisible "
+                      className="hover inline-block w-[255px] h-auto transition-all duration-300 ease-in-out absolute top-0 left-0 z-[1] invisible "
                       src={logo}
-                      alt="Client Hover"
+                      width={255}
+                      height={68}
+                      alt="Client logo"
                     />
                     <Image
-                      className="normal inline-block max-w-full w-auto transition-all duration-300 ease-in-out   "
+                      className="normal inline-block w-[255px] h-auto transition-all duration-300 ease-in-out   "
                       src={logo}
-                      alt="Client Main"
+                      alt="Client logo"
                     />
                   </Link>
                 </div>
