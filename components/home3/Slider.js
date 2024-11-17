@@ -50,7 +50,7 @@ const Slider = () => {
                 <h5
                   className={` layer_animated ${
                     rubik.className
-                  } text-white font-medium text-base  leading-[22px]  capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block ${
+                  } text-white font-medium text-base  leading-[22px]  capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block after:transition-all after:duration-1000 ${
                     activeIndex == 0 ? "slider_sub_title" : ""
                   }`}
                 >
@@ -118,7 +118,7 @@ const Slider = () => {
                 <h5
                   className={` layer_animated ${
                     rubik.className
-                  } text-white font-medium text-base  leading-[22px]  capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block ${
+                  } text-white font-medium text-base  leading-[22px]  capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block after:transition-all after:duration-1000 ${
                     activeIndex == 1 ? "slider_sub_title" : ""
                   }`}
                 >
@@ -171,7 +171,7 @@ const Slider = () => {
                 <h5
                   className={` layer_animated ${
                     rubik.className
-                  } text-white font-medium text-base leading-[22px] capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block ${
+                  } text-white font-medium text-base leading-[22px] capitalize  mb-3 relative after:relative after:-right-6 after:-top-[3px] after:xs:w-[60px] after:w-[45px] after:h-[2px] after:bg-[#F0F4F9] after:content-[''] after:inline-block after:transition-all after:duration-1000 ${
                     activeIndex == 2 ? "slider_sub_title" : ""
                   }`}
                 >

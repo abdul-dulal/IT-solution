@@ -13,18 +13,18 @@ const HeaderThreePopup = () => {
   const [searchPopup, setSearchPopup] = useState(false);
   return (
     <div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 relative">
         <Link
           href=""
           onClick={() => setSearchPopup(!searchPopup)}
-          className={`transition-all duration-[5s] ease-in-out  py-10 border-l border-[rgba(255,255,255,0.1)] border-solid pl-6 text-white hover:text-black`}
+          className={`relative transition-all duration-500 ease-in-out  after:absolute after:top-0 after:left-0 after:w-[1px] after:h-[85%] after:bg-[rgba(255,255,255,0.1)] before:absolute before:top-0 before:-right-5 before:w-[1px] before:h-[85%] before:bg-[rgba(255,255,255,0.1)] py-10   pl-6 text-white hover:text-black`}
         >
           <IoSearchOutline size={24} />
         </Link>
         <div
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
-          className="transition-all duration-600 ease-linear border-l border-[rgba(255,255,255,0.1)] border-solid  block px-6 pr-5 py-10  cursor-pointer text-white hover:text-black"
+          className="transition-all duration-500 ease-linear    block px-6 pr-5 py-10  cursor-pointer text-white hover:text-black"
         >
           {hover ? (
             <HiMiniBars3BottomRight

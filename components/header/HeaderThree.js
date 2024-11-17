@@ -1,5 +1,4 @@
 import React from "react";
-import TopheaderTwo from "./TopheaderTwo";
 import Link from "next/link";
 import { rubik } from "@/app/fonts";
 
