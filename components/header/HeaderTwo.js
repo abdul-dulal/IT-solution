@@ -26,7 +26,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/"
-                      className=" w-[250px] block px-6 py-[6px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[6px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Home One
                     </Link>
@@ -34,7 +34,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/HomeTwo"
-                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(70,68,68,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Home Two
                     </Link>
@@ -42,7 +42,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/HomeThree"
-                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(70,68,68,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Home Three
                     </Link>
@@ -60,7 +60,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/ServiceOne"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Service 01
                     </Link>
@@ -68,7 +68,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/ServiceTwo"
-                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(70,68,68,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Service 02
                     </Link>
@@ -76,7 +76,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/Service-details"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Service Details
                     </Link>
@@ -94,7 +94,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/About"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       About Page
                     </Link>
@@ -102,7 +102,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/Pricing"
-                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(70,68,68,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Pricing Page
                     </Link>
@@ -110,7 +110,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/Faq"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Faq Page
                     </Link>
@@ -118,7 +118,7 @@ const HeaderTwo = () => {
                   <li className="team">
                     <Link
                       href="#"
-                      className=" w-[250px] after:content-['+'] hover:after:content-['-'] after:ml-40 block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] after:content-['+'] hover:after:content-['-'] after:ml-40 block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Team
                     </Link>
@@ -126,7 +126,7 @@ const HeaderTwo = () => {
                       <li className="">
                         <Link
                           href="/TeamMember"
-                          className=" w-[250px] block px-6 py-[6px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                          className=" w-[250px] block px-6 py-[6px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                         >
                           Team Member 01
                         </Link>
@@ -134,7 +134,7 @@ const HeaderTwo = () => {
                       <li className="">
                         <Link
                           href="/TeamMemberTwo"
-                          className=" w-[250px] block px-6 py-[6px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                          className=" w-[250px] block px-6 py-[6px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                         >
                           Team Member 02
                         </Link>
@@ -142,7 +142,7 @@ const HeaderTwo = () => {
                       <li className="">
                         <Link
                           href="/TeamDetails"
-                          className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                          className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(70,68,68,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                         >
                           Team Details
                         </Link>
@@ -162,7 +162,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/CaseStudyOne"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Case Study 01
                     </Link>
@@ -170,7 +170,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/CaseStudyTwo"
-                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(70,68,68,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Case Study 02
                     </Link>
@@ -178,7 +178,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/CaseStudyThree"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Case Study 03
                     </Link>
@@ -186,7 +186,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/CaseDetails"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Case Details
                     </Link>
@@ -204,7 +204,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/BlogStandard"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-300 translate-y-1 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Blog Stadard
                     </Link>
@@ -212,7 +212,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/BlogGridOne"
-                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(255,255,255,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t-[.5px] border-[rgba(70,68,68,0.1)]  transform transition-all duration-500 translate-y-4 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Blog Grid 01
                     </Link>
@@ -220,7 +220,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/BlogGridTwo"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Blog Grid 02
                     </Link>
@@ -228,7 +228,7 @@ const HeaderTwo = () => {
                   <li className="">
                     <Link
                       href="/SingleBlog"
-                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(255,255,255,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
+                      className=" w-[250px] block px-6 py-[10px]   border-t border-[rgba(70,68,68,0.1)]  transform transition-all duration-700 translate-y-6 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto hover:text-primary"
                     >
                       Blog Details
                     </Link>
