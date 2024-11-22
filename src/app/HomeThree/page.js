@@ -37,7 +37,7 @@ const HomeThree = () => {
 
       {/* Service--Start */}
       <section className="service-section-3 relative bg-[#f0f4f9] pt-[116px] pb-[90px]">
-        <div className="container mx-auto xs:px-4 px-3 ">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3 ">
           <div className="text-center">
             <h6 className="">What we do</h6>
             <h2 className=" mb-10 text-[#191919] text-center">
@@ -52,7 +52,7 @@ const HomeThree = () => {
       {/* About--Start */}
 
       <section className="about-section-2 relative pt-[120px] pb-[10px]">
-        <div className="container mx-auto xs:px-4 px-3 ">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3 ">
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="">
               <Image src={layer} alt="Layer" />
@@ -104,7 +104,7 @@ const HomeThree = () => {
 
       {/* Work--Process--Start */}
       <section className="relative pt-28 pb-[120px]">
-        <div className="container mx-auto xs:px-4 px-3 ">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3 ">
           <h6 className="text-center ">Our Work Process</h6>
           <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-5 text-center">
             We Complete Every <br /> Step Carefully
@@ -116,7 +116,7 @@ const HomeThree = () => {
 
       {/* Portfolio--Start */}
       <section className="relative bg-[#f0f4f9] py-[120px]">
-        <div className="container mx-auto xs:px-4 px-3 ">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3 ">
           <h6 className="text-center ">Case Study</h6>
           <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-8 text-center">
             Our Recent Launched Projects
@@ -187,7 +187,7 @@ const HomeThree = () => {
         style={{ padding: "123px 0 172px" }}
         className="testibg-section -z-20 bg-[url('/img/home3/shadowbg.jpg')] bg-center bg-cover bg-fixed bg-no-repeat relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-full after:bg-[rgba(8,24,69,0.9)] after:-z-10"
       >
-        <div className="container mx-auto xs:px-4 px-3  z-[33]">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3  z-[33]">
           <div className=" text-center">
             <h6 className=" text-white capitalize">Client Testimonials</h6>
             <h2 className=" text-white">What our clients say</h2>
@@ -196,7 +196,7 @@ const HomeThree = () => {
       </section>
 
       <section className=" -mt-[135px] z-[99]">
-        <div className="container mx-auto xs:px-4 px-3 ">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3 ">
           <ClientTestimonial />
         </div>
       </section>
@@ -205,7 +205,7 @@ const HomeThree = () => {
 
       {/* Price--Start */}
       <section className="relative pt-[116px] pb-[85px]">
-        <div className="container mx-auto xs:px-4 px-3 ">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3 ">
           <h6 className="  text-center">Let’s Work</h6>
           <h2 className=" mb-10 text-[#191919] text-center">Pricing Plans</h2>
           <div className="grid  lg:grid-cols-3 sm:grid-cols-2  gap-8">
@@ -223,7 +223,9 @@ const HomeThree = () => {
 
       {/* Contact--Start */}
       <section className="bg-secondary pt-[120px] pb-[115px] bg-center  bg-cover bg-no-repeat relative bg-[url('/img/home3/contact-bg.png')]">
-        <Contact />
+        <div className=" container mx-auto lg:px-[30px] xs:px-4 px-3">
+          <Contact />
+        </div>
       </section>
       {/* Contact--End */}
 
@@ -233,7 +235,7 @@ const HomeThree = () => {
         style={{ padding: "116px 0 90px" }}
         className="relative pt-[116px]"
       >
-        <div className="container mx-auto xs:px-4 px-3 ">
+        <div className="container mx-auto lg:px-[30px] xs:px-4 px-3 ">
           <div>
             <h6 className="title  text-center">Blogs</h6>
             <h2 className="mb-10  text-center">Out Latest Articles</h2>

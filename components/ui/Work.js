@@ -6,7 +6,7 @@ import { LuComponent } from "react-icons/lu";
 
 const Work = () => {
   return (
-    <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">
+    <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-[30px]">
       <WorkProcess
         title="Collecting Info Data"
         serial="01"

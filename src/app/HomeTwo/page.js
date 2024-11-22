@@ -37,7 +37,7 @@ const HomeTwo = () => {
     <div>
       {/* Hero Banner Start --- */}
       <section className=" relative overflow-hidden bg-[url('/img/home1/home-banner.jpg')] bg-no-repeat bg-cover bg-center py-11 bg-secondary">
-        <div className="container mx-auto grid grid-cols-12 xs:px-3 px-0">
+        <div className="container mx-auto grid grid-cols-12 xs:px-3 px-4">
           <div className="sm:col-span-7 xs:col-span-8 col-span-10 items-center">
             <div className="relative  mt-20 ml-6">
               <h5
@@ -152,7 +152,7 @@ const HomeTwo = () => {
 
       {/* Service--Start */}
       <section className="  bg-secondary pt-[116px] pb-[345px]  relative bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat ">
-        <div className="container mx-auto xl:px-1 xs:px-6 px-4">
+        <div className="container mx-auto  xs:px-6 px-4">
           <div className=" grid grid-cols-12">
             <div className="xs:col-start-3 xs:col-span-8 col-start-1 col-span-11 text-center">
               <h6 className="title text-white">What we do</h6>
@@ -170,7 +170,7 @@ const HomeTwo = () => {
 
       {/* FAQ--Start */}
       <section className=" bg-[#f0f4f9]  pb-11">
-        <div className="container mx-auto xl:px-1 xs:px-6 px-4">
+        <div className="container mx-auto xs:px-3 px-4">
           <div className="grid grid-cols-12  bg-white relative rounded-[10px] py-[65px] lg:px-[45px] px-4 z-[3] -mt-[260px]">
             <div className="md:col-span-5 col-span-12">
               <h2 className="lg:text-[25px] text-[22px] text-center leading-[30px] mb-[12px] font-bold text-[#191919]">
@@ -192,7 +192,7 @@ const HomeTwo = () => {
 
       {/* Client--Start */}
       <section className="bg-[#f0f4f9] relative pt-[75px] pb-[68px] ">
-        <div className="container mx-auto xl:px-1 xs:px-6 px-4">
+        <div className="container mx-auto xs:px-6 px-4">
           <Client />
         </div>
       </section>
@@ -201,7 +201,7 @@ const HomeTwo = () => {
 
       {/* Price--Start */}
       <section className="relative pt-[116px] pb-[85px]">
-        <div className="container mx-auto xl:px-1 xs:px-6 px-4">
+        <div className="container mx-auto xs:px-6 px-4">
           <h6 className="text-center">Let’s Work</h6>
           <h2 className="text-center">Pricing Plans</h2>
           <div className="grid  md:grid-cols-3 xs:grid-cols-2  gap-8">
@@ -227,7 +227,7 @@ const HomeTwo = () => {
 
       {/* Counter--Start */}
       <section className="relative -mt-[150px]">
-        <div className="container mx-auto xl:px-1 xs:px-6 px-4">
+        <div className="container mx-auto  xs:px-6 px-4">
           <div className="bg-[url('/img/bg/counter-bg.png')] relative   w-full rounded-[10px] bg-[#686ee2] z-[2]  py-10 bg-center bg-auto bg-no-repeat">
             <Counter />
           </div>
@@ -242,7 +242,7 @@ const HomeTwo = () => {
         style={{ padding: "116px 0 90px" }}
         className="relative pt-[116px]"
       >
-        <div className="container mx-auto xl:px-1 xs:px-6 px-4">
+        <div className="container mx-auto xs:px-6 px-4">
           <div>
             <h6 className="  text-center">Blogs</h6>
             <h2 className="text-center">Out Latest Articles</h2>

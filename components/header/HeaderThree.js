@@ -9,11 +9,11 @@ import ResponsiveHeader from "./ResponsiveHeader";
 const HeaderThree = () => {
   return (
     <header className="sticky top-0 bg-primary z-[999]">
-      <div className="container mx-auto xs:px-4 px-3  z-[999] ">
+      <div className="container mx-auto lg:px-[30px] xs:px-4 px-3  z-[999] ">
         <nav className="h-[74px]">
           <div className="flex justify-between  items-center w-full h-full">
             <ul
-              className={`${rubik.className}   lg:flex hidden items-center gap-10 text-base text-lg font-medium text-white `}
+              className={`${rubik.className}   lg:flex hidden items-center gap-10 text-base text-lg font-medium text-white pl-4`}
             >
               <li className="group relative w-16">
                 <Link
