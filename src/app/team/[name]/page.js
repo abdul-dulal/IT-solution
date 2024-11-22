@@ -21,7 +21,7 @@ const TeamDetails = ({ params }) => {
     <div>
       <BreadCumb currentPage="Team Member" />
       <section className=" relative pt-[120px] pb-[90px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="grid lg:grid-cols-2 xs:gap-10">
             <TeamMemberSkill member={img} />
             <div className="relative">

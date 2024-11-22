@@ -16,7 +16,7 @@ const CaseStudyTwo = () => {
       <BreadCumb currentPage="case study" />
 
       <section className="py-[120px] relative">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3">
             {portfolio.map((item) => (
               <div key={item.id} className=" group relative overflow-hidden  ">

@@ -30,7 +30,7 @@ const Portfolio = ({ params }) => {
       <BreadCumb currentPage={title} />
 
       <section className="relative py-[120px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="relative">
             <Image
               src={single?.img2}

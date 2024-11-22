@@ -29,7 +29,7 @@ export default function ServiceDetails({ params }) {
     <div>
       <BreadCumb currentPage={paramsTitle} />
       <section className=" relative  py-[120px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="grid grid-cols-12  xs:gap-7">
             <div className="lg:col-span-8 col-span-12">
               <div className=" relative">

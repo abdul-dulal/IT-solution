@@ -22,7 +22,7 @@ const ServiceTwo = () => {
       <BreadCumb currentPage="Service" />
       {/* Service Start */}
       <section className=" relative bg-[#f0f4f9] pt-[116px] pb-[90px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="text-center">
             <h6 className="">What we do</h6>
             <h2 className="mb-10  text-center">Service for You</h2>
@@ -36,12 +36,12 @@ const ServiceTwo = () => {
       {/* Work Process Start */}
 
       <section className="relative pt-28 pb-[120px]">
-        <div className="container mx-auto xs:px-6 px-4">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <h6 className="text-center ">Our Work Process</h6>
           <h2 className="text-center">
             We Complete Every <br /> Step Carefully
           </h2>
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-9">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-7">
             <WorkProcess
               title="Collecting Info Data"
               serial="01"

@@ -10,7 +10,7 @@ const TeamDetails = () => {
     <div>
       <BreadCumb currentPage="Team Member" />
       <section className=" relative pt-[120px] pb-[90px]">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="grid lg:grid-cols-2 gap-10">
             <TeamMemberSkill member={member} />
             <TeamMemberDetails name="Doris Jordan" dgn="Design Expert" />

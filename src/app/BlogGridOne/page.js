@@ -15,7 +15,7 @@ const BlogGridOne = () => {
         style={{ padding: "116px 0 90px" }}
         className="relative pt-[116px]"
       >
-        <div className="container mx-auto xs:px-6 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <Blog />
         </div>
       </section>

@@ -12,7 +12,7 @@ const BlogGridTwo = () => {
     <div>
       <BreadCumb currentPage="Grid Blog" />
       <section className=" relative py-[120px]">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <BlogGrid />
         </div>
       </section>

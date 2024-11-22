@@ -32,7 +32,7 @@ const SingleBlog = ({ params }) => {
       <BreadCumb currentPage={title} />
 
       <section className="relative py-[120px]">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="grid grid-cols-12 xs:gap-7 gap-0">
             <div className="lg:col-span-8 col-span-12 relative mb-[43px] transition-all ease-in-out duration-400">
               <div>

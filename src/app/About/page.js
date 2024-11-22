@@ -23,7 +23,7 @@ const About = () => {
       {/* About--Start */}
 
       <section className="relative pt-[120px] ">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xl:px-[30px] xs:px-4 px-3">
           <div className="grid md:grid-cols-2 xl:gap-4 gap-10 ">
             <AboutLeft />
 
@@ -55,7 +55,7 @@ const About = () => {
 
       {/* Work Process */}
       <section className="relative pt-28 pb-[120px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <h6 className="text-center ">Our Work Process</h6>
           <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-5 text-center">
             We Complete Every <br /> Step Carefully
@@ -82,7 +82,7 @@ const About = () => {
 
       {/* Testimonial--Start */}
       <section className="relative pt-[116px] pb-[120px] ">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <h6 className=" text-capitalize  ">Client Testimonials</h6>
           <h2 className=" sm:text-5xl text-3xl mb-12 text-[rgb(25,25,25)]">
             What our clients say

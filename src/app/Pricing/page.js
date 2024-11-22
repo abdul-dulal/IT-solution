@@ -16,7 +16,7 @@ const Pricing = () => {
       <BreadCumb currentPage="About" />
       {/* Price--Start */}
       <section className="relative pt-[116px] pb-[85px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <h6 className="  text-center">Let’s Work</h6>
           <h2 className=" mb-10 text-center">Pricing Plans</h2>
           <div className="grid  md:grid-cols-3 sm:grid-cols-2  gap-8">

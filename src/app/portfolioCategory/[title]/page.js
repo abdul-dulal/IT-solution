@@ -20,7 +20,7 @@ const FolioCat = ({ params }) => {
     <div>
       <BreadCumb currentPage={title} />
       <section className="relative py-[120px]">
-        <div className="container mx-auto xl:px-6 px-4">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-8 ">
             {categories.map((item) => {
               return (

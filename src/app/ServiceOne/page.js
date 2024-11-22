@@ -31,7 +31,7 @@ const ServiceOne = () => {
 
       {/* Work Process Start */}
       <section className="relative pt-28 pb-[120px]">
-        <div className="container mx-auto xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
           <h6 className="text-center ">Our Work Process</h6>
           <h2 className="lg:text-[46px] xs:text-4xl text-3xl lg:leading-[58px] xs:leading-[45px] leading-[42px]  mb-5 text-center">
             We Complete Every <br /> Step Carefully
