@@ -21,7 +21,7 @@ const TeamMember = () => {
       {/* Team Start */}
 
       <section className="relative pt-[120px] pb-[70px]">
-        <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
+        <div className="container mx-auto xl:px-[30px]  xs:px-4 px-3">
           <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-7">
             {teams?.map(({ id, name, designation, img }) => {
               const encName = encodeURIComponent(name);

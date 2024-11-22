@@ -39,7 +39,7 @@ const FolioCat = ({ params }) => {
                     >
                       <p className=" relative text-primary mb-[2px]">
                         <Link
-                          href={`/folioCat/${item?.tech}`}
+                          href={`/portfolioCategory/${item?.tech}`}
                           className="text-primary inline-block hover:text-[#191919]"
                         >
                           {item?.tech}

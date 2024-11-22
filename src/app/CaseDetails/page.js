@@ -17,7 +17,7 @@ const CaseDetails = () => {
 
       <section className="portfolio-single relative py-[120px]">
         <div className="container mx-auto xl:px-[30px] xs:px-4 px-3">
-          <div className="folio-thumb relative">
+          <div className=" relative">
             <Image
               src={caseDetails}
               className="w-full mb-[30px]"

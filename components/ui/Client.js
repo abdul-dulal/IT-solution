@@ -68,16 +68,14 @@ const Client = () => {
                     className="group  overflow-hidden inline-block relative transition-all duration-300 ease-in-out  "
                   >
                     <Image
-                      className="hover inline-block w-[255px] h-auto transition-all duration-300 ease-in-out absolute top-0 left-0 z-[1] invisible "
                       src={logo}
-                      width={255}
-                      height={68}
                       alt="Client logo"
+                      className="hover inline-block max-w-[255px]   transition-all duration-300 ease-in-out absolute top-0 left-0 z-[1] invisible "
                     />
                     <Image
-                      className="normal inline-block w-[255px] h-auto transition-all duration-300 ease-in-out   "
                       src={logo}
                       alt="Client logo"
+                      className="normal inline-block max-w-[255px]  transition-all duration-300 ease-in-out   "
                     />
                   </Link>
                 </div>
