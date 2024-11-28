@@ -131,7 +131,7 @@ const HomeOne = () => {
       {/* Client--End */}
       {/* Portfolio */}
 
-      <section className=" pt-[116px] pb-[147px] bg-[url('/img/bg/service-bg.png')] bg-center bg-cover bg-no-repeat relative">
+      <section className=" pt-[116px] pb-[147px]  relative">
         <div className="container mx-auto xl:px-0 xs:px-6 px-4">
           <h6 className=" text-capitalize text-primary text-center">
             Portfolio

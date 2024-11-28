@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "/public/img/main-logo.png";
+
 import { rubik } from "@/app/fonts";
 import HeaderRight from "./HeaderRight";
 import ResponsiveHeader from "./ResponsiveHeader";
@@ -13,7 +13,13 @@ const MainHeader = () => {
         <nav className="h-[98px]">
           <div className="flex justify-between items-center w-full h-full">
             <Link href={"/"} className="">
-              <Image src={logo} className="" alt="Main logo" />
+              <Image
+                src="/img/main-logo.png"
+                width={181}
+                height={41}
+                className="w-full"
+                alt="Main logo"
+              />
             </Link>
             <ul
               className={`${rubik.className}   lg:flex hidden items-center gap-9 text-white text-lg font-medium `}

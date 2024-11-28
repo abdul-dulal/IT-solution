@@ -6,7 +6,13 @@ const TeamMemberSkill = ({ member }) => {
   return (
     <div>
       <div>
-        <Image src={member} className=" w-full rounded-md" alt="Team Member" />
+        <Image
+          src={member}
+          width={768}
+          height={768}
+          className=" w-full rounded-md"
+          alt="Team Member"
+        />
       </div>
       <div className=" relative mb-[25px] mt-10">
         <ProgressBar datacount={95} title="software development" />

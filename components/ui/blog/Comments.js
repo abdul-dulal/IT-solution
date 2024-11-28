@@ -20,7 +20,7 @@ const Comments = () => {
       id: 1,
       comment:
         "Lorem available market standard dummy text available marketindustry Lorem Ipsum simply dummy text available market.Thereare many variations",
-      author: "jhon shikon",
+      author: "abdul dulal",
       replay: [],
       img: "/img/blog/author2.jpg",
     },

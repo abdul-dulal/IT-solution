@@ -63,7 +63,7 @@ const Slider = () => {
             title="Business Growth &"
             titleTwo="Success"
             subTitle="We Increse Your"
-            index={1}
+            index={2}
             bgImg="/img/home2/homeslider2.jpg"
             swiperRef={swiperRef}
           />
